@@ -1,0 +1,23 @@
+<svg viewBox="0 0 560 160" role="img" aria-label="Il prompt contiene solo l'istruzione e nessun esempio: il modello risponde con ciò che ha imparato in addestramento.">
+<defs>
+<marker id="ah-zero-shot" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm" x="20" y="22">Prompt</text>
+<rect class="box" x="20" y="32" width="200" height="104" rx="8"/>
+<rect class="box-accent" x="36" y="46" width="168" height="34" rx="6"/>
+<text class="t mid it" x="120" y="68">Istruzione chiara</text>
+<text class="t mid en" x="120" y="68">Clear instruction</text>
+<rect class="ln-muted dash" x="36" y="90" width="168" height="34" rx="6"/>
+<text class="t-xs mid it" x="120" y="111">0 esempi</text>
+<text class="t-xs mid en" x="120" y="111">0 examples</text>
+<line class="ln" x1="228" y1="84" x2="272" y2="84" marker-end="url(#ah-zero-shot)"/>
+<rect class="box-mod" x="280" y="60" width="110" height="48" rx="8"/>
+<text class="t mid it" x="335" y="89">Modello</text>
+<text class="t mid en" x="335" y="89">Model</text>
+<line class="ln" x1="398" y1="84" x2="442" y2="84" marker-end="url(#ah-zero-shot)"/>
+<rect class="box" x="450" y="60" width="90" height="48" rx="8"/>
+<text class="t mid it" x="495" y="89">Risposta</text>
+<text class="t mid en" x="495" y="89">Answer</text>
+</svg>

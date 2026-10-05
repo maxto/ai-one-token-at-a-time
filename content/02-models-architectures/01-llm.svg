@@ -1,0 +1,31 @@
+<svg viewBox='0 0 560 190' role='img' aria-label='Il modello dà una probabilità a ogni possibile token successivo, ne sceglie uno, lo aggiunge al testo e ripete (numeri illustrativi).'>
+<defs>
+<marker id='ah-llm' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'>
+<path d='M0,0 L10,5 L0,10 z' class='fill-ink'/>
+</marker>
+</defs>
+<rect class='box' x='20' y='61' width='180' height='44' rx='6'/>
+<text class='t-sm mid it' x='110' y='88'>Il gatto dorme sul</text>
+<text class='t-sm mid en' x='110' y='88'>The cat sleeps on the</text>
+<line class='ln' x1='204' y1='83' x2='238' y2='83' marker-end='url(#ah-llm)'/>
+<rect class='box-mod' x='244' y='61' width='80' height='44' rx='6'/>
+<text class='t t-b mid' x='284' y='88'>LLM</text>
+<line class='ln' x1='328' y1='83' x2='362' y2='83' marker-end='url(#ah-llm)'/>
+<text class='t-xs it' x='370' y='34'>prossimo token</text>
+<text class='t-xs en' x='370' y='34'>next token</text>
+<text class='t-sm it' x='370' y='60'>divano</text>
+<text class='t-sm en' x='370' y='60'>sofa</text>
+<rect class='fill-accent' x='426' y='46' width='72' height='18' rx='2'/>
+<text class='t-xs' x='506' y='60'>0.6</text>
+<text class='t-sm it' x='370' y='88'>letto</text>
+<text class='t-sm en' x='370' y='88'>bed</text>
+<rect class='fill-muted' x='426' y='74' width='36' height='18' rx='2'/>
+<text class='t-xs' x='470' y='88'>0.3</text>
+<text class='t-sm it' x='370' y='116'>tetto</text>
+<text class='t-sm en' x='370' y='116'>roof</text>
+<rect class='fill-muted' x='426' y='102' width='12' height='18' rx='2'/>
+<text class='t-xs' x='446' y='116'>0.1</text>
+<path class='ln' d='M430,128 L430,150 L110,150 L110,111' marker-end='url(#ah-llm)'/>
+<text class='t-sm mid it' x='286' y='174'>aggiunge il token e ripete</text>
+<text class='t-sm mid en' x='286' y='174'>appends the token, repeats</text>
+</svg>

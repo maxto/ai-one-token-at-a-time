@@ -1,0 +1,46 @@
+<svg viewBox='0 0 560 200' role='img' aria-label='Nell&#39;encoder ogni token guarda tutti gli altri; nel decoder solo quelli precedenti, perché i successivi non sono ancora stati scritti.'>
+<defs>
+<marker id='ah-encoder-decoder' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'>
+<path d='M0,0 L10,5 L0,10 z' class='fill-ink'/>
+</marker>
+</defs>
+<line class='ln-muted' x1='280' y1='16' x2='280' y2='196'/>
+<text class='t t-b mid' x='145' y='30'>Encoder</text>
+<text class='t-xs mid it' x='145' y='50'>guarda avanti e indietro</text>
+<text class='t-xs mid en' x='145' y='50'>looks both ways</text>
+<text class='t t-b mid' x='419' y='30'>Decoder</text>
+<text class='t-xs mid it' x='419' y='50'>guarda solo indietro</text>
+<text class='t-xs mid en' x='419' y='50'>looks only back</text>
+<rect class='box' x='24' y='130' width='50' height='32' rx='6'/>
+<text class='t-sm mid it' x='49' y='151'>il</text>
+<text class='t-sm mid en' x='49' y='151'>the</text>
+<rect class='box' x='84' y='130' width='50' height='32' rx='6'/>
+<text class='t-sm mid it' x='109' y='151'>gatto</text>
+<text class='t-sm mid en' x='109' y='151'>cat</text>
+<rect class='box-accent' x='144' y='130' width='50' height='32' rx='6'/>
+<text class='t-sm mid it' x='169' y='151'>dorme</text>
+<text class='t-sm mid en' x='169' y='151'>sleeps</text>
+<rect class='box' x='204' y='130' width='50' height='32' rx='6'/>
+<text class='t-sm mid it' x='229' y='151'>qui</text>
+<text class='t-sm mid en' x='229' y='151'>here</text>
+<path class='ln-accent' d='M169,128 Q109,72 49,128'/>
+<path class='ln-accent' d='M169,128 Q139,96 109,128'/>
+<path class='ln-accent' d='M169,128 Q199,96 229,128'/>
+<rect class='box' x='294' y='130' width='50' height='32' rx='6'/>
+<text class='t-sm mid it' x='319' y='151'>il</text>
+<text class='t-sm mid en' x='319' y='151'>the</text>
+<rect class='box' x='354' y='130' width='50' height='32' rx='6'/>
+<text class='t-sm mid it' x='379' y='151'>gatto</text>
+<text class='t-sm mid en' x='379' y='151'>cat</text>
+<rect class='box-accent' x='414' y='130' width='50' height='32' rx='6'/>
+<text class='t-sm mid it' x='439' y='151'>dorme</text>
+<text class='t-sm mid en' x='439' y='151'>sleeps</text>
+<rect class='ln-muted dash' x='474' y='130' width='50' height='32' rx='6'/>
+<text class='t-sm mid' x='499' y='151'>?</text>
+<path class='ln-accent' d='M439,128 Q379,72 319,128'/>
+<path class='ln-accent' d='M439,128 Q409,96 379,128'/>
+<text class='t-xs mid it' x='145' y='188'>classificare, cercare</text>
+<text class='t-xs mid en' x='145' y='188'>classify, search</text>
+<text class='t-xs mid it' x='419' y='188'>generare testo</text>
+<text class='t-xs mid en' x='419' y='188'>generate text</text>
+</svg>

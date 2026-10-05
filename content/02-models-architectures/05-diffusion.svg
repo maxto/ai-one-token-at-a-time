@@ -1,0 +1,101 @@
+<svg viewBox='0 0 560 240' role='img' aria-label='Si parte da rumore puro e lo si toglie passo dopo passo, guidati dal prompt; in addestramento si fa il percorso inverso.'>
+<defs>
+<marker id='ah-diffusion' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'>
+<path d='M0,0 L10,5 L0,10 z' class='fill-ink'/>
+</marker>
+<marker id='ah2-diffusion' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'>
+<path d='M0,0 L10,5 L0,10 z' class='fill-accent'/>
+</marker>
+</defs>
+<rect class='box-accent' x='170' y='16' width='220' height='34' rx='6'/>
+<text class='t-sm mid it' x='280' y='38'>“un cane che dorme”</text>
+<text class='t-sm mid en' x='280' y='38'>“a sleeping dog”</text>
+<rect class='box' x='30' y='90' width='80' height='80' rx='4'/>
+<rect class='box' x='170' y='90' width='80' height='80' rx='4'/>
+<rect class='box' x='310' y='90' width='80' height='80' rx='4'/>
+<rect class='box' x='450' y='90' width='80' height='80' rx='4'/>
+<circle class='fill-muted' cx='79' cy='117' r='2.5'/>
+<circle class='fill-muted' cx='88' cy='104' r='2.5'/>
+<circle class='fill-muted' cx='47' cy='110' r='2.5'/>
+<circle class='fill-muted' cx='84' cy='105' r='2.5'/>
+<circle class='fill-muted' cx='102' cy='125' r='2.5'/>
+<circle class='fill-muted' cx='42' cy='109' r='2.5'/>
+<circle class='fill-muted' cx='93' cy='151' r='2.5'/>
+<circle class='fill-muted' cx='46' cy='128' r='2.5'/>
+<circle class='fill-muted' cx='49' cy='152' r='2.5'/>
+<circle class='fill-muted' cx='45' cy='113' r='2.5'/>
+<circle class='fill-muted' cx='66' cy='105' r='2.5'/>
+<circle class='fill-muted' cx='88' cy='104' r='2.5'/>
+<circle class='fill-muted' cx='66' cy='103' r='2.5'/>
+<circle class='fill-muted' cx='55' cy='135' r='2.5'/>
+<circle class='fill-muted' cx='91' cy='116' r='2.5'/>
+<circle class='fill-muted' cx='53' cy='137' r='2.5'/>
+<circle class='fill-muted' cx='61' cy='111' r='2.5'/>
+<circle class='fill-muted' cx='62' cy='145' r='2.5'/>
+<circle class='fill-muted' cx='50' cy='106' r='2.5'/>
+<circle class='fill-muted' cx='45' cy='124' r='2.5'/>
+<circle class='fill-muted' cx='101' cy='152' r='2.5'/>
+<circle class='fill-muted' cx='78' cy='157' r='2.5'/>
+<circle class='fill-muted' cx='96' cy='144' r='2.5'/>
+<circle class='fill-muted' cx='76' cy='129' r='2.5'/>
+<circle class='fill-muted' cx='61' cy='129' r='2.5'/>
+<circle class='fill-muted' cx='48' cy='136' r='2.5'/>
+<circle class='fill-muted' cx='101' cy='141' r='2.5'/>
+<circle class='fill-muted' cx='95' cy='134' r='2.5'/>
+<circle class='fill-muted' cx='47' cy='113' r='2.5'/>
+<circle class='fill-muted' cx='91' cy='119' r='2.5'/>
+<circle class='fill-muted' cx='81' cy='117' r='2.5'/>
+<circle class='fill-muted' cx='100' cy='151' r='2.5'/>
+<circle class='fill-muted' cx='43' cy='107' r='2.5'/>
+<circle class='fill-muted' cx='78' cy='141' r='2.5'/>
+<ellipse class='fill-soft' cx='210' cy='138' rx='26' ry='14' opacity='0.7'/>
+<circle class='fill-muted' cx='222' cy='161' r='2.5'/>
+<circle class='fill-muted' cx='236' cy='106' r='2.5'/>
+<circle class='fill-muted' cx='189' cy='132' r='2.5'/>
+<circle class='fill-muted' cx='238' cy='106' r='2.5'/>
+<circle class='fill-muted' cx='185' cy='137' r='2.5'/>
+<circle class='fill-muted' cx='235' cy='134' r='2.5'/>
+<circle class='fill-muted' cx='227' cy='142' r='2.5'/>
+<circle class='fill-muted' cx='180' cy='157' r='2.5'/>
+<circle class='fill-muted' cx='223' cy='119' r='2.5'/>
+<circle class='fill-muted' cx='192' cy='161' r='2.5'/>
+<circle class='fill-muted' cx='185' cy='125' r='2.5'/>
+<circle class='fill-muted' cx='214' cy='114' r='2.5'/>
+<circle class='fill-muted' cx='209' cy='148' r='2.5'/>
+<circle class='fill-muted' cx='228' cy='161' r='2.5'/>
+<circle class='fill-muted' cx='188' cy='119' r='2.5'/>
+<circle class='fill-muted' cx='235' cy='149' r='2.5'/>
+<circle class='fill-muted' cx='213' cy='115' r='2.5'/>
+<circle class='fill-muted' cx='233' cy='133' r='2.5'/>
+<ellipse class='fill-muted' cx='356' cy='140' rx='24' ry='12' opacity='0.5'/>
+<circle class='fill-muted' cx='330' cy='134' r='9' opacity='0.5'/>
+<circle class='fill-muted' cx='371' cy='143' r='2.5'/>
+<circle class='fill-muted' cx='366' cy='127' r='2.5'/>
+<circle class='fill-muted' cx='337' cy='108' r='2.5'/>
+<circle class='fill-muted' cx='340' cy='117' r='2.5'/>
+<circle class='fill-muted' cx='347' cy='127' r='2.5'/>
+<circle class='fill-muted' cx='319' cy='160' r='2.5'/>
+<ellipse class='fill-mod' cx='503' cy='144' rx='22' ry='12'/>
+<circle class='fill-mod' cx='468' cy='138' r='10'/>
+<polygon class='fill-mod' points='461,132 463,120 471,129'/>
+<text class='t-xs' x='484' y='118'>z z</text>
+<line class='ln' x1='114' y1='136' x2='166' y2='136' marker-end='url(#ah-diffusion)'/>
+<text class='t-xs mid it' x='140' y='124'>toglie</text>
+<text class='t-xs mid en' x='140' y='124'>denoise</text>
+<line class='ln' x1='254' y1='136' x2='306' y2='136' marker-end='url(#ah-diffusion)'/>
+<text class='t-xs mid it' x='280' y='124'>toglie</text>
+<text class='t-xs mid en' x='280' y='124'>denoise</text>
+<line class='ln' x1='394' y1='136' x2='446' y2='136' marker-end='url(#ah-diffusion)'/>
+<text class='t-xs mid it' x='420' y='124'>toglie</text>
+<text class='t-xs mid en' x='420' y='124'>denoise</text>
+<line class='ln-accent dash' x1='230' y1='54' x2='140' y2='108' marker-end='url(#ah2-diffusion)'/>
+<line class='ln-accent dash' x1='280' y1='54' x2='280' y2='108' marker-end='url(#ah2-diffusion)'/>
+<line class='ln-accent dash' x1='330' y1='54' x2='420' y2='108' marker-end='url(#ah2-diffusion)'/>
+<text class='t-xs mid it' x='70' y='190'>rumore puro</text>
+<text class='t-xs mid en' x='70' y='190'>pure noise</text>
+<text class='t-xs mid it' x='490' y='190'>immagine</text>
+<text class='t-xs mid en' x='490' y='190'>image</text>
+<line class='ln-muted dash' x1='490' y1='206' x2='70' y2='206' marker-end='url(#ah-diffusion)'/>
+<text class='t-xs mid it' x='280' y='228'>addestramento: si aggiunge rumore</text>
+<text class='t-xs mid en' x='280' y='228'>training: noise is added</text>
+</svg>

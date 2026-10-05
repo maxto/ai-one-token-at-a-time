@@ -1,0 +1,489 @@
+<title>AI, un token alla volta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: course workbook. Sticky top bar, syllabus rail on the left, one reading column; token chips as the recurring motif. */
+:root {
+  --bg: #f5f6fa;
+  --surface: #ffffff;
+  --ink: #161a23;
+  --ink-2: #464d5e;
+  --muted: #6f7689;
+  --rule: #dde1ea;
+  --accent: #3b5bdb;
+  --accent-ink: #ffffff;
+  --accent-soft: #edf2ff;
+  --good: #2b8a3e;
+  --good-soft: #ebfbee;
+  --warn: #c25e00;
+  --warn-soft: #fff4e6;
+  --bad: #c92a2a;
+  --bad-soft: #fff5f5;
+  --chip: #eef0f5;
+  --line: #aeb6c6;
+  --on-fill: #ffffff;
+  --m1: #4263eb; --m2: #ae3ec9; --m3: #1098ad; --m4: #37b24d; --m5: #f76707; --m6: #d6336c; --m7: #868e96;
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --s-xs: .8125rem; --s-sm: .9375rem; --s-md: 1.0625rem; --s-lg: 1.375rem; --s-xl: 2rem; --s-xxl: clamp(2.1rem, 5vw, 3.25rem);
+  --radius: 10px;
+  --top-h: 60px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10131a; --surface: #171b24; --ink: #e8eaf1; --ink-2: #b6bccb; --muted: #8a91a5; --rule: #2a303d;
+    --accent: #7d97ff; --accent-ink: #0b0e14; --accent-soft: #1d2440;
+    --good: #69db7c; --good-soft: #12261a; --warn: #ffa94d; --warn-soft: #2b1f10; --bad: #ff8787; --bad-soft: #2d1517;
+    --chip: #222734;
+    --line: #4c5568;
+    --on-fill: #0b0e14;
+    --m1: #748ffc; --m2: #da77f2; --m3: #3bc9db; --m4: #69db7c; --m5: #ffa94d; --m6: #f783ac; --m7: #adb5bd;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10131a; --surface: #171b24; --ink: #e8eaf1; --ink-2: #b6bccb; --muted: #8a91a5; --rule: #2a303d;
+  --accent: #7d97ff; --accent-ink: #0b0e14; --accent-soft: #1d2440;
+  --good: #69db7c; --good-soft: #12261a; --warn: #ffa94d; --warn-soft: #2b1f10; --bad: #ff8787; --bad-soft: #2d1517;
+  --chip: #222734;
+  --line: #4c5568;
+  --on-fill: #0b0e14;
+  --m1: #748ffc; --m2: #da77f2; --m3: #3bc9db; --m4: #69db7c; --m5: #ffa94d; --m6: #f783ac; --m7: #adb5bd;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: var(--s-md); line-height: 1.6; }
+a { color: var(--accent); }
+button, input { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.15; margin: 0; }
+.eyebrow { font-family: var(--f-mono); font-size: var(--s-xs); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+
+/* top bar */
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--rule); }
+.topbar-in { display: flex; align-items: center; gap: 12px; padding-inline: 16px; min-height: var(--top-h); }
+.brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); font-family: var(--f-display); font-weight: 700; font-size: 1.05rem; white-space: nowrap; }
+.brand-mark { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 7px; background: var(--accent); color: var(--accent-ink); font-family: var(--f-mono); font-size: .8rem; font-weight: 500; }
+.menu-btn { display: none; border: 1px solid var(--rule); background: var(--surface); border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: var(--s-sm); }
+.search { flex: 1; min-width: 0; max-width: 380px; margin-left: auto; position: relative; }
+.search input { width: 100%; border: 1px solid var(--rule); background: var(--bg); border-radius: 8px; padding: 7px 10px 7px 32px; font-size: var(--s-sm); }
+.search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: var(--muted); }
+.lang { display: inline-flex; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; flex: none; }
+.lang button { border: 0; background: transparent; padding: 6px 10px; cursor: pointer; font-family: var(--f-mono); font-size: var(--s-xs); font-weight: 500; color: var(--muted); }
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+.meter { height: 3px; background: var(--rule); }
+.meter > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s ease; }
+
+/* shell */
+.shell { display: grid; grid-template-columns: 290px minmax(0, 1fr); max-width: 1240px; margin: 0 auto; }
+.syllabus { position: sticky; top: calc(var(--top-h) + 3px + env(safe-area-inset-top, 0px)); align-self: start; max-height: calc(100vh - var(--top-h) - 3px - env(safe-area-inset-top, 0px)); overflow-y: auto; padding: 20px 12px 40px 16px; border-right: 1px solid var(--rule); }
+.syl-progress { display: flex; justify-content: space-between; align-items: baseline; padding: 0 8px 14px; font-size: var(--s-sm); color: var(--ink-2); }
+.syl-progress b { font-family: var(--f-mono); font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
+.syl-mod { margin-bottom: 6px; }
+.syl-mod > a { display: flex; align-items: center; gap: 10px; padding: 8px; border-radius: 8px; text-decoration: none; color: var(--ink); font-weight: 700; font-size: var(--s-sm); line-height: 1.3; }
+.syl-mod > a:hover { background: var(--chip); }
+.dot { flex: none; width: 10px; height: 10px; border-radius: 3px; background: var(--mc, var(--accent)); }
+.syl-mod ol { list-style: none; margin: 0 0 4px; padding: 0 0 0 18px; border-left: 1px solid var(--rule); margin-left: 12px; }
+.syl-mod li a { display: flex; gap: 8px; align-items: baseline; padding: 4px 8px; border-radius: 6px; text-decoration: none; color: var(--ink-2); font-size: var(--s-sm); line-height: 1.35; }
+.syl-mod li a:hover { background: var(--chip); color: var(--ink); }
+.syl-mod li a[aria-current="page"] { background: var(--accent-soft); color: var(--ink); font-weight: 700; }
+.tick { flex: none; width: 14px; font-family: var(--f-mono); font-size: .75rem; color: var(--muted); }
+.done .tick { color: var(--good); }
+.syl-quiz a { font-style: italic; }
+
+main { min-width: 0; padding: 32px 16px 80px; }
+.col { max-width: 68ch; margin: 0 auto; }
+
+/* home */
+.hero { padding-block: 12px 28px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px 4px; margin: 18px 0 8px; }
+.chip { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; }
+.chip span { font-family: var(--f-display); font-weight: 700; font-size: var(--s-xxl); line-height: 1; padding: .12em .2em .16em; border-radius: 8px; background: var(--chip); white-space: pre; }
+.chip:nth-child(3n+1) span { background: var(--accent-soft); }
+.chip small { font-family: var(--f-mono); font-size: .7rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.chips-note { font-size: var(--s-xs); color: var(--muted); font-family: var(--f-mono); }
+.lead { font-size: var(--s-lg); line-height: 1.45; color: var(--ink-2); margin: 20px 0 0; max-width: 58ch; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 8px; padding: 10px 16px; font-weight: 700; font-size: var(--s-sm); text-decoration: none; cursor: pointer; border: 1px solid transparent; }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
+.btn-ghost:hover { background: var(--chip); }
+.how { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 34px 0 10px; padding: 16px 0; border-block: 1px solid var(--rule); }
+.how div { min-width: 0; font-size: var(--s-sm); color: var(--ink-2); }
+.how b { display: block; color: var(--ink); font-family: var(--f-display); font-size: 1rem; margin-bottom: 2px; }
+.modules { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 26px; }
+.mcard { display: flex; flex-direction: column; gap: 8px; padding: 16px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); text-decoration: none; color: var(--ink); min-width: 0; }
+.mcard:hover { border-color: var(--mc); }
+.mcard .eyebrow { display: flex; align-items: center; gap: 8px; }
+.mcard h3 { font-size: 1.2rem; }
+.mcard p { margin: 0; font-size: var(--s-sm); color: var(--ink-2); line-height: 1.5; flex: 1; }
+.bar { height: 4px; border-radius: 2px; background: var(--chip); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--mc); }
+.mcard .count { font-family: var(--f-mono); font-size: var(--s-xs); color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* lesson */
+.crumb { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; line-height: 1.5; }
+.crumb a { color: var(--muted); text-decoration: none; }
+.crumb a:hover { color: var(--ink); }
+.lesson h1 { font-size: var(--s-xl); margin-top: 10px; }
+.lesson .one { font-size: var(--s-lg); line-height: 1.45; color: var(--ink-2); margin: 14px 0 0; }
+.sec { margin-top: 30px; }
+.sec h2 { font-size: var(--s-xs); font-family: var(--f-mono); font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.sec p { margin: 0 0 14px; }
+.box { padding: 16px 18px; border-radius: var(--radius); }
+.box h2 { margin-bottom: 6px; }
+.box p { margin: 0; }
+.box-dummy { background: var(--accent-soft); }
+.box-dummy h2 { color: var(--accent); }
+.box-mistake { background: var(--warn-soft); }
+.box-mistake h2 { color: var(--warn); }
+.lesson-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--rule); }
+.mark[aria-pressed="true"] { background: var(--good-soft); color: var(--good); border-color: transparent; }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+.pager a { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border: 1px solid var(--rule); border-radius: var(--radius); text-decoration: none; color: var(--ink); min-width: 0; }
+.pager a:hover { background: var(--surface); }
+.pager a.next { text-align: right; grid-column: 2; }
+.pager small { color: var(--muted); font-size: var(--s-xs); font-family: var(--f-mono); }
+.pager span { font-weight: 700; font-size: var(--s-sm); overflow-wrap: anywhere; }
+.keys { margin-top: 14px; font-size: var(--s-xs); color: var(--muted); }
+kbd { font-family: var(--f-mono); font-size: .75rem; border: 1px solid var(--rule); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; }
+
+
+/* lesson figure: inline SVG drawn only with these classes */
+.fig { margin: 28px 0 0; padding: 16px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); }
+.fig-scroll { overflow-x: auto; }
+.fig svg { display: block; width: 100%; min-width: 420px; max-width: 560px; height: auto; margin: 0 auto; color: var(--ink); }
+.fig figcaption { margin-top: 10px; font-size: var(--s-sm); color: var(--muted); line-height: 1.5; }
+html[lang="it"] .fig svg .en, html[lang="en"] .fig svg .it { display: none; }
+.fig svg .box { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+.fig svg .box-soft { fill: var(--chip); stroke: none; }
+.fig svg .box-accent { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.5; }
+.fig svg .box-mod { fill: var(--mc-soft); stroke: var(--mc); stroke-width: 1.5; }
+.fig svg .fill-accent { fill: var(--accent); } .fig svg .fill-mod { fill: var(--mc); } .fig svg .fill-muted { fill: var(--muted); }
+.fig svg .fill-ink { fill: var(--ink-2); } .fig svg .fill-soft { fill: var(--chip); }
+.fig svg .ln { stroke: var(--ink-2); stroke-width: 1.5; fill: none; }
+.fig svg .ln-muted { stroke: var(--muted); stroke-width: 1.5; fill: none; }
+.fig svg .ln-accent { stroke: var(--accent); stroke-width: 2; fill: none; }
+.fig svg .ln-mod { stroke: var(--mc); stroke-width: 2; fill: none; }
+.fig svg .dash { stroke-dasharray: 5 4; }
+.fig svg text { font-family: var(--f-body); }
+.fig svg .t { font-size: 15px; fill: var(--ink); }
+.fig svg .t-sm { font-size: 13px; fill: var(--ink-2); }
+.fig svg .t-xs { font-size: 11.5px; fill: var(--muted); }
+.fig svg .t-mono { font-family: var(--f-mono); }
+.fig svg .t-b { font-weight: 700; }
+.fig svg .t-accent { fill: var(--accent); } .fig svg .t-mod { fill: var(--mc-text); } .fig svg .t-on { fill: var(--on-fill); }
+.fig svg .mid { text-anchor: middle; } .fig svg .end { text-anchor: end; }
+
+/* quiz */
+.q { margin-top: 26px; padding: 18px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); }
+.q h3 { font-size: 1.1rem; font-family: var(--f-body); font-weight: 700; line-height: 1.4; }
+.q fieldset { border: 0; padding: 0; margin: 12px 0 0; display: grid; gap: 8px; }
+.q legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.opt { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px; cursor: pointer; font-size: var(--s-sm); line-height: 1.45; }
+.opt input { margin-top: 3px; accent-color: var(--accent); flex: none; }
+.opt.right { border-color: var(--good); background: var(--good-soft); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.q .explain { margin: 12px 0 0; font-size: var(--s-sm); color: var(--ink-2); }
+.score { margin-top: 24px; font-family: var(--f-display); font-size: var(--s-lg); }
+
+/* search results */
+.results { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; }
+.results a { display: block; padding: 12px 14px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); text-decoration: none; color: var(--ink); }
+.results a:hover { border-color: var(--accent); }
+.results .eyebrow { display: flex; gap: 8px; align-items: center; }
+.results p { margin: 4px 0 0; font-size: var(--s-sm); color: var(--ink-2); }
+mark { background: var(--accent-soft); color: var(--ink); border-radius: 3px; padding: 0 2px; }
+
+/* narrow */
+@media (max-width: 860px) {
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .menu-btn { display: inline-block; }
+  .syllabus { display: none; position: fixed; inset: calc(var(--top-h) + 3px + env(safe-area-inset-top, 0px)) 0 0 0; max-height: none; z-index: 15; background: var(--surface); border-right: 0; padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px)); }
+  body.nav-open .syllabus { display: block; }
+  .brand-name { display: none; }
+  .search { max-width: none; }
+}
+@media (max-width: 480px) {
+  .pager { grid-template-columns: minmax(0, 1fr); }
+  .pager a.next { grid-column: 1; }
+  .keys { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="syllabus">Indice</button>
+    <a class="brand" href="#home"><span class="brand-mark">AI</span><span class="brand-name" id="brandName">AI, un token alla volta</span></a>
+    <label class="search">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="Cerca un concetto" aria-label="Cerca">
+    </label>
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button id="langIt" type="button" aria-pressed="true">IT</button>
+      <button id="langEn" type="button" aria-pressed="false">EN</button>
+    </div>
+  </div>
+  <div class="meter" aria-hidden="true"><i id="meter"></i></div>
+</header>
+
+<div class="shell">
+  <nav class="syllabus" id="syllabus" aria-label="Indice del corso"></nav>
+  <main id="view" tabindex="-1"></main>
+</div>
+
+<script>
+const COURSE = /*__COURSE_DATA__*/;
+
+const UI = {
+  it: {
+    name: "AI, un token alla volta", menu: "Indice", search: "Cerca un concetto", lessons: "lezioni", lesson: "Lezione", of: "di",
+    module: "Modulo", completed: "completate", progress: "Avanzamento", start: "Inizia il corso", resume: "Riprendi", overview: "Panoramica",
+    lead: "Un corso breve sui concetti che servono davvero per capire e usare l'intelligenza artificiale generativa. 7 moduli, 56 lezioni, un esempio quotidiano per ogni idea.",
+    how: [["Una frase", "Il concetto in breve."], ["Approfondimento", "Come funziona davvero."], ["For dummies", "Un esempio di tutti i giorni."], ["Errore comune", "L'equivoco da evitare."]],
+    chipsNote: "Il titolo diviso in token, come lo vede un modello (divisione illustrativa).",
+    deep: "Approfondimento", dummy: "Esempio for dummies", mistake: "Errore comune",
+    mark: "Segna come completata", marked: "Completata", prev: "Precedente", next: "Successiva", quiz: "Quiz del modulo", quizShort: "Quiz",
+    quizIntro: "Tre domande per verificare il modulo. Scegli una risposta: vedi subito se è giusta e perché.",
+    right: "Giusto.", wrong: "Non proprio.", score: (a, b) => `Hai risposto giusto a ${a} domande su ${b}.`, retry: "Ricomincia il quiz",
+    results: (n, q) => `${n} risultati per “${q}”`, none: "Nessun concetto trovato. Prova con un'altra parola, anche in inglese.",
+    keys: "Usa le frecce ← → per passare da una lezione all'altra.", backHome: "Torna alla panoramica", nextModule: "Modulo successivo",
+    chips: ["AI", ",", " un", " token", " alla", " vol", "ta"]
+  },
+  en: {
+    name: "AI, one token at a time", menu: "Contents", search: "Search a concept", lessons: "lessons", lesson: "Lesson", of: "of",
+    module: "Module", completed: "completed", progress: "Progress", start: "Start the course", resume: "Resume", overview: "Overview",
+    lead: "A short course on the concepts you actually need to understand and use generative AI. 7 modules, 56 lessons, an everyday example for every idea.",
+    how: [["One line", "The idea in brief."], ["Deep dive", "How it really works."], ["For dummies", "An everyday example."], ["Common mistake", "The misconception to avoid."]],
+    chipsNote: "The title split into tokens, the way a model sees it (illustrative split).",
+    deep: "Deep dive", dummy: "For dummies", mistake: "Common mistake",
+    mark: "Mark as complete", marked: "Completed", prev: "Previous", next: "Next", quiz: "Module quiz", quizShort: "Quiz",
+    quizIntro: "Three questions to check the module. Pick an answer: you see at once whether it is right, and why.",
+    right: "Right.", wrong: "Not quite.", score: (a, b) => `You got ${a} out of ${b} right.`, retry: "Restart the quiz",
+    results: (n, q) => `${n} results for “${q}”`, none: "No concept found. Try another word.",
+    keys: "Use the ← → arrow keys to move between lessons.", backHome: "Back to the overview", nextModule: "Next module",
+    chips: ["AI", ",", " one", " token", " at", " a", " time"]
+  }
+};
+
+/* ---------- state ---------- */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("aicourse:" + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem("aicourse:" + k, JSON.stringify(v)); } catch (e) {} }
+};
+let lang = store.get("lang", "it") === "en" ? "en" : "it";
+let done = new Set(store.get("done", []));
+let quizState = {};
+
+/* flat list of steps: lessons, then the module quiz */
+const steps = [];
+COURSE.forEach((m, mi) => {
+  m.lessons.forEach((l, li) => steps.push({ kind: "lesson", key: `${m.id}-${l.id}`, m, mi, l, li }));
+  steps.push({ kind: "quiz", key: `${m.id}-quiz`, m, mi });
+});
+const byKey = Object.fromEntries(steps.map(s => [s.key, s]));
+const totalLessons = steps.filter(s => s.kind === "lesson").length;
+
+const t = k => UI[lang][k];
+const L = o => (o && (o[lang] ?? o.it)) || "";
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const rich = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+const mc = mi => `--mc: var(--m${mi + 1}); --mc-soft: color-mix(in srgb, var(--m${mi + 1}) 16%, var(--surface)); --mc-text: color-mix(in srgb, var(--m${mi + 1}) 78%, var(--ink))`;
+
+/* ---------- syllabus + meter ---------- */
+function renderSyllabus(currentKey) {
+  const nav = document.getElementById("syllabus");
+  const n = done.size;
+  let h = `<div class="syl-progress"><span>${t("progress")}</span><b>${n}/${totalLessons}</b></div>`;
+  COURSE.forEach((m, mi) => {
+    h += `<div class="syl-mod" style="${mc(mi)}"><a href="#${m.id}-${m.lessons[0].id}"><span class="dot"></span><span>${mi + 1}. ${esc(L(m.title))}</span></a><ol>`;
+    m.lessons.forEach(l => {
+      const key = `${m.id}-${l.id}`, isDone = done.has(key);
+      h += `<li class="${isDone ? "done" : ""}"><a href="#${key}"${key === currentKey ? ' aria-current="page"' : ""}><span class="tick">${isDone ? "✓" : "·"}</span><span>${esc(L(l.title))}</span></a></li>`;
+    });
+    const qk = `${m.id}-quiz`;
+    h += `<li class="syl-quiz"><a href="#${qk}"${qk === currentKey ? ' aria-current="page"' : ""}><span class="tick">?</span><span>${t("quiz")}</span></a></li></ol></div>`;
+  });
+  nav.innerHTML = h;
+  document.getElementById("meter").style.width = (100 * n / totalLessons) + "%";
+}
+
+/* ---------- views ---------- */
+function firstOpen() { return steps.find(s => s.kind === "lesson" && !done.has(s.key)) || steps[0]; }
+
+function viewHome() {
+  const chips = t("chips").map((c, i) => `<span class="chip"><span>${esc(c)}</span><small>${i}</small></span>`).join("");
+  const started = done.size > 0;
+  const go = firstOpen();
+  let h = `<div class="col"><section class="hero">
+    <div class="eyebrow">${COURSE.length} ${lang === "it" ? "moduli" : "modules"} · ${totalLessons} ${t("lessons")}</div>
+    <h1 class="chips" aria-label="${esc(t("name"))}">${chips}</h1>
+    <div class="chips-note">${esc(t("chipsNote"))}</div>
+    <p class="lead">${esc(t("lead"))}</p>
+    <div class="actions"><a class="btn btn-primary" href="#${go.key}">${started ? t("resume") : t("start")} →</a>
+    ${started ? `<span class="btn btn-ghost" aria-live="polite">${done.size}/${totalLessons} ${t("completed")}</span>` : ""}</div>
+    <div class="how">${t("how").map(([a, b]) => `<div><b>${esc(a)}</b>${esc(b)}</div>`).join("")}</div>
+  </section></div>
+  <div class="modules">`;
+  COURSE.forEach((m, mi) => {
+    const n = m.lessons.filter(l => done.has(`${m.id}-${l.id}`)).length;
+    const next = m.lessons.find(l => !done.has(`${m.id}-${l.id}`)) || m.lessons[0];
+    h += `<a class="mcard" style="${mc(mi)}" href="#${m.id}-${next.id}">
+      <span class="eyebrow"><span class="dot"></span>${t("module")} ${mi + 1}</span>
+      <h3>${esc(L(m.title))}</h3><p>${esc(L(m.intro))}</p>
+      <div class="bar"><i style="width:${100 * n / m.lessons.length}%"></i></div>
+      <span class="count">${n}/${m.lessons.length} ${t("completed")}</span></a>`;
+  });
+  return h + `</div>`;
+}
+
+function pagerHtml(i) {
+  const prev = steps[i - 1], next = steps[i + 1];
+  const label = s => s.kind === "lesson" ? L(s.l.title) : `${t("quiz")} · ${L(s.m.title)}`;
+  return `<nav class="pager" aria-label="${t("prev")} / ${t("next")}">
+    ${prev ? `<a class="prev" href="#${prev.key}"><small>← ${t("prev")}</small><span>${esc(label(prev))}</span></a>` : ""}
+    ${next ? `<a class="next" href="#${next.key}"><small>${t("next")} →</small><span>${esc(label(next))}</span></a>` : `<a class="next" href="#home"><small>→</small><span>${t("backHome")}</span></a>`}
+  </nav><p class="keys">${t("keys")}</p>`;
+}
+
+function viewLesson(s) {
+  const { m, mi, l, li } = s, i = steps.indexOf(s), isDone = done.has(s.key);
+  return `<article class="col lesson" style="${mc(mi)}">
+    <div class="crumb eyebrow"><span class="dot"></span><a href="#${m.id}-${m.lessons[0].id}">${t("module")} ${mi + 1} · ${esc(L(m.title))}</a><span>· ${t("lesson")} ${li + 1} ${t("of")} ${m.lessons.length}</span></div>
+    <h1>${esc(L(l.title))}</h1>
+    <p class="one">${rich(L(l.oneLiner))}</p>
+    <section class="sec"><h2>${t("deep")}</h2>${(l.deep[lang] || l.deep.it).map(p => `<p>${rich(p)}</p>`).join("")}</section>
+    ${l.fig ? `<figure class="fig"><div class="fig-scroll">${l.fig.svg}</div><figcaption>${rich(L(l.fig.caption))}</figcaption></figure>` : ""}
+    <section class="sec box box-dummy"><h2>${t("dummy")}</h2><p>${rich(L(l.dummy))}</p></section>
+    <section class="sec box box-mistake"><h2>${t("mistake")}</h2><p>${rich(L(l.mistake))}</p></section>
+    <div class="lesson-foot"><button class="btn btn-ghost mark" id="mark" type="button" aria-pressed="${isDone}">${isDone ? "✓ " + t("marked") : t("mark")}</button>
+    <span class="eyebrow">${done.size}/${totalLessons} ${t("completed")}</span></div>
+    ${pagerHtml(i)}
+  </article>`;
+}
+
+function viewQuiz(s) {
+  const { m, mi } = s, i = steps.indexOf(s);
+  const st = quizState[m.id] || (quizState[m.id] = {});
+  let h = `<article class="col lesson" style="${mc(mi)}">
+    <div class="crumb eyebrow"><span class="dot"></span><a href="#${m.id}-${m.lessons[0].id}">${t("module")} ${mi + 1} · ${esc(L(m.title))}</a><span>· ${t("quizShort")}</span></div>
+    <h1>${t("quiz")}</h1><p class="one">${t("quizIntro")}</p>`;
+  m.quiz.forEach((q, qi) => {
+    const picked = st[qi];
+    h += `<div class="q"><h3 id="${m.id}-q${qi}">${qi + 1}. ${esc(L(q.q))}</h3><fieldset aria-labelledby="${m.id}-q${qi}"><legend>${esc(L(q.q))}</legend>`;
+    (q.options[lang] || q.options.it).forEach((o, oi) => {
+      const cls = picked === undefined ? "" : oi === q.answer ? "right" : oi === picked ? "wrong" : "";
+      h += `<label class="opt ${cls}"><input type="radio" id="${m.id}-q${qi}-o${oi}" name="${m.id}-q${qi}" data-q="${qi}" data-o="${oi}"${picked === oi ? " checked" : ""}${picked !== undefined ? " disabled" : ""}><span>${esc(o)}</span></label>`;
+    });
+    h += `</fieldset>${picked !== undefined ? `<p class="explain" aria-live="polite"><strong>${picked === q.answer ? t("right") : t("wrong")}</strong> ${rich(L(q.explain))}</p>` : ""}</div>`;
+  });
+  const answered = Object.keys(st).length;
+  if (answered === m.quiz.length) {
+    const ok = m.quiz.filter((q, qi) => st[qi] === q.answer).length;
+    h += `<p class="score">${t("score")(ok, m.quiz.length)}</p><div class="actions"><button class="btn btn-ghost" id="retry" type="button">${t("retry")}</button></div>`;
+  }
+  return h + pagerHtml(i) + `</article>`;
+}
+
+function viewSearch(q) {
+  const needle = q.trim().toLowerCase();
+  const hits = [];
+  steps.forEach(s => {
+    if (s.kind !== "lesson") return;
+    const l = s.l;
+    const fields = [L(l.title), L(l.oneLiner), ...(l.deep[lang] || []), L(l.dummy), L(l.mistake), l.title.en, l.title.it];
+    const score = fields.reduce((a, f, fi) => a + (f.toLowerCase().includes(needle) ? (fi === 0 || fi > 4 ? 10 : 1) : 0), 0);
+    if (score) hits.push({ s, score });
+  });
+  hits.sort((a, b) => b.score - a.score);
+  const hl = str => { const e = esc(str); const n = esc(needle); if (!n) return e; const re = new RegExp(n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"); return e.replace(re, m => `<mark>${m}</mark>`); };
+  let h = `<div class="col"><div class="eyebrow">${esc(t("results")(hits.length, q.trim()))}</div>`;
+  if (!hits.length) h += `<p class="one">${t("none")}</p>`;
+  h += `<ul class="results">` + hits.map(({ s }) => `<li><a href="#${s.key}" style="${mc(s.mi)}"><span class="eyebrow"><span class="dot"></span>${t("module")} ${s.mi + 1} · ${esc(L(s.m.title))}</span><strong>${hl(L(s.l.title))}</strong><p>${hl(L(s.l.oneLiner).replace(/\*\*/g, ""))}</p></a></li>`).join("") + `</ul></div>`;
+  return h;
+}
+
+/* ---------- router ---------- */
+let current = "home";
+function render() {
+  const view = document.getElementById("view");
+  const qv = document.getElementById("q").value;
+  const key = (location.hash || "#home").slice(1);
+  if (qv.trim()) { view.innerHTML = viewSearch(qv); renderSyllabus(null); return; }
+  const s = byKey[key];
+  if (!s) { current = "home"; view.innerHTML = viewHome(); renderSyllabus(null); }
+  else {
+    current = key; view.innerHTML = s.kind === "lesson" ? viewLesson(s) : viewQuiz(s); renderSyllabus(key);
+    const svg = view.querySelector(".fig svg");
+    if (svg && s.l.fig) svg.setAttribute("aria-label", L(s.l.fig.caption).replace(/\*\*/g, ""));
+  }
+  store.set("last", current);
+}
+function go() {
+  document.getElementById("q").value = "";
+  document.body.classList.remove("nav-open");
+  document.getElementById("menuBtn").setAttribute("aria-expanded", "false");
+  render();
+  window.scrollTo(0, 0);
+  const cur = document.querySelector('.syllabus [aria-current="page"]');
+  if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: "nearest" });
+}
+window.addEventListener("hashchange", go);
+
+document.getElementById("view").addEventListener("click", e => {
+  const mark = e.target.closest("#mark");
+  if (mark) {
+    done.has(current) ? done.delete(current) : done.add(current);
+    store.set("done", [...done]);
+    render();
+    return;
+  }
+  if (e.target.closest("#retry")) {
+    const s = byKey[current]; if (s) { quizState[s.m.id] = {}; render(); }
+  }
+});
+document.getElementById("view").addEventListener("change", e => {
+  const r = e.target;
+  if (r.type !== "radio") return;
+  const s = byKey[current]; if (!s || s.kind !== "quiz") return;
+  quizState[s.m.id][+r.dataset.q] = +r.dataset.o;
+  render();
+});
+document.getElementById("q").addEventListener("input", render);
+document.getElementById("syllabus").addEventListener("click", e => {
+  if (e.target.closest("a") && document.getElementById("q").value) { document.getElementById("q").value = ""; }
+});
+
+function setLang(l) {
+  lang = l; store.set("lang", l);
+  document.documentElement.lang = l;
+  document.title = UI[l].name;
+  document.getElementById("brandName").textContent = UI[l].name;
+  document.getElementById("q").placeholder = UI[l].search;
+  document.getElementById("q").setAttribute("aria-label", UI[l].search);
+  document.getElementById("menuBtn").textContent = UI[l].menu;
+  document.getElementById("syllabus").setAttribute("aria-label", UI[l].menu);
+  document.getElementById("langIt").setAttribute("aria-pressed", l === "it");
+  document.getElementById("langEn").setAttribute("aria-pressed", l === "en");
+  render();
+}
+document.getElementById("langIt").addEventListener("click", () => setLang("it"));
+document.getElementById("langEn").addEventListener("click", () => setLang("en"));
+document.getElementById("menuBtn").addEventListener("click", () => {
+  const open = document.body.classList.toggle("nav-open");
+  document.getElementById("menuBtn").setAttribute("aria-expanded", open);
+});
+document.addEventListener("keydown", e => {
+  if (e.target.closest("input, textarea") || e.altKey || e.ctrlKey || e.metaKey) return;
+  const s = byKey[current]; if (!s) return;
+  const i = steps.indexOf(s);
+  if (e.key === "ArrowRight" && steps[i + 1]) location.hash = steps[i + 1].key;
+  if (e.key === "ArrowLeft" && steps[i - 1]) location.hash = steps[i - 1].key;
+});
+
+setLang(lang);
+</script>

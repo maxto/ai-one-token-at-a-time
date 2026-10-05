@@ -1,0 +1,40 @@
+<svg viewBox="0 0 560 236" role="img" aria-label="Con lo stesso prefisso il calcolo viene riletto dalla cache; una data messa in testa cambia il prefisso e obbliga a ricalcolare tutto.">
+<defs>
+<marker id="ah-prompt-caching" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm it" x="20" y="51">Richiesta 1</text>
+<text class="t-sm en" x="20" y="51">Request 1</text>
+<text class="t-sm it" x="20" y="121">Richiesta 2</text>
+<text class="t-sm en" x="20" y="121">Request 2</text>
+<text class="t-sm it" x="20" y="191">Richiesta 3</text>
+<text class="t-sm en" x="20" y="191">Request 3</text>
+<rect class="box-mod" x="120" y="26" width="280" height="40" rx="6"/>
+<text class="t mid it" x="260" y="51">Istruzioni + manuale</text>
+<text class="t mid en" x="260" y="51">Instructions + manual</text>
+<rect class="box" x="408" y="26" width="132" height="40" rx="6"/>
+<text class="t mid it" x="474" y="51">Domanda A</text>
+<text class="t mid en" x="474" y="51">Question A</text>
+<text class="t-xs it" x="120" y="84">calcolato e salvato</text>
+<text class="t-xs en" x="120" y="84">computed and stored</text>
+<rect class="box-accent" x="120" y="96" width="280" height="40" rx="6"/>
+<text class="t mid it" x="260" y="121">Istruzioni + manuale</text>
+<text class="t mid en" x="260" y="121">Instructions + manual</text>
+<rect class="box" x="408" y="96" width="132" height="40" rx="6"/>
+<text class="t mid it" x="474" y="121">Domanda B</text>
+<text class="t mid en" x="474" y="121">Question B</text>
+<text class="t-xs t-accent it" x="120" y="154">letto dalla cache</text>
+<text class="t-xs t-accent en" x="120" y="154">read from cache</text>
+<rect class="box" x="120" y="166" width="70" height="40" rx="6"/>
+<text class="t mid it" x="155" y="191">data</text>
+<text class="t mid en" x="155" y="191">date</text>
+<rect class="box-soft" x="198" y="166" width="202" height="40" rx="6"/>
+<text class="t-sm mid it" x="299" y="190">Istruzioni + manuale</text>
+<text class="t-sm mid en" x="299" y="190">Instructions + manual</text>
+<rect class="box" x="408" y="166" width="132" height="40" rx="6"/>
+<text class="t mid it" x="474" y="191">Domanda C</text>
+<text class="t mid en" x="474" y="191">Question C</text>
+<text class="t-xs it" x="120" y="224">prefisso cambiato: tutto ricalcolato</text>
+<text class="t-xs en" x="120" y="224">prefix changed: all recomputed</text>
+</svg>

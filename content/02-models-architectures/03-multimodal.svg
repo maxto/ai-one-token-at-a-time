@@ -1,0 +1,35 @@
+<svg viewBox='0 0 560 206' role='img' aria-label='I riquadri dell&#39;immagine diventano vettori e finiscono nella stessa sequenza dei token di testo, che il modello elabora insieme.'>
+<defs>
+<marker id='ah-multimodal' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'>
+<path d='M0,0 L10,5 L0,10 z' class='fill-ink'/>
+</marker>
+</defs>
+<rect class='box' x='20' y='24' width='84' height='84' rx='4'/>
+<line class='ln-muted' x1='48' y1='24' x2='48' y2='108'/>
+<line class='ln-muted' x1='76' y1='24' x2='76' y2='108'/>
+<line class='ln-muted' x1='20' y1='52' x2='104' y2='52'/>
+<line class='ln-muted' x1='20' y1='80' x2='104' y2='80'/>
+<text class='t-xs mid it' x='62' y='126'>immagine in patch</text>
+<text class='t-xs mid en' x='62' y='126'>image in patches</text>
+<line class='ln' x1='110' y1='66' x2='150' y2='66' marker-end='url(#ah-multimodal)'/>
+<rect class='box' x='158' y='46' width='120' height='40' rx='6'/>
+<text class='t-sm mid it' x='218' y='71'>encoder visivo</text>
+<text class='t-sm mid en' x='218' y='71'>vision encoder</text>
+<path class='ln' d='M282,66 L377,66 L377,98' marker-end='url(#ah-multimodal)'/>
+<text class='t-xs mid it' x='330' y='58'>vettori</text>
+<text class='t-xs mid en' x='330' y='58'>vectors</text>
+<rect class='box' x='20' y='150' width='258' height='40' rx='6'/>
+<text class='t-sm mid it' x='149' y='175'>“Basta il francobollo?”</text>
+<text class='t-sm mid en' x='149' y='175'>“Is this stamp enough?”</text>
+<path class='ln' d='M282,170 L485,170 L485,142' marker-end='url(#ah-multimodal)'/>
+<text class='t-xs mid it' x='384' y='186'>token di testo</text>
+<text class='t-xs mid en' x='384' y='186'>text tokens</text>
+<rect class='box-accent' x='326' y='104' width='30' height='30' rx='4'/>
+<rect class='box-accent' x='362' y='104' width='30' height='30' rx='4'/>
+<rect class='box-accent' x='398' y='104' width='30' height='30' rx='4'/>
+<rect class='box-mod' x='434' y='104' width='30' height='30' rx='4'/>
+<rect class='box-mod' x='470' y='104' width='30' height='30' rx='4'/>
+<rect class='box-mod' x='506' y='104' width='30' height='30' rx='4'/>
+<text class='t-xs mid it' x='400' y='156'>stessa sequenza</text>
+<text class='t-xs mid en' x='400' y='156'>same sequence</text>
+</svg>

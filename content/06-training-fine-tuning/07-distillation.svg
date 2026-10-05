@@ -1,0 +1,36 @@
+<svg viewBox="0 0 560 200" role="img" aria-label="Lo studente impara a riprodurre l'intera distribuzione di probabilità dell'insegnante, non solo la risposta più probabile.">
+<defs>
+<marker id="ah-distillation" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+<marker id="ah2-distillation" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+</marker>
+</defs>
+<text class="t-sm t-mono mid it" x="268" y="34">il gatto dorme sul …</text>
+<text class="t-sm t-mono mid en" x="268" y="34">the cat is sleeping on the …</text>
+<rect class="box-mod" x="20" y="70" width="110" height="90" rx="8"/>
+<text class="t mid it" x="75" y="120">Insegnante</text>
+<text class="t mid en" x="75" y="120">Teacher</text>
+<text class="t-xs mid it" x="75" y="180">grande, lento</text>
+<text class="t-xs mid en" x="75" y="180">large, slow</text>
+<line class="ln" x1="134" y1="125" x2="178" y2="125" marker-end="url(#ah-distillation)"/>
+<rect class="fill-mod" x="190" y="80" width="36" height="90"/>
+<text class="t-xs mid it" x="208" y="188">divano</text>
+<text class="t-xs mid en" x="208" y="188">sofa</text>
+<rect class="fill-mod" x="250" y="100" width="36" height="70"/>
+<text class="t-xs mid it" x="268" y="188">letto</text>
+<text class="t-xs mid en" x="268" y="188">bed</text>
+<rect class="fill-mod" x="310" y="162" width="36" height="8"/>
+<text class="t-xs mid it" x="328" y="188">frigo</text>
+<text class="t-xs mid en" x="328" y="188">fridge</text>
+<line class="ln-muted" x1="182" y1="170" x2="354" y2="170"/>
+<text class="t-sm mid it" x="400" y="106">imita</text>
+<text class="t-sm mid en" x="400" y="106">imitates</text>
+<line class="ln" x1="362" y1="117" x2="446" y2="117" marker-end="url(#ah-distillation)"/>
+<rect class="box-accent" x="450" y="95" width="90" height="44" rx="6"/>
+<text class="t mid it" x="495" y="122">Studente</text>
+<text class="t mid en" x="495" y="122">Student</text>
+<text class="t-xs mid it" x="495" y="158">piccolo, veloce</text>
+<text class="t-xs mid en" x="495" y="158">small, fast</text>
+</svg>

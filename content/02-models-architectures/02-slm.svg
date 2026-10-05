@@ -1,0 +1,29 @@
+<svg viewBox='0 0 560 190' role='img' aria-label='Un modello piccolo può imparare da uno grande (distillazione) e diventa abbastanza leggero da girare su un telefono o un portatile.'>
+<defs>
+<marker id='ah-slm' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'>
+<path d='M0,0 L10,5 L0,10 z' class='fill-ink'/>
+</marker>
+<marker id='ah2-slm' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'>
+<path d='M0,0 L10,5 L0,10 z' class='fill-accent'/>
+</marker>
+</defs>
+<rect class='box-soft' x='20' y='30' width='150' height='120' rx='8'/>
+<text class='t t-b mid' x='95' y='88'>LLM</text>
+<text class='t-xs mid it' x='95' y='108'>molti parametri</text>
+<text class='t-xs mid en' x='95' y='108'>many parameters</text>
+<text class='t-xs mid' x='95' y='172'>data center</text>
+<line class='ln-accent' x1='178' y1='90' x2='292' y2='90' marker-end='url(#ah2-slm)'/>
+<text class='t-sm mid it' x='235' y='78'>distillazione</text>
+<text class='t-sm mid en' x='235' y='78'>distillation</text>
+<rect class='box' x='305' y='35' width='90' height='110' rx='14'/>
+<rect class='box-accent' x='320' y='68' width='60' height='44' rx='6'/>
+<text class='t t-b mid' x='350' y='95'>SLM</text>
+<text class='t-xs mid it' x='350' y='172'>telefono, portatile</text>
+<text class='t-xs mid en' x='350' y='172'>phone, laptop</text>
+<text class='t-sm it' x='415' y='68'>più veloce</text>
+<text class='t-sm en' x='415' y='68'>faster</text>
+<text class='t-sm it' x='415' y='95'>costa meno</text>
+<text class='t-sm en' x='415' y='95'>cheaper</text>
+<text class='t-sm it' x='415' y='122'>dati in locale</text>
+<text class='t-sm en' x='415' y='122'>data stays local</text>
+</svg>

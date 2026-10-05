@@ -1,0 +1,34 @@
+<svg viewBox="0 0 560 240" role="img" aria-label="Le persone scelgono la risposta migliore, un reward model impara a dare punteggi e l'apprendimento per rinforzo aggiorna il modello.">
+<defs>
+<marker id="ah-rlhf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+<marker id="ah2-rlhf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+</marker>
+</defs>
+<rect class="box-mod" x="20" y="92" width="110" height="44" rx="6"/>
+<text class="t mid it" x="75" y="119">Modello</text>
+<text class="t mid en" x="75" y="119">Model</text>
+<line class="ln" x1="130" y1="104" x2="166" y2="76" marker-end="url(#ah-rlhf)"/>
+<line class="ln" x1="130" y1="124" x2="166" y2="152" marker-end="url(#ah-rlhf)"/>
+<text class="t-xs t-accent mid it" x="225" y="44">preferita</text>
+<text class="t-xs t-accent mid en" x="225" y="44">preferred</text>
+<rect class="box" x="170" y="52" width="110" height="36" rx="6"/>
+<text class="t-sm mid it" x="225" y="75">Risposta A</text>
+<text class="t-sm mid en" x="225" y="75">Answer A</text>
+<rect class="box" x="170" y="140" width="110" height="36" rx="6"/>
+<text class="t-sm mid it" x="225" y="163">Risposta B</text>
+<text class="t-sm mid en" x="225" y="163">Answer B</text>
+<line class="ln" x1="280" y1="76" x2="316" y2="104" marker-end="url(#ah-rlhf)"/>
+<line class="ln" x1="280" y1="152" x2="316" y2="124" marker-end="url(#ah-rlhf)"/>
+<rect class="box" x="320" y="96" width="96" height="36" rx="6"/>
+<text class="t-sm mid it" x="368" y="119">Persone</text>
+<text class="t-sm mid en" x="368" y="119">People</text>
+<line class="ln" x1="416" y1="114" x2="444" y2="114" marker-end="url(#ah-rlhf)"/>
+<rect class="box-accent" x="448" y="92" width="96" height="44" rx="6"/>
+<text class="t-sm mid" x="496" y="119">Reward model</text>
+<path class="ln-accent" d="M496,136 L496,204 L75,204 L75,142" marker-end="url(#ah2-rlhf)"/>
+<text class="t-sm mid it" x="286" y="226">punteggio → aggiorna il modello (PPO)</text>
+<text class="t-sm mid en" x="286" y="226">score → update the model (PPO)</text>
+</svg>

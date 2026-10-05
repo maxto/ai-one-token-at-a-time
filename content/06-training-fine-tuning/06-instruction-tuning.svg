@@ -1,0 +1,31 @@
+<svg viewBox="0 0 560 200" role="img" aria-label="Alla stessa richiesta il modello base continua il testo, quello dopo l'instruction tuning risponde.">
+<defs>
+<marker id="ah-instruction-tuning" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+<marker id="ah2-instruction-tuning" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+</marker>
+</defs>
+<rect class="box-soft" x="20" y="16" width="520" height="36" rx="6"/>
+<text class="t t-mono mid it" x="280" y="39">Elenca tre capitali europee</text>
+<text class="t t-mono mid en" x="280" y="39">List three European capitals</text>
+<line class="ln" x1="145" y1="56" x2="145" y2="78" marker-end="url(#ah-instruction-tuning)"/>
+<line class="ln" x1="415" y1="56" x2="415" y2="78" marker-end="url(#ah-instruction-tuning)"/>
+<text class="t-sm t-b mid it" x="145" y="98">Modello base</text>
+<text class="t-sm t-b mid en" x="145" y="98">Base model</text>
+<text class="t-sm t-b mid it" x="415" y="98">Dopo instruction tuning</text>
+<text class="t-sm t-b mid en" x="415" y="98">After instruction tuning</text>
+<rect class="box" x="20" y="108" width="250" height="60" rx="6"/>
+<text class="t-sm t-mono it" x="34" y="133">Elenca tre fiumi europei.</text>
+<text class="t-sm t-mono en" x="34" y="133">List three European rivers.</text>
+<text class="t-sm t-mono it" x="34" y="153">Elenca tre monti…</text>
+<text class="t-sm t-mono en" x="34" y="153">List three mountains…</text>
+<rect class="box-accent" x="290" y="108" width="250" height="60" rx="6"/>
+<text class="t-sm t-mono mid it" x="415" y="143">Parigi, Roma, Berlino.</text>
+<text class="t-sm t-mono mid en" x="415" y="143">Paris, Rome, Berlin.</text>
+<text class="t-xs mid it" x="145" y="188">continua il testo</text>
+<text class="t-xs mid en" x="145" y="188">continues the text</text>
+<text class="t-xs mid it" x="415" y="188">segue l'istruzione</text>
+<text class="t-xs mid en" x="415" y="188">follows the instruction</text>
+</svg>

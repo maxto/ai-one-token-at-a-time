@@ -1,0 +1,50 @@
+<svg viewBox="0 0 560 225" role="img" aria-label="Senza uno standard ogni app serve un connettore per ogni servizio; con MCP ognuno si collega una volta sola all'interfaccia comune.">
+<text class="t-sm t-b mid it" x="140" y="26">Senza standard</text>
+<text class="t-sm t-b mid en" x="140" y="26">Without a standard</text>
+<text class="t-sm t-b mid it" x="420" y="26">Con MCP</text>
+<text class="t-sm t-b mid en" x="420" y="26">With MCP</text>
+<rect class="box" x="30" y="50" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="60" y="70">App 1</text>
+<rect class="box" x="190" y="50" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="220" y="70">File</text>
+<rect class="box" x="30" y="100" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="60" y="120">App 2</text>
+<rect class="box" x="190" y="100" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="220" y="120">Mail</text>
+<rect class="box" x="30" y="150" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="60" y="170">App 3</text>
+<rect class="box" x="190" y="150" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="220" y="170">Web</text>
+<line class="ln-muted" x1="90" y1="65" x2="190" y2="65"/>
+<line class="ln-muted" x1="90" y1="65" x2="190" y2="115"/>
+<line class="ln-muted" x1="90" y1="65" x2="190" y2="165"/>
+<line class="ln-muted" x1="90" y1="115" x2="190" y2="65"/>
+<line class="ln-muted" x1="90" y1="115" x2="190" y2="115"/>
+<line class="ln-muted" x1="90" y1="115" x2="190" y2="165"/>
+<line class="ln-muted" x1="90" y1="165" x2="190" y2="65"/>
+<line class="ln-muted" x1="90" y1="165" x2="190" y2="115"/>
+<line class="ln-muted" x1="90" y1="165" x2="190" y2="165"/>
+<line class="ln-muted dash" x1="280" y1="44" x2="280" y2="186"/>
+<rect class="box-accent" x="415" y="50" width="30" height="130" rx="6"/>
+<text class="t-sm t-b mid" x="430" y="120" transform="rotate(-90 430 115)">MCP</text>
+<rect class="box" x="300" y="50" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="330" y="70">App 1</text>
+<rect class="box" x="490" y="50" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="520" y="70">File</text>
+<line class="ln" x1="360" y1="65" x2="415" y2="65"/>
+<line class="ln" x1="445" y1="65" x2="490" y2="65"/>
+<rect class="box" x="300" y="100" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="330" y="120">App 2</text>
+<rect class="box" x="490" y="100" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="520" y="120">Mail</text>
+<line class="ln" x1="360" y1="115" x2="415" y2="115"/>
+<line class="ln" x1="445" y1="115" x2="490" y2="115"/>
+<rect class="box" x="300" y="150" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="330" y="170">App 3</text>
+<rect class="box" x="490" y="150" width="60" height="30" rx="6"/>
+<text class="t-sm mid" x="520" y="170">Web</text>
+<line class="ln" x1="360" y1="165" x2="415" y2="165"/>
+<line class="ln" x1="445" y1="165" x2="490" y2="165"/>
+<text class="t-sm mid" x="140" y="212">3 × 3 = 9</text>
+<text class="t-sm mid" x="420" y="212">3 + 3 = 6</text>
+</svg>

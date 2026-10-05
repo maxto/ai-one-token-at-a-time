@@ -1,0 +1,14 @@
+{
+  "name": "ai-one-token-at-a-time",
+  "private": true,
+  "description": "A short bilingual (IT/EN) course on how generative AI works.",
+  "type": "module",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "test": "python3 scripts/build.py && node tests/e2e.mjs",
+    "figs": "mkdir -p tests/output && python3 scripts/build.py --json tests/output/course.json && node tests/render-figs.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.0"
+  }
+}

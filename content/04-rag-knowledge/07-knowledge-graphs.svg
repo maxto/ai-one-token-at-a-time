@@ -1,0 +1,30 @@
+<svg viewBox="0 0 560 236" role="img" aria-label="Due fatti scritti in documenti diversi diventano archi collegati: seguendo il percorso si arriva alla risposta in due passi.">
+<defs>
+<marker id="ah-knowledge-graphs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm it" x="16" y="26">In quale città insegna Marta?</text>
+<text class="t-sm en" x="16" y="26">Which city does Marta teach in?</text>
+<line class="ln-accent" x1="128" y1="110" x2="212" y2="110" marker-end="url(#ah-knowledge-graphs)"/>
+<text class="t-xs mid it" x="170" y="100">insegna in</text>
+<text class="t-xs mid en" x="170" y="100">teaches at</text>
+<line class="ln-accent" x1="346" y1="110" x2="424" y2="110" marker-end="url(#ah-knowledge-graphs)"/>
+<text class="t-xs mid it" x="385" y="100">si trova a</text>
+<text class="t-xs mid en" x="385" y="100">located in</text>
+<line class="ln" x1="110" y1="128" x2="228" y2="192" marker-end="url(#ah-knowledge-graphs)"/>
+<text class="t-xs mid it" x="150" y="184">insegna</text>
+<text class="t-xs mid en" x="150" y="184">teaches</text>
+<ellipse class="box-mod" cx="76" cy="110" rx="52" ry="22"/>
+<text class="t mid" x="76" y="115">Marta</text>
+<ellipse class="box-mod" cx="280" cy="110" rx="66" ry="22"/>
+<text class="t mid it" x="280" y="115">Scuola Verdi</text>
+<text class="t mid en" x="280" y="115">Verdi School</text>
+<ellipse class="box-accent" cx="484" cy="110" rx="58" ry="22"/>
+<text class="t mid" x="484" y="115">Bologna</text>
+<text class="t-xs t-accent mid it" x="484" y="152">risposta</text>
+<text class="t-xs t-accent mid en" x="484" y="152">answer</text>
+<ellipse class="box" cx="282" cy="200" rx="56" ry="22"/>
+<text class="t mid it" x="282" y="205">Musica</text>
+<text class="t mid en" x="282" y="205">Music</text>
+</svg>

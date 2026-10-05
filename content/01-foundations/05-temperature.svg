@@ -1,0 +1,40 @@
+<svg viewBox="0 0 560 234" role="img" aria-label="Stessi punteggi, due temperature: bassa rende il token più probabile quasi certo, alta dà più chance agli altri.">
+<defs>
+<marker id="ah-temperature" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm mid it" x="280" y="22">"Stasera mangio…"</text>
+<text class="t-sm mid en" x="280" y="22">"Tonight I'll have…"</text>
+<text class="t-sm t-b mid it" x="145" y="50">Temperatura bassa</text>
+<text class="t-sm t-b mid en" x="145" y="50">Low temperature</text>
+<text class="t-sm t-b mid it" x="415" y="50">Temperatura alta</text>
+<text class="t-sm t-b mid en" x="415" y="50">High temperature</text>
+<line class="ln-muted dash" x1="280" y1="40" x2="280" y2="200"/>
+<line class="ln-muted" x1="26" y1="180" x2="264" y2="180"/>
+<rect class="fill-accent" x="32" y="76.0" width="34" height="104.0" rx="2"/>
+<text class="t-xs mid" x="49" y="198">pizza</text>
+<text class="t-xs t-b mid" x="49" y="68.0">80%</text>
+<rect class="fill-muted" x="80" y="164.4" width="34" height="15.6" rx="2"/>
+<text class="t-xs mid" x="97" y="198">pasta</text>
+<rect class="fill-muted" x="128" y="173.5" width="34" height="6.5" rx="2"/>
+<text class="t-xs mid" x="145" y="198">sushi</text>
+<rect class="fill-muted" x="176" y="177.4" width="34" height="2.6" rx="2"/>
+<text class="t-xs mid" x="193" y="198">tacos</text>
+<rect class="fill-muted" x="224" y="178" width="34" height="2" rx="2"/>
+<text class="t-xs mid" x="241" y="198">kebab</text>
+<line class="ln-muted" x1="296" y1="180" x2="534" y2="180"/>
+<rect class="fill-accent" x="302" y="135.8" width="34" height="44.2" rx="2"/>
+<text class="t-xs mid" x="319" y="198">pizza</text>
+<text class="t-xs t-b mid" x="319" y="127.8">34%</text>
+<rect class="fill-muted" x="350" y="146.2" width="34" height="33.8" rx="2"/>
+<text class="t-xs mid" x="367" y="198">pasta</text>
+<rect class="fill-muted" x="398" y="156.6" width="34" height="23.4" rx="2"/>
+<text class="t-xs mid" x="415" y="198">sushi</text>
+<rect class="fill-muted" x="446" y="163.1" width="34" height="16.9" rx="2"/>
+<text class="t-xs mid" x="463" y="198">tacos</text>
+<rect class="fill-muted" x="494" y="168.3" width="34" height="11.7" rx="2"/>
+<text class="t-xs mid" x="511" y="198">kebab</text>
+<text class="t-xs mid it" x="280" y="224">probabilità del token successivo</text>
+<text class="t-xs mid en" x="280" y="224">probability of the next token</text>
+</svg>

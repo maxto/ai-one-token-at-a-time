@@ -1,0 +1,38 @@
+<svg viewBox="0 0 560 186" role="img" aria-label="Un eval passa casi reali al sistema, li fa valutare e dà un numero con il suo margine di errore; il giudice va tarato su voti umani.">
+<defs>
+<marker id="ah-evals-benchmarks" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<rect class="box" x="20" y="32" width="124" height="56" rx="6"/>
+<text class="t-sm mid it" x="82" y="57">casi reali</text>
+<text class="t-sm mid en" x="82" y="57">real cases</text>
+<text class="t-xs mid it" x="82" y="75">+ risultati attesi</text>
+<text class="t-xs mid en" x="82" y="75">+ expected results</text>
+<line class="ln" x1="148" y1="60" x2="172" y2="60" marker-end="url(#ah-evals-benchmarks)"/>
+<rect class="box" x="176" y="32" width="90" height="56" rx="6"/>
+<text class="t mid it" x="221" y="65">sistema</text>
+<text class="t mid en" x="221" y="65">system</text>
+<line class="ln" x1="270" y1="60" x2="294" y2="60" marker-end="url(#ah-evals-benchmarks)"/>
+<rect class="box-mod" x="298" y="32" width="110" height="56" rx="6"/>
+<text class="t-sm mid it" x="353" y="57">valutatore</text>
+<text class="t-sm mid en" x="353" y="57">grader</text>
+<text class="t-xs mid it" x="353" y="75">codice o giudice</text>
+<text class="t-xs mid en" x="353" y="75">code or judge</text>
+<line class="ln" x1="412" y1="60" x2="436" y2="60" marker-end="url(#ah-evals-benchmarks)"/>
+<rect class="box-accent" x="440" y="32" width="100" height="56" rx="6"/>
+<text class="t t-mono mid" x="490" y="65">72% ± 9</text>
+<text class="t-xs mid it" x="490" y="108">margine di errore</text>
+<text class="t-xs mid en" x="490" y="108">margin of error</text>
+<line class="ln-muted dash" x1="353" y1="134" x2="353" y2="94" marker-end="url(#ah-evals-benchmarks)"/>
+<text class="t-xs end it" x="345" y="118">tara il giudice</text>
+<text class="t-xs end en" x="345" y="118">calibrates judge</text>
+<rect class="box" x="303" y="138" width="100" height="34" rx="6"/>
+<text class="t-sm mid it" x="353" y="159">persone</text>
+<text class="t-sm mid en" x="353" y="159">humans</text>
+<rect class="box-soft" x="20" y="138" width="250" height="34" rx="6"/>
+<text class="t-sm it" x="32" y="159">benchmark: compito di altri</text>
+<text class="t-sm en" x="32" y="159">benchmark: someone else's task</text>
+<text class="t-xs it" x="440" y="159">numeri illustrativi</text>
+<text class="t-xs en" x="440" y="159">illustrative numbers</text>
+</svg>

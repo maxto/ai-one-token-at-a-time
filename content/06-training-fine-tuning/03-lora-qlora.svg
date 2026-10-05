@@ -1,0 +1,22 @@
+<svg viewBox="0 0 560 220" role="img" aria-label="La grande matrice W resta congelata; si allenano solo due matrici sottili, B e A, il cui prodotto si somma a W.">
+<defs>
+<marker id="ah-lora-qlora" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+<marker id="ah2-lora-qlora" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+</marker>
+</defs>
+<text class="t t-mono mid" x="288" y="26">W + B·A</text>
+<rect class="box-soft" x="100" y="44" width="140" height="140" rx="4"/>
+<text class="t t-b mid" x="170" y="119">W</text>
+<text class="t mid" x="270" y="119">+</text>
+<rect class="box-accent" x="300" y="44" width="24" height="140" rx="4"/>
+<text class="t t-b mid" x="312" y="119">B</text>
+<rect class="box-accent" x="336" y="102" width="140" height="24" rx="4"/>
+<text class="t t-b mid" x="406" y="119">A</text>
+<text class="t-sm mid it" x="170" y="206">congelata</text>
+<text class="t-sm mid en" x="170" y="206">frozen</text>
+<text class="t-sm mid it" x="388" y="206">allenate (rango r)</text>
+<text class="t-sm mid en" x="388" y="206">trained (rank r)</text>
+</svg>

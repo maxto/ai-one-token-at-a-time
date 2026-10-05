@@ -1,0 +1,34 @@
+<svg viewBox="0 0 560 190" role="img" aria-label="Il modello vede un testo, prova a indovinare il token successivo e corregge i pesi in base all'errore.">
+<defs>
+<marker id="ah-pre-training" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+<marker id="ah2-pre-training" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+</marker>
+</defs>
+<text class="t-xs mid it" x="132" y="30">contesto</text>
+<text class="t-xs mid en" x="132" y="30">context</text>
+<rect class="box-soft" x="14" y="40" width="236" height="44" rx="6"/>
+<text class="t t-mono mid it" x="132" y="67">Il gatto dorme sul ___</text>
+<text class="t t-mono mid en" x="132" y="67">The cat sleeps on the ___</text>
+<line class="ln" x1="252" y1="62" x2="276" y2="62" marker-end="url(#ah-pre-training)"/>
+<rect class="box-mod" x="280" y="40" width="110" height="44" rx="6"/>
+<text class="t mid it" x="335" y="67">Modello</text>
+<text class="t mid en" x="335" y="67">Model</text>
+<line class="ln" x1="394" y1="62" x2="426" y2="62" marker-end="url(#ah-pre-training)"/>
+<text class="t-xs mid it" x="485" y="30">previsione</text>
+<text class="t-xs mid en" x="485" y="30">guess</text>
+<rect class="box-accent" x="430" y="40" width="110" height="44" rx="6"/>
+<text class="t t-mono mid it" x="485" y="67">letto</text>
+<text class="t t-mono mid en" x="485" y="67">bed</text>
+<text class="t-sm mid it" x="485" y="108">vero: divano</text>
+<text class="t-sm mid en" x="485" y="108">actual: sofa</text>
+<path class="ln-accent" d="M485,118 L485,150 L335,150 L335,92" marker-end="url(#ah2-pre-training)"/>
+<text class="t-sm mid it" x="410" y="172">errore: corregge i pesi</text>
+<text class="t-sm mid en" x="410" y="172">error: nudge the weights</text>
+<text class="t-xs it" x="14" y="118">ripetuto su migliaia</text>
+<text class="t-xs en" x="14" y="118">repeated over trillions</text>
+<text class="t-xs it" x="14" y="134">di miliardi di token</text>
+<text class="t-xs en" x="14" y="134">of tokens</text>
+</svg>

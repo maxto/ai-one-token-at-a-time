@@ -1,0 +1,32 @@
+<svg viewBox="0 0 560 160" role="img" aria-label="Regole, chat, documenti e risposta devono stare tutti nella stessa finestra di token; ciò che non ci sta viene tagliato.">
+<defs>
+<marker id="ah-context-window" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm t-accent t-b it" x="128" y="36">finestra di contesto: N token al massimo</text>
+<text class="t-sm t-accent t-b en" x="128" y="36">context window: N tokens at most</text>
+<rect class="box-accent" x="128" y="48" width="412" height="60" rx="8"/>
+<rect class="box" x="140" y="60" width="80" height="36" rx="6"/>
+<text class="t-sm mid it" x="180" y="83">regole</text>
+<text class="t-sm mid en" x="180" y="83">rules</text>
+<rect class="box" x="226" y="60" width="110" height="36" rx="6"/>
+<text class="t-sm mid" x="281" y="83">chat</text>
+<rect class="box" x="342" y="60" width="100" height="36" rx="6"/>
+<text class="t-sm mid it" x="392" y="83">documenti</text>
+<text class="t-sm mid en" x="392" y="83">documents</text>
+<rect class="box-mod" x="448" y="60" width="80" height="36" rx="6"/>
+<text class="t-sm mid it" x="488" y="83">risposta</text>
+<text class="t-sm mid en" x="488" y="83">reply</text>
+<rect class="box-soft" x="16" y="60" width="100" height="36" rx="6"/>
+<text class="t-sm mid it" x="66" y="83">chat vecchia</text>
+<text class="t-sm mid en" x="66" y="83">old chat</text>
+<text class="t-xs mid it" x="66" y="124">tagliata</text>
+<text class="t-xs mid en" x="66" y="124">cut off</text>
+<line class="ln-muted" x1="140" y1="124" x2="442" y2="124"/>
+<text class="t-xs mid it" x="291" y="144">ingresso</text>
+<text class="t-xs mid en" x="291" y="144">input</text>
+<line class="ln-muted" x1="448" y1="124" x2="528" y2="124"/>
+<text class="t-xs mid it" x="488" y="144">uscita</text>
+<text class="t-xs mid en" x="488" y="144">output</text>
+</svg>

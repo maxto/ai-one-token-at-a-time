@@ -1,0 +1,32 @@
+<svg viewBox="0 0 560 170" role="img" aria-label="La frase viene tagliata in token, spesso con lo spazio attaccato, e ogni token diventa un numero del vocabolario.">
+<defs>
+<marker id="ah-tokens" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm it" x="20" y="28">Testo</text>
+<text class="t-sm en" x="20" y="28">Text</text>
+<text class="t t-mono" x="120" y="28">"Unbelievable cats!"</text>
+<line class="ln" x1="280" y1="40" x2="280" y2="66" marker-end="url(#ah-tokens)"/>
+<rect class="box-mod" x="120" y="74" width="62" height="34" rx="6"/>
+<text class="t t-mono mid" x="151" y="96">Un</text>
+<text class="t-xs t-mono mid" x="151" y="132">3118</text>
+<rect class="box-mod" x="188" y="74" width="92" height="34" rx="6"/>
+<text class="t t-mono mid" x="234" y="96">believ</text>
+<text class="t-xs t-mono mid" x="234" y="132">31141</text>
+<rect class="box-mod" x="286" y="74" width="62" height="34" rx="6"/>
+<text class="t t-mono mid" x="317" y="96">able</text>
+<text class="t-xs t-mono mid" x="317" y="132">481</text>
+<rect class="box-mod" x="354" y="74" width="72" height="34" rx="6"/>
+<text class="t t-mono mid" x="390" y="96">␣cats</text>
+<text class="t-xs t-mono mid" x="390" y="132">19987</text>
+<rect class="box-mod" x="432" y="74" width="34" height="34" rx="6"/>
+<text class="t t-mono mid" x="449" y="96">!</text>
+<text class="t-xs t-mono mid" x="449" y="132">0</text>
+<text class="t-sm it" x="20" y="96">Token</text>
+<text class="t-sm en" x="20" y="96">Tokens</text>
+<text class="t-sm it" x="20" y="132">ID</text>
+<text class="t-sm en" x="20" y="132">IDs</text>
+<text class="t-xs it" x="120" y="158">␣ = spazio · numeri illustrativi</text>
+<text class="t-xs en" x="120" y="158">␣ = space · illustrative numbers</text>
+</svg>

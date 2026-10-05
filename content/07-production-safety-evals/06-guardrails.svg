@@ -1,0 +1,34 @@
+<svg viewBox="0 0 560 166" role="img" aria-label="I controlli stanno fuori dal modello, prima e dopo: possono bloccare o correggere ciò che passa.">
+<defs>
+<marker id="ah-guardrails" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm it" x="20" y="80">Domanda</text>
+<text class="t-sm en" x="20" y="80">Question</text>
+<line class="ln" x1="90" y1="75" x2="116" y2="75" marker-end="url(#ah-guardrails)"/>
+<rect class="box-accent" x="120" y="50" width="90" height="50" rx="6"/>
+<text class="t-sm mid it" x="165" y="71">controllo</text>
+<text class="t-sm mid it" x="165" y="89">input</text>
+<text class="t-sm mid en" x="165" y="71">input</text>
+<text class="t-sm mid en" x="165" y="89">check</text>
+<line class="ln" x1="214" y1="75" x2="240" y2="75" marker-end="url(#ah-guardrails)"/>
+<rect class="box" x="244" y="50" width="80" height="50" rx="6"/>
+<text class="t mid it" x="284" y="80">modello</text>
+<text class="t mid en" x="284" y="80">model</text>
+<line class="ln" x1="328" y1="75" x2="354" y2="75" marker-end="url(#ah-guardrails)"/>
+<rect class="box-accent" x="358" y="50" width="90" height="50" rx="6"/>
+<text class="t-sm mid it" x="403" y="71">controllo</text>
+<text class="t-sm mid it" x="403" y="89">output</text>
+<text class="t-sm mid en" x="403" y="71">output</text>
+<text class="t-sm mid en" x="403" y="89">check</text>
+<line class="ln" x1="452" y1="75" x2="476" y2="75" marker-end="url(#ah-guardrails)"/>
+<text class="t-sm it" x="480" y="80">Risposta</text>
+<text class="t-sm en" x="480" y="80">Answer</text>
+<line class="ln-muted dash" x1="165" y1="104" x2="165" y2="132" marker-end="url(#ah-guardrails)"/>
+<text class="t-xs mid it" x="165" y="150">blocca o ripulisce</text>
+<text class="t-xs mid en" x="165" y="150">block or clean</text>
+<line class="ln-muted dash" x1="403" y1="104" x2="403" y2="132" marker-end="url(#ah-guardrails)"/>
+<text class="t-xs mid it" x="403" y="150">blocca o corregge</text>
+<text class="t-xs mid en" x="403" y="150">block or fix</text>
+</svg>

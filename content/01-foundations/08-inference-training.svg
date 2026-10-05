@@ -1,0 +1,40 @@
+<svg viewBox="0 0 560 216" role="img" aria-label="Nell'addestramento ogni errore corregge i parametri, per moltissimi passi; nell'inferenza i parametri restano fermi e producono solo la risposta.">
+<defs>
+<marker id="ah-inference-training" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+<marker id="ah2-inference-training" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+</marker>
+</defs>
+<text class="t-sm t-b it" x="20" y="65">Addestramento</text>
+<text class="t-sm t-b en" x="20" y="65">Training</text>
+<rect class="box-mod" x="140" y="40" width="140" height="40" rx="6"/>
+<text class="t-sm mid it" x="210" y="65">parametri</text>
+<text class="t-sm mid en" x="210" y="65">parameters</text>
+<line class="ln" x1="282" y1="60" x2="313" y2="60" marker-end="url(#ah-inference-training)"/>
+<rect class="box" x="315" y="40" width="110" height="40" rx="6"/>
+<text class="t-sm mid it" x="370" y="65">previsione</text>
+<text class="t-sm mid en" x="370" y="65">prediction</text>
+<line class="ln" x1="427" y1="60" x2="458" y2="60" marker-end="url(#ah-inference-training)"/>
+<rect class="box" x="460" y="40" width="80" height="40" rx="6"/>
+<text class="t-sm mid it" x="500" y="65">errore</text>
+<text class="t-sm mid en" x="500" y="65">error</text>
+<path class="ln-accent" stroke-width="2" d="M500,80 V104 H210 V84" marker-end="url(#ah2-inference-training)"/>
+<text class="t-xs t-accent mid it" x="355" y="122">corregge e ripete</text>
+<text class="t-xs t-accent mid en" x="355" y="122">adjusts and repeats</text>
+<line class="ln-muted dash" x1="20" y1="140" x2="540" y2="140"/>
+<text class="t-sm t-b it" x="20" y="185">Inferenza</text>
+<text class="t-sm t-b en" x="20" y="185">Inference</text>
+<rect class="box" x="140" y="160" width="90" height="40" rx="6"/>
+<text class="t-sm mid it" x="185" y="185">testo</text>
+<text class="t-sm mid en" x="185" y="185">text</text>
+<line class="ln" x1="232" y1="180" x2="263" y2="180" marker-end="url(#ah-inference-training)"/>
+<rect class="box-mod" x="265" y="160" width="150" height="40" rx="6"/>
+<text class="t-sm mid it" x="340" y="185">parametri fermi</text>
+<text class="t-sm mid en" x="340" y="185">frozen parameters</text>
+<line class="ln" x1="417" y1="180" x2="458" y2="180" marker-end="url(#ah-inference-training)"/>
+<rect class="box" x="460" y="160" width="80" height="40" rx="6"/>
+<text class="t-sm mid it" x="500" y="185">risposta</text>
+<text class="t-sm mid en" x="500" y="185">answer</text>
+</svg>

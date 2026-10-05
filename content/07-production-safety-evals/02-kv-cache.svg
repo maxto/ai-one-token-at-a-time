@@ -1,0 +1,40 @@
+<svg viewBox="0 0 560 156" role="img" aria-label="A ogni passo si calcolano key e value solo del token nuovo, che si confronta con quelli già in cache.">
+<defs>
+<marker id="ah-kv-cache" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+<marker id="ah2-kv-cache" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+</marker>
+</defs>
+<rect class="box-mod" x="120" y="60" width="60" height="50" rx="6"/>
+<text class="t mid it" x="150" y="82">Oggi</text>
+<text class="t mid en" x="150" y="82">Today</text>
+<text class="t-xs t-mono mid" x="150" y="100">K V</text>
+<rect class="box-mod" x="188" y="60" width="80" height="50" rx="6"/>
+<text class="t mid it" x="228" y="82">il</text>
+<text class="t mid en" x="228" y="82">the</text>
+<text class="t-xs t-mono mid" x="228" y="100">K V</text>
+<rect class="box-mod" x="276" y="60" width="80" height="50" rx="6"/>
+<text class="t mid it" x="316" y="82">sole</text>
+<text class="t mid en" x="316" y="82">sun</text>
+<text class="t-xs t-mono mid" x="316" y="100">K V</text>
+<rect class="box-mod" x="364" y="60" width="60" height="50" rx="6"/>
+<text class="t mid it" x="394" y="82">è</text>
+<text class="t mid en" x="394" y="82">is</text>
+<text class="t-xs t-mono mid" x="394" y="100">K V</text>
+<rect class="box-accent" x="440" y="60" width="100" height="50" rx="6"/>
+<text class="t mid it" x="490" y="82">caldo</text>
+<text class="t mid en" x="490" y="82">warm</text>
+<text class="t-xs t-mono mid" x="490" y="100">K V</text>
+<path class="ln-accent" d="M120,54 L120,46 L424,46 L424,54"/>
+<path class="ln-accent" d="M490,56 C490,24 300,22 276,40" marker-end="url(#ah2-kv-cache)"/>
+<text class="t-xs t-accent mid it" x="385" y="22">attenzione: confronta</text>
+<text class="t-xs t-accent mid en" x="385" y="22">attention: compares</text>
+<text class="t-sm" x="20" y="90">KV cache</text>
+<line class="ln-muted" x1="120" y1="122" x2="424" y2="122"/>
+<text class="t-xs mid it" x="272" y="140">in memoria: non ricalcolati</text>
+<text class="t-xs mid en" x="272" y="140">in memory: not recomputed</text>
+<text class="t-xs mid it" x="490" y="140">calcolato ora</text>
+<text class="t-xs mid en" x="490" y="140">computed now</text>
+</svg>

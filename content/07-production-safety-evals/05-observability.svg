@@ -1,0 +1,29 @@
+<svg viewBox="0 0 560 242" role="img" aria-label="Una traccia mostra i passi di una singola richiesta nel tempo e rivela quale passo rallenta o sbaglia.">
+<defs>
+<marker id="ah-observability" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm it" x="20" y="47">richiesta</text>
+<text class="t-sm en" x="20" y="47">request</text>
+<rect class="box-soft" x="140" y="30" width="400" height="24" rx="6"/>
+<text class="t-sm it" x="20" y="81">ricerca</text>
+<text class="t-sm en" x="20" y="81">search</text>
+<rect class="box-mod" x="150" y="64" width="70" height="24" rx="6"/>
+<text class="t-sm it" x="20" y="115">modello</text>
+<text class="t-sm en" x="20" y="115">model</text>
+<rect class="box-mod" x="226" y="98" width="110" height="24" rx="6"/>
+<text class="t-sm it" x="20" y="149">strumento</text>
+<text class="t-sm en" x="20" y="149">tool</text>
+<rect class="box-accent" x="342" y="132" width="150" height="24" rx="6"/>
+<text class="t-sm it" x="20" y="183">modello</text>
+<text class="t-sm en" x="20" y="183">model</text>
+<rect class="box-mod" x="498" y="166" width="36" height="24" rx="6"/>
+<text class="t-xs it" x="150" y="46">traccia di una richiesta</text>
+<text class="t-xs en" x="150" y="46">trace of one request</text>
+<text class="t-xs t-accent mid it" x="417" y="148">lento</text>
+<text class="t-xs t-accent mid en" x="417" y="148">slow</text>
+<line class="ln-muted" x1="140" y1="210" x2="536" y2="210" marker-end="url(#ah-observability)"/>
+<text class="t-xs end it" x="540" y="230">tempo</text>
+<text class="t-xs end en" x="540" y="230">time</text>
+</svg>

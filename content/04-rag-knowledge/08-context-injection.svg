@@ -1,0 +1,36 @@
+<svg viewBox="0 0 560 236" role="img" aria-label="Nel prompt entrano le istruzioni, solo i pezzi utili con la loro fonte e la domanda; il pezzo fuori tema resta fuori.">
+<defs>
+<marker id="ah-context-injection" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm t-b it" x="16" y="70">Recuperati</text>
+<text class="t-sm t-b en" x="16" y="70">Retrieved</text>
+<rect class="box" x="230" y="16" width="314" height="204" rx="8"/>
+<text class="t-sm t-b" x="244" y="38">Prompt</text>
+<rect class="box-accent" x="244" y="50" width="286" height="30" rx="6"/>
+<text class="t-sm it" x="256" y="70">Istruzioni: rispondi solo da qui</text>
+<text class="t-sm en" x="256" y="70">Instructions: answer only from here</text>
+<rect class="box-mod" x="16" y="88" width="150" height="30" rx="6"/>
+<text class="t-sm it" x="28" y="108">Fonte 1</text>
+<text class="t-sm en" x="28" y="108">Source 1</text>
+<line class="ln" x1="166" y1="103" x2="242" y2="103" marker-end="url(#ah-context-injection)"/>
+<rect class="box-mod" x="244" y="88" width="286" height="30" rx="6"/>
+<text class="t-sm it" x="256" y="108">[Fonte 1] …</text>
+<text class="t-sm en" x="256" y="108">[Source 1] …</text>
+<rect class="box-mod" x="16" y="126" width="150" height="30" rx="6"/>
+<text class="t-sm it" x="28" y="146">Fonte 2</text>
+<text class="t-sm en" x="28" y="146">Source 2</text>
+<line class="ln" x1="166" y1="141" x2="242" y2="141" marker-end="url(#ah-context-injection)"/>
+<rect class="box-mod" x="244" y="126" width="286" height="30" rx="6"/>
+<text class="t-sm it" x="256" y="146">[Fonte 2] …</text>
+<text class="t-sm en" x="256" y="146">[Source 2] …</text>
+<rect class="ln-muted dash" x="16" y="164" width="150" height="30" rx="6"/>
+<text class="t-sm it" x="28" y="184">Fuori tema</text>
+<text class="t-sm en" x="28" y="184">Off topic</text>
+<text class="t-xs it" x="16" y="214">resta fuori</text>
+<text class="t-xs en" x="16" y="214">left out</text>
+<rect class="box" x="244" y="164" width="286" height="30" rx="6"/>
+<text class="t-sm it" x="256" y="184">Domanda</text>
+<text class="t-sm en" x="256" y="184">Question</text>
+</svg>
