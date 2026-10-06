@@ -10,7 +10,7 @@ title.en: Prompt Injection
 
 ## In una frase
 
-La prompt injection è un attacco in cui un testo malevolo, scritto dall'utente o nascosto in un documento, spinge il modello a ignorare le istruzioni originali.
+La prompt injection è un attacco: un testo malevolo, scritto dall'utente o nascosto in un documento, spinge il modello a ignorare le istruzioni originali.
 
 ## Approfondimento
 

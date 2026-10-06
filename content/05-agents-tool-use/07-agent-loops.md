@@ -10,7 +10,7 @@ title.en: Agent Loops
 
 ## In una frase
 
-Il ciclo è il motore dell'agente: agisci, osserva, decidi se continuare. Funziona bene solo con una verifica chiara e un limite di tentativi.
+Il ciclo dell'agente alterna azioni e osservazioni finché decide di fermarsi, e funziona bene solo con una verifica chiara e un limite di tentativi.
 
 ## Approfondimento
 
@@ -36,7 +36,7 @@ Dopo ogni azione una verifica decide: se passa il lavoro è finito, se fallisce 
 
 ## One line
 
-The loop is the agent's engine: act, observe, decide whether to continue. It works well only with a clear check and a cap on attempts.
+An agent's loop alternates actions and observations until it decides to stop, and works well only with a clear check and a cap on attempts.
 
 ## Deep dive
 

@@ -30,7 +30,7 @@ Pensare che top-k e top-p scelgano il token migliore. Decidono solo chi partecip
 
 ## Didascalia della figura
 
-Top-p 0,9 tiene i token più probabili fino al 90%: uno solo se il modello è sicuro, sei se è incerto. Top-k 3 ne tiene sempre tre.
+Top-p 0,9 tiene i token più probabili fino al 90%, uno solo se il modello è sicuro e sei se è incerto, mentre top-k 3 ne tiene sempre tre.
 
 # EN
 
@@ -56,4 +56,4 @@ Thinking top-k and top-p pick the best token. They only decide who gets into the
 
 ## Figure caption
 
-Top-p 0.9 keeps the most likely tokens up to 90%: just one when the model is confident, six when it is unsure. Top-k 3 always keeps three.
+Top-p 0.9 keeps the most likely tokens up to 90%, just one when the model is confident and six when it is unsure, while top-k 3 always keeps three.

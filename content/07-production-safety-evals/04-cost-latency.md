@@ -18,7 +18,7 @@ Le API dei modelli si pagano a token, con due prezzi: uno per l'input e uno, di 
 
 Le leve principali sono poche. Scegliere il modello più piccolo che supera i propri test. Accorciare il prompt e chiedere risposte brevi. Usare il prompt caching per le parti ripetute. Molti fornitori fanno uno sconto sui lavori in batch, che possono aspettare ore invece di secondi. Mandare le domande facili a un modello piccolo e quelle difficili a uno grande.
 
-Ogni leva ha un prezzo. Un modello piccolo sbaglia di più. I modelli che ragionano a lungo prima di rispondere producono molti token che non vedi ma paghi. Il numero giusto da guardare non è il costo per chiamata ma il costo per compito riuscito, tentativi falliti compresi.
+Ogni leva ha un prezzo. Un modello piccolo può essere meno affidabile sui compiti complessi. I modelli che ragionano a lungo prima di rispondere producono molti token che non vedi ma paghi. Il numero giusto non è il costo per chiamata ma il costo per compito riuscito, tentativi falliti compresi.
 
 ## Esempio for dummies
 
@@ -44,7 +44,7 @@ Model APIs charge per token, with two prices: one for input and one, usually hig
 
 The main levers are few. Pick the smallest model that passes your tests. Shorten the prompt and ask for short answers. Use prompt caching for repeated parts. Many providers discount batch jobs that can wait hours instead of seconds. Route easy questions to a small model and hard ones to a large one.
 
-Each lever has a price. A small model makes more mistakes. Models that reason at length before answering produce many tokens you may not see but still pay for. The number that matters is not cost per call but cost per successful task, failed attempts included.
+Each lever has a price. A small model can be less reliable on complex tasks. Models that reason at length before answering produce many tokens you may not see but still pay for. The number that matters is not cost per call but cost per successful task, failed attempts included.
 
 ## For dummies
 

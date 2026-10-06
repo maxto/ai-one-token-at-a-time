@@ -10,7 +10,7 @@ title.en: Knowledge graphs
 
 ## In una frase
 
-Un grafo di conoscenza salva i fatti come entità collegate da relazioni, così si possono seguire catene di collegamenti che la ricerca per somiglianza non vede.
+Un grafo di conoscenza salva i fatti come entità collegate da relazioni, così si possono seguire catene di collegamenti invisibili alla ricerca per somiglianza.
 
 ## Approfondimento
 

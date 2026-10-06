@@ -10,7 +10,7 @@ title.en: Quantization
 
 ## In una frase
 
-La quantizzazione salva i pesi del modello con meno bit, per esempio 4 invece di 16, riducendo memoria e costi con una piccola perdita di precisione.
+La quantizzazione salva i pesi del modello con meno bit, per esempio 4 invece di 16, riducendo memoria e costi, con un po' meno precisione.
 
 ## Approfondimento
 

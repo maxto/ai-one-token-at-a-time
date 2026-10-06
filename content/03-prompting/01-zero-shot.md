@@ -16,7 +16,7 @@ Chiedere al modello di svolgere un compito con sole istruzioni, senza mostrargli
 
 Nello **zero-shot prompting** descrivi il compito e il modello risponde, senza esempi. Funziona perché durante l'addestramento il modello ha visto enormi quantità di testi con compiti simili: riassunti, traduzioni, classificazioni. In più l'instruction tuning, un addestramento extra su coppie istruzione-risposta, gli ha insegnato a seguire richieste scritte in modo diretto.
 
-È il punto di partenza giusto: costa poco, si scrive in fretta e per i compiti comuni basta. La qualità dipende quasi tutta da quanto è chiara l'istruzione. Conviene dire cosa vuoi, per chi, in che formato e con quali vincoli.
+È il punto di partenza giusto: costa poco, si scrive in fretta e per i compiti comuni basta. La qualità dipende molto da quanto è chiara l'istruzione, oltre che dalle capacità del modello e dalle informazioni che ha a disposizione. Conviene dire cosa vuoi, per chi, in che formato e con quali vincoli.
 
 Il limite arriva con compiti insoliti o formati molto precisi. Se vuoi un'etichetta tra cinque categorie inventate da te, o uno stile particolare, il modello deve indovinare. Lì conviene passare agli esempi (vedi Few-shot Prompting).
 
@@ -42,7 +42,7 @@ Asking the model to do a task from instructions alone, without showing it any wo
 
 In **zero-shot prompting** you describe the task and the model answers, with no examples. It works because pre-training exposed the model to huge amounts of text containing similar tasks: summaries, translations, classifications. Instruction tuning, an extra training stage on instruction-response pairs, then taught it to follow direct requests.
 
-It is the right starting point: cheap, quick to write, and enough for common tasks. Quality depends almost entirely on how clear the instruction is. Say what you want, for whom, in what format and under which constraints.
+It is the right starting point: cheap, quick to write, and enough for common tasks. Quality depends a lot on how clear the instruction is, as well as on the model's abilities and the information it has. Say what you want, for whom, in what format and under which constraints.
 
 The limit shows up with unusual tasks or very precise formats. If you want one label out of five categories you invented, or a specific house style, the model has to guess. That is when examples help (see Few-shot Prompting).
 

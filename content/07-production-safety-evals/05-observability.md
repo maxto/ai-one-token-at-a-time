@@ -36,7 +36,7 @@ Una traccia mostra i passi di una singola richiesta nel tempo e rivela quale pas
 
 ## One line
 
-Observability records what goes in, what comes out and what happens at each step of an AI system, so you can understand errors, costs and timing.
+Observability records what goes in, what comes out and what happens at each step of an AI system, to understand errors, costs and timing.
 
 ## Deep dive
 

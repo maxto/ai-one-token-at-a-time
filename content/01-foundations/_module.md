@@ -24,7 +24,7 @@ Un modello sbaglia a contare quante "r" ci sono in una parola. Qual è la causa 
 - [x] Il modello vede token, cioè pezzi di parola, e non le singole lettere
 - [ ] La parola non è nel vocabolario, quindi viene ignorata
 
-> Il tokenizer raggruppa le lettere in token, quindi il modello non vede i caratteri uno per uno. Una parola fuori vocabolario non viene ignorata: viene spezzata in pezzi più piccoli.
+> Il tokenizer raggruppa le lettere in token, quindi di solito il modello non riceve i caratteri uno per uno. Una parola fuori vocabolario non viene ignorata: viene spezzata in pezzi più piccoli.
 
 ### EN
 
@@ -34,7 +34,7 @@ A model miscounts how many "r"s a word contains. What is the most likely cause?
 - [x] The model sees tokens, chunks of words, not individual letters
 - [ ] The word is not in the vocabulary, so it gets ignored
 
-> The tokenizer groups letters into tokens, so the model never sees the characters one by one. A word outside the vocabulary is not ignored. It is split into smaller pieces.
+> The tokenizer groups letters into tokens, so the model usually does not receive the characters one by one. A word outside the vocabulary is not ignored. It is split into smaller pieces.
 
 ## 2
 

@@ -26,7 +26,7 @@ Un bambino passa anni ad ascoltare le persone intorno a sé. Nessuno gli spiega 
 
 ## Errore comune
 
-Si pensa che il modello memorizzi Internet come un archivio da consultare. Salvo alcuni passaggi molto ripetuti, non conserva i documenti: comprime regolarità statistiche nei pesi. Per questo ricorda bene i fatti noti ma può ricostruire male i dettagli rari.
+Si pensa che il modello memorizzi Internet come un archivio da consultare. Non conserva i documenti in modo ordinato: comprime regolarità statistiche nei pesi, ma a volte ricorda alla lettera alcuni passaggi, soprattutto quelli ripetuti spesso. Per questo ricorda bene i fatti noti ma può ricostruire male i dettagli rari.
 
 ## Didascalia della figura
 
@@ -52,7 +52,7 @@ A toddler spends years listening to the people around them. Nobody teaches them 
 
 ## Common mistake
 
-People think the model stores the internet like an archive it can look things up in. Apart from some heavily repeated passages, it doesn't keep the documents: it compresses statistical patterns into its weights. So it recalls well-known facts but can get rare details wrong.
+People think the model stores the internet like a searchable archive. It doesn't keep the documents in an orderly way: it compresses statistical patterns into its weights, but sometimes recalls passages word for word, especially frequently repeated ones. So it recalls well-known facts but can get rare details wrong.
 
 ## Figure caption
 
