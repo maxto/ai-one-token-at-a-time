@@ -59,6 +59,13 @@ await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceSc
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
     await p.waitForTimeout(300);
   };
+  const swipeY = async (y1, y2) => {
+    const cdp = await p.context().newCDPSession(p);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 200, y: y1 }] });
+    for (let i = 1; i <= 8; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 200, y: y1 + (y2 - y1) * i / 8 }] });
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await p.waitForTimeout(400);
+  };
   await p.evaluate(() => scrollTo(0, 0));
   await swipe(320, 80);
   expect(await p.evaluate(() => location.hash) === '#m1-top-k-top-p', 'swipe left did not go to the next lesson');
@@ -68,6 +75,9 @@ await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceSc
   expect(await p.isVisible('#syllabus'), 'phone menu did not open');
   const menu = await p.evaluate(() => { const n = document.getElementById('syllabus'); return { bottom: n.getBoundingClientRect().bottom, scrolls: n.scrollHeight > n.clientHeight }; });
   expect(menu.bottom <= 844 && menu.scrolls, 'phone menu is taller than the screen, so it cannot scroll');
+  for (let k = 0; k < 6; k++) await swipeY(700, 150);
+  expect(await p.evaluate(() => document.getElementById('syllabus').scrollTop) > 0, 'phone menu did not scroll');
+  expect(await p.evaluate(() => scrollY) === 0, 'scrolling past the end of the phone menu moved the page behind it');
 });
 
 await browser.close();
