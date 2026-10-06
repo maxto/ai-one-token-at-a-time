@@ -24,8 +24,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 scripts/build.py
-      # artifact.html is only for the claude.ai reading copy
-      - run: rm dist/artifact.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

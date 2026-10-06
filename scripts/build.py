@@ -6,7 +6,6 @@ Reads every module folder in content/ (NN-slug/), its _module.md (titles,
 intro, quiz) and its lessons (NN-id.md + NN-id.svg), validates them, and
 writes:
   dist/index.html     standalone page (GitHub Pages, open locally)
-  dist/artifact.html  same page without the document skeleton (claude.ai Artifact)
   content/**/NN-id.preview.svg  light-theme, Italian copy of each figure for GitHub
 """
 import json, re, sys, pathlib
@@ -196,7 +195,6 @@ def main():
     data = json.dumps(course, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = (SITE / "template.html").read_text().replace("/*__COURSE_DATA__*/", data)
     DIST.mkdir(exist_ok=True)
-    (DIST / "artifact.html").write_text(page)
     (DIST / "index.html").write_text('<!doctype html>\n<html lang="it">\n<head>\n<meta charset="utf-8">\n'
                                      '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
                                      '</head>\n<body style="margin:0">\n' + page + '\n</body>\n</html>\n')
