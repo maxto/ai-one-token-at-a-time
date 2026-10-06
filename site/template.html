@@ -488,13 +488,28 @@ document.getElementById("menuBtn").addEventListener("click", () => {
   const open = document.body.classList.toggle("nav-open");
   document.getElementById("menuBtn").setAttribute("aria-expanded", open);
 });
+function step(delta) {
+  const s = byKey[current]; if (!s) return;
+  const to = steps[steps.indexOf(s) + delta];
+  if (to) location.hash = to.key;
+}
 document.addEventListener("keydown", e => {
   if (e.target.closest("input, textarea") || e.altKey || e.ctrlKey || e.metaKey) return;
-  const s = byKey[current]; if (!s) return;
-  const i = steps.indexOf(s);
-  if (e.key === "ArrowRight" && steps[i + 1]) location.hash = steps[i + 1].key;
-  if (e.key === "ArrowLeft" && steps[i - 1]) location.hash = steps[i - 1].key;
+  if (e.key === "ArrowRight") step(1);
+  if (e.key === "ArrowLeft") step(-1);
 });
+/* touch: swipe left = next, swipe right = previous. Not from a figure (it scrolls sideways) or the screen edges (browser back gesture). */
+let touch = null;
+document.getElementById("view").addEventListener("touchstart", e => {
+  const t = e.touches[0];
+  touch = e.touches.length === 1 && !e.target.closest(".fig-scroll, input") && t.clientX > 24 && t.clientX < innerWidth - 24 ? { x: t.clientX, y: t.clientY } : null;
+}, { passive: true });
+document.getElementById("view").addEventListener("touchend", e => {
+  if (!touch) return;
+  const t = e.changedTouches[0], dx = t.clientX - touch.x, dy = t.clientY - touch.y;
+  touch = null;
+  if (Math.abs(dx) >= 70 && Math.abs(dx) > 2 * Math.abs(dy)) step(dx < 0 ? 1 : -1);
+}, { passive: true });
 
 setLang(lang);
 </script>

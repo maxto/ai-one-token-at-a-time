@@ -45,13 +45,25 @@ await run({ viewport: { width: 1280, height: 860 } }, 'desktop', async p => {
   expect(await p.$$eval('.results li', l => l.length) > 0, 'search found nothing for "token"');
 });
 
-await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceScaleFactor: 2 }, 'phone', async p => {
+await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceScaleFactor: 2, hasTouch: true, isMobile: true }, 'phone', async p => {
   expect(await overflow(p) === 0, 'phone home overflows');
   expect(await p.isVisible('#repo'), 'GitHub link hidden on phone');
   await p.goto(url + '#m1-temperature'); await p.waitForTimeout(300);
   expect(await overflow(p) === 0, 'phone lesson overflows');
   await p.evaluate(() => document.querySelector('.fig').scrollIntoView());
   await p.screenshot({ path: path.join(out, 'phone-dark-figure.png') });
+  const swipe = async (x1, x2) => {
+    const cdp = await p.context().newCDPSession(p);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x1, y: 300 }] });
+    for (let i = 1; i <= 8; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x1 + (x2 - x1) * i / 8, y: 300 + i }] });
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await p.waitForTimeout(300);
+  };
+  await p.evaluate(() => scrollTo(0, 0));
+  await swipe(320, 80);
+  expect(await p.evaluate(() => location.hash) === '#m1-top-k-top-p', 'swipe left did not go to the next lesson');
+  await swipe(80, 320);
+  expect(await p.evaluate(() => location.hash) === '#m1-temperature', 'swipe right did not go back');
   await p.click('#menuBtn'); await p.waitForTimeout(200);
   expect(await p.isVisible('#syllabus'), 'phone menu did not open');
   const menu = await p.evaluate(() => { const n = document.getElementById('syllabus'); return { bottom: n.getBoundingClientRect().bottom, scrolls: n.scrollHeight > n.clientHeight }; });
