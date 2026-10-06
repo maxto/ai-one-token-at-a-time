@@ -74,6 +74,9 @@ h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.1
 .lang { display: inline-flex; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; flex: none; }
 .lang button { border: 0; background: transparent; padding: 6px 10px; cursor: pointer; font-family: var(--f-mono); font-size: var(--s-xs); font-weight: 500; color: var(--muted); }
 .lang button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+.repo { display: inline-grid; place-items: center; flex: none; width: 34px; height: 34px; border: 1px solid var(--rule); border-radius: 8px; color: var(--muted); }
+.repo:hover { color: var(--ink); background: var(--chip); }
+.repo svg { width: 18px; height: 18px; }
 .meter { height: 3px; background: var(--rule); }
 .meter > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s ease; }
 
@@ -207,6 +210,9 @@ mark { background: var(--accent-soft); color: var(--ink); border-radius: 3px; pa
   .brand-name { display: none; }
   .search { max-width: none; }
 }
+@media (max-width: 400px) {
+  .topbar-in { gap: 8px; padding-inline: 12px; }
+}
 @media (max-width: 480px) {
   .pager { grid-template-columns: minmax(0, 1fr); }
   .pager a.next { grid-column: 1; }
@@ -227,6 +233,9 @@ mark { background: var(--accent-soft); color: var(--ink); border-radius: 3px; pa
       <button id="langIt" type="button" aria-pressed="true">IT</button>
       <button id="langEn" type="button" aria-pressed="false">EN</button>
     </div>
+    <a class="repo" id="repo" href="https://github.com/maxto/ai-one-token-at-a-time" target="_blank" rel="noopener" aria-label="Codice sorgente su GitHub" title="Codice sorgente su GitHub">
+      <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+    </a>
   </div>
   <div class="meter" aria-hidden="true"><i id="meter"></i></div>
 </header>
@@ -241,7 +250,7 @@ const COURSE = /*__COURSE_DATA__*/;
 
 const UI = {
   it: {
-    name: "AI, un token alla volta", menu: "Indice", search: "Cerca un concetto", lessons: "lezioni", lesson: "Lezione", of: "di",
+    name: "AI, un token alla volta", repo: "Codice sorgente su GitHub", menu: "Indice", search: "Cerca un concetto", lessons: "lezioni", lesson: "Lezione", of: "di",
     module: "Modulo", completed: "completate", progress: "Avanzamento", start: "Inizia il corso", resume: "Riprendi", overview: "Panoramica",
     lead: "Un corso breve sui concetti che servono davvero per capire e usare l'intelligenza artificiale generativa. 7 moduli, 56 lezioni, un esempio quotidiano per ogni idea.",
     how: [["Una frase", "Il concetto in breve."], ["Approfondimento", "Come funziona davvero."], ["For dummies", "Un esempio di tutti i giorni."], ["Errore comune", "L'equivoco da evitare."]],
@@ -255,7 +264,7 @@ const UI = {
     chips: ["AI", ",", " un", " token", " alla", " vol", "ta"]
   },
   en: {
-    name: "AI, one token at a time", menu: "Contents", search: "Search a concept", lessons: "lessons", lesson: "Lesson", of: "of",
+    name: "AI, one token at a time", repo: "Source code on GitHub", menu: "Contents", search: "Search a concept", lessons: "lessons", lesson: "Lesson", of: "of",
     module: "Module", completed: "completed", progress: "Progress", start: "Start the course", resume: "Resume", overview: "Overview",
     lead: "A short course on the concepts you actually need to understand and use generative AI. 7 modules, 56 lessons, an everyday example for every idea.",
     how: [["One line", "The idea in brief."], ["Deep dive", "How it really works."], ["For dummies", "An everyday example."], ["Common mistake", "The misconception to avoid."]],
@@ -466,6 +475,8 @@ function setLang(l) {
   document.getElementById("q").placeholder = UI[l].search;
   document.getElementById("q").setAttribute("aria-label", UI[l].search);
   document.getElementById("menuBtn").textContent = UI[l].menu;
+  document.getElementById("repo").setAttribute("aria-label", UI[l].repo);
+  document.getElementById("repo").title = UI[l].repo;
   document.getElementById("syllabus").setAttribute("aria-label", UI[l].menu);
   document.getElementById("langIt").setAttribute("aria-pressed", l === "it");
   document.getElementById("langEn").setAttribute("aria-pressed", l === "en");

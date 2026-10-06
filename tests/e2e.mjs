@@ -35,6 +35,7 @@ await run({ viewport: { width: 1280, height: 860 } }, 'desktop', async p => {
   expect(await p.evaluate(() => location.hash) === '#m1-embeddings', 'arrow key did not go to next lesson');
   await p.click('#langEn'); await p.waitForTimeout(200);
   expect(await p.textContent('.lesson h1') === 'Embeddings', 'language switch failed');
+  expect(await p.getAttribute('#repo', 'aria-label') === 'Source code on GitHub', 'GitHub link label not translated');
   expect(await p.evaluate(() => getComputedStyle(document.querySelector('.fig svg .it') || document.body).display) === 'none' || !(await p.$('.fig svg .it')), 'Italian figure labels visible in EN');
   await p.screenshot({ path: path.join(out, 'desktop-lesson-en.png') });
   await p.goto(url + '#m1-quiz'); await p.waitForTimeout(300);
@@ -46,6 +47,7 @@ await run({ viewport: { width: 1280, height: 860 } }, 'desktop', async p => {
 
 await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceScaleFactor: 2 }, 'phone', async p => {
   expect(await overflow(p) === 0, 'phone home overflows');
+  expect(await p.isVisible('#repo'), 'GitHub link hidden on phone');
   await p.goto(url + '#m1-temperature'); await p.waitForTimeout(300);
   expect(await overflow(p) === 0, 'phone lesson overflows');
   await p.evaluate(() => document.querySelector('.fig').scrollIntoView());
