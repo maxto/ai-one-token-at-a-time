@@ -52,4 +52,4 @@ People assume more agents always means better results, like a bigger team. Often
 
 ## Figure caption
 
-The orchestrator gives each sub-agent a task; each works in its own context and returns only a summary.
+The orchestrator gives each sub-agent a task, and each works in its own context and returns only a summary.

@@ -34,7 +34,7 @@ A model miscounts how many "r"s a word contains. What is the most likely cause?
 - [x] The model sees tokens, chunks of words, not individual letters
 - [ ] The word is not in the vocabulary, so it gets ignored
 
-> The tokenizer groups letters into tokens, so the model never sees the characters one by one. A word outside the vocabulary is not ignored; it is split into smaller pieces.
+> The tokenizer groups letters into tokens, so the model never sees the characters one by one. A word outside the vocabulary is not ignored. It is split into smaller pieces.
 
 ## 2
 

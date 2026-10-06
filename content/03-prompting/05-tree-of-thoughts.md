@@ -30,7 +30,7 @@ Si crede che basti scrivere “considera più opzioni” per avere un Tree of Th
 
 ## Didascalia della figura
 
-A ogni bivio nascono più passi alternativi; il modello li valuta, i rami deboli vengono scartati e si espande solo quello promettente.
+A ogni bivio nascono più passi alternativi: il modello li valuta, i rami deboli vengono scartati e si espande solo quello promettente.
 
 # EN
 
@@ -44,7 +44,7 @@ Chain-of-Thought follows a single path: if the first step is wrong, so is everyt
 
 It works well on problems that need exploration and backtracking: puzzles, planning under tight constraints, writing with strict requirements. On these, a single linear attempt often fails.
 
-The price is high. Every branch needs model calls, so cost grows quickly. It also needs code to manage the tree; it is not a trick you write into one prompt. For most everyday tasks it is overkill, and modern reasoning models already do some of this exploration internally.
+The price is high. Every branch needs model calls, so cost grows quickly. It also needs code to manage the tree. It is not a trick you write into one prompt. For most everyday tasks it is overkill, and modern reasoning models already do some of this exploration internally.
 
 ## For dummies
 
@@ -56,4 +56,4 @@ People think writing “consider several options” gives you Tree of Thoughts. 
 
 ## Figure caption
 
-Each fork produces several alternative steps; the model scores them, weak branches are pruned and only the promising one is expanded.
+Each fork produces several alternative steps: the model scores them, weak branches are pruned and only the promising one is expanded.

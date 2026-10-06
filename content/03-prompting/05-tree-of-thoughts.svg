@@ -1,4 +1,4 @@
-<svg viewBox="0 0 560 232" role="img" aria-label="A ogni bivio nascono più passi alternativi; il modello li valuta, i rami deboli vengono scartati e si espande solo quello promettente.">
+<svg viewBox="0 0 560 232" role="img" aria-label="A ogni bivio nascono più passi alternativi: il modello li valuta, i rami deboli vengono scartati e si espande solo quello promettente.">
 <defs>
 <marker id="ah-tree-of-thoughts" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
 <path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>

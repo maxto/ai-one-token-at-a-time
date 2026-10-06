@@ -30,7 +30,7 @@ Si pensa che la risposta più votata sia per forza corretta. La maggioranza ridu
 
 ## Didascalia della figura
 
-La stessa domanda viene ragionata cinque volte in modo indipendente; vince la risposta finale più frequente.
+La stessa domanda viene ragionata cinque volte in modo indipendente, e vince la risposta finale più frequente.
 
 # EN
 
@@ -44,7 +44,7 @@ With some randomness in sampling (controlled by the temperature setting), a mode
 
 The idea is that a correct answer can be reached by several routes, while errors tend to scatter across different results. On arithmetic and questions with a clear-cut answer, it measurably improves accuracy.
 
-There are two limits. Cost multiplies by the number of attempts. And voting only works when answers can be compared: a number or a choice between options, yes; free text such as an email, no. Also, if the model is systematically wrong, the majority is wrong with it.
+There are two limits. Cost multiplies by the number of attempts. And voting only works when answers can be compared: a number or a choice between options works, but free text such as an email does not. Also, if the model is systematically wrong, the majority is wrong with it.
 
 ## For dummies
 
@@ -56,4 +56,4 @@ People assume the most-voted answer must be correct. Majority voting reduces ran
 
 ## Figure caption
 
-The same question is reasoned through five times independently; the most frequent final answer wins.
+The same question is reasoned through five times independently, and the most frequent final answer wins.

@@ -30,7 +30,7 @@ Errore comune: immaginare ogni esperto come lo specialista di una materia, uno p
 
 ## Didascalia della figura
 
-Il router manda ogni token solo a pochi esperti e ne combina i risultati; tutti gli esperti però restano in memoria.
+Il router manda ogni token solo a pochi esperti e ne combina i risultati, ma tutti gli esperti restano in memoria.
 
 # EN
 
@@ -56,4 +56,4 @@ Common mistake: picturing each expert as a subject specialist, one for medicine,
 
 ## Figure caption
 
-The router sends each token to only a few experts and combines their results; all experts still stay in memory.
+The router sends each token to only a few experts and combines their results, but all experts still stay in memory.

@@ -18,7 +18,7 @@ Il **fine-tuning** (letteralmente "regolazione fine") usa lo stesso meccanismo d
 
 Funziona bene per insegnare uno stile, un formato fisso, un gergo o un compito ripetitivo, come smistare messaggi. Costa molto meno del pre-training, perché il modello conosce già la lingua e il mondo.
 
-Ha due limiti noti. Primo: è poco affidabile per aggiungere fatti nuovi o che cambiano spesso; in quel caso conviene recuperare i documenti al momento della domanda. Secondo: se si esagera, il modello può perdere capacità che aveva prima. Questo fenomeno si chiama oblio catastrofico.
+Ha due limiti noti. Primo: è poco affidabile per aggiungere fatti nuovi o che cambiano spesso. In quel caso conviene recuperare i documenti al momento della domanda. Secondo: se si esagera, il modello può perdere capacità che aveva prima. Questo fenomeno si chiama oblio catastrofico.
 
 ## Esempio for dummies
 
@@ -44,7 +44,7 @@ Fine-tuning takes an already trained model and keeps training it on a small, tar
 
 It works well for teaching a style, a fixed output format, a vocabulary or a repetitive task such as sorting messages. It costs far less than pre-training because the model already knows the language and the world.
 
-It has two known limits. First, it is an unreliable way to add new or fast-changing facts; fetching the documents at question time usually works better. Second, push it too hard and the model can lose skills it had before. This is called catastrophic forgetting.
+It has two known limits. First, it is an unreliable way to add new or fast-changing facts. Fetching the documents at question time usually works better. Second, push it too hard and the model can lose skills it had before. This is called catastrophic forgetting.
 
 ## For dummies
 

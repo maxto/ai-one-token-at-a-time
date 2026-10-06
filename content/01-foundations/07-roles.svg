@@ -1,4 +1,4 @@
-<svg viewBox="0 0 560 226" role="img" aria-label="I messaggi con i loro ruoli diventano un unico testo, separato da token speciali; il modello continua dal punto in cui tocca all'assistente.">
+<svg viewBox="0 0 560 226" role="img" aria-label="I messaggi con i loro ruoli diventano un unico testo, separato da token speciali, e il modello continua dal punto in cui tocca all'assistente.">
 <defs>
 <marker id="ah-roles" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
 <path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>

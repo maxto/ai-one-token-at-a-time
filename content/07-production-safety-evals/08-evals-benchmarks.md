@@ -10,7 +10,7 @@ title.en: Evals & Benchmarks
 
 ## In una frase
 
-Un eval misura se il tuo sistema fa bene il tuo compito; un benchmark confronta modelli su un compito standard, uguale per tutti.
+Un eval misura se il tuo sistema fa bene il tuo compito, mentre un benchmark confronta modelli su un compito standard, uguale per tutti.
 
 ## Approfondimento
 
@@ -30,13 +30,13 @@ Si pensa che il modello in cima alle classifiche sia il migliore per il proprio 
 
 ## Didascalia della figura
 
-Un eval passa casi reali al sistema, li fa valutare e dà un numero con il suo margine di errore; il giudice va tarato su voti umani.
+Un eval passa casi reali al sistema, li fa valutare e dà un numero con il suo margine di errore, e il giudice va tarato su voti umani.
 
 # EN
 
 ## One line
 
-An eval measures whether your system does your task well; a benchmark compares models on a standard task that is the same for everyone.
+An eval measures whether your system does your task well, while a benchmark compares models on a standard task that is the same for everyone.
 
 ## Deep dive
 
@@ -56,4 +56,4 @@ People assume the model at the top of the leaderboard is the best for their case
 
 ## Figure caption
 
-An eval runs real cases through the system, grades them and gives one number with its margin of error; the judge is calibrated on human scores.
+An eval runs real cases through the system, grades them and gives one number with its margin of error, and the judge is calibrated on human scores.

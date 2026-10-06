@@ -30,7 +30,7 @@ Si crede che dire “sei un esperto” renda le risposte più corrette. Il ruolo
 
 ## Didascalia della figura
 
-Con la stessa domanda, il ruolo cambia stile e priorità della risposta; le conoscenze del modello restano le stesse.
+Con la stessa domanda, il ruolo cambia stile e priorità della risposta, mentre le conoscenze del modello restano le stesse.
 
 # EN
 
@@ -48,7 +48,7 @@ The limit matters. A role does not add knowledge the model lacks. “You are a d
 
 ## For dummies
 
-At the post office counter, the same question about a lost parcel gets different answers. The new clerk reads out the rules. The one with twenty years' service tells you straight away which form to fill in and whom to call. The manager talks about timelines and refunds. The rules are the same for all three; what changes is what they put first. None of them can tell you where the parcel is if nobody logged it.
+At the post office counter, the same question about a lost parcel gets different answers. The new clerk reads out the rules. The one with twenty years' service tells you straight away which form to fill in and whom to call. The manager talks about timelines and refunds. The rules are the same for all three. What changes is what they put first. None of them can tell you where the parcel is if nobody logged it.
 
 ## Common mistake
 
@@ -56,4 +56,4 @@ People think “you are an expert” makes answers more correct. A role steers s
 
 ## Figure caption
 
-With the same question, the role changes the answer's style and priorities; the model's knowledge stays the same.
+With the same question, the role changes the answer's style and priorities, while the model's knowledge stays the same.

@@ -30,7 +30,7 @@ Molti pensano che il prompt caching salvi le risposte e le restituisca a domande
 
 ## Didascalia della figura
 
-Con lo stesso prefisso il calcolo viene riletto dalla cache; una data messa in testa cambia il prefisso e obbliga a ricalcolare tutto.
+Con lo stesso prefisso il calcolo viene riletto dalla cache, mentre una data messa in testa cambia il prefisso e obbliga a ricalcolare tutto.
 
 # EN
 
@@ -56,4 +56,4 @@ Many think prompt caching stores answers and returns them for similar questions.
 
 ## Figure caption
 
-With the same prefix the work is read back from the cache; a date placed at the top changes the prefix and forces a full recompute.
+With the same prefix the work is read back from the cache, while a date placed at the top changes the prefix and forces a full recompute.

@@ -30,7 +30,7 @@ Errore comune: pensare che il reranking renda inutile una buona ricerca iniziale
 
 ## Didascalia della figura
 
-La ricerca veloce sceglie i candidati; il reranker legge domanda e pezzo insieme e li rimette in ordine.
+La ricerca veloce sceglie i candidati, poi il reranker legge domanda e pezzo insieme e li rimette in ordine.
 
 # EN
 
@@ -44,7 +44,7 @@ The first search must be fast, so it is approximate. Query and document embeddin
 
 That judgement is far more accurate but also far slower, because it must run once per pair. So the work is split in two stages: search fetches, say, the top 50 or 100 candidates, the reranker reorders them, and only the best 5 or 10 reach the model.
 
-The limit: a reranker cannot rescue what the first stage left out. It reorders; it does not search.
+The limit: a reranker cannot rescue what the first stage left out. It reorders. It does not search.
 
 ## For dummies
 
@@ -56,4 +56,4 @@ Common mistake: thinking reranking makes a good first-stage search unnecessary. 
 
 ## Figure caption
 
-Fast search picks the candidates; the reranker reads query and chunk together and puts them back in order.
+Fast search picks the candidates, and then the reranker reads query and chunk together and puts them back in order.

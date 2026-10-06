@@ -30,7 +30,7 @@ Errore comune: credere che con finestre di contesto molto grandi il recupero non
 
 ## Didascalia della figura
 
-Nel prompt entrano le istruzioni, solo i pezzi utili con la loro fonte e la domanda; il pezzo fuori tema resta fuori.
+Nel prompt entrano le istruzioni, solo i pezzi utili con la loro fonte e la domanda, mentre il pezzo fuori tema resta fuori.
 
 # EN
 
@@ -56,4 +56,4 @@ Common mistake: believing huge context windows make retrieval unnecessary. Filli
 
 ## Figure caption
 
-The prompt gets the instructions, only the useful chunks with their sources, and the question; the off-topic chunk stays out.
+The prompt gets the instructions, only the useful chunks with their sources, and the question, while the off-topic chunk stays out.

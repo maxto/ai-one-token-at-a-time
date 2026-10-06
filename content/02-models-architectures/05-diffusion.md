@@ -30,7 +30,7 @@ Errore comune: pensare che il modello incolli pezzi di immagini viste in addestr
 
 ## Didascalia della figura
 
-Si parte da rumore puro e lo si toglie passo dopo passo, guidati dal prompt; in addestramento si fa il percorso inverso.
+Si parte da rumore puro e lo si toglie passo dopo passo, guidati dal prompt, mentre in addestramento si fa il percorso inverso.
 
 # EN
 
@@ -56,4 +56,4 @@ Common mistake: thinking the model pastes together pieces of training images. It
 
 ## Figure caption
 
-Generation starts from pure noise and removes it step by step, guided by the prompt; training runs the opposite way.
+Generation starts from pure noise and removes it step by step, guided by the prompt, while training runs the opposite way.

@@ -14,6 +14,7 @@ A bilingual (IT/EN) course on how generative AI works, for the owner's own study
 
 - Content stays general: no finance examples (see the writing guide).
 - IT and EN always say the same thing. Change both together.
+- Correctness first. Every content change gets a second review (another model as advisor), and any uncertain claim is checked against reliable sources on the web before it goes in.
 - Never rename an existing lesson or module `id`: it is in page URLs and in readers' saved progress.
 - After any change: `npm test`. After a figure change also `npm run figs` and look at the PNGs.
 - Run `python3 scripts/build.py` and commit the regenerated `*.preview.svg` files with the change. `dist/` is not committed.

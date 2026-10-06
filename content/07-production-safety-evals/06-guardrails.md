@@ -18,11 +18,11 @@ Un modello addestrato a comportarsi bene a volte sbaglia comunque. I **guardrail
 
 Contano anche i limiti sulle azioni, non solo sul testo. Se il sistema può mandare email o modificare dati, conviene limitare cosa può fare e chiedere una conferma umana per i passi rischiosi.
 
-Il compromesso è tra sicurezza e utilità. Controlli troppo severi bloccano richieste legittime e irritano gli utenti; troppo larghi lasciano passare errori. Ogni controllo aggiunge anche tempo e costo. Nessun guardrail è perfetto: se ne usano diversi, a strati, e si misura quanti falsi allarmi e quanti errori mancati producono.
+Il compromesso è tra sicurezza e utilità. Controlli troppo severi bloccano richieste legittime e irritano gli utenti. Quelli troppo larghi lasciano passare errori. Ogni controllo aggiunge anche tempo e costo. Nessun guardrail è perfetto: se ne usano diversi, a strati, e si misura quanti falsi allarmi e quanti errori mancati producono.
 
 ## Esempio for dummies
 
-In piscina il bagnino non insegna a nuotare: sorveglia. Vieta i tuffi dove l'acqua è bassa, fischia se qualcuno esagera, tiene i bambini lontani dalle corsie profonde. Se fischia troppo spesso la gente se ne va; se si distrae succede un incidente. E anche con il bagnino migliore, il bordo dove l'acqua è bassa ha comunque il suo cartello.
+In piscina il bagnino non insegna a nuotare: sorveglia. Vieta i tuffi dove l'acqua è bassa, fischia se qualcuno esagera, tiene i bambini lontani dalle corsie profonde. Se fischia troppo spesso la gente se ne va. Se si distrae succede un incidente. E anche con il bagnino migliore, il bordo dove l'acqua è bassa ha comunque il suo cartello.
 
 ## Errore comune
 
@@ -44,11 +44,11 @@ A model trained to behave well still makes mistakes sometimes. **Guardrails** ar
 
 Limits on actions matter as much as limits on text. If the system can send emails or change data, restrict what it may do and ask a human to confirm risky steps.
 
-The trade-off is safety against usefulness. Checks that are too strict block legitimate requests and annoy users; checks that are too loose let errors through. Every check also adds time and cost. No guardrail is perfect, so you stack several and measure how many false alarms and missed errors they produce.
+The trade-off is safety against usefulness. Checks that are too strict block legitimate requests and annoy users. Checks that are too loose let errors through. Every check also adds time and cost. No guardrail is perfect, so you stack several and measure how many false alarms and missed errors they produce.
 
 ## For dummies
 
-A lifeguard at the pool does not teach swimming: he watches. He bans diving where the water is shallow, whistles when someone gets reckless, and keeps children out of the deep lanes. Whistle too often and people leave; look away and there is an accident. And even with the best lifeguard, the shallow end still has its warning sign.
+A lifeguard at the pool does not teach swimming: he watches. He bans diving where the water is shallow, whistles when someone gets reckless, and keeps children out of the deep lanes. Whistle too often and people leave. Look away and there is an accident. And even with the best lifeguard, the shallow end still has its warning sign.
 
 ## Common mistake
 

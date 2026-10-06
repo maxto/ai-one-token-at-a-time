@@ -56,7 +56,7 @@ An agent on a long task often claims to be done when it is not. What is the most
 - [ ] Let it run for more turns without changing anything else
 - [ ] Add more agents that trade opinions without clear criteria
 
-> Without an objective check the agent cannot tell when it is really done. The check decides the end; the cap stops it going in circles.
+> Without an objective check the agent cannot tell when it is really done. The check decides the end. The cap stops it going in circles.
 
 ## 3
 

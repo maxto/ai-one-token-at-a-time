@@ -30,7 +30,7 @@ Errore comune: pensare che sia un tipo nuovo di architettura, o che il ragioname
 
 ## Didascalia della figura
 
-Un modello standard risponde subito; un modello di ragionamento genera prima passaggi intermedi, e li paga in token e tempo.
+Un modello standard risponde subito, mentre un modello di ragionamento genera prima passaggi intermedi, e li paga in token e tempo.
 
 # EN
 
@@ -56,4 +56,4 @@ Common mistake: thinking it is a new kind of architecture, or that the visible r
 
 ## Figure caption
 
-A standard model answers straight away; a reasoning model first generates intermediate steps, and pays for them in tokens and time.
+A standard model answers straight away, while a reasoning model first generates intermediate steps, and pays for them in tokens and time.

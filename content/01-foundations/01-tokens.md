@@ -22,7 +22,7 @@ Il limite: un token di più lettere arriva al modello come un'unica unità, e le
 
 ## Esempio for dummies
 
-Una scatola di LEGO ha pezzi standard. Per una casa usi i mattoncini grandi già pronti; per un dettaglio strano unisci tre pezzetti piccoli. Il tokenizer fa lo stesso con il testo: una parola comune è spesso un pezzo unico, una parola rara o inventata di solito diventa più pezzi. Al modello ogni mattoncino arriva come un numero, non come una fila di lettere.
+Una scatola di LEGO ha pezzi standard. Per una casa usi i mattoncini grandi già pronti. Per un dettaglio strano unisci tre pezzetti piccoli. Il tokenizer fa lo stesso con il testo: una parola comune è spesso un pezzo unico, una parola rara o inventata di solito diventa più pezzi. Al modello ogni mattoncino arriva come un numero, non come una fila di lettere.
 
 ## Errore comune
 
@@ -48,7 +48,7 @@ The limit: a token of several letters reaches the model as a single unit, and th
 
 ## For dummies
 
-A LEGO box comes with standard pieces. For a house you use the big ready-made bricks; for an odd detail you join three small ones. The tokenizer does the same with text: a common word is often a single piece, while a rare or made-up word usually becomes several. Each brick reaches the model as a number, not as a row of letters.
+A LEGO box comes with standard pieces. For a house you use the big ready-made bricks. For an odd detail you join three small ones. The tokenizer does the same with text: a common word is often a single piece, while a rare or made-up word usually becomes several. Each brick reaches the model as a number, not as a row of letters.
 
 ## Common mistake
 

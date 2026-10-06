@@ -30,7 +30,7 @@ Errore comune: credere che i modelli solo decoder sappiano generare ma non capir
 
 ## Didascalia della figura
 
-Nell'encoder ogni token guarda tutti gli altri; nel decoder solo quelli precedenti, perché i successivi non sono ancora stati scritti.
+Nell'encoder ogni token guarda tutti gli altri, mentre nel decoder guarda solo quelli precedenti, perché i successivi non sono ancora stati scritti.
 
 # EN
 
@@ -56,4 +56,4 @@ Common mistake: believing decoder-only models can generate but not understand. T
 
 ## Figure caption
 
-In an encoder every token looks at all the others; in a decoder only at earlier ones, because later ones have not been written yet.
+In an encoder every token looks at all the others, while in a decoder it looks only at earlier ones, because later ones have not been written yet.

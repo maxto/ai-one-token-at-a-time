@@ -30,7 +30,7 @@ Si pensa che MCP sia un modello o un'alternativa al tool calling. È un protocol
 
 ## Didascalia della figura
 
-Senza uno standard ogni app serve un connettore per ogni servizio; con MCP ognuno si collega una volta sola all'interfaccia comune.
+Senza uno standard ogni app serve un connettore per ogni servizio, mentre con MCP ognuno si collega una volta sola all'interfaccia comune.
 
 # EN
 
@@ -56,4 +56,4 @@ People think MCP is a model, or a replacement for tool calling. It is a connecti
 
 ## Figure caption
 
-Without a standard, each app needs a connector for each service; with MCP, each side connects once to the common interface.
+Without a standard, each app needs a connector for each service, while with MCP, each side connects once to the common interface.

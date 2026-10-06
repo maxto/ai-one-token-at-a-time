@@ -30,7 +30,7 @@ Si pensa che in ReAct il modello usi gli strumenti da solo. In realtà scrive so
 
 ## Didascalia della figura
 
-Il modello alterna pensiero, azione e osservazione; il programma esegue l'azione con lo strumento, e il ciclo si ripete finché le informazioni bastano.
+Il modello alterna pensiero, azione e osservazione: il programma esegue l'azione con lo strumento, e il ciclo si ripete finché le informazioni bastano.
 
 # EN
 
@@ -56,4 +56,4 @@ Many believe the model runs the tools itself in ReAct. It only writes which acti
 
 ## Figure caption
 
-The model alternates thought, action and observation; the program runs the action on the tool, and the loop repeats until there is enough information.
+The model alternates thought, action and observation: the program runs the action on the tool, and the loop repeats until there is enough information.

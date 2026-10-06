@@ -30,7 +30,7 @@ Si pensa che il ragionamento scritto mostri esattamente cosa «pensa» il modell
 
 ## Didascalia della figura
 
-Rispondere subito lascia poco spazio al calcolo; scrivere passaggi intermedi dà a ogni passo il contesto del precedente.
+Rispondere subito lascia poco spazio al calcolo, mentre scrivere passaggi intermedi dà a ogni passo il contesto del precedente.
 
 # EN
 
@@ -56,4 +56,4 @@ People think the written reasoning shows exactly what the model 'thinks'. It is 
 
 ## Figure caption
 
-Answering at once leaves little room for working; writing intermediate steps gives each step the previous one as context.
+Answering at once leaves little room for working, while writing intermediate steps gives each step the previous one as context.

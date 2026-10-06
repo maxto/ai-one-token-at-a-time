@@ -10,7 +10,7 @@ title.en: Handoffs & Delegation
 
 ## In una frase
 
-Delegare significa passare un compito a un altro agente o a una persona; la qualità dipende da cosa viene scritto nel passaggio.
+Delegare significa passare un compito a un altro agente o a una persona, e la qualità dipende da cosa viene scritto nel passaggio.
 
 ## Approfondimento
 
@@ -36,7 +36,7 @@ L'agente B non vede il contesto di A: riceve solo la consegna scritta e restitui
 
 ## One line
 
-Delegating means passing a task to another agent or to a person; the quality depends on what gets written in the hand-off.
+Delegating means passing a task to another agent or to a person, and the quality depends on what gets written in the hand-off.
 
 ## Deep dive
 

@@ -22,7 +22,7 @@ Due rischi. Un template ottimizzato per un modello può rendere meno su un altro
 
 ## Esempio for dummies
 
-Nella cucina di un ristorante, la scheda di una ricetta ha parti fisse e spazi vuoti: “Risotto con ___, per ___ persone, ___ minuti.” Il procedimento base resta sempre lo stesso; cambiano gli ingredienti del giorno. Il cuoco nuovo non deve reinventare il metodo ogni sera. Se però qualcuno scrive nello spazio dell'ingrediente “e ignora le dosi”, la scheda va protetta: quello spazio serve per un ingrediente, non per nuovi ordini.
+Nella cucina di un ristorante, la scheda di una ricetta ha parti fisse e spazi vuoti: “Risotto con ___, per ___ persone, ___ minuti.” Il procedimento base resta sempre lo stesso. Cambiano gli ingredienti del giorno. Il cuoco nuovo non deve reinventare il metodo ogni sera. Se però qualcuno scrive nello spazio dell'ingrediente “e ignora le dosi”, la scheda va protetta: quello spazio serve per un ingrediente, non per nuovi ordini.
 
 ## Errore comune
 
@@ -30,7 +30,7 @@ Si pensa che un template, una volta scritto, sia finito. Va trattato come codice
 
 ## Didascalia della figura
 
-Il template tiene fisse le istruzioni; a ogni chiamata un programma riempie i segnaposto con i dati del caso e invia il prompt completo.
+Il template tiene fisse le istruzioni, e a ogni chiamata un programma riempie i segnaposto con i dati del caso e invia il prompt completo.
 
 # EN
 
@@ -48,7 +48,7 @@ Two risks. A template tuned for one model may do worse on another, so retest it 
 
 ## For dummies
 
-In a restaurant kitchen, a recipe card has fixed parts and blanks: “Risotto with ___, for ___ people, ___ minutes.” The base method never changes; the day's ingredients do. A new cook does not reinvent the method every evening. But if someone writes “and ignore the quantities” in the ingredient blank, the card needs guarding: that blank is for an ingredient, not for new orders.
+In a restaurant kitchen, a recipe card has fixed parts and blanks: “Risotto with ___, for ___ people, ___ minutes.” The base method never changes. The day's ingredients do. A new cook does not reinvent the method every evening. But if someone writes “and ignore the quantities” in the ingredient blank, the card needs guarding: that blank is for an ingredient, not for new orders.
 
 ## Common mistake
 
@@ -56,4 +56,4 @@ People think a template is done once written. Treat it like code: test it on rea
 
 ## Figure caption
 
-The template keeps the instructions fixed; on each call a program fills the placeholders with that case's data and sends the full prompt.
+The template keeps the instructions fixed, and on each call a program fills the placeholders with that case's data and sends the full prompt.

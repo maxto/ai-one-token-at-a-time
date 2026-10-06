@@ -1,4 +1,4 @@
-<svg viewBox="0 0 560 180" role="img" aria-label="Rispondere subito lascia poco spazio al calcolo; scrivere passaggi intermedi dà a ogni passo il contesto del precedente.">
+<svg viewBox="0 0 560 180" role="img" aria-label="Rispondere subito lascia poco spazio al calcolo, mentre scrivere passaggi intermedi dà a ogni passo il contesto del precedente.">
 <defs>
 <marker id="ah-planning-reasoning" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
 <path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>

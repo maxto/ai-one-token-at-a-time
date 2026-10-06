@@ -48,7 +48,7 @@ It also needs brakes. A maximum number of turns, and of retries for the same err
 
 ## For dummies
 
-A teenager learns to bake bread with a kitchen thermometer. Bake, wait, measure: if the middle of the loaf is not hot enough, back in the oven for five minutes. Repeat until the thermometer says yes. But grandma set a rule: after three failed tries, stop and call her rather than burn dinner. The check decides when the job is done; the cap decides when to ask for help.
+A teenager learns to bake bread with a kitchen thermometer. Bake, wait, measure: if the middle of the loaf is not hot enough, back in the oven for five minutes. Repeat until the thermometer says yes. But grandma set a rule: after three failed tries, stop and call her rather than burn dinner. The check decides when the job is done. The cap decides when to ask for help.
 
 ## Common mistake
 

@@ -28,7 +28,7 @@ Errore comune: pensare che il RAG "insegni" i documenti al modello. Il modello n
 
 ## Didascalia della figura
 
-Prima i documenti vengono tagliati e indicizzati; poi ogni domanda cerca nell'indice e i pezzi migliori entrano nel prompt.
+Prima i documenti vengono tagliati e indicizzati, poi ogni domanda cerca nell'indice e i pezzi migliori entrano nel prompt.
 
 # EN
 
@@ -52,4 +52,4 @@ Common mistake: thinking RAG "teaches" the documents to the model. The model doe
 
 ## Figure caption
 
-First documents are cut up and indexed; then each question searches the index and the best pieces go into the prompt.
+First documents are cut up and indexed, and then each question searches the index and the best pieces go into the prompt.

@@ -30,7 +30,7 @@ Pensare che il modello "ricordi" le conversazioni passate. Sa solo ciò che è n
 
 ## Didascalia della figura
 
-Regole, chat, documenti e risposta devono stare tutti nella stessa finestra di token; ciò che non ci sta viene tagliato.
+Regole, chat, documenti e risposta devono stare tutti nella stessa finestra di token: ciò che non ci sta viene tagliato.
 
 # EN
 
@@ -56,4 +56,4 @@ Thinking the model "remembers" past conversations. It only knows what is in the 
 
 ## Figure caption
 
-Rules, chat, documents and the reply must all fit in one window of tokens; whatever does not fit gets cut.
+Rules, chat, documents and the reply must all fit in one window of tokens: whatever does not fit gets cut.

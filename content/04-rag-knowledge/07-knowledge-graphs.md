@@ -52,7 +52,7 @@ The family tree hangs on the living-room wall. Nowhere does it say "Luca is Sara
 
 ## Common mistake
 
-Common mistake: treating graphs and vector search as rivals. They serve different needs. Vectors find similar text; graphs follow exact relations. Many systems call on the graph only for questions that need connections.
+Common mistake: treating graphs and vector search as rivals. They serve different needs. Vectors find similar text. Graphs follow exact relations. Many systems call on the graph only for questions that need connections.
 
 ## Figure caption
 

@@ -10,7 +10,7 @@ title.en: Chunking strategies
 
 ## In una frase
 
-Il chunking divide i documenti in pezzi da indicizzare; dimensione e confini dei pezzi decidono che cosa la ricerca potrà trovare.
+Il chunking divide i documenti in pezzi da indicizzare: dimensione e confini dei pezzi decidono che cosa la ricerca potrà trovare.
 
 ## Approfondimento
 
@@ -36,7 +36,7 @@ Lo stesso ricettario tagliato in tre modi: un pezzo unico, una riga per pezzo, u
 
 ## One line
 
-Chunking splits documents into pieces for indexing; the size and boundaries of those pieces decide what search will be able to find.
+Chunking splits documents into pieces for indexing: the size and boundaries of those pieces decide what search will be able to find.
 
 ## Deep dive
 

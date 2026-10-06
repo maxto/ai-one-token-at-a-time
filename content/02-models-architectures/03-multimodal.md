@@ -16,7 +16,7 @@ Un modello multimodale lavora con più tipi di dati insieme, come testo, immagin
 
 Un modello **multimodale** riceve, e a volte produce, più tipi di dati. Il trucco è tradurre tutto nello stesso linguaggio interno: vettori di numeri. Un'immagine viene divisa in piccoli riquadri (patch). Un encoder visivo trasforma ogni riquadro in un vettore, proiettato nello stesso spazio degli embedding delle parole. Da lì il modello tratta pezzi di immagine e token di testo nella stessa sequenza. Per l'audio vale un principio simile.
 
-Così può descrivere una foto, leggere un appunto scritto a mano o rispondere a una domanda su uno screenshot. In uscita, molti modelli generano solo testo; per creare immagini o voce si usano spesso componenti dedicati.
+Così può descrivere una foto, leggere un appunto scritto a mano o rispondere a una domanda su uno screenshot. In uscita, molti modelli generano solo testo. Per creare immagini o voce si usano spesso componenti dedicati.
 
 Limiti: i dettagli fini restano difficili. Contare oggetti, leggere scritte minuscole o capire posizioni precise può fallire. E le immagini consumano molti token, quindi spazio nel contesto e costo.
 
@@ -42,7 +42,7 @@ A multimodal model handles several kinds of data together, such as text, images 
 
 A **multimodal** model takes in, and sometimes produces, several types of data. The trick is translating everything into one internal language: vectors of numbers. An image is cut into small squares (patches). A vision encoder turns each patch into a vector, projected into the same space as the word embeddings. From there the model handles image pieces and text tokens in a single sequence. Audio works on a similar principle.
 
-That is how it can describe a photo, read a handwritten note or answer a question about a screenshot. On the output side, many models generate only text; images or speech are often produced by dedicated components.
+That is how it can describe a photo, read a handwritten note or answer a question about a screenshot. On the output side, many models generate only text. Images or speech are often produced by dedicated components.
 
 Limits: fine detail remains hard. Counting objects, reading tiny print or judging exact positions can fail. And images use up many tokens, which costs context space and money.
 

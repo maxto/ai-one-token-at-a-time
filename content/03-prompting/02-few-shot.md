@@ -18,7 +18,7 @@ Nel **few-shot prompting** inserisci nel prompt alcuni esempi completi, di solit
 
 Gli esempi comunicano cose difficili da descrivere a parole: un formato esatto, un tono, il confine tra due categorie. Spesso un esempio vale più di un paragrafo di istruzioni.
 
-Ci sono dei costi. Ogni esempio occupa token, quindi spazio e denaro a ogni chiamata. Il modello copia anche dettagli che non volevi: se tutti gli esempi sono brevi, le risposte saranno brevi; se tre su quattro hanno la stessa etichetta, tenderà a sceglierla. Servono esempi vari, rappresentativi e coerenti tra loro. Con i modelli recenti, istruzioni chiare più uno o due esempi bastano spesso.
+Ci sono dei costi. Ogni esempio occupa token, quindi spazio e denaro a ogni chiamata. Il modello copia anche dettagli che non volevi: se tutti gli esempi sono brevi, le risposte saranno brevi. Se tre su quattro hanno la stessa etichetta, tenderà a sceglierla. Servono esempi vari, rappresentativi e coerenti tra loro. Con i modelli recenti, istruzioni chiare più uno o due esempi bastano spesso.
 
 ## Esempio for dummies
 
@@ -30,7 +30,7 @@ Si crede che con gli esempi il modello “impari” in modo permanente. Non è c
 
 ## Didascalia della figura
 
-Tre esempi completi mostrano lo schema; per il caso nuovo il modello continua lo stesso schema, senza cambiare i suoi pesi.
+Tre esempi completi mostrano lo schema, e per il caso nuovo il modello continua lo stesso schema, senza cambiare i suoi pesi.
 
 # EN
 
@@ -40,11 +40,11 @@ Putting a few examples of input and desired output in the prompt, so the model c
 
 ## Deep dive
 
-In **few-shot prompting** you place a few complete examples in the prompt, usually two to five, followed by the new case. The model is not retrained; its weights stay the same. It spots the pattern in the examples and continues it. This is called in-context learning: learning inside the context of a single request.
+In **few-shot prompting** you place a few complete examples in the prompt, usually two to five, followed by the new case. The model is not retrained. Its weights stay the same. It spots the pattern in the examples and continues it. This is called in-context learning: learning inside the context of a single request.
 
 Examples convey things that are hard to put into words: an exact format, a tone, the boundary between two categories. One example is often worth a paragraph of instructions.
 
-There are costs. Every example uses tokens, so space and money on every call. The model also copies details you did not intend: if all examples are short, answers will be short; if three out of four share a label, it will lean toward that label. Examples need to be varied, representative and consistent. With recent models, clear instructions plus one or two examples are often enough.
+There are costs. Every example uses tokens, so space and money on every call. The model also copies details you did not intend: if all examples are short, answers will be short. If three out of four share a label, it will lean toward that label. Examples need to be varied, representative and consistent. With recent models, clear instructions plus one or two examples are often enough.
 
 ## For dummies
 
@@ -56,4 +56,4 @@ Many think examples make the model “learn” permanently. They do not. Example
 
 ## Figure caption
 
-Three complete examples show the pattern; for the new case the model continues that pattern, with no change to its weights.
+Three complete examples show the pattern, and for the new case the model continues that pattern, with no change to its weights.

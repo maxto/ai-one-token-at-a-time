@@ -14,7 +14,7 @@ Per capire se due testi parlano della stessa cosa si misura quanto sono vicini i
 
 ## Approfondimento
 
-La misura più usata è la **similarità del coseno**: guarda l'angolo tra due vettori, non la loro lunghezza. Vale 1 se puntano nella stessa direzione e 0 se sono perpendicolari, cioè senza relazione. In teoria può scendere fino a -1, ma con molti modelli di embedding i valori reali stanno in una fascia stretta. Altre misure sono il prodotto scalare e la distanza euclidea; su vettori normalizzati danno tutte la stessa classifica.
+La misura più usata è la **similarità del coseno**: guarda l'angolo tra due vettori, non la loro lunghezza. Vale 1 se puntano nella stessa direzione e 0 se sono perpendicolari, cioè senza relazione. In teoria può scendere fino a -1, ma con molti modelli di embedding i valori reali stanno in una fascia stretta. Altre misure sono il prodotto scalare e la distanza euclidea. Su vettori normalizzati danno tutte la stessa classifica.
 
 È il motore della ricerca semantica e del RAG (Retrieval-Augmented Generation): trasformi la domanda in embedding, cerchi i pezzi di documento più vicini e li passi al modello. Con milioni di vettori non si confronta tutto con tutto. I database vettoriali usano indici approssimati, molto più veloci, che però ogni tanto perdono un risultato.
 
@@ -40,7 +40,7 @@ To tell whether two texts are about the same thing, you measure how close their 
 
 ## Deep dive
 
-The most common measure is **cosine similarity**: it looks at the angle between two vectors, not their length. It is 1 when they point the same way and 0 when they are perpendicular, meaning unrelated. In theory it can drop to -1, but with many embedding models real scores sit in a narrow band. Other measures are the dot product and Euclidean distance; on normalised vectors they all give the same ranking.
+The most common measure is **cosine similarity**: it looks at the angle between two vectors, not their length. It is 1 when they point the same way and 0 when they are perpendicular, meaning unrelated. In theory it can drop to -1, but with many embedding models real scores sit in a narrow band. Other measures are the dot product and Euclidean distance. On normalised vectors they all give the same ranking.
 
 This is the engine behind semantic search and RAG (Retrieval-Augmented Generation): embed the question, find the closest document chunks, pass them to the model. With millions of vectors you cannot compare everything with everything. Vector databases use approximate indexes, which are much faster but occasionally miss a result.
 

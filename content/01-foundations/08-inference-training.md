@@ -10,11 +10,11 @@ title.en: Inference vs training
 
 ## In una frase
 
-L'addestramento costruisce il modello regolando miliardi di parametri; l'inferenza è l'uso del modello finito, con quei parametri fermi.
+L'addestramento costruisce il modello regolando miliardi di parametri, mentre l'inferenza è l'uso del modello finito, con quei parametri fermi.
 
 ## Approfondimento
 
-L'**addestramento** (training) parte da parametri casuali. Il modello legge enormi quantità di testo e prova a prevedere il token successivo; ogni errore produce una piccola correzione dei parametri. Si ripete per moltissimi passi, su molti processori in parallelo. Di solito seguono fasi più brevi, come il fine-tuning e l'addestramento con feedback umano, che lo rendono un assistente utile.
+L'**addestramento** (training) parte da parametri casuali. Il modello legge enormi quantità di testo e prova a prevedere il token successivo. Ogni errore produce una piccola correzione dei parametri. Si ripete per moltissimi passi, su molti processori in parallelo. Di solito seguono fasi più brevi, come il fine-tuning e l'addestramento con feedback umano, che lo rendono un assistente utile.
 
 L'inferenza è ciò che succede quando lo usi: il testo entra, il modello calcola, escono token. I parametri non cambiano. Una singola chiamata costa pochissimo rispetto all'addestramento, ma le chiamate sono moltissime, quindi anche l'inferenza pesa nei costi.
 
@@ -30,17 +30,17 @@ Pensare che il modello impari mentre ci parli. Durante l'inferenza i parametri r
 
 ## Didascalia della figura
 
-Nell'addestramento ogni errore corregge i parametri, per moltissimi passi; nell'inferenza i parametri restano fermi e producono solo la risposta.
+Nell'addestramento ogni errore corregge i parametri, per moltissimi passi, mentre nell'inferenza i parametri restano fermi e producono solo la risposta.
 
 # EN
 
 ## One line
 
-Training builds the model by adjusting billions of parameters; inference is using the finished model, with those parameters frozen.
+Training builds the model by adjusting billions of parameters, while inference is using the finished model, with those parameters frozen.
 
 ## Deep dive
 
-**Training** starts from random parameters. The model reads huge amounts of text and tries to predict the next token; every mistake triggers a small correction to the parameters. This repeats over a vast number of steps, on many processors in parallel. Shorter phases usually follow, such as fine-tuning and training with human feedback, which turn it into a useful assistant.
+**Training** starts from random parameters. The model reads huge amounts of text and tries to predict the next token. Every mistake triggers a small correction to the parameters. This repeats over a vast number of steps, on many processors in parallel. Shorter phases usually follow, such as fine-tuning and training with human feedback, which turn it into a useful assistant.
 
 Inference is what happens when you use it: text goes in, the model computes, tokens come out. The parameters do not change. A single call is very cheap compared with training, but there are enormous numbers of calls, so inference is a major cost too.
 
@@ -48,7 +48,7 @@ The practical consequence: the model's knowledge stops at its training data cuto
 
 ## For dummies
 
-A student spends months preparing for final exams: reading, getting exercises wrong, correcting, repeating. That is training. On exam day there is no more studying; the student answers with what is already in their head. That is inference. If a question is about something that happened yesterday, they can only know it if someone wrote it on the exam sheet.
+A student spends months preparing for final exams: reading, getting exercises wrong, correcting, repeating. That is training. On exam day there is no more studying. The student answers with what is already in their head. That is inference. If a question is about something that happened yesterday, they can only know it if someone wrote it on the exam sheet.
 
 ## Common mistake
 
@@ -56,4 +56,4 @@ Thinking the model learns while you chat with it. During inference its parameter
 
 ## Figure caption
 
-In training every error adjusts the parameters, over a vast number of steps; in inference the parameters stay fixed and just produce the answer.
+In training every error adjusts the parameters, over a vast number of steps, while in inference the parameters stay fixed and just produce the answer.

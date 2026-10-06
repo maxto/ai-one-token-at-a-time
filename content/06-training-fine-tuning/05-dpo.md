@@ -30,7 +30,7 @@ Si dice che la DPO faccia a meno delle preferenze umane. Falso: richiede le stes
 
 ## Didascalia della figura
 
-L'RLHF passa da un reward model e dall'apprendimento per rinforzo; la DPO usa le stesse preferenze per aggiornare il modello direttamente.
+L'RLHF passa da un reward model e dall'apprendimento per rinforzo, mentre la DPO usa le stesse preferenze per aggiornare il modello direttamente.
 
 # EN
 
@@ -56,4 +56,4 @@ A common claim is that DPO does away with human preferences. It doesn't: it need
 
 ## Figure caption
 
-RLHF goes through a reward model and reinforcement learning; DPO uses the same preferences to update the model directly.
+RLHF goes through a reward model and reinforcement learning, while DPO uses the same preferences to update the model directly.

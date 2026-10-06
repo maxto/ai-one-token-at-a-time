@@ -26,7 +26,7 @@ La ricetta della nonna dice 237 grammi di farina e 52 di zucchero. La nipote la 
 
 ## Errore comune
 
-Si crede che la quantizzazione tolga parametri al modello. Il numero di pesi resta identico: cambia solo quanti bit servono per scriverne ciascuno. Togliere pesi è un'altra tecnica, il pruning; allenare un modello più piccolo è la distillazione.
+Si crede che la quantizzazione tolga parametri al modello. Il numero di pesi resta identico: cambia solo quanti bit servono per scriverne ciascuno. Togliere pesi è un'altra tecnica, il pruning. Allenare un modello più piccolo è la distillazione.
 
 ## Didascalia della figura
 
@@ -52,7 +52,7 @@ Grandma's recipe says 237 grams of flour and 52 of sugar. Her grandson copies it
 
 ## Common mistake
 
-People believe quantization removes parameters from the model. The number of weights stays exactly the same; only the bits used to write each one change. Removing weights is a different technique, pruning, and training a smaller model is distillation.
+People believe quantization removes parameters from the model. The number of weights stays exactly the same. Only the bits used to write each one change. Removing weights is a different technique, pruning, and training a smaller model is distillation.
 
 ## Figure caption
 

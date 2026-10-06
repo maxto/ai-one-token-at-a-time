@@ -22,7 +22,7 @@ Ogni leva ha un prezzo. Un modello piccolo sbaglia di più. I modelli che ragion
 
 ## Esempio for dummies
 
-All'ufficio postale il costo di una spedizione dipende dal peso e dalla velocità scelta. Una raccomandata urgente arriva prima ma costa di più; un pacco ordinario costa poco ma arriva tra giorni. Chi spedisce tanto impara a scegliere: posta veloce solo per ciò che corre, invii raggruppati per il resto. E conta il costo per pacco arrivato: una spedizione economica che si perde e va rifatta costa il doppio.
+All'ufficio postale il costo di una spedizione dipende dal peso e dalla velocità scelta. Una raccomandata urgente arriva prima ma costa di più. Un pacco ordinario costa poco ma arriva tra giorni. Chi spedisce tanto impara a scegliere: posta veloce solo per ciò che corre, invii raggruppati per il resto. E conta il costo per pacco arrivato: una spedizione economica che si perde e va rifatta costa il doppio.
 
 ## Errore comune
 
@@ -48,7 +48,7 @@ Each lever has a price. A small model makes more mistakes. Models that reason at
 
 ## For dummies
 
-At the post office, the price of a shipment depends on weight and speed. Express arrives sooner but costs more; standard is cheap but takes days. People who ship a lot learn to choose: express only for what is urgent, grouped shipments for the rest. And what counts is the cost per parcel delivered: a cheap shipment that gets lost and must be resent costs twice.
+At the post office, the price of a shipment depends on weight and speed. Express arrives sooner but costs more. Standard is cheap but takes days. People who ship a lot learn to choose: express only for what is urgent, grouped shipments for the rest. And what counts is the cost per parcel delivered: a cheap shipment that gets lost and must be resent costs twice.
 
 ## Common mistake
 

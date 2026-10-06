@@ -44,7 +44,7 @@ Un modello appena pre-addestrato riceve la domanda "Quali sono i pianeti del sis
 
 - [ ] Perché la quantizzazione ha danneggiato i suoi pesi.
 - [ ] Perché nei suoi dati di addestramento non c'erano domande.
-- [x] Perché il pre-training gli ha insegnato a continuare testo; seguire istruzioni arriva con l'instruction tuning.
+- [x] Perché il pre-training gli ha insegnato a continuare testo. Seguire istruzioni arriva con l'instruction tuning.
 
 > Un modello base prevede il testo più probabile. Dopo una domanda, in molte pagine viene un'altra domanda, come in una scheda di esercizi. Il comportamento da assistente si aggiunge dopo.
 
@@ -54,7 +54,7 @@ A freshly pre-trained model is asked "What are the planets of the solar system?"
 
 - [ ] Because quantization damaged its weights.
 - [ ] Because its training data contained no questions.
-- [x] Because pre-training taught it to continue text; following instructions comes with instruction tuning.
+- [x] Because pre-training taught it to continue text. Following instructions comes with instruction tuning.
 
 > A base model predicts the most likely text. On many pages, a question is followed by another question, as in a worksheet. Assistant behaviour is added later.
 

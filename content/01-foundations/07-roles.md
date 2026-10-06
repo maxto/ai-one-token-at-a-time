@@ -30,7 +30,7 @@ Trattare il system prompt come una barriera di sicurezza. È testo a cui il mode
 
 ## Didascalia della figura
 
-I messaggi con i loro ruoli diventano un unico testo, separato da token speciali; il modello continua dal punto in cui tocca all'assistente.
+I messaggi con i loro ruoli diventano un unico testo, separato da token speciali, e il modello continua dal punto in cui tocca all'assistente.
 
 # EN
 
@@ -56,4 +56,4 @@ Treating the system prompt as a security wall. It is text the model gives more w
 
 ## Figure caption
 
-Messages and their roles become one single text, separated by special tokens; the model continues from where the assistant's turn begins.
+Messages and their roles become one single text, separated by special tokens, and the model continues from where the assistant's turn begins.

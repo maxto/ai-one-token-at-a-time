@@ -10,7 +10,7 @@ title.en: LoRA / QLoRA
 
 ## In una frase
 
-LoRA adatta un modello allenando solo piccole matrici aggiuntive; QLoRA fa lo stesso tenendo il modello base compresso a 4 bit.
+LoRA adatta un modello allenando solo piccole matrici aggiuntive, e QLoRA fa lo stesso tenendo il modello base compresso a 4 bit.
 
 ## Approfondimento
 
@@ -30,13 +30,13 @@ Molti pensano che LoRA produca un modello più piccolo. Non è così: il modello
 
 ## Didascalia della figura
 
-La grande matrice W resta congelata; si allenano solo due matrici sottili, B e A, il cui prodotto si somma a W.
+La grande matrice W resta congelata: si allenano solo due matrici sottili, B e A, il cui prodotto si somma a W.
 
 # EN
 
 ## One line
 
-LoRA adapts a model by training only small add-on matrices; QLoRA does the same while keeping the base model compressed to 4 bits.
+LoRA adapts a model by training only small add-on matrices, and QLoRA does the same while keeping the base model compressed to 4 bits.
 
 ## Deep dive
 
@@ -56,4 +56,4 @@ Many assume LoRA produces a smaller model. It doesn't: the base model keeps its 
 
 ## Figure caption
 
-The large matrix W stays frozen; only two thin matrices, B and A, are trained, and their product is added to W.
+The large matrix W stays frozen: only two thin matrices, B and A, are trained, and their product is added to W.

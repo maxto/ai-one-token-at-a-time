@@ -30,7 +30,7 @@ Si pensa che aggiungere “pensa passo per passo” migliori sempre le risposte.
 
 ## Didascalia della figura
 
-Saltando i passaggi il conto si sbaglia facilmente; scrivendo i risultati intermedi ogni passo si appoggia sul precedente.
+Saltando i passaggi il conto si sbaglia facilmente, mentre scrivendo i risultati intermedi ogni passo si appoggia sul precedente.
 
 # EN
 
@@ -56,4 +56,4 @@ People think adding “think step by step” always improves answers. On simple 
 
 ## Figure caption
 
-Skipping the steps makes the sum easy to get wrong; writing intermediate results lets each step build on the one before.
+Skipping the steps makes the sum easy to get wrong, while writing intermediate results lets each step build on the one before.

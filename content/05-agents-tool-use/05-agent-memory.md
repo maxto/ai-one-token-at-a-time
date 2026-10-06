@@ -26,11 +26,11 @@ Un'infermiera finisce il turno di notte. Non può passare la propria testa alla 
 
 ## Errore comune
 
-Si pensa che l'agente «impari» da ogni conversazione come una persona. Il modello resta identico. Ricorda solo ciò che il sistema ha salvato e gli rimette davanti; il resto è perso.
+Si pensa che l'agente «impari» da ogni conversazione come una persona. Il modello resta identico. Ricorda solo ciò che il sistema ha salvato e gli rimette davanti. Il resto è perso.
 
 ## Didascalia della figura
 
-Il modello legge solo la finestra di contesto; la memoria a lungo termine sta fuori, e il sistema salva e recupera note.
+Il modello legge solo la finestra di contesto, mentre la memoria a lungo termine sta fuori, e il sistema salva e recupera note.
 
 # EN
 
@@ -52,8 +52,8 @@ A nurse finishes the night shift. She cannot hand her memory to the morning coll
 
 ## Common mistake
 
-People think an agent 'learns' from every conversation the way a person does. The model stays the same. It only remembers what the system saved and shows it again; the rest is gone.
+People think an agent 'learns' from every conversation the way a person does. The model stays the same. It only remembers what the system saved and shows it again. The rest is gone.
 
 ## Figure caption
 
-The model reads only the context window; long-term memory sits outside, and the system saves and retrieves notes.
+The model reads only the context window, while long-term memory sits outside, and the system saves and retrieves notes.

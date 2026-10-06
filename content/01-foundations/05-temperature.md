@@ -10,7 +10,7 @@ title.en: Temperature & sampling
 
 ## In una frase
 
-A ogni passo il modello assegna una probabilità a ogni token possibile; la temperatura decide quanto rischiare nella scelta del prossimo.
+A ogni passo il modello assegna una probabilità a ogni token possibile, e la temperatura decide quanto rischiare nella scelta del prossimo.
 
 ## Approfondimento
 
@@ -18,11 +18,11 @@ Il modello genera un token alla volta. A ogni passo produce un punteggio per ogn
 
 La **temperatura** modifica le probabilità prima dell'estrazione: i punteggi vengono divisi per la temperatura. Sotto 1 la distribuzione si fa più appuntita: i token già probabili lo diventano ancora di più e il testo è più prevedibile. Sopra 1 si appiattisce: escono più spesso token improbabili, il testo è più vario ma anche più esposto a errori e frasi strane. A temperatura 0 si prende sempre il token più probabile.
 
-Il compromesso: bassa per estrarre dati, classificare, scrivere codice; più alta per idee e varianti. Anche a temperatura 0 la risposta può cambiare leggermente tra una richiesta e l'altra, per dettagli tecnici del calcolo sui server.
+Il compromesso: bassa per estrarre dati, classificare o scrivere codice, più alta per idee e varianti. Anche a temperatura 0 la risposta può cambiare leggermente tra una richiesta e l'altra, per dettagli tecnici del calcolo sui server.
 
 ## Esempio for dummies
 
-Nella trattoria sotto casa ordini quasi sempre la carbonara, qualche volta l'amatriciana, di rado il piatto del giorno. Con la temperatura bassa prendi sempre la carbonara: sicuro, ma monotono. Con la temperatura alta ogni tanto ordini la trippa che non hai mai provato. Può essere una scoperta o un disastro. Il menu è lo stesso; cambia quanto peso dai alle abitudini.
+Nella trattoria sotto casa ordini quasi sempre la carbonara, qualche volta l'amatriciana, di rado il piatto del giorno. Con la temperatura bassa prendi sempre la carbonara: sicuro, ma monotono. Con la temperatura alta ogni tanto ordini la trippa che non hai mai provato. Può essere una scoperta o un disastro. Il menu è lo stesso. Cambia quanto peso dai alle abitudini.
 
 ## Errore comune
 
@@ -36,7 +36,7 @@ Stessi punteggi, due temperature: bassa rende il token più probabile quasi cert
 
 ## One line
 
-At each step the model gives every possible next token a probability; temperature decides how much risk to take when picking one.
+At each step the model gives every possible next token a probability, and temperature decides how much risk to take when picking one.
 
 ## Deep dive
 
@@ -44,15 +44,15 @@ The model generates one token at a time. At each step it produces a score for ev
 
 **Temperature** reshapes the probabilities before the draw: the scores are divided by the temperature. Below 1 the distribution gets sharper: likely tokens become even more likely and the text is more predictable. Above 1 it flattens: unlikely tokens come up more often, so the text is more varied but also more prone to errors and odd phrasing. At temperature 0 the most likely token is always taken.
 
-The trade-off: keep it low for extracting data, classifying or writing code; raise it for ideas and variations. Even at temperature 0 the output can vary slightly between requests, because of technical details in how servers run the computation.
+The trade-off: keep it low for extracting data, classifying or writing code. Raise it for ideas and variations. Even at temperature 0 the output can vary slightly between requests, because of technical details in how servers run the computation.
 
 ## For dummies
 
-At your local trattoria you nearly always order the carbonara, sometimes the amatriciana, rarely the daily special. At low temperature you get the carbonara every time: safe, but dull. At high temperature you now and then order the tripe you have never tried. It might be a discovery or a disaster. The menu stays the same; what changes is how much weight your habits get.
+At your local trattoria you nearly always order the carbonara, sometimes the amatriciana, rarely the daily special. At low temperature you get the carbonara every time: safe, but dull. At high temperature you now and then order the tripe you have never tried. It might be a discovery or a disaster. The menu stays the same. What changes is how much weight your habits get.
 
 ## Common mistake
 
-Believing a high temperature makes the model smarter or truly creative. It adds no knowledge; it only changes how often less likely tokens get picked. Push it too far and the text turns incoherent.
+Believing a high temperature makes the model smarter or truly creative. It adds no knowledge. It only changes how often less likely tokens get picked. Push it too far and the text turns incoherent.
 
 ## Figure caption
 

@@ -1,4 +1,4 @@
-<svg viewBox="0 0 560 200" role="img" aria-label="Il modello legge solo la finestra di contesto; la memoria a lungo termine sta fuori, e il sistema salva e recupera note.">
+<svg viewBox="0 0 560 200" role="img" aria-label="Il modello legge solo la finestra di contesto, mentre la memoria a lungo termine sta fuori, e il sistema salva e recupera note.">
 <defs>
 <marker id="ah-agent-memory" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
 <path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
