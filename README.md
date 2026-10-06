@@ -33,10 +33,10 @@ npm run figs               # render every diagram to tests/output/figs/
 
 ## Contributing a lesson
 
-Read [docs/writing-guide.md](docs/writing-guide.md) and [docs/figure-guide.md](docs/figure-guide.md). A lesson is one `.md` file plus one `.svg` in its module folder; the build validates both.
+Read [docs/writing-guide.md](docs/writing-guide.md) and [docs/figure-guide.md](docs/figure-guide.md). A lesson is one `.md` file plus one `.svg` in its module folder. The build validates both.
 
 ## Licence
 
 Code (scripts, page template, tests): [MIT](LICENSE). Course content (`content/`): [CC BY 4.0](content/LICENSE.md).
 
-The content was written with AI assistance and reviewed for technical accuracy; corrections are welcome.
+The content was written with AI assistance and reviewed for technical accuracy. Corrections are welcome.

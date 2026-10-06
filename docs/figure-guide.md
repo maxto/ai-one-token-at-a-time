@@ -1,10 +1,14 @@
 # Figure guide
 
-Every lesson has one simple diagram, `content/NN-module/NN-id.svg`. The build checks it and inlines it in the page; colours and fonts come from the page, so the figure works in light and dark themes and in both languages.
+Every lesson has one simple diagram, `content/NN-module/NN-id.svg`. The build checks it and inlines it in the page. Colours and fonts come from the page, so the figure works in light and dark themes and in both languages.
 
 ## What to draw
 
-- **The mechanism, not its name.** Show what moves, what is compared, what changes. Examples: tokens = a sentence cut into chips with numbers under them; temperature = the same probability bars, flat vs peaked; RAG = query → search → top chunks → prompt → answer; LoRA = big frozen matrix + two thin trainable ones.
+- **The mechanism, not its name.** Show what moves, what is compared, what changes. Examples:
+  - tokens: a sentence cut into chips with numbers under them.
+  - temperature: the same probability bars, flat vs peaked.
+  - RAG: query → search → top chunks → prompt → answer.
+  - LoRA: big frozen matrix + two thin trainable ones.
 - **Comparisons draw the difference** (before/after, A vs B side by side, the one arrow that changes).
 - **Simple:** 3–8 shapes is typical. Labels of 1–3 words. Explanations go in the caption (the lesson's "Figure caption" section), not in the drawing.
 - **Label arrows** when the meaning is not obvious.

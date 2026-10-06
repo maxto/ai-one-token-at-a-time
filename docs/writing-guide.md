@@ -10,8 +10,8 @@ Smart readers who are not ML engineers. Level: medium-high. Explain the real mec
 
 - **General, not finance.** No examples about finance, banks, investing, markets or portfolios. Everyday examples only: cooking, libraries, travel, school, sport, shopping, home, music, post office.
 - **Correct.** Technically accurate at a medium-high level. If a common simplification is wrong, give the correct version. Do not invent numbers, model names, versions or benchmark scores. Well-established orders of magnitude are fine ("a token is roughly ¾ of an English word"). Avoid naming current products or model versions: they date quickly. Well-known techniques, papers and open standards are fine.
-- **Both languages written natively.** Italian first: plain, short sentences, active voice, everyday words; keep the standard English technical term (token, embedding, prompt, fine-tuning…) and explain it the first time. English: the same content, natural English, not a literal translation. IT and EN must say the same thing.
-- **Style.** Short sentences. No hype or filler. No em-dashes as asides. No emoji. Inside text, only `**bold**` for at most one key term per paragraph.
+- **Both languages written natively.** Italian first: plain, short sentences, active voice, everyday words. Keep the standard English technical term (token, embedding, prompt, fine-tuning…) and explain it the first time. English: the same content, natural English, not a literal translation. IT and EN must say the same thing.
+- **Style.** Short sentences. No hype or filler. No em-dashes and no semicolons: use a full stop, a comma or a colon instead. No emoji. Inside text, only `**bold**` for at most one key term per paragraph.
 
 ## Lengths (per language)
 
@@ -19,7 +19,7 @@ Smart readers who are not ML engineers. Level: medium-high. Explain the real mec
 |---|---|---|---|
 | One line | `## In una frase` | `## One line` | one sentence, max ~25 words |
 | Deep dive | `## Approfondimento` | `## Deep dive` | 2–3 paragraphs, 110–180 words total: how it works, why it matters, a limit or trade-off |
-| For dummies | `## Esempio for dummies` | `## For dummies` | 50–90 words, an everyday scene or analogy; vary the opening (not always "Imagine…") |
+| For dummies | `## Esempio for dummies` | `## For dummies` | 50–90 words, an everyday scene or analogy. Vary the opening (not always "Imagine…") |
 | Common mistake | `## Errore comune` | `## Common mistake` | 25–50 words: the misconception and the correct view |
 | Figure caption | `## Didascalia della figura` | `## Figure caption` | one sentence: what the picture shows |
 
@@ -71,6 +71,6 @@ title.en: Tokens & tokenization
 
 ## Module file
 
-`content/NN-module/_module.md`: front matter `id` (`m1`, `m2`…), `title.it`, `title.en`; then `# IT` and `# EN` with a 2-sentence intro each; then `# Quiz`.
+`content/NN-module/_module.md`: front matter `id` (`m1`, `m2`…), `title.it`, `title.en`. Then `# IT` and `# EN` with a 2-sentence intro each, then `# Quiz`.
 
 Quiz: exactly 3 questions, `## 1` … `## 3`, each with `### IT` and `### EN`: the question, 3 options as a checklist with exactly one `[x]` (the same position in both languages), and a 1–2 sentence explanation as a `>` quote. Test understanding, not memory of wording. Vary the position of the right answer.
