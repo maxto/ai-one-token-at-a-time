@@ -10,7 +10,7 @@ title.en: Tokens & tokenization
 
 ## In una frase
 
-Un modello linguistico non legge lettere né parole intere: legge token, cioè pezzi di testo presi da un vocabolario fisso.
+Un modello linguistico legge token: pezzi di testo presi da un vocabolario fisso, che possono essere parole intere, parti di parole o singoli caratteri.
 
 ## Approfondimento
 
@@ -18,11 +18,11 @@ Prima di arrivare al modello, il testo passa da un **tokenizer**, che lo spezza 
 
 I token contano perché tutto si misura in token: costo, velocità, limiti di lunghezza. In inglese un token vale in media circa ¾ di parola. L'italiano e le lingue meno presenti nei dati di addestramento di solito richiedono più token per dire la stessa cosa.
 
-Il limite: il modello non vede le singole lettere. Per questo può sbagliare compiti banali per noi, come contare le lettere di una parola o scriverla al contrario.
+Il limite: un token di più lettere arriva al modello come un'unica unità, e le lettere che contiene non sono indicate. Questo contribuisce a errori in compiti banali per noi, come contare le lettere di una parola o scriverla al contrario.
 
 ## Esempio for dummies
 
-Una scatola di LEGO ha pezzi standard. Per una casa usi i mattoncini grandi già pronti; per un dettaglio strano unisci tre pezzetti piccoli. Il tokenizer fa lo stesso con il testo: "casa" è un pezzo unico, una parola rara o inventata diventa più pezzi. Il modello vede solo i mattoncini, mai la plastica di cui sono fatti, cioè le singole lettere.
+Una scatola di LEGO ha pezzi standard. Per una casa usi i mattoncini grandi già pronti; per un dettaglio strano unisci tre pezzetti piccoli. Il tokenizer fa lo stesso con il testo: una parola comune è spesso un pezzo unico, una parola rara o inventata di solito diventa più pezzi. Al modello ogni mattoncino arriva come un numero, non come una fila di lettere.
 
 ## Errore comune
 
@@ -36,7 +36,7 @@ La frase viene tagliata in token, spesso con lo spazio attaccato, e ogni token d
 
 ## One line
 
-A language model reads neither letters nor whole words: it reads tokens, chunks of text taken from a fixed vocabulary.
+A language model reads tokens: chunks of text from a fixed vocabulary that can be whole words, parts of words or individual characters.
 
 ## Deep dive
 
@@ -44,11 +44,11 @@ Before text reaches the model, a **tokenizer** splits it into tokens: common wor
 
 Tokens matter because everything is measured in them: cost, speed, length limits. In English a token averages roughly ¾ of a word. Italian, and languages that are rarer in the training data, usually need more tokens to say the same thing.
 
-The limit: the model never sees individual letters. That is why it can fail at tasks that are trivial for us, like counting the letters in a word or spelling it backwards.
+The limit: a token of several letters reaches the model as a single unit, and the letters inside it are not marked. This contributes to errors on tasks that are trivial for us, like counting the letters in a word or spelling it backwards.
 
 ## For dummies
 
-A LEGO box comes with standard pieces. For a house you use the big ready-made bricks; for an odd detail you join three small ones. The tokenizer does the same with text: "house" is a single piece, while a rare or made-up word becomes several. The model sees only the bricks, never the plastic they are made of, meaning the individual letters.
+A LEGO box comes with standard pieces. For a house you use the big ready-made bricks; for an odd detail you join three small ones. The tokenizer does the same with text: a common word is often a single piece, while a rare or made-up word usually becomes several. Each brick reaches the model as a number, not as a row of letters.
 
 ## Common mistake
 
