@@ -80,6 +80,16 @@ await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceSc
   expect(await p.evaluate(() => scrollY) === 0, 'scrolling past the end of the phone menu moved the page behind it');
 });
 
+// Some mobile browsers report a top safe-area inset even when the page sits below the status bar:
+// the sticky top bar must still stick to the very top.
+await run({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true }, 'phone-safe-area', async p => {
+  const cdp = await p.context().newCDPSession(p);
+  await cdp.send('Emulation.setSafeAreaInsetsOverride', { insets: { top: 40, topMax: 40 } });
+  await p.reload(); await p.waitForTimeout(500);
+  await p.evaluate(() => scrollTo(0, 400)); await p.waitForTimeout(200);
+  expect(await p.evaluate(() => document.querySelector('.topbar').getBoundingClientRect().top) === 0, 'top bar leaves a gap above it when the browser reports a safe-area inset');
+});
+
 await browser.close();
 if (failures.length) { console.error('FAIL\n' + failures.join('\n')); process.exit(1); }
 console.log('e2e ok (screenshots in tests/output/)');

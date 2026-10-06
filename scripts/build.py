@@ -196,7 +196,7 @@ def main():
     page = (SITE / "template.html").read_text().replace("/*__COURSE_DATA__*/", data)
     DIST.mkdir(exist_ok=True)
     (DIST / "index.html").write_text('<!doctype html>\n<html lang="it">\n<head>\n<meta charset="utf-8">\n'
-                                     '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
+                                     '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
                                      '</head>\n<body style="margin:0">\n' + page + '\n</body>\n</html>\n')
     write_previews(course)
     n = sum(len(m["lessons"]) for m in course)

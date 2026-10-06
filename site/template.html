@@ -63,7 +63,7 @@ h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.1
 .eyebrow { font-family: var(--f-mono); font-size: var(--s-xs); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 
 /* top bar */
-.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--rule); }
+.topbar { position: sticky; top: 0; z-index: 20; background: var(--surface); border-bottom: 1px solid var(--rule); }
 .topbar-in { display: flex; align-items: center; gap: 12px; padding-inline: 16px; min-height: var(--top-h); }
 .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); font-family: var(--f-display); font-weight: 700; font-size: 1.05rem; white-space: nowrap; }
 .brand-mark { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 7px; background: var(--accent); color: var(--accent-ink); font-family: var(--f-mono); font-size: .8rem; font-weight: 500; }
@@ -82,7 +82,7 @@ h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.1
 
 /* shell */
 .shell { display: grid; grid-template-columns: 290px minmax(0, 1fr); max-width: 1240px; margin: 0 auto; }
-.syllabus { position: sticky; top: calc(var(--top-h) + 3px + env(safe-area-inset-top, 0px)); align-self: start; max-height: calc(100vh - var(--top-h) - 3px - env(safe-area-inset-top, 0px)); overflow-y: auto; padding: 20px 12px 40px 16px; border-right: 1px solid var(--rule); }
+.syllabus { position: sticky; top: calc(var(--top-h) + 3px); align-self: start; max-height: calc(100vh - var(--top-h) - 3px); overflow-y: auto; padding: 20px 12px 40px 16px; border-right: 1px solid var(--rule); }
 .syl-progress { display: flex; justify-content: space-between; align-items: baseline; padding: 0 8px 14px; font-size: var(--s-sm); color: var(--ink-2); }
 .syl-progress b { font-family: var(--f-mono); font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
 .syl-mod { margin-bottom: 6px; }
@@ -205,7 +205,7 @@ mark { background: var(--accent-soft); color: var(--ink); border-radius: 3px; pa
 @media (max-width: 860px) {
   .shell { grid-template-columns: minmax(0, 1fr); }
   .menu-btn { display: inline-block; }
-  .syllabus { display: none; position: fixed; inset: calc(var(--top-h) + 3px + env(safe-area-inset-top, 0px)) 0 0 0; align-self: stretch; max-height: none; z-index: 15; background: var(--surface); border-right: 0; padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px)); }
+  .syllabus { display: none; position: fixed; inset: calc(var(--top-h) + 3px) 0 0 0; align-self: stretch; max-height: none; z-index: 15; background: var(--surface); border-right: 0; padding-bottom: 40px; }
   body.nav-open { overflow: hidden; }
   body.nav-open .syllabus { display: block; overscroll-behavior: contain; }
   .brand-name { display: none; }
