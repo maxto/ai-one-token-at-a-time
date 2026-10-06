@@ -21,4 +21,5 @@ A bilingual (IT/EN) course on how generative AI works, for the owner's own study
 ## Publishing
 
 - **Private Artifact** (owner's reading copy): https://claude.ai/artifact/K3qRnyDmjK8FnEJ5zwou2E. Republish `dist/artifact.html` to that URL after content changes.
+- **GitHub Pages:** https://maxto.github.io/ai-one-token-at-a-time/, deployed by `.github/workflows/pages.yml` on every push to `main`.
 - **GitHub:** `github.com/maxto/ai-one-token-at-a-time` (public). Commits use the GitHub noreply address set in this repo's git config. Pushing needs the owner's go-ahead.

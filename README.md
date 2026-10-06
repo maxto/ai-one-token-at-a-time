@@ -4,6 +4,8 @@ A short bilingual (Italian / English) course on how generative AI works: 7 modul
 
 *Un corso breve, in italiano e in inglese, su come funziona l'intelligenza artificiale generativa: 7 moduli, 56 lezioni, un diagramma e un esempio di tutti i giorni per ogni idea, un quiz alla fine di ogni modulo.*
 
+**Read the course / Leggi il corso: https://maxto.github.io/ai-one-token-at-a-time/**
+
 ## Contents
 
 | # | Module | Lessons |
