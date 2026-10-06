@@ -1,0 +1,43 @@
+<svg viewBox="0 0 560 206" role="img" aria-label="Ogni connettore apre solo le porte che autorizzi: leggere è un permesso, inviare o modificare è un altro, più rischioso.">
+<defs>
+<marker id="ah-permissions-connectors" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<rect class="box-mod" x="20" y="91" width="110" height="50" rx="6"/>
+<text class="t-sm mid it" x="75" y="121">assistente</text>
+<text class="t-sm mid en" x="75" y="121">assistant</text>
+<line class="ln" x1="134" y1="116" x2="196" y2="56" marker-end="url(#ah-permissions-connectors)"/>
+<line class="ln" x1="134" y1="116" x2="196" y2="116" marker-end="url(#ah-permissions-connectors)"/>
+<line class="ln" x1="134" y1="116" x2="196" y2="176" marker-end="url(#ah-permissions-connectors)"/>
+<rect class="box" x="200" y="36" width="130" height="40" rx="6"/>
+<text class="t-sm mid" x="265" y="61">Email</text>
+<rect class="box" x="200" y="96" width="130" height="40" rx="6"/>
+<text class="t-sm mid it" x="265" y="121">File</text>
+<text class="t-sm mid en" x="265" y="121">Files</text>
+<rect class="box" x="200" y="156" width="130" height="40" rx="6"/>
+<text class="t-sm mid it" x="265" y="181">Calendario</text>
+<text class="t-sm mid en" x="265" y="181">Calendar</text>
+<text class="t-xs mid it" x="398" y="22">concesso</text>
+<text class="t-xs mid en" x="398" y="22">granted</text>
+<text class="t-xs mid it" x="494" y="22">non concesso</text>
+<text class="t-xs mid en" x="494" y="22">not granted</text>
+<rect class="box-accent" x="356" y="42" width="84" height="28" rx="14"/>
+<text class="t-xs mid it" x="398" y="60">leggere</text>
+<text class="t-xs mid en" x="398" y="60">read</text>
+<rect class="box dash" x="450" y="42" width="88" height="28" rx="14"/>
+<text class="t-xs mid it" x="494" y="60">inviare</text>
+<text class="t-xs mid en" x="494" y="60">send</text>
+<rect class="box-accent" x="356" y="102" width="84" height="28" rx="14"/>
+<text class="t-xs mid it" x="398" y="120">leggere</text>
+<text class="t-xs mid en" x="398" y="120">read</text>
+<rect class="box dash" x="450" y="102" width="88" height="28" rx="14"/>
+<text class="t-xs mid it" x="494" y="120">modificare</text>
+<text class="t-xs mid en" x="494" y="120">edit</text>
+<rect class="box-accent" x="356" y="162" width="84" height="28" rx="14"/>
+<text class="t-xs mid it" x="398" y="180">leggere</text>
+<text class="t-xs mid en" x="398" y="180">read</text>
+<rect class="box dash" x="450" y="162" width="88" height="28" rx="14"/>
+<text class="t-xs mid it" x="494" y="180">creare</text>
+<text class="t-xs mid en" x="494" y="180">create</text>
+</svg>

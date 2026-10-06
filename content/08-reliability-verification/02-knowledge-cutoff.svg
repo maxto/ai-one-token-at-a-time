@@ -1,0 +1,30 @@
+<svg viewBox="0 0 560 285" role="img" aria-label="Un documento recente entra nel contesto insieme alla domanda e permette di usare informazioni successive al cutoff.">
+<defs>
+<marker id="ah-knowledge-cutoff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<rect class="box" x="196" y="18" width="180" height="54" rx="7"/>
+<text class="t-sm mid it" x="286" y="43">Conoscenze apprese</text>
+<text class="t-sm mid en" x="286" y="43">Learned knowledge</text>
+<text class="t-xs mid it" x="286" y="61">nei parametri</text>
+<text class="t-xs mid en" x="286" y="61">in parameters</text>
+<line class="ln" x1="286" y1="76" x2="286" y2="107" marker-end="url(#ah-knowledge-cutoff)"/>
+<rect class="box" x="236" y="113" width="100" height="48" rx="7"/>
+<text class="t-sm mid it" x="286" y="142">Modello</text>
+<text class="t-sm mid en" x="286" y="142">Model</text>
+<line class="ln" x1="340" y1="137" x2="400" y2="137" marker-end="url(#ah-knowledge-cutoff)"/>
+<rect class="box" x="406" y="113" width="134" height="48" rx="7"/>
+<text class="t-sm mid it" x="473" y="142">Risposta</text>
+<text class="t-sm mid en" x="473" y="142">Answer</text>
+<rect class="box-accent" x="20" y="202" width="158" height="54" rx="7"/>
+<text class="t-sm mid it" x="99" y="234">Documento recente</text>
+<text class="t-sm mid en" x="99" y="234">Recent document</text>
+<line class="ln" x1="182" y1="229" x2="205" y2="229" marker-end="url(#ah-knowledge-cutoff)"/>
+<rect class="box" x="211" y="202" width="150" height="54" rx="7"/>
+<text class="t-sm mid it" x="286" y="225">Contesto</text>
+<text class="t-sm mid en" x="286" y="225">Context</text>
+<text class="t-xs mid it" x="286" y="244">+ domanda</text>
+<text class="t-xs mid en" x="286" y="244">+ question</text>
+<line class="ln" x1="286" y1="198" x2="286" y2="167" marker-end="url(#ah-knowledge-cutoff)"/>
+</svg>

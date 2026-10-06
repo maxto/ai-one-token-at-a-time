@@ -1,0 +1,25 @@
+<svg viewBox="0 0 560 233" role="img" aria-label="L'inpainting modifica una zona interna selezionata, mentre l'outpainting genera nuove zone oltre il bordo originale.">
+<defs>
+<marker id="ah-image-editing" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm mid" x="145" y="26">Inpainting</text>
+<text class="t-sm mid" x="421" y="26">Outpainting</text>
+<rect class="box" x="45" y="49" width="200" height="136" rx="6"/>
+<line class="ln-muted" x1="57" y1="146" x2="233" y2="146"/>
+<rect class="box-accent" x="111" y="80" width="69" height="63" rx="6"/>
+<text class="t-sm mid it" x="145" y="111">Zona</text>
+<text class="t-sm mid en" x="145" y="111">Edit</text>
+<text class="t-sm mid it" x="145" y="129">da rifare</text>
+<text class="t-sm mid en" x="145" y="129">area</text>
+<text class="t-sm mid it" x="145" y="211">Selezione interna</text>
+<text class="t-sm mid en" x="145" y="211">Interior selection</text>
+<rect class="box-accent" x="313" y="49" width="220" height="136" rx="6"/>
+<rect class="box" x="353" y="69" width="140" height="96" rx="6"/>
+<line class="ln-muted" x1="365" y1="144" x2="481" y2="144"/>
+<text class="t-sm mid it" x="423" y="110">Originale</text>
+<text class="t-sm mid en" x="423" y="110">Original</text>
+<text class="t-sm mid it" x="423" y="211">Nuovo bordo esterno</text>
+<text class="t-sm mid en" x="423" y="211">New outer area</text>
+</svg>

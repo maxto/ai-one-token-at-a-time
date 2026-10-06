@@ -1,0 +1,41 @@
+<svg viewBox="0 0 560 210" role="img" aria-label="Nello schema illustrativo, nota riceve più informazioni da violino e suonato, parole utili a distinguerne il senso musicale.">
+<defs>
+<marker id="ah-attention" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+<marker id="ah2-attention" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+</marker>
+</defs>
+<rect class="box" x="20" y="30" width="70" height="36" rx="6"/>
+<text class="t mid it" x="55" y="53">Col</text>
+<text class="t mid en" x="55" y="53">On the</text>
+<rect class="box" x="100" y="30" width="90" height="36" rx="6"/>
+<text class="t mid it" x="145" y="53">violino</text>
+<text class="t mid en" x="145" y="53">violin</text>
+<rect class="box" x="200" y="30" width="120" height="36" rx="6"/>
+<text class="t mid it" x="260" y="53">ha suonato</text>
+<text class="t mid en" x="260" y="53">she played</text>
+<rect class="box" x="330" y="30" width="60" height="36" rx="6"/>
+<text class="t mid it" x="360" y="53">una</text>
+<text class="t mid en" x="360" y="53">a</text>
+<rect class="box-accent" x="410" y="30" width="80" height="36" rx="6"/>
+<text class="t t-b mid it" x="450" y="53">nota</text>
+<text class="t t-b mid en" x="450" y="53">note</text>
+<path class="ln-muted" d="M360,70 Q390,105 420,72" marker-end="url(#ah-attention)"/>
+<path class="ln-accent" stroke-width="3" d="M260,70 Q350,140 440,73" marker-end="url(#ah2-attention)"/>
+<path class="ln-accent" stroke-width="3" d="M145,70 Q302,175 460,73" marker-end="url(#ah2-attention)"/>
+<path class="ln-muted" d="M55,70 Q268,205 480,72" marker-end="url(#ah-attention)"/>
+<text class="t-sm t-accent end it" x="548" y="108">senso:</text>
+<text class="t-sm t-accent end it" x="548" y="126">musica</text>
+<text class="t-sm t-accent end en" x="548" y="108">sense:</text>
+<text class="t-sm t-accent end en" x="548" y="126">music</text>
+<line class="ln-accent" stroke-width="3" x1="110" y1="186" x2="150" y2="186"/>
+<text class="t-xs it" x="158" y="190">molto peso</text>
+<text class="t-xs en" x="158" y="190">high weight</text>
+<line class="ln-muted" x1="300" y1="186" x2="340" y2="186"/>
+<text class="t-xs it" x="348" y="190">poco peso</text>
+<text class="t-xs en" x="348" y="190">low weight</text>
+<text class="t-xs end it" x="540" y="190">schema illustrativo</text>
+<text class="t-xs end en" x="540" y="190">illustrative diagram</text>
+</svg>

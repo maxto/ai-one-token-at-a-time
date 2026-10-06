@@ -1,0 +1,39 @@
+<svg viewBox="0 0 560 206" role="img" aria-label="Il modello locale elabora il prompt sul dispositivo, quello nel cloud su server remoti, mentre la riservatezza dipende anche dall'applicazione.">
+<defs>
+<marker id="ah-local-vs-cloud" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+<marker id="ah2-local-vs-cloud" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-accent"/>
+</marker>
+</defs>
+<text class="t-sm t-b it" x="20" y="26">In locale</text>
+<text class="t-sm t-b en" x="20" y="26">Local</text>
+<rect class="box-soft" x="20" y="40" width="236" height="150" rx="6"/>
+<rect class="box" x="36" y="70" width="80" height="40" rx="6"/>
+<text class="t-sm mid" x="76" y="95">prompt</text>
+<line class="ln" x1="120" y1="90" x2="150" y2="90" marker-end="url(#ah-local-vs-cloud)"/>
+<rect class="box-mod" x="154" y="72" width="76" height="36" rx="6"/>
+<text class="t-sm mid it" x="192" y="95">modello</text>
+<text class="t-sm mid en" x="192" y="95">model</text>
+<text class="t-xs mid it" x="192" y="128">spesso più piccolo</text>
+<text class="t-xs mid en" x="192" y="128">often smaller</text>
+<text class="t-xs mid it" x="138" y="176">elaborazione locale</text>
+<text class="t-xs mid en" x="138" y="176">local processing</text>
+<text class="t-sm t-b it" x="280" y="26">Nel cloud</text>
+<text class="t-sm t-b en" x="280" y="26">Cloud</text>
+<rect class="box-soft" x="280" y="40" width="100" height="150" rx="6"/>
+<rect class="box" x="292" y="70" width="76" height="40" rx="6"/>
+<text class="t-sm mid" x="330" y="95">prompt</text>
+<text class="t-xs mid it" x="330" y="176">dispositivo</text>
+<text class="t-xs mid en" x="330" y="176">device</text>
+<line class="ln-accent" x1="372" y1="90" x2="416" y2="90" marker-end="url(#ah2-local-vs-cloud)"/>
+<rect class="box-soft" x="420" y="40" width="124" height="150" rx="6"/>
+<rect class="box-mod" x="444" y="60" width="76" height="70" rx="6"/>
+<text class="t-sm mid it" x="482" y="100">modello</text>
+<text class="t-sm mid en" x="482" y="100">model</text>
+<text class="t-xs mid it" x="482" y="148">spesso più grande</text>
+<text class="t-xs mid en" x="482" y="148">often larger</text>
+<text class="t-xs mid it" x="482" y="176">server remoto</text>
+<text class="t-xs mid en" x="482" y="176">remote server</text>
+</svg>

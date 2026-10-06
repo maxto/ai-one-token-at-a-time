@@ -1,0 +1,32 @@
+<svg viewBox="0 0 560 186" role="img" aria-label="Ogni dettaglio da solo descrive molte persone, ma la combinazione di pochi dettagli può restringere il gruppo a una persona sola.">
+<text class="t-xs it" x="20" y="24">nome tolto, ma restano i dettagli</text>
+<text class="t-xs en" x="20" y="24">name removed, details remain</text>
+<text class="t-sm it" x="20" y="61">codice postale</text>
+<text class="t-sm en" x="20" y="61">postcode</text>
+<circle class="fill-muted" cx="220" cy="56" r="8"/>
+<circle class="fill-muted" cx="246" cy="56" r="8"/>
+<circle class="fill-muted" cx="272" cy="56" r="8"/>
+<circle class="fill-muted" cx="298" cy="56" r="8"/>
+<circle class="fill-muted" cx="324" cy="56" r="8"/>
+<circle class="fill-muted" cx="350" cy="56" r="8"/>
+<circle class="fill-muted" cx="376" cy="56" r="8"/>
+<circle class="fill-muted" cx="402" cy="56" r="8"/>
+<circle class="fill-muted" cx="428" cy="56" r="8"/>
+<circle class="fill-muted" cx="454" cy="56" r="8"/>
+<circle class="fill-muted" cx="480" cy="56" r="8"/>
+<circle class="fill-muted" cx="506" cy="56" r="8"/>
+<text class="t-sm" x="522" y="61">…</text>
+<text class="t-sm it" x="20" y="111">+ sesso</text>
+<text class="t-sm en" x="20" y="111">+ sex</text>
+<circle class="fill-muted" cx="220" cy="106" r="8"/>
+<circle class="fill-muted" cx="246" cy="106" r="8"/>
+<circle class="fill-muted" cx="272" cy="106" r="8"/>
+<circle class="fill-muted" cx="298" cy="106" r="8"/>
+<circle class="fill-muted" cx="324" cy="106" r="8"/>
+<circle class="fill-muted" cx="350" cy="106" r="8"/>
+<text class="t-sm it" x="20" y="161">+ data di nascita</text>
+<text class="t-sm en" x="20" y="161">+ date of birth</text>
+<circle class="fill-accent" cx="220" cy="156" r="8"/>
+<text class="t-sm t-accent it" x="240" y="161">1 persona</text>
+<text class="t-sm t-accent en" x="240" y="161">1 person</text>
+</svg>

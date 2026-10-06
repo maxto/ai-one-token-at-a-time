@@ -1,0 +1,30 @@
+<svg viewBox="0 0 560 243" role="img" aria-label="Dati con ruoli rappresentati in modo squilibrato possono portare il modello a ripetere la stessa associazione nelle storie generate.">
+<defs>
+<marker id="ah-bias" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm mid it" x="111" y="27">Dati: esempio</text>
+<text class="t-sm mid en" x="111" y="27">Data: example</text>
+<rect class="box" x="20" y="44" width="182" height="60" rx="7"/>
+<text class="t-sm mid it" x="111.0" y="79.0">medico: uomo</text>
+<text class="t-sm mid en" x="111.0" y="79.0">doctor: man</text>
+<rect class="box" x="20" y="116" width="182" height="60" rx="7"/>
+<text class="t-sm mid it" x="111.0" y="151.0">medico: uomo</text>
+<text class="t-sm mid en" x="111.0" y="151.0">doctor: man</text>
+<line class="ln" x1="206" y1="110" x2="246" y2="110" marker-end="url(#ah-bias)"/>
+<rect class="box" x="252" y="78" width="96" height="64" rx="7"/>
+<text class="t-sm mid it" x="300.0" y="115.0">Modello</text>
+<text class="t-sm mid en" x="300.0" y="115.0">Model</text>
+<line class="ln" x1="352" y1="110" x2="386" y2="110" marker-end="url(#ah-bias)"/>
+<text class="t-sm mid it" x="467" y="27">Possibile ripetizione</text>
+<text class="t-sm mid en" x="467" y="27">Possible repetition</text>
+<rect class="box-accent" x="392" y="44" width="150" height="60" rx="7"/>
+<text class="t-sm mid it" x="467.0" y="79.0">medico: uomo</text>
+<text class="t-sm mid en" x="467.0" y="79.0">doctor: man</text>
+<rect class="box" x="392" y="116" width="150" height="60" rx="7"/>
+<text class="t-sm mid it" x="467.0" y="151.0">medico: uomo</text>
+<text class="t-sm mid en" x="467.0" y="151.0">doctor: man</text>
+<text class="t-sm mid it" x="280" y="222">Conta anche la varietà dei ruoli rappresentati</text>
+<text class="t-sm mid en" x="280" y="222">Variety in the roles represented matters too</text>
+</svg>

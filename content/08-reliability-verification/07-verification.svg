@@ -1,0 +1,36 @@
+<svg viewBox="0 0 560 319" role="img" aria-label="Fatti, calcoli e procedure richiedono controlli diversi prima di decidere se usare la risposta o rinviare l&#x27;azione.">
+<defs>
+<marker id="ah-verification" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<rect class="box" x="20" y="30" width="144" height="46" rx="7"/>
+<text class="t-sm mid it" x="92.0" y="58.0">Fatti</text>
+<text class="t-sm mid en" x="92.0" y="58.0">Facts</text>
+<rect class="box" x="208" y="30" width="144" height="46" rx="7"/>
+<text class="t-sm mid it" x="280.0" y="58.0">Calcoli</text>
+<text class="t-sm mid en" x="280.0" y="58.0">Calculations</text>
+<rect class="box" x="396" y="30" width="144" height="46" rx="7"/>
+<text class="t-sm mid it" x="468.0" y="58.0">Procedure</text>
+<text class="t-sm mid en" x="468.0" y="58.0">Procedures</text>
+<line class="ln" x1="92" y1="80" x2="92" y2="110" marker-end="url(#ah-verification)"/>
+<line class="ln" x1="280" y1="80" x2="280" y2="110" marker-end="url(#ah-verification)"/>
+<line class="ln" x1="468" y1="80" x2="468" y2="110" marker-end="url(#ah-verification)"/>
+<rect class="box" x="20" y="116" width="144" height="54" rx="7"/>
+<text class="t-sm mid it" x="92.0" y="148.0">Fonti indipendenti</text>
+<text class="t-sm mid en" x="92.0" y="148.0">Independent sources</text>
+<rect class="box" x="208" y="116" width="144" height="54" rx="7"/>
+<text class="t-sm mid it" x="280.0" y="148.0">Rifai il conto</text>
+<text class="t-sm mid en" x="280.0" y="148.0">Recalculate</text>
+<rect class="box" x="396" y="116" width="144" height="54" rx="7"/>
+<text class="t-sm mid it" x="468.0" y="148.0">Prova casi noti</text>
+<text class="t-sm mid en" x="468.0" y="148.0">Test known cases</text>
+<line class="ln" x1="92" y1="174" x2="204" y2="222" marker-end="url(#ah-verification)"/>
+<line class="ln" x1="280" y1="174" x2="280" y2="222" marker-end="url(#ah-verification)"/>
+<line class="ln" x1="468" y1="174" x2="356" y2="222" marker-end="url(#ah-verification)"/>
+<rect class="box-accent" x="154" y="228" width="252" height="46" rx="7"/>
+<text class="t-sm mid it" x="280.0" y="256.0">Usa oppure rinvia</text>
+<text class="t-sm mid en" x="280.0" y="256.0">Use or postpone</text>
+<text class="t-sm mid it" x="280" y="301">Più conseguenze, più controllo</text>
+<text class="t-sm mid en" x="280" y="301">Greater consequences, closer checks</text>
+</svg>

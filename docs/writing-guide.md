@@ -23,7 +23,7 @@ Smart readers who are not ML engineers. Level: medium-high. Explain the real mec
 | Common mistake | `## Errore comune` | `## Common mistake` | 25–50 words: the misconception and the correct view |
 | Figure caption | `## Didascalia della figura` | `## Figure caption` | one sentence: what the picture shows |
 
-Every section is one paragraph, except the deep dive (paragraphs separated by a blank line).
+Every section is one paragraph, except the deep dive (paragraphs separated by a blank line). `python3 scripts/lengths.py` checks these lengths, the one-sentence sections and the punctuation rule.
 
 ## Lesson file
 

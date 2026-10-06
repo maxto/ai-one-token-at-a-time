@@ -1,0 +1,29 @@
+<svg viewBox="0 0 560 266" role="img" aria-label="La calibrazione confronta sicurezza dichiarata e risultati verificati su un insieme di risposte, non il tono di una frase isolata.">
+<defs>
+<marker id="ah-confidence" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm mid it" x="280" y="26">Molte risposte sullo stesso tipo di compito</text>
+<text class="t-sm mid en" x="280" y="26">Many answers to the same kind of task</text>
+<rect class="box" x="20" y="75" width="138" height="68" rx="7"/>
+<text class="t-sm mid it" x="89.0" y="109.0">Risposte</text>
+<text class="t-sm mid en" x="89.0" y="109.0">Answers</text>
+<text class="t-sm mid it" x="89.0" y="127.0">raggruppate</text>
+<text class="t-sm mid en" x="89.0" y="127.0">grouped</text>
+<line class="ln" x1="162" y1="102" x2="210" y2="65" marker-end="url(#ah-confidence)"/>
+<line class="ln" x1="162" y1="117" x2="210" y2="181" marker-end="url(#ah-confidence)"/>
+<rect class="box" x="216" y="35" width="185" height="58" rx="7"/>
+<text class="t-sm mid it" x="308.5" y="69.0">Sicurezza dichiarata</text>
+<text class="t-sm mid en" x="308.5" y="69.0">Stated confidence</text>
+<rect class="box" x="216" y="153" width="185" height="58" rx="7"/>
+<text class="t-sm mid it" x="308.5" y="187.0">Quota corretta</text>
+<text class="t-sm mid en" x="308.5" y="187.0">Fraction correct</text>
+<line class="ln" x1="405" y1="64" x2="445" y2="113" marker-end="url(#ah-confidence)"/>
+<line class="ln" x1="405" y1="182" x2="445" y2="130" marker-end="url(#ah-confidence)"/>
+<rect class="box-accent" x="451" y="95" width="89" height="54" rx="7"/>
+<text class="t-sm mid it" x="495.5" y="127.0">Confronto</text>
+<text class="t-sm mid en" x="495.5" y="127.0">Compare</text>
+<text class="t-sm mid it" x="280" y="246">Calibrazione: quanto coincidono?</text>
+<text class="t-sm mid en" x="280" y="246">Calibration: how closely do they match?</text>
+</svg>

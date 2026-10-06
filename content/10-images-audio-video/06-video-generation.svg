@@ -1,0 +1,25 @@
+<svg viewBox="0 0 560 246" role="img" aria-label="La tazza mantiene il manico nei primi fotogrammi, ma lo cambia nell'ultimo: un esempio di incoerenza nel tempo.">
+<defs>
+<marker id="ah-video-generation" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm mid it" x="280" y="27">Stesso oggetto nel tempo</text>
+<text class="t-sm mid en" x="280" y="27">Same object over time</text>
+<rect class="box" x="20" y="49" width="140" height="115" rx="6"/>
+<text class="t-sm mid" x="90" y="191">t1</text>
+<rect class="box-mod" x="60" y="78" width="48" height="57" rx="3"/>
+<path class="ln" d="M108,88 h12 q20,20 0,35 h-12"/>
+<line class="ln" x1="169" y1="107" x2="199" y2="107" marker-end="url(#ah-video-generation)"/>
+<rect class="box" x="210" y="49" width="140" height="115" rx="6"/>
+<text class="t-sm mid" x="280" y="191">t2</text>
+<rect class="box-mod" x="250" y="78" width="48" height="57" rx="3"/>
+<path class="ln" d="M298,88 h12 q20,20 0,35 h-12"/>
+<line class="ln" x1="359" y1="107" x2="389" y2="107" marker-end="url(#ah-video-generation)"/>
+<rect class="box-accent" x="400" y="49" width="140" height="115" rx="6"/>
+<text class="t-sm mid" x="470" y="191">t3</text>
+<rect class="box-mod" x="440" y="78" width="48" height="57" rx="3"/>
+<path class="ln" d="M440,88 h-12 q-20,20 0,35 h12"/>
+<text class="t-sm mid it" x="280" y="225">Il manico cambia lato</text>
+<text class="t-sm mid en" x="280" y="225">The handle switches sides</text>
+</svg>

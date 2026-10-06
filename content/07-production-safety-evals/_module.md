@@ -6,11 +6,11 @@ title.en: Production, safety & evals
 
 # IT
 
-Questo modulo spiega cosa serve per portare un sistema AI dal prototipo all'uso reale: renderlo veloce ed economico, tenerlo sotto controllo e difenderlo dagli abusi. Chiude con la domanda più importante: come misurare se funziona davvero.
+Questo modulo spiega cosa serve per portare un sistema AI dal prototipo all'uso reale: renderlo veloce ed economico, tenerlo sotto controllo e difenderlo dagli abusi. Chiude con le domande più importanti: come misurare se funziona davvero e come scegliere il modello giusto.
 
 # EN
 
-This module covers what it takes to move an AI system from prototype to real use: making it fast and affordable, keeping an eye on it, and defending it against abuse. It ends with the most important question: how to measure whether it actually works.
+This module covers what it takes to move an AI system from prototype to real use: making it fast and affordable, keeping an eye on it, and defending it against abuse. It ends with the most important questions: how to measure whether it actually works and how to choose the right model.
 
 # Quiz
 

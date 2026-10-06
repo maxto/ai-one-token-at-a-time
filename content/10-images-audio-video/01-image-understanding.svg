@@ -1,0 +1,32 @@
+<svg viewBox="0 0 560 220" role="img" aria-label="L'immagine divisa in patch diventa una sequenza di token visivi che il modello combina con la domanda.">
+<defs>
+<marker id="ah-image-understanding" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm mid it" x="90" y="26">Immagine</text>
+<text class="t-sm mid en" x="90" y="26">Image</text>
+<rect class="box" x="30" y="45" width="120" height="96" rx="6"/>
+<path class="ln-mod" d="M40,126 L70,80 L92,108 L114,68 L140,126"/>
+<line class="ln-muted" x1="70" y1="45" x2="70" y2="141"/>
+<line class="ln-muted" x1="110" y1="45" x2="110" y2="141"/>
+<line class="ln-muted" x1="30" y1="93" x2="150" y2="93"/>
+<text class="t-sm mid" x="90" y="165">patch</text>
+<line class="ln" x1="160" y1="93" x2="206" y2="93" marker-end="url(#ah-image-understanding)"/>
+<text class="t-sm mid it" x="283" y="26">Token visivi</text>
+<text class="t-sm mid en" x="283" y="26">Visual tokens</text>
+<rect class="box-mod" x="216" y="73" width="38" height="40" rx="6"/>
+<text class="t-sm mid" x="235" y="99">…</text>
+<rect class="box-mod" x="262" y="73" width="38" height="40" rx="6"/>
+<text class="t-sm mid" x="281" y="99">…</text>
+<rect class="box-mod" x="308" y="73" width="38" height="40" rx="6"/>
+<text class="t-sm mid" x="327" y="99">…</text>
+<line class="ln" x1="356" y1="93" x2="398" y2="93" marker-end="url(#ah-image-understanding)"/>
+<rect class="box-accent" x="408" y="68" width="124" height="50" rx="6"/>
+<text class="t-sm mid it" x="470" y="98">Modello</text>
+<text class="t-sm mid en" x="470" y="98">Model</text>
+<rect class="box" x="408" y="160" width="124" height="38" rx="6"/>
+<text class="t-sm mid it" x="470" y="184">Domanda</text>
+<text class="t-sm mid en" x="470" y="184">Question</text>
+<line class="ln" x1="470" y1="153" x2="470" y2="124" marker-end="url(#ah-image-understanding)"/>
+</svg>

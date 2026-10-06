@@ -1,0 +1,40 @@
+<svg viewBox="0 0 560 288" role="img" aria-label="Lo stesso prompt guida due percorsi dal rumore all'immagine, con risultati diversi quando cambia il seed.">
+<defs>
+<marker id="ah-text-to-image" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm mid" x="75" y="28">seed A</text>
+<text class="t-sm mid" x="75" y="183">seed B</text>
+<rect class="box" x="185" y="115" width="190" height="36" rx="6"/>
+<text class="t-sm mid it" x="280" y="138">Bici nella pioggia</text>
+<text class="t-sm mid en" x="280" y="138">Bicycle in rain</text>
+<line class="ln" x1="280" y1="108" x2="280" y2="88" marker-end="url(#ah-text-to-image)"/>
+<line class="ln" x1="280" y1="158" x2="280" y2="188" marker-end="url(#ah-text-to-image)"/>
+<rect class="box-soft" x="25" y="40" width="100" height="40" rx="6"/>
+<text class="t-sm mid it" x="75" y="65">Rumore</text>
+<text class="t-sm mid en" x="75" y="65">Noise</text>
+<line class="ln" x1="135" y1="60" x2="195" y2="60" marker-end="url(#ah-text-to-image)"/>
+<rect class="box-mod" x="205" y="40" width="150" height="40" rx="6"/>
+<text class="t-sm mid it" x="280" y="65">Passaggi guidati</text>
+<text class="t-sm mid en" x="280" y="65">Guided steps</text>
+<line class="ln" x1="365" y1="60" x2="405" y2="60" marker-end="url(#ah-text-to-image)"/>
+<rect class="box" x="415" y="35" width="120" height="58" rx="6"/>
+<circle class="ln" cx="441" cy="73" r="9"/>
+<circle class="ln" cx="493" cy="73" r="9"/>
+<path class="ln" d="M441,73 l18,-21 l15,21 h-33 M459,52 h22 l12,21 M474,73 l7,-21"/>
+<rect class="box-soft" x="25" y="195" width="100" height="40" rx="6"/>
+<text class="t-sm mid it" x="75" y="220">Rumore</text>
+<text class="t-sm mid en" x="75" y="220">Noise</text>
+<line class="ln" x1="135" y1="215" x2="195" y2="215" marker-end="url(#ah-text-to-image)"/>
+<rect class="box-mod" x="205" y="195" width="150" height="40" rx="6"/>
+<text class="t-sm mid it" x="280" y="220">Passaggi guidati</text>
+<text class="t-sm mid en" x="280" y="220">Guided steps</text>
+<line class="ln" x1="365" y1="215" x2="405" y2="215" marker-end="url(#ah-text-to-image)"/>
+<rect class="box-accent" x="415" y="190" width="120" height="58" rx="6"/>
+<circle class="ln" cx="444" cy="224" r="13"/>
+<circle class="ln" cx="505" cy="224" r="13"/>
+<path class="ln" d="M505,224 l-20,-24 l-18,24 h38 M485,200 h-26 l-15,24 M467,224 l-8,-24"/>
+<text class="t-sm mid it" x="280" y="274">Stesso prompt, rumore diverso</text>
+<text class="t-sm mid en" x="280" y="274">Same prompt, different noise</text>
+</svg>

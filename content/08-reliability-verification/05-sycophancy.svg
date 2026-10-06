@@ -1,0 +1,27 @@
+<svg viewBox="0 0 560 272" role="img" aria-label="Una domanda orientata spinge verso la conferma, mentre una domanda neutrale porta il confronto su dati e criteri espliciti.">
+<defs>
+<marker id="ah-sycophancy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm it" x="20" y="25">Domanda orientata</text>
+<text class="t-sm en" x="20" y="25">Leading question</text>
+<rect class="box" x="20" y="42" width="242" height="56" rx="7"/>
+<text class="t-sm mid it" x="141.0" y="75.0">«È perfetto, vero?»</text>
+<text class="t-sm mid en" x="141.0" y="75.0">“It is perfect, right?”</text>
+<line class="ln" x1="266" y1="70" x2="306" y2="70" marker-end="url(#ah-sycophancy)"/>
+<rect class="box" x="312" y="42" width="228" height="56" rx="7"/>
+<text class="t-sm mid it" x="426.0" y="75.0">Pressione a confermare</text>
+<text class="t-sm mid en" x="426.0" y="75.0">Pressure to agree</text>
+<text class="t-sm it" x="20" y="145">Domanda neutrale</text>
+<text class="t-sm en" x="20" y="145">Neutral question</text>
+<rect class="box" x="20" y="162" width="242" height="56" rx="7"/>
+<text class="t-sm mid it" x="141.0" y="195.0">«Confronta tempi e cambi»</text>
+<text class="t-sm mid en" x="141.0" y="195.0">“Compare timing and changes”</text>
+<line class="ln" x1="266" y1="190" x2="306" y2="190" marker-end="url(#ah-sycophancy)"/>
+<rect class="box-accent" x="312" y="162" width="228" height="56" rx="7"/>
+<text class="t-sm mid it" x="426.0" y="195.0">Dati + criteri</text>
+<text class="t-sm mid en" x="426.0" y="195.0">Data + criteria</text>
+<text class="t-sm mid it" x="280" y="251">Una formulazione migliore aiuta, non garantisce</text>
+<text class="t-sm mid en" x="280" y="251">Better wording helps, but is no guarantee</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg viewBox="0 0 560 196" role="img" aria-label="Con la sola richiesta nel prompt il JSON può arrivare rotto, la decodifica vincolata impone lo schema, ma i valori vanno comunque controllati.">
+<defs>
+<marker id="ah-structured-output" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<rect class="box" x="20" y="24" width="130" height="44" rx="6"/>
+<text class="t-sm mid" x="85" y="42">prompt</text>
+<text class="t-sm mid it" x="85" y="60">chiede JSON</text>
+<text class="t-sm mid en" x="85" y="60">asks for JSON</text>
+<line class="ln" x1="152" y1="46" x2="176" y2="46" marker-end="url(#ah-structured-output)"/>
+<rect class="box" x="180" y="24" width="120" height="44" rx="6"/>
+<text class="t mid it" x="240" y="51">modello</text>
+<text class="t mid en" x="240" y="51">model</text>
+<line class="ln" x1="302" y1="46" x2="326" y2="46" marker-end="url(#ah-structured-output)"/>
+<text class="t-sm t-mono it" x="336" y="51">Ecco: {"anno": 1990</text>
+<text class="t-sm t-mono en" x="336" y="51">Here: {"year": 1990</text>
+<text class="t-xs it" x="336" y="74">formato rotto</text>
+<text class="t-xs en" x="336" y="74">broken format</text>
+<line class="ln-muted dash" x1="20" y1="94" x2="540" y2="94"/>
+<rect class="box" x="20" y="114" width="130" height="44" rx="6"/>
+<text class="t-sm mid" x="85" y="132">prompt</text>
+<text class="t-sm mid" x="85" y="150">+ schema</text>
+<line class="ln" x1="152" y1="136" x2="176" y2="136" marker-end="url(#ah-structured-output)"/>
+<rect class="box-accent" x="180" y="114" width="120" height="44" rx="6"/>
+<text class="t-sm mid it" x="240" y="132">modello</text>
+<text class="t-sm mid it" x="240" y="150">+ vincolo</text>
+<text class="t-sm mid en" x="240" y="132">model</text>
+<text class="t-sm mid en" x="240" y="150">+ constraint</text>
+<line class="ln" x1="302" y1="136" x2="326" y2="136" marker-end="url(#ah-structured-output)"/>
+<text class="t-sm t-mono it" x="336" y="141">{"anno": 1990}</text>
+<text class="t-sm t-mono en" x="336" y="141">{"year": 1990}</text>
+<text class="t-xs it" x="336" y="164">formato vincolato</text>
+<text class="t-xs en" x="336" y="164">constrained format</text>
+<text class="t-xs t-accent it" x="336" y="182">valore da controllare</text>
+<text class="t-xs t-accent en" x="336" y="182">value still to check</text>
+</svg>

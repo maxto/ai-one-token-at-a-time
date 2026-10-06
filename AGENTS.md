@@ -7,6 +7,7 @@ A bilingual (IT/EN) course on how generative AI works, for the owner's own study
 - `content/NN-module/`: `_module.md` (titles, intro, quiz) and lessons `NN-id.md` + `NN-id.svg`. `NN-id.preview.svg` is generated (GitHub preview): never edit it.
 - `site/template.html`: the page (CSS, UI strings, JS). The build replaces `/*__COURSE_DATA__*/` with the course data.
 - `scripts/build.py`: parses and validates `content/`, writes `dist/index.html` and the preview SVGs. No dependencies.
+- `scripts/lengths.py`: checks lesson section lengths and punctuation against the writing guide.
 - `tests/e2e.mjs` (`npm test`), `tests/render-figs.mjs` (`npm run figs`): headless Chrome via `playwright-core`. Set `CHROME_PATH` if Chrome is not at `/usr/bin/google-chrome`.
 - `docs/writing-guide.md`, `docs/figure-guide.md`: the content rules. Read both before writing or changing a lesson.
 
@@ -16,7 +17,7 @@ A bilingual (IT/EN) course on how generative AI works, for the owner's own study
 - IT and EN always say the same thing. Change both together.
 - Correctness first. Every content change gets a second review (another model as advisor), and any uncertain claim is checked against reliable sources on the web before it goes in.
 - Never rename an existing lesson or module `id`: it is in page URLs and in readers' saved progress.
-- After any change: `npm test`. After a figure change also `npm run figs` and look at the PNGs.
+- After any change: `npm test`. After a content change also `python3 scripts/lengths.py` (section lengths, one-sentence sections, no semicolons or em-dashes). After a figure change also `npm run figs` and look at the PNGs.
 - Run `python3 scripts/build.py` and commit the regenerated `*.preview.svg` files with the change. `dist/` is not committed.
 
 ## Publishing

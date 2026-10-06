@@ -1,0 +1,62 @@
+<svg viewBox="0 0 560 248" role="img" aria-label="Gli stessi casi reali vanno a tre modelli, e il confronto guarda qualità, costo, tempo e correzioni, non solo la classifica.">
+<defs>
+<marker id="ah-choosing-a-model" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<rect class="box-mod" x="20" y="102" width="110" height="50" rx="6"/>
+<text class="t-sm mid it" x="75" y="123">stessi casi</text>
+<text class="t-sm mid it" x="75" y="141">reali</text>
+<text class="t-sm mid en" x="75" y="123">same real</text>
+<text class="t-sm mid en" x="75" y="141">cases</text>
+<text class="t-xs mid it" x="320" y="32">qualità</text>
+<text class="t-xs mid en" x="320" y="32">quality</text>
+<text class="t-xs mid it" x="380" y="18">costo</text>
+<text class="t-xs mid it" x="380" y="32">basso</text>
+<text class="t-xs mid en" x="380" y="18">low</text>
+<text class="t-xs mid en" x="380" y="32">cost</text>
+<text class="t-xs mid it" x="440" y="32">velocità</text>
+<text class="t-xs mid en" x="440" y="32">speed</text>
+<text class="t-xs mid it" x="500" y="18">poche</text>
+<text class="t-xs mid it" x="500" y="32">correzioni</text>
+<text class="t-xs mid en" x="500" y="18">few</text>
+<text class="t-xs mid en" x="500" y="32">fixes</text>
+<line class="ln" x1="132" y1="127" x2="176" y2="62" marker-end="url(#ah-choosing-a-model)"/>
+<rect class="box" x="180" y="44" width="96" height="36" rx="6"/>
+<text class="t-sm mid it" x="228" y="67">modello A</text>
+<text class="t-sm mid en" x="228" y="67">model A</text>
+<rect class="box-soft" x="298" y="57" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="298" y="57" width="44" height="10" rx="2"/>
+<rect class="box-soft" x="358" y="57" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="358" y="57" width="14" height="10" rx="2"/>
+<rect class="box-soft" x="418" y="57" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="418" y="57" width="14" height="10" rx="2"/>
+<rect class="box-soft" x="478" y="57" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="478" y="57" width="44" height="10" rx="2"/>
+<line class="ln" x1="132" y1="127" x2="176" y2="127" marker-end="url(#ah-choosing-a-model)"/>
+<rect class="box-accent" x="180" y="109" width="96" height="36" rx="6"/>
+<text class="t-sm mid it" x="228" y="132">modello B</text>
+<text class="t-sm mid en" x="228" y="132">model B</text>
+<rect class="box-soft" x="298" y="122" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="298" y="122" width="44" height="10" rx="2"/>
+<rect class="box-soft" x="358" y="122" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="358" y="122" width="29" height="10" rx="2"/>
+<rect class="box-soft" x="418" y="122" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="418" y="122" width="29" height="10" rx="2"/>
+<rect class="box-soft" x="478" y="122" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="478" y="122" width="44" height="10" rx="2"/>
+<line class="ln" x1="132" y1="127" x2="176" y2="192" marker-end="url(#ah-choosing-a-model)"/>
+<rect class="box" x="180" y="174" width="96" height="36" rx="6"/>
+<text class="t-sm mid it" x="228" y="197">modello C</text>
+<text class="t-sm mid en" x="228" y="197">model C</text>
+<rect class="box-soft" x="298" y="187" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="298" y="187" width="14" height="10" rx="2"/>
+<rect class="box-soft" x="358" y="187" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="358" y="187" width="44" height="10" rx="2"/>
+<rect class="box-soft" x="418" y="187" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="418" y="187" width="44" height="10" rx="2"/>
+<rect class="box-soft" x="478" y="187" width="44" height="10" rx="2"/>
+<rect class="fill-mod" x="478" y="187" width="14" height="10" rx="2"/>
+<text class="t-xs mid it" x="410" y="238">barra lunga = meglio · valori illustrativi</text>
+<text class="t-xs mid en" x="410" y="238">longer bar = better · illustrative values</text>
+</svg>
