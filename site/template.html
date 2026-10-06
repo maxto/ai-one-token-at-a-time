@@ -205,7 +205,7 @@ mark { background: var(--accent-soft); color: var(--ink); border-radius: 3px; pa
 @media (max-width: 860px) {
   .shell { grid-template-columns: minmax(0, 1fr); }
   .menu-btn { display: inline-block; }
-  .syllabus { display: none; position: fixed; inset: calc(var(--top-h) + 3px + env(safe-area-inset-top, 0px)) 0 0 0; max-height: none; z-index: 15; background: var(--surface); border-right: 0; padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px)); }
+  .syllabus { display: none; position: fixed; inset: calc(var(--top-h) + 3px + env(safe-area-inset-top, 0px)) 0 0 0; align-self: stretch; max-height: none; z-index: 15; background: var(--surface); border-right: 0; padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px)); }
   body.nav-open .syllabus { display: block; }
   .brand-name { display: none; }
   .search { max-width: none; }

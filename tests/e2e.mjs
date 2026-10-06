@@ -54,6 +54,8 @@ await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceSc
   await p.screenshot({ path: path.join(out, 'phone-dark-figure.png') });
   await p.click('#menuBtn'); await p.waitForTimeout(200);
   expect(await p.isVisible('#syllabus'), 'phone menu did not open');
+  const menu = await p.evaluate(() => { const n = document.getElementById('syllabus'); return { bottom: n.getBoundingClientRect().bottom, scrolls: n.scrollHeight > n.clientHeight }; });
+  expect(menu.bottom <= 844 && menu.scrolls, 'phone menu is taller than the screen, so it cannot scroll');
 });
 
 await browser.close();
