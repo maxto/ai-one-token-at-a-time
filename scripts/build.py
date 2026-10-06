@@ -172,7 +172,7 @@ text{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}.en{display:none}
 .dash{stroke-dasharray:5 4}.t{font-size:15px;fill:#161a23}.t-sm{font-size:13px;fill:#464d5e}.t-xs{font-size:11.5px;fill:#6f7689}
 .t-mono{font-family:ui-monospace,Consolas,monospace}.t-b{font-weight:700}.t-accent{fill:#3b5bdb}.t-mod{fill:MOD}.t-on{fill:#fff}.mid{text-anchor:middle}.end{text-anchor:end}
 """
-MOD_COLORS = ["#4263eb", "#ae3ec9", "#1098ad", "#37b24d", "#f76707", "#d6336c", "#868e96"]
+MOD_COLORS = ["#4263eb", "#ae3ec9", "#1098ad", "#37b24d", "#f76707", "#d6336c", "#868e96", "#7048e8", "#0ca678", "#e03131"]  # same as --m1..--m10 in site/template.html
 
 
 def write_previews(course):
