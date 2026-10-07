@@ -27,14 +27,19 @@ const overflow = p => p.evaluate(() => document.documentElement.scrollWidth - do
 await run({ viewport: { width: 1280, height: 860 } }, 'desktop', async p => {
   await p.screenshot({ path: path.join(out, 'desktop-home.png') });
   expect(await overflow(p) === 0, 'desktop home overflows');
+  expect(await p.evaluate(() => document.documentElement.lang) === 'en' && await p.textContent('#brandName') === 'AI, one token at a time', 'a first visit does not open in English');
   await p.goto(url + '#m1-tokens'); await p.waitForTimeout(300);
   expect(await p.$('.fig svg') !== null, 'lesson has no figure');
   await p.click('#mark');
   expect((await p.textContent('.syl-progress b')).startsWith('1/'), 'mark as complete did not update progress');
   await p.keyboard.press('ArrowRight'); await p.waitForTimeout(200);
   expect(await p.evaluate(() => location.hash) === '#m1-embeddings', 'arrow key did not go to next lesson');
+  await p.click('#langIt'); await p.waitForTimeout(200);
+  expect(await p.textContent('.lesson h1') === 'Embedding', 'switch to Italian failed');
+  await p.reload(); await p.waitForTimeout(300);
+  expect(await p.textContent('.lesson h1') === 'Embedding', 'the Italian choice was not remembered');
   await p.click('#langEn'); await p.waitForTimeout(200);
-  expect(await p.textContent('.lesson h1') === 'Embeddings', 'language switch failed');
+  expect(await p.textContent('.lesson h1') === 'Embeddings', 'switch back to English failed');
   expect(await p.getAttribute('#repo', 'aria-label') === 'Source code on GitHub', 'GitHub link label not translated');
   expect(await p.evaluate(() => getComputedStyle(document.querySelector('.fig svg .it') || document.body).display) === 'none' || !(await p.$('.fig svg .it')), 'Italian figure labels visible in EN');
   await p.screenshot({ path: path.join(out, 'desktop-lesson-en.png') });
