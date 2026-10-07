@@ -20,7 +20,7 @@ Così la generazione diventa molto più veloce. Questo spiega anche le due fasi 
 
 Il prezzo è la memoria. La cache cresce con la lunghezza del testo e con il numero di utenti serviti insieme, e sta nella memoria della GPU, che è limitata. È uno dei motivi per cui i contesti molto lunghi costano. La KV cache vive dentro una singola richiesta. Il prompt caching (vedi Prompt Caching) la conserva tra richieste diverse.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 A una partita di basket, il telecronista non riguarda tutta la partita prima di commentare ogni azione. Tiene un taccuino: punteggio, falli, chi è in forma. A ogni nuova azione aggiunge una riga e commenta con il taccuino aperto. La KV cache è quel taccuino. Più dura la partita, più il taccuino si riempie, e a un certo punto le pagine finiscono.
 
@@ -46,7 +46,7 @@ This makes generation much faster. It also explains the two phases of a request:
 
 The price is memory. The cache grows with text length and with the number of users served at once, and it sits in GPU memory, which is limited. That is one reason very long contexts are expensive. The KV cache lives inside one request. Prompt caching (see Prompt Caching) keeps it across requests.
 
-## For dummies
+## In everyday life
 
 A basketball commentator does not rewatch the whole game before describing each play. He keeps a notebook: score, fouls, who is playing well. With every new play he adds a line and speaks with the notebook open. The KV cache is that notebook. The longer the game, the fuller it gets, and at some point the pages run out.
 

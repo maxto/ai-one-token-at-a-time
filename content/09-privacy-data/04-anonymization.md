@@ -20,7 +20,7 @@ La re-identificazione avviene incrociando fonti. In un altro studio noto, due ri
 
 Con un assistente AI vale lo stesso. "La nuova maestra di 34 anni della scuola di un paesino" può indicare una persona sola anche senza nome. Prima di incollare un testo togli o generalizza i dettagli rari: età esatte, luoghi piccoli, date, ruoli unici.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Il giornale di un paese scrive: "un idraulico di quarant'anni, con un cane a tre zampe, ha vinto la gara di torte". Niente nome, ma tutto il paese sa chi è. Ogni dettaglio da solo è comune: tanti idraulici, tanti quarantenni, qualche cane a tre zampe. Insieme formano un identikit. Gli archivi "anonimi" funzionano allo stesso modo: il pericolo sta nella combinazione.
 
@@ -46,7 +46,7 @@ Re-identification works by linking sources. In another well-known study, two res
 
 The same applies with an AI assistant. "The new 34-year-old teacher at a village school" may point to exactly one person, no name needed. Before pasting a text, remove or blur the rare details: exact ages, small places, dates, unique roles.
 
-## For dummies
+## In everyday life
 
 A village paper reports: "a forty-year-old plumber with a three-legged dog won the cake contest". No name, yet the whole village knows who it is. Each detail alone is common: plenty of plumbers, plenty of forty-year-olds, a few three-legged dogs. Together they make an identikit. "Anonymous" datasets work the same way: the danger lies in the combination.
 

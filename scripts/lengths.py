@@ -10,7 +10,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 LIMITS = {
     ("In una frase", "One line"): (1, 25),
     ("Approfondimento", "Deep dive"): (110, 180),
-    ("Esempio for dummies", "For dummies"): (50, 90),
+    ("Nella vita di tutti i giorni", "In everyday life"): (50, 90),
     ("Errore comune", "Common mistake"): (25, 50),
 }
 SINGLE = ("In una frase", "One line", "Didascalia della figura", "Figure caption")

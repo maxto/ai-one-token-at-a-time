@@ -20,7 +20,7 @@ Il funzionamento è diretto. Per ogni domanda c'è una risposta preferita e una 
 
 Il vantaggio è pratico: meno modelli in memoria, un addestramento più stabile ed economico. Per questo la DPO e le sue varianti sono molto diffuse nei modelli aperti. Il limite: impara solo dalle coppie già raccolte, senza esplorare risposte nuove. Se i dati sono pochi o di parte, lo sarà anche il risultato.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 L'insegnante di italiano restituisce due compiti dello stesso studente sulla stessa traccia. Su uno scrive "più così", sull'altro "così no". Niente voti, nessun commissario esterno. Lo studente mette a confronto le due versioni e capisce da che parte spostarsi. Però impara solo da ciò che ha già scritto: se non ha mai provato un certo stile, nessuno glielo indicherà.
 
@@ -46,7 +46,7 @@ The method is direct. Each prompt comes with a preferred answer and a rejected o
 
 The benefit is practical: fewer models in memory, and training that is more stable and cheaper. That is why DPO and its variants are widely used for open models. The limit: it learns only from pairs already collected and never explores new answers. If the data is thin or skewed, so is the result.
 
-## For dummies
+## In everyday life
 
 A writing teacher hands back two essays by the same student on the same topic. One says "more like this", the other "not like this". No grades, no outside examiner. The student compares the two and sees which way to move. But he only learns from what he has already written: if he never tried a certain style, nobody will point him towards it.
 

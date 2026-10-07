@@ -20,7 +20,7 @@ Il cloud ha dalla sua la potenza: modelli più grandi e veloci, spesso con strum
 
 Due cautele. Locale non vuol dire automaticamente privato: l'applicazione attorno al modello può inviare statistiche d'uso, sincronizzare le chat o cercare online, quindi conviene controllarla. E in locale la sicurezza è compito tuo: aggiornamenti, backup, protezione del dispositivo. Molti scelgono una via di mezzo: locale per i testi delicati, cloud per il resto.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Le lenzuola puoi lavarle in casa o portarle in lavanderia. In casa nessuno vede la tua biancheria, ma la lavatrice è piccola e il piumone non ci entra. La lavanderia ha macchine enormi e lava tutto, anche i capi difficili. In cambio la tua biancheria passa per le mani di altri, con le loro regole su chi la tocca e quanto resta in negozio.
 
@@ -46,7 +46,7 @@ The cloud's strength is power: bigger, faster models, often with tools like web 
 
 Two caveats. Local does not automatically mean private: the app around the model may send usage statistics, sync your chats or search online, so it is worth checking. And with local, security is your job: updates, backups, protecting the device. Many people choose a middle way: local for sensitive texts, cloud for the rest.
 
-## For dummies
+## In everyday life
 
 You can wash your sheets at home or take them to the laundry. At home nobody sees your linen, but the machine is small and the duvet will not fit. The laundry has huge machines and washes everything, even the tricky items. In exchange, your linen passes through other people's hands, under their rules on who touches it and how long it stays in the shop.
 

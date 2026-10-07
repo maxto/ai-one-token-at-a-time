@@ -20,7 +20,7 @@ In un sistema che risponde a domande sulle immagini, queste rappresentazioni ven
 
 Contare oggetti simili e leggere scritte minuscole può essere difficile. Ridimensionare l'immagine può perdere dettagli, e riconoscere una scena non equivale a misurarla con precisione. Un ritaglio nitido della zona utile può aiutare, ma numeri e testi importanti vanno confrontati con l'originale.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Porti la foto di uno scaffale a un amico e gli chiedi cosa contiene. Da lontano distingue libri, una pianta e una lampada. Per leggere il titolo sul dorso di un libro deve avvicinarsi. Un modello può dare una buona descrizione generale e sbagliare proprio quel titolo, anche se risponde con la stessa sicurezza in entrambi i casi.
 
@@ -46,7 +46,7 @@ In a system that answers questions about images, these representations connect t
 
 Counting similar objects and reading tiny text can be difficult. Resizing an image can lose detail, and recognizing a scene is different from measuring it precisely. A clear crop of the relevant area may help, but important counts and text need checking against the original.
 
-## For dummies
+## In everyday life
 
 You show a friend a photo of a shelf and ask what it holds. From a distance, they can distinguish books, a plant and a lamp. To read a book's title on its spine, they need a closer look. A model may give a good overall description and get that very title wrong, while sounding equally confident about both.
 

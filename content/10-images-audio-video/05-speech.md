@@ -20,7 +20,7 @@ La sintesi vocale, o text-to-speech, fa il percorso opposto: genera un nuovo seg
 
 La clonazione vocale usa registrazioni di riferimento per riprodurre caratteristiche di una voce. La somiglianza non prova chi abbia pronunciato quelle parole. Per creare una voce clonata, chiedi il consenso della persona. Quando ricevi una richiesta insolita con una voce familiare, verifica l'identità attraverso un contatto indipendente.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Detti a casa un messaggio per l'allenatrice: “Chiedi a Nives di portare le racchette”. Il frullatore copre il nome e la trascrizione lo sostituisce con un altro. La lettura automatica pronuncia poi quel nome sbagliato in modo limpido e naturale. Una voce gradevole non corregge l'errore iniziale: prima di inviare il messaggio, controlli il nome nel testo.
 
@@ -46,7 +46,7 @@ Speech synthesis, or text-to-speech, goes the other way: it generates a new audi
 
 Voice cloning uses reference recordings to reproduce characteristics of a voice. Resemblance does not prove who spoke those words. Ask for a person's consent before creating a cloned voice. When an unusual request arrives in a familiar voice, verify the speaker's identity through an independent contact.
 
-## For dummies
+## In everyday life
 
 At home, you dictate a message for your coach: “Ask Nives to bring the rackets”. The blender drowns out the name, and the transcript replaces it with another one. The automatic reader then pronounces that wrong name clearly and naturally. A pleasant voice does not fix the original error: before sending the message, you check the name in the text.
 

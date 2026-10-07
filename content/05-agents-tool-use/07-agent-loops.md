@@ -20,7 +20,7 @@ La domanda chiave è: come sa l'agente di aver finito? Il modo più affidabile �
 
 Servono anche dei freni. Un numero massimo di giri e di tentativi per lo stesso errore. E un controllo umano prima delle azioni difficili da annullare, come cancellare dati o inviare messaggi: più grande è il danno possibile, più forte deve essere il cancello.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un ragazzo impara a fare il pane con un termometro da cucina. Inforna, aspetta, misura: se il cuore della pagnotta non è abbastanza caldo, la rimette in forno per cinque minuti. Ripete finché il termometro dice sì. Ma la nonna gli ha dato una regola: dopo tre tentativi andati male si ferma e la chiama, invece di bruciare la cena. La verifica decide quando ha finito, il limite decide quando chiedere aiuto.
 
@@ -46,7 +46,7 @@ The key question is: how does the agent know it is done? The most reliable way i
 
 It also needs brakes. A maximum number of turns, and of retries for the same error. And a human check before actions that are hard to undo, such as deleting data or sending messages: the bigger the possible damage, the stronger the gate should be.
 
-## For dummies
+## In everyday life
 
 A teenager learns to bake bread with a kitchen thermometer. Bake, wait, measure: if the middle of the loaf is not hot enough, back in the oven for five minutes. Repeat until the thermometer says yes. But grandma set a rule: after three failed tries, stop and call her rather than burn dinner. The check decides when the job is done. The cap decides when to ask for help.
 

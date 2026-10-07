@@ -20,7 +20,7 @@ In pratica, chiediti cosa serve davvero al compito. Per migliorare il tono di un
 
 Il compromesso è con la qualità. Se togli troppo, la risposta diventa generica. Se il compito riguarda proprio un dettaglio, quel dettaglio serve. L'obiettivo non è dare il meno possibile in assoluto, ma niente oltre il necessario.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Dal ferramenta, per comprare la vite giusta porti la vite vecchia, non l'intero armadio. Il commesso ha tutto ciò che gli serve e l'armadio resta a casa. Se però il problema è un'anta che non si chiude, la vite da sola non basta: allora porti una foto della cerniera. Porti ciò che serve alla domanda, non tutto ciò che hai.
 
@@ -46,7 +46,7 @@ In practice, ask what the task really needs. To improve the tone of a letter to 
 
 The trade-off is with quality. Remove too much and the answer turns generic. If the task is about one specific detail, that detail is needed. The goal is not the absolute minimum, but nothing beyond what is necessary.
 
-## For dummies
+## In everyday life
 
 At the hardware shop, to buy the right screw you bring the old screw, not the whole wardrobe. The clerk has everything they need and the wardrobe stays at home. If the problem is a door that will not close, though, the screw alone is not enough: then you bring a photo of the hinge. You bring what the question needs, not everything you have.
 

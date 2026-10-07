@@ -20,7 +20,7 @@ Controllare la posa è un compito diverso dal mantenere lo stile. Alcuni metodi 
 
 Specificare cosa mantenere e cosa cambiare rende il tentativo più valutabile. Una guida più forte può migliorare la somiglianza, ma limitare le variazioni desiderate o portare con sé dettagli indesiderati. Confronta separatamente identità del soggetto, disposizione e stile, senza trattare la somiglianza complessiva come una copia esatta.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Vuoi disegnare il tuo cane come in un libro illustrato. Fornisci una sua foto per l'aspetto e una pagina dipinta per lo stile, se lo strumento accetta più riferimenti. Chiedi poi il cane sdraiato. Una bella pennellata non basta: controlli anche orecchie e macchie. Se la posa resta quella della foto, il riferimento ha vincolato anche qualcosa che volevi cambiare.
 
@@ -46,7 +46,7 @@ Controlling pose is different from maintaining style. Some methods extract edges
 
 Stating what to keep and what to change makes an attempt easier to evaluate. Stronger guidance may improve resemblance, but restrict desired variations or carry over unwanted details. Compare subject identity, layout and style separately, without treating overall similarity as an exact copy.
 
-## For dummies
+## In everyday life
 
 You want to draw your dog as a picture-book character. You provide a photo for its appearance and a painted page for the style, if the tool accepts multiple references. Then you ask for the dog lying down. Lovely brushwork is not enough: you check its ears and markings too. If the pose stays unchanged, the reference has constrained something you wanted to alter.
 

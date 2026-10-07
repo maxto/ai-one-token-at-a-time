@@ -20,7 +20,7 @@ Poi entra in gioco l'apprendimento per rinforzo, spesso con un algoritmo chiamat
 
 I limiti sono reali. È costoso e instabile da allenare. Il modello può imparare a ingannare il giudice, per esempio con risposte lunghe o compiacenti che piacciono senza essere migliori. E riflette i gusti e i pregiudizi di chi ha votato.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un pasticciere prepara due versioni della stessa torta e le fa assaggiare ai clienti. Non chiede un voto da uno a dieci, solo "quale preferisci?". Dopo mesi ha un aiutante che sa prevedere i gusti della clientela. Da quel momento prova ricette nuove e le fa giudicare all'aiutante. Il rischio? Scoprire che più zucchero vince sempre, e finire a sfornare dolci stucchevoli.
 
@@ -46,7 +46,7 @@ Then reinforcement learning takes over, often with an algorithm called PPO. The 
 
 The limits are real. It is expensive and unstable to train. The model can learn to game the judge, for example with long or flattering answers that score well without being better. And it reflects the tastes and biases of the people who voted.
 
-## For dummies
+## In everyday life
 
 A baker makes two versions of the same cake and lets customers taste both. He doesn't ask for a score out of ten, only "which one do you prefer?". After months he has an assistant who can predict the customers' taste. From then on he tries new recipes and lets the assistant judge them. The risk: learning that more sugar always wins, and ending up baking cloying cakes.
 

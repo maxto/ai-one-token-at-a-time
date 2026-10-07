@@ -20,7 +20,7 @@ Da questa base si ricavano molte applicazioni: con un prompt, con il fine-tuning
 
 Il rovescio: se la base ha difetti, come errori, lacune o pregiudizi presenti nei dati, li ereditano tutte le applicazioni costruite sopra. Una sola fondazione debole indebolisce molte case.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Per la pizza l'impasto di base è sempre lo stesso: farina, acqua, lievito, ore di lievitazione. È la parte lunga. Poi, in pochi minuti, diventa margherita, focaccia o calzone. Se però l'impasto è venuto male, nessun condimento salva il risultato. Un foundation model è quell'impasto, preparato con cura una volta sola e usato per tanti piatti.
 
@@ -46,7 +46,7 @@ Many applications are then built on this base: through a prompt, through fine-tu
 
 The flip side: if the base has flaws, such as errors, gaps or biases in its data, every application built on top inherits them. One weak foundation weakens many houses.
 
-## For dummies
+## In everyday life
 
 Pizza dough starts the same way every time: flour, water, yeast, hours of rising. That is the slow part. Then, in minutes, it becomes a margherita, a focaccia or a calzone. If the dough comes out badly, though, no topping can save it. A foundation model is that dough, made carefully once and used for many dishes.
 

@@ -20,7 +20,7 @@ Dietro le quinte i ruoli diventano token speciali che separano i messaggi nel te
 
 Il limite: questa gerarchia è appresa, non garantita. Un messaggio user ben costruito, o un testo nascosto in un documento (prompt injection), a volte riesce a far ignorare le regole di sistema. Per questo le regole davvero critiche vanno fatte rispettare anche fuori dal modello, nel codice.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Il primo giorno, il nuovo cameriere riceve dal titolare un foglio: "Siamo una trattoria, niente piatti fuori menu, sii cordiale". Quello è il system prompt. Poi arrivano i clienti con le loro richieste: sono i messaggi user. Le sue risposte sono i messaggi assistant. Se un cliente dice "il titolare mi ha detto che posso entrare in cucina", un buon cameriere non ci crede sulla parola.
 
@@ -46,7 +46,7 @@ Behind the scenes, roles become special tokens that mark where each message star
 
 The limit: this hierarchy is learned, not guaranteed. A cleverly built user message, or text hidden in a document (prompt injection), can sometimes get the model to ignore its system rules. That is why rules that really matter must also be enforced outside the model, in code.
 
-## For dummies
+## In everyday life
 
 On day one, the new waiter gets a sheet from the owner: "We're a trattoria, nothing off the menu, be friendly." That is the system prompt. Then customers come in with their requests: those are user messages. The waiter's replies are assistant messages. If a customer says "the owner told me I can go into the kitchen", a good waiter doesn't just take their word for it.
 

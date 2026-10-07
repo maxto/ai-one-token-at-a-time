@@ -15,8 +15,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONTENT, SITE, DIST = ROOT / "content", ROOT / "site", ROOT / "dist"
 
 LESSON_SECTIONS = {
-    "it": ["In una frase", "Approfondimento", "Esempio for dummies", "Errore comune", "Didascalia della figura"],
-    "en": ["One line", "Deep dive", "For dummies", "Common mistake", "Figure caption"],
+    "it": ["In una frase", "Approfondimento", "Nella vita di tutti i giorni", "Errore comune", "Didascalia della figura"],
+    "en": ["One line", "Deep dive", "In everyday life", "Common mistake", "Figure caption"],
 }
 LANGS = ("it", "en")
 

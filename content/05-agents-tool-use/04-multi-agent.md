@@ -18,7 +18,7 @@ Lo schema più comune ha un orchestratore, cioè un agente coordinatore, che sco
 
 I vantaggi sono reali: lavori indipendenti in parallelo, contesti più corti e quindi più focalizzati, ruoli più facili da testare. Ma ogni **passaggio** tra agenti perde informazioni, come nel gioco del telefono senza fili. I costi in token si moltiplicano e gli errori diventano più difficili da rintracciare. Regola pratica: usare più agenti solo quando il lavoro si divide davvero in parti indipendenti. Per un compito lineare di solito basta un solo agente ben istruito.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Trasloco di famiglia. Una persona coordina: qualcuno smonta i mobili, qualcuno imballa i libri, qualcuno carica il furgone. Ognuno sa solo quello che serve per il suo pezzo. Alla fine chi coordina controlla che non manchi nulla. Funziona perché i compiti sono separati. Se tre persone imballassero la stessa libreria, si intralcerebbero e nessuno saprebbe più in quale scatola sono finiti i libri.
 
@@ -42,7 +42,7 @@ The most common pattern has an orchestrator, a coordinating agent that breaks th
 
 The gains are real: independent work runs in parallel, contexts stay shorter and more focused, and roles are easier to test. But every **hand-off** between agents loses information, like a game of telephone. Token costs multiply and errors get harder to trace. A practical rule: use several agents only when the work truly splits into independent parts. For a linear task, one well-instructed agent is usually enough.
 
-## For dummies
+## In everyday life
 
 A family house move. One person coordinates: someone takes the furniture apart, someone packs the books, someone loads the van. Each knows only what their part requires. At the end the coordinator checks that nothing is missing. It works because the jobs are separate. If three people packed the same bookcase, they would get in each other's way and nobody would know which box the books went into.
 

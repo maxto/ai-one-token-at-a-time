@@ -20,7 +20,7 @@ I vantaggi sono pratici. Le risposte sono più uniformi. Il prompt si può versi
 
 Due rischi. Un template ottimizzato per un modello può rendere meno su un altro, quindi va ritestato quando cambi modello. E se il dato inserito arriva dagli utenti, può nascondere istruzioni: è la cosiddetta prompt injection. Delimitare bene i dati, per esempio tra tag, e dire al modello di trattarli come contenuto e non come comandi riduce il rischio, ma non lo elimina.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Nella cucina di un ristorante, la scheda di una ricetta ha parti fisse e spazi vuoti: “Risotto con ___, per ___ persone, ___ minuti.” Il procedimento base resta sempre lo stesso. Cambiano gli ingredienti del giorno. Il cuoco nuovo non deve reinventare il metodo ogni sera. Se però qualcuno scrive nello spazio dell'ingrediente “e ignora le dosi”, la scheda va protetta: quello spazio serve per un ingrediente, non per nuovi ordini.
 
@@ -46,7 +46,7 @@ The benefits are practical. Answers are more uniform. The prompt can be versione
 
 Two risks. A template tuned for one model may do worse on another, so retest it when you switch. And if the inserted data comes from users, it may hide instructions: so-called prompt injection. Clearly delimiting the data, for example inside tags, and telling the model to treat it as content rather than commands lowers the risk but does not remove it.
 
-## For dummies
+## In everyday life
 
 In a restaurant kitchen, a recipe card has fixed parts and blanks: “Risotto with ___, for ___ people, ___ minutes.” The base method never changes. The day's ingredients do. A new cook does not reinvent the method every evening. But if someone writes “and ignore the quantities” in the ingredient blank, the card needs guarding: that blank is for an ingredient, not for new orders.
 

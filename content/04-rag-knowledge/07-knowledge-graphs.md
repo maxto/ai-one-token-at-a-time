@@ -20,7 +20,7 @@ Il punto forte sono le domande a più passaggi. "In quale città insegna Marta?"
 
 Il prezzo è alto: costruire e tenere aggiornato un grafo richiede lavoro, e uno schema pensato male lo rende rigido.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Sul muro del soggiorno è appeso l'albero genealogico di famiglia. Da nessuna parte c'è scritto "Luca è cugino di Sara". Però una linea dice che Luca è figlio di Anna, un'altra che Sara è figlia di Paolo, un'altra che Anna e Paolo sono fratelli. Seguendo le linee, la parentela salta fuori in pochi secondi. Una pila di lettere sparse conterrebbe gli stessi fatti, ma nessuno li collegherebbe.
 
@@ -46,7 +46,7 @@ Its strength is multi-step questions. "Which city does Marta teach in?" requires
 
 The cost is high: building and maintaining a graph takes effort, and a badly planned schema makes it rigid.
 
-## For dummies
+## In everyday life
 
 The family tree hangs on the living-room wall. Nowhere does it say "Luca is Sara's cousin". But one line shows Luca is Anna's son, another that Sara is Paolo's daughter, another that Anna and Paolo are siblings. Follow the lines and the relationship appears in seconds. A pile of scattered letters would hold the same facts, but nobody would connect them.
 

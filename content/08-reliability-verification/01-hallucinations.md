@@ -20,7 +20,7 @@ Si parla di **allucinazione** quando il sistema presenta contenuti inventati o n
 
 Addestramento mirato, documenti pertinenti e controlli esterni possono ridurre questi errori. Nessuno di questi accorgimenti garantisce ogni risposta. Per un fatto importante serve una verifica che aggiunga prove, non soltanto una formulazione più convincente.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Chiedi il titolo di un romanzo ambientato in una biblioteca di montagna. L'assistente propone un titolo credibile, un autore e una breve trama. Tutti i dettagli si incastrano, ma nel catalogo della biblioteca non trovi una registrazione corrispondente. Il modello ha composto una risposta che assomiglia a una scheda bibliografica. Il riferimento resta non verificato. Prima di ordinare il libro, cerchi altre registrazioni e controlli che autore e titolo coincidano.
 
@@ -46,7 +46,7 @@ A **hallucination** occurs when the system presents invented content or content 
 
 Targeted training, relevant documents and external checks can reduce such errors. None guarantees every answer. An important factual claim needs verification that adds evidence, not just more convincing wording.
 
-## For dummies
+## In everyday life
 
 You ask for the title of a novel set in a mountain library. The assistant offers a plausible title, an author and a short plot. Everything fits together, but you cannot find a matching record in the library catalogue. The model has composed something resembling a book record. The reference remains unverified. Before ordering the book, you look for other records and check that the author and title match.
 

@@ -20,7 +20,7 @@ Con l'addestramento il problema cambia natura. Un modello non contiene un archiv
 
 E a volte i modelli memorizzano: alcuni studi hanno estratto da modelli linguistici brani testuali dei dati di addestramento, compresi nomi e indirizzi email. Per questo conta decidere prima cosa condividere, non dopo.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Lo zucchero, finché è nel barattolo, puoi toglierlo quando vuoi. Una volta mescolato nell'impasto e cotto nella torta, non c'è modo di ripescarlo: dovresti rifare la torta da capo. Una conversazione salvata è come lo zucchero nel barattolo: si può cancellare. Una conversazione già usata per addestrare un modello è come lo zucchero nella torta.
 
@@ -46,7 +46,7 @@ With training, the problem changes nature. A model does not hold an archive of c
 
 And models sometimes memorise: some studies have extracted verbatim passages of training data from language models, including names and email addresses. That is why deciding what to share matters before, not after.
 
-## For dummies
+## In everyday life
 
 Sugar in the jar can be taken out whenever you like. Once it is stirred into the batter and baked into the cake, there is no fishing it out: you would have to bake the cake again from scratch. A saved conversation is like sugar in the jar: it can be deleted. A conversation already used to train a model is like the sugar in the cake.
 

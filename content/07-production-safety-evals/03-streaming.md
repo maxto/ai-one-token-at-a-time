@@ -20,7 +20,7 @@ Il tempo totale cambia poco. Cambia il tempo percepito: il primo testo compare p
 
 Ha dei costi per chi costruisce l'applicazione. Bisogna ricomporre i pezzi, gestire una connessione che cade a metà e controllare un testo non ancora finito. Un filtro di sicurezza che legge solo la risposta completa arriva tardi: l'utente l'ha già vista. E un JSON a metà non è ancora valido.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Al telefono, un amico ti detta una ricetta. Potrebbe scriverla tutta e mandartela dopo dieci minuti, oppure leggertela riga per riga. Nel secondo caso inizi subito a preparare gli ingredienti, anche se la ricetta finisce alla stessa ora. Però, se a metà cade la linea, ti resta mezza ricetta e devi capire dove eri arrivato.
 
@@ -46,7 +46,7 @@ Total time barely changes. Perceived time does: the first text appears quickly a
 
 It has costs for whoever builds the application. You have to reassemble the pieces, handle a connection that drops halfway, and check text that is not finished yet. A safety filter that only reads the complete answer comes too late: the user has already seen it. And half a JSON object is not valid JSON yet.
 
-## For dummies
+## In everyday life
 
 A friend is giving you a recipe over the phone. He could write it all out and send it ten minutes later, or read it to you line by line. In the second case you start getting the ingredients ready right away, even though the recipe ends at the same time. But if the line drops halfway, you are left with half a recipe and must work out where you stopped.
 

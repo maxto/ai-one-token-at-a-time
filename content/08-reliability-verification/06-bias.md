@@ -20,7 +20,7 @@ Il problema non riguarda soltanto frasi offensive. Può apparire come una distri
 
 Dati più rappresentativi, valutazioni su gruppi diversi e correzioni mirate possono ridurre i danni. Non esiste però una pulizia definitiva valida per ogni contesto: gli squilibri sono molti e i criteri di equità dipendono dall'uso. Servono controlli ripetuti, anche quando cambiano pubblico o compito, e persone capaci di riconoscere esclusioni sfuggite alle metriche.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Una classe chiede racconti su persone che lavorano in ospedale. In molti racconti generati i medici sono uomini e chi assiste i pazienti è donna. Ogni singola storia potrebbe essere plausibile, ma la ripetizione restringe i ruoli rappresentati. L'insegnante confronta più testi e chiede personaggi più vari. Questo migliora il materiale della lezione, senza dimostrare che il modello sia diventato privo di pregiudizi in ogni situazione.
 
@@ -46,7 +46,7 @@ The problem goes beyond offensive sentences. It can appear as a narrow distribut
 
 More representative data, evaluations across groups and targeted corrections can reduce harm. There is no final cleanup that works in every context: imbalances take many forms, and fairness criteria depend on the use. Repeated checks are needed, including when the audience or task changes, with people able to notice exclusions that metrics miss.
 
-## For dummies
+## In everyday life
 
 A class asks for stories about people working in a hospital. In many generated stories, doctors are men and those caring for patients are women. Each story might be plausible, but repetition narrows the roles represented. The teacher compares several texts and asks for more varied characters. This improves the lesson material without establishing that the model has become free of bias in every situation.
 

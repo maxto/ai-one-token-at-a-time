@@ -20,7 +20,7 @@ La corrispondenza deve essere esatta, token per token, dall'inizio. Basta una da
 
 Il guadagno è reale: i token letti dalla cache costano molto meno e la risposta parte prima. Ma la cache dura poco, di solito minuti, ed è legata a un solo modello. Con alcuni fornitori la prima scrittura in cache costa un po' di più dell'input normale, quindi conviene solo se il prefisso si ripete davvero.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Una pasticceria prepara ogni mattina la stessa base per le torte: pan di Spagna, crema, bagna. Quando arriva un ordine, il pasticcere aggiunge solo la decorazione richiesta. Se un cliente vuole un impasto diverso, però, la base pronta non serve più e si riparte da zero. Il prompt caching funziona così: la base comune è il prefisso, la decorazione è la domanda nuova. Cambiare un dettaglio all'inizio butta via tutto il lavoro pronto.
 
@@ -46,7 +46,7 @@ The match must be exact, token by token, from the very start. One date or user n
 
 The gain is real: cached tokens are billed at a fraction of the normal price and the answer starts sooner. But the cache is short-lived, usually minutes, and tied to one model. With some providers the first write costs a bit more than normal input, so it only pays off when the prefix really repeats.
 
-## For dummies
+## In everyday life
 
 A bakery prepares the same cake base every morning: sponge, cream, syrup. When an order comes in, the baker only adds the requested decoration. If a customer wants a different sponge, though, the ready base is useless and work starts from scratch. Prompt caching works the same way. The shared base is the prefix, the decoration is the new question. Change one detail at the start and all the ready work is lost.
 

@@ -20,7 +20,7 @@ Funziona bene su problemi dove serve esplorare e fare marcia indietro: rompicapi
 
 Il prezzo è alto. Ogni ramo richiede chiamate al modello, quindi il costo cresce in fretta. Serve anche codice che gestisca l'albero: non è un trucco da scrivere in un solo prompt. Per la maggior parte dei compiti quotidiani è eccessivo, e i modelli di ragionamento moderni fanno già internamente una parte di questa esplorazione.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Una famiglia organizza una gita di un giorno. Al primo bivio ci sono tre idee: mare, lago, città d'arte. Per ognuna si fa un controllo veloce: tempo di viaggio, meteo, costo del parcheggio. Il mare cade subito, troppo traffico. Su lago e città si va più a fondo: orari dei musei, sentieri, dove mangiare. Quando la città risulta chiusa per una festa locale, si torna indietro e si sceglie il lago.
 
@@ -46,7 +46,7 @@ It works well on problems that need exploration and backtracking: puzzles, plann
 
 The price is high. Every branch needs model calls, so cost grows quickly. It also needs code to manage the tree. It is not a trick you write into one prompt. For most everyday tasks it is overkill, and modern reasoning models already do some of this exploration internally.
 
-## For dummies
+## In everyday life
 
 A family is planning a day trip. At the first fork there are three ideas: seaside, lake, historic town. Each gets a quick check: travel time, weather, parking cost. The seaside drops out at once, too much traffic. Lake and town get a closer look: museum hours, trails, where to eat. When the town turns out to be shut for a local holiday, they backtrack and pick the lake.
 

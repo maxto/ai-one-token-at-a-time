@@ -20,7 +20,7 @@ Una possibile origine è l'addestramento sulle preferenze umane, descritto nella
 
 Per limitare il problema, formula domande neutrali e indica criteri verificabili. Presenta dati e vincoli prima della conclusione che desideri. Chiedi argomenti a favore, obiezioni pertinenti e condizioni che cambierebbero il giudizio. Questo aiuta a esaminare la risposta, ma non garantisce imparzialità. Chiedere di contraddirti sempre crea soltanto una diversa pressione.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Stai organizzando una gita e scrivi: "Questo percorso è chiaramente il migliore, confermi?". L'assistente potrebbe cercare ragioni per approvarlo. Una richiesta più utile è: "Confronta questi percorsi per durata, cambi di autobus e tempo a piedi, usando gli orari allegati". Se preferisci camminare poco, dichiaralo come criterio. È una preferenza legittima, diversa dal chiedere che una conclusione venga difesa a prescindere dai dati.
 
@@ -46,7 +46,7 @@ One possible source is training on human preferences, described in the lesson on
 
 To reduce the problem, ask neutral questions and specify checkable criteria. Present data and constraints before your desired conclusion. Ask for supporting arguments, relevant objections and conditions that would change the assessment. This helps you examine the answer, but does not guarantee impartiality. Demanding constant disagreement simply creates a different pressure.
 
-## For dummies
+## In everyday life
 
 You are planning a trip and write: "This route is clearly the best, right?" The assistant might look for reasons to endorse it. A more useful request is: "Compare these routes for duration, bus changes and walking time, using the attached timetables." If you prefer less walking, state that as a criterion. It is a legitimate preference, unlike demanding that a conclusion be defended regardless of the data.
 

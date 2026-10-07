@@ -20,7 +20,7 @@ La dimensione è un **compromesso**. Pezzi troppo grandi mescolano più argoment
 
 Due rimedi comuni. Aggiungere a ogni pezzo il titolo del documento e della sezione. Oppure cercare su pezzi piccoli e poi passare al modello il brano più ampio che li contiene.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Dovete digitalizzare un ricettario. Se fotografate il libro intero come un'unica pagina, nessuno troverà mai la ricetta della frittata. Se ritagliate ogni singola riga, trovate "due uova" ma non sapete se servono per la frittata o per il tiramisù. La scelta sensata è una scheda per ricetta, con il titolo scritto in alto. Ogni scheda è completa e parla di una cosa sola.
 
@@ -46,7 +46,7 @@ Size is a **trade-off**. Chunks that are too big mix several topics, so the embe
 
 Two common fixes. Prefix each chunk with the document and section title. Or search over small chunks, then hand the model the larger passage that contains them.
 
-## For dummies
+## In everyday life
 
 You are digitising a cookbook. Photograph the whole book as one page, and nobody will ever find the omelette recipe. Cut out every single line, and you will find "two eggs" without knowing whether they belong to the omelette or the tiramisu. The sensible choice is one card per recipe, with its title at the top. Each card is complete and covers one thing.
 

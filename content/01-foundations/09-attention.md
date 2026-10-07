@@ -20,7 +20,7 @@ Una parola da sola è spesso ambigua. "Nota" può essere un suono o un appunto: 
 
 Il costo: nella versione standard ogni token si confronta con tutti quelli visibili. Se il testo raddoppia, i confronti quadruplicano: i contesti lunghi costano di più e sono più lenti.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Al bancone della pizzeria qualcuno grida "la margherita!". Da sola la frase non basta: in forno ce ne sono tre. Per capire se è la tua ripensi a quando hai ordinato, guardi chi era in fila prima di te e ignori la musica e il traffico. Dai molto peso a poche cose utili e quasi nessuno al resto. Il modello fa lo stesso per ogni token del testo, a ogni strato.
 
@@ -46,7 +46,7 @@ It is the core of the transformer, the architecture behind almost every language
 
 The cost: in the standard version every token is compared with all the ones it can see. Double the text and the comparisons quadruple, so long contexts cost more and run slower.
 
-## For dummies
+## In everyday life
 
 At the pizzeria counter someone shouts "margherita!". On its own that is not enough: there are three in the oven. To tell whether it is yours, you think back to when you ordered, check who was ahead of you in the queue, and ignore the music and the traffic. You give a lot of weight to a few useful things and almost none to the rest. The model does the same for every token in the text, at every layer.
 

@@ -20,7 +20,7 @@ La scoperta importante è che la varietà conta. Allenato su tanti tipi di compi
 
 Di solito è il primo passo dopo il pre-training, prima di RLHF o DPO. Il limite è che il modello imita gli esempi. Se sono scritti male, troppo sicuri di sé o sbagliati, copierà anche quello.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un ragazzo ha letto tutti i libri di cucina della biblioteca, ma il primo giorno al bar resta immobile quando un cliente chiede "un macchiato, per favore". Il titolare gli fa vedere decine di ordinazioni, ognuna con la risposta giusta. Dopo una settimana gestisce anche richieste mai sentite, come un cappuccino d'orzo tiepido. Il sapere c'era già. Mancava l'abitudine di servire.
 
@@ -46,7 +46,7 @@ The key finding is that variety matters. Trained on many different kinds of task
 
 It is usually the first step after pre-training, before RLHF or DPO. The limit is that the model imitates its examples. If they are sloppy, overconfident or wrong, it copies that too.
 
-## For dummies
+## In everyday life
 
 A young man has read every cookbook in the library, but on his first day at a café he freezes when a customer asks for "a flat white, please". The owner walks him through dozens of orders, each with the right response. A week later he handles orders he has never heard, like an oat-milk decaf, extra hot. The knowledge was already there. What was missing was the habit of serving.
 

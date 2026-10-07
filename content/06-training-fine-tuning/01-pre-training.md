@@ -20,7 +20,7 @@ Non servono etichette scritte da persone: la risposta giusta è già nel testo. 
 
 Il prezzo è alto. Servono migliaia di processori grafici (GPU) per settimane o mesi. Il risultato è un modello base: sa continuare un testo, ma non è ancora un assistente che segue istruzioni. Conosce il mondo solo fino alla data in cui sono stati raccolti i dati, e ne eredita errori e pregiudizi.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un bambino passa anni ad ascoltare le persone intorno a sé. Nessuno gli spiega la grammatica, eppure a un certo punto sa che dopo "buona" viene spesso "notte" o "giornata". Ha assorbito le regole sentendo frasi su frasi. Il pre-training funziona così, su scala enorme: tanta esposizione, nessuna lezione esplicita. Il bambino però non sa ancora come comportarsi a un colloquio di lavoro. Quello si impara dopo.
 
@@ -46,7 +46,7 @@ No human labels are needed: the right answer is already in the text. This is cal
 
 The cost is high: thousands of GPUs running for weeks or months. The result is a base model. It can continue text, but it is not yet an assistant that follows instructions. It knows the world only up to the date its data was collected, and it inherits that data's errors and biases.
 
-## For dummies
+## In everyday life
 
 A toddler spends years listening to the people around them. Nobody teaches them grammar, yet one day they know that "good" is often followed by "night" or "morning". They absorbed the rules just by hearing sentence after sentence. Pre-training works the same way at enormous scale: massive exposure, no explicit lessons. The toddler still has no idea how to behave in a job interview, though. That comes later.
 

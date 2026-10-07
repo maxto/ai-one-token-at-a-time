@@ -20,7 +20,7 @@ Il workflow è prevedibile: costa più o meno sempre uguale, si prova facilmente
 
 Il compromesso è tra flessibilità e controllo. Un agente spende più tempo e denaro, e un errore iniziale può portarlo fuori strada. Il consiglio pratico è partire dalla soluzione più semplice: una sola chiamata ben scritta, poi un workflow, e un agente solo se serve davvero.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Una ricetta di torta è un workflow: pesare, mescolare, infornare per trenta minuti, sempre in quest'ordine. Funziona ogni volta e, se la torta viene male, sai a quale passo guardare. Un cuoco a cui dici "prepara una cena con quello che trovi in frigo" è un agente: apre, guarda, decide, cambia idea. Gli serve più tempo e il risultato è meno prevedibile. Per una torta non serve chiamarlo.
 
@@ -46,7 +46,7 @@ A workflow is predictable: it costs roughly the same every time, is easy to test
 
 The trade-off is flexibility against control. An agent spends more time and money, and an early mistake can send it off course. The practical advice: start with the simplest solution: one well-written call, then a workflow, and an agent only when truly needed.
 
-## For dummies
+## In everyday life
 
 A cake recipe is a workflow: weigh, mix, bake for thirty minutes, always in that order. It works every time and, if the cake goes wrong, you know which step to look at. A cook told "make dinner from whatever is in the fridge" is an agent: they open it, look, decide, change their mind. It takes longer and the result is less predictable. For a cake, you do not need to call them.
 

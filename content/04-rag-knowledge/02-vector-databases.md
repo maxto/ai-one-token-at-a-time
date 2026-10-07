@@ -20,7 +20,7 @@ Confrontare la domanda con milioni di punti uno per uno sarebbe lento. Per quest
 
 Non sempre serve un prodotto dedicato. Per poche migliaia di pezzi basta un'estensione del database che già usate, o anche un semplice confronto con tutti i punti.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 In un grande supermercato i prodotti non sono in ordine alfabetico. Stanno per affinità: la pasta vicino al sugo, lo shampoo vicino al balsamo. Se cercate il parmigiano, andate nella zona giusta e guardate gli scaffali intorno, senza percorrere ogni corsia. Un database vettoriale fa lo stesso con i testi. Ogni tanto però un prodotto è finito in una corsia inattesa, e non lo vedete.
 
@@ -46,7 +46,7 @@ Comparing a query with millions of points one by one would be slow. So these sys
 
 You do not always need a dedicated product. For a few thousand pieces, an extension to the database you already use, or even a plain comparison against every point, is enough.
 
-## For dummies
+## In everyday life
 
 In a big supermarket, products are not sorted alphabetically. They sit by affinity: pasta near the sauce, shampoo near the conditioner. To find parmesan, you head to the right area and scan the nearby shelves without walking every aisle. A vector database does the same with texts. Now and then, though, an item has ended up in an unexpected aisle, and you miss it.
 

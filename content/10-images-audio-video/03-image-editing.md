@@ -20,7 +20,7 @@ L'outpainting applica un'idea simile oltre i bordi originali. Si allarga la tela
 
 La maschera non garantisce sempre che ogni pixel esterno resti identico. Alcuni procedimenti ricostruiscono anche il contesto o sfumano il confine, introducendo variazioni. Se serve conservarlo esattamente, occorre un metodo che ricomponga la parte modificata sull'originale. Confronta il risultato completo, soprattutto vicino ai bordi della selezione.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Hai una foto della cucina con una tazza sul tavolo. Selezioni la tazza e chiedi una ciotola. Il sistema deve inventare anche il bordo nascosto del tavolo e un'ombra credibile. Se invece allarghi la foto verso destra, deve inventare altra cucina. In entrambi i casi guardi anche piastrelle e tovaglia, perché una modifica riuscita al centro può nascondere piccoli cambiamenti intorno.
 
@@ -46,7 +46,7 @@ Outpainting applies a similar idea beyond the original borders. The canvas expan
 
 A mask does not always guarantee that every outside pixel stays identical. Some methods also reconstruct context or blend the boundary, introducing changes. Exact preservation requires a method that composites the edited area onto the original. Compare the full result, especially around the selection's edges.
 
-## For dummies
+## In everyday life
 
 You have a kitchen photo with a cup on the table. You select the cup and ask for a bowl. The system must also invent the hidden table edge and a plausible shadow. If you expand the photo to the right instead, it must invent more kitchen. In both cases, check the tiles and tablecloth too: a successful central edit can hide small changes nearby.
 

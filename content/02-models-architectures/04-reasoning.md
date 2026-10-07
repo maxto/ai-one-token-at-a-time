@@ -20,7 +20,7 @@ L'idea chiave è spendere più calcolo al momento della risposta (test-time comp
 
 Il prezzo: risposte più lente e più costose, perché anche i passaggi intermedi sono token. Su domande semplici può complicare le cose senza motivo. E il ragionamento mostrato non è per forza il vero processo interno che ha prodotto la risposta.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Due studenti ricevono lo stesso problema di geometria. Il primo scrive subito un numero: a volte giusto, a volte no. Il secondo usa la brutta copia: disegna la figura, prova una strada, si accorge di un errore, ricomincia. Ci mette dieci minuti invece di uno, ma sbaglia molto meno. Per dire che ore sono, però, nessuno ha bisogno della brutta copia.
 
@@ -46,7 +46,7 @@ The key idea is spending more compute at answer time (test-time compute), not on
 
 The cost: slower, pricier answers, because the intermediate steps are tokens too. On simple questions it can overcomplicate things. And the reasoning it shows is not necessarily the actual internal process that produced the answer.
 
-## For dummies
+## In everyday life
 
 Two students get the same geometry problem. The first writes down a number straight away: sometimes right, sometimes not. The second reaches for scrap paper: draws the figure, tries one approach, spots a mistake, starts over. It takes ten minutes instead of one, but with far fewer errors. To tell someone the time, though, nobody needs scrap paper.
 

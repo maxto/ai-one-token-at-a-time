@@ -20,7 +20,7 @@ Una scansione è solo un'immagine. Serve l'**OCR**, il riconoscimento ottico dei
 
 Gli errori poi possono propagarsi. Un pezzo di testo confuso dà un embedding confuso, e questo può compromettere la ricerca: il modello rischia di rispondere senza l'informazione giusta. Esistono correzioni dopo l'OCR, automatiche o manuali, ma senza garanzie. Per questo conviene leggere a campione il testo estratto prima di regolare il resto.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un amico ti detta al telefono una ricetta da un vecchio libro a due colonne. Legge ogni riga da sinistra a destra, saltando da una colonna all'altra: "200 grammi di farina, infornare a 180 gradi, due uova". Tu scrivi tutto con cura e poi segui il foglio alla lettera. La torta viene male. Non hai sbagliato tu a cucinare: l'errore era nella dettatura, ma lo scopri solo alla fine.
 
@@ -46,7 +46,7 @@ A scan is just an image. It needs **OCR**, optical character recognition, which 
 
 The errors can then spread. A garbled piece of text gives a garbled embedding, which can undermine the search: the model may answer without the right information. There are fixes after OCR, automatic or manual, but with no guarantee. So read a sample of the extracted text before tuning anything else.
 
-## For dummies
+## In everyday life
 
 A friend reads you a recipe over the phone from an old two-column cookbook. They read each line from left to right, jumping from one column to the other: "200 grams of flour, bake at 180 degrees, two eggs". You write it all down carefully and then follow the sheet to the letter. The cake comes out wrong. Your cooking was fine: the mistake was in the reading, but you only find out at the end.
 

@@ -18,7 +18,7 @@ Un chatbot risponde una volta e si ferma. Un **agente** riceve un obiettivo e la
 
 Il vantaggio è che l'agente può affrontare compiti aperti, dove i passi non sono noti in anticipo, e può correggersi quando un tentativo fallisce. Il prezzo è il controllo. Più passi significano più costi, più tempo e più occasioni di errore, e un errore iniziale si propaga. Per questo un buon agente ha confini chiari: quali strumenti può usare, quando fermarsi e quali azioni richiedono l'approvazione di una persona.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un amico va a fare la spesa per te con una lista e il telefono in mano. Al supermercato il basilico è finito. Non torna a casa a mani vuote: si guarda intorno, ti scrive «prendo il prezzemolo?», aspetta la risposta e continua. Alla cassa ricontrolla la lista prima di pagare. Ecco un agente: un obiettivo, degli strumenti, decisioni passo dopo passo e un controllo alla fine.
 
@@ -42,7 +42,7 @@ A chatbot answers once and stops. An **agent** gets a goal and works in several 
 
 The benefit is that an agent can handle open-ended tasks, where the steps are not known in advance, and it can correct itself when an attempt fails. The cost is control. More steps mean more money, more time and more chances to go wrong, and an early mistake carries forward. So a good agent has clear limits: which tools it may use, when to stop, and which actions need a person's approval.
 
-## For dummies
+## In everyday life
 
 A friend goes grocery shopping for you with a list and a phone. The shop is out of basil. They do not come home empty-handed: they look around, text you 'parsley instead?', wait for the reply and carry on. At the till they check the list again before paying. That is an agent: a goal, some tools, step-by-step decisions and a check at the end.
 

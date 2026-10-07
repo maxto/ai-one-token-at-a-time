@@ -20,7 +20,7 @@ L'idea è che a una risposta giusta si arriva per più strade, mentre gli errori
 
 I limiti sono due. Il costo si moltiplica per il numero di tentativi. E il voto funziona solo se le risposte si possono confrontare: un numero o una scelta tra opzioni sì, un testo libero come un'email no. Inoltre, se il modello sbaglia in modo sistematico, la maggioranza sbaglia con lui.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Al quiz del pub la squadra non ricorda l'anno di uscita di un album. Invece di fidarsi del primo che parla, ognuno scrive la sua risposta su un foglietto senza guardare gli altri. Quattro scrivono 1971, uno 1973, uno 1969. La squadra mette 1971. Funziona perché gli errori si sparpagliano, mentre il ricordo giusto tende a coincidere. Se però tutti hanno letto la stessa notizia sbagliata, il voto non salva nessuno.
 
@@ -46,7 +46,7 @@ The idea is that a correct answer can be reached by several routes, while errors
 
 There are two limits. Cost multiplies by the number of attempts. And voting only works when answers can be compared: a number or a choice between options works, but free text such as an email does not. Also, if the model is systematically wrong, the majority is wrong with it.
 
-## For dummies
+## In everyday life
 
 At the pub quiz, the team cannot place the release year of an album. Instead of trusting whoever speaks first, everyone writes an answer on a slip without looking at the others. Four write 1971, one 1973, one 1969. The team goes with 1971. It works because wrong guesses scatter while the right memory tends to agree. If everyone read the same wrong fact, though, the vote saves no one.
 

@@ -20,7 +20,7 @@ Il prompt entra tramite un encoder di testo che orienta ogni passaggio verso ci�
 
 Il compromesso: servono molti passaggi, quindi la generazione può essere lenta, anche se esistono tecniche per ridurli. E il controllo fine resta difficile: testo leggibile dentro l'immagine, numero esatto di oggetti, disposizioni precise.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Uno scultore guarda un blocco di marmo grezzo e toglie un po' di pietra, poi un altro po'. All'inizio si intuisce solo una sagoma, poi una testa, infine i dettagli del pelo. Il cliente gli ha chiesto «un cane che dorme», e ogni colpo di scalpello va in quella direzione. Un modello di diffusione fa lo stesso, ma il suo marmo è rumore casuale.
 
@@ -46,7 +46,7 @@ The prompt comes in through a text encoder that steers every step toward what is
 
 The trade-off: many steps are needed, so generation can be slow, although there are techniques to cut them down. And fine control remains hard: legible text inside the image, an exact number of objects, precise layouts.
 
-## For dummies
+## In everyday life
 
 A sculptor faces a rough block of marble and chips some stone away, then a little more. At first only an outline shows, then a head, finally the texture of the fur. The client asked for “a sleeping dog”, and every stroke of the chisel moves that way. A diffusion model does the same, except its marble is random noise.
 

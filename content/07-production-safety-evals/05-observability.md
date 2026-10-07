@@ -20,7 +20,7 @@ Con le tracce si risponde a domande concrete. Perché questa risposta è sbaglia
 
 Il limite è che registrare tutto significa conservare i testi degli utenti, a volte con dati personali. Servono regole su cosa salvare, per quanto tempo e chi può leggerlo. E i dati da soli non bastano: qualcuno deve leggerli.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 In una cucina di ristorante ogni comanda ha un foglietto: chi ha ordinato, a che ora è entrata, chi ha cucinato ogni portata, quando è uscita. Se un cliente si lamenta di un piatto freddo, lo chef guarda il foglietto e vede dove si è fermato: ai fornelli o in attesa del cameriere. Senza foglietti restano solo un piatto freddo e tante ipotesi.
 
@@ -46,7 +46,7 @@ Traces let you answer concrete questions. Why is this answer wrong: was the righ
 
 The catch is that logging everything means storing users' text, sometimes with personal data. You need rules on what to keep, for how long, and who can read it. And data alone is not enough: someone has to read it.
 
-## For dummies
+## In everyday life
 
 In a restaurant kitchen every order gets a ticket: who ordered, when it came in, who cooked each dish, when it went out. If a guest complains about a cold plate, the chef checks the ticket and sees where it stalled: at the stove or waiting for a waiter. Without tickets there is only a cold plate and a lot of guesses.
 

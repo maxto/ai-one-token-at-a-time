@@ -20,7 +20,7 @@ Gli usi sono due. Dentro un modello linguistico, ogni token diventa un embedding
 
 Il limite: le singole dimensioni di rado hanno un significato leggibile. Non esiste la "colonna del colore". L'embedding riflette ciò che il modello ha visto nei dati, pregiudizi compresi. E gli embedding di modelli diversi non si possono confrontare tra loro.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Al supermercato la disposizione non è casuale. La pasta sta vicino ai sughi, i detersivi lontano dalla frutta. Se conosci corsia e scaffale, sai già più o meno cosa troverai. Un embedding è l'indirizzo di un testo in un supermercato con centinaia di coordinate invece di due: la posizione ti dice di cosa parla.
 
@@ -46,7 +46,7 @@ There are two uses. Inside a language model, every token becomes an embedding be
 
 The limit: individual dimensions rarely have a readable meaning. There is no "colour column". An embedding reflects what the model saw in its data, biases included. And embeddings from different models cannot be compared with each other.
 
-## For dummies
+## In everyday life
 
 Supermarket layouts are not random. Pasta sits near the sauces, detergents far from the fruit. Know the aisle and the shelf, and you roughly know what you will find. An embedding is a text's address in a store with hundreds of coordinates instead of two: the position tells you what the text is about.
 

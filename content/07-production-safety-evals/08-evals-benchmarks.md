@@ -20,7 +20,7 @@ Un giudice automatico va controllato come qualsiasi strumento: si confrontano i 
 
 I **benchmark** pubblici servono a fare una prima selezione tra modelli. Però si saturano, possono finire nei dati di addestramento e misurano un compito che non è il tuo. La scelta finale va fatta con il tuo eval.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Per assumere un cuoco, un ristorante non guarda solo le medaglie vinte alle gare nazionali: quelle sono i benchmark. Gli fa cucinare i dieci piatti del proprio menù e li serve a clienti abituali che danno un voto: quello è l'eval. E se a votare è un critico, il proprietario controlla prima che i suoi gusti coincidano con quelli dei clienti.
 
@@ -46,7 +46,7 @@ A model judge must be checked like any instrument: compare its scores with human
 
 Public **benchmarks** help make a first shortlist of models. But they saturate, can leak into training data, and measure a task that is not yours. The final choice should come from your own eval.
 
-## For dummies
+## In everyday life
 
 When hiring a cook, a restaurant does not just look at medals from national contests: those are benchmarks. It has the candidate cook the ten dishes on its own menu and serves them to regular guests who score them: that is the eval. And if a critic does the scoring, the owner first checks that the critic's taste matches the guests'.
 

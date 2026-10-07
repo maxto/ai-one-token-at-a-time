@@ -20,7 +20,7 @@ Le finestre sono cresciute molto, fino a centinaia di migliaia di token e oltre.
 
 E non tutto il contesto viene usato bene. Diversi studi mostrano che i modelli recuperano meglio le informazioni all'inizio e alla fine, e peggio quelle nel mezzo (effetto "lost in the middle"). Un contesto corto e pertinente spesso funziona meglio di uno lungo e pieno di rumore.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un cuoco lavora su un bancone di misura fissa. Sopra ci sono la ricetta, gli ingredienti e il piatto in preparazione. Se aggiungi altra roba, qualcosa deve finire per terra. E su un bancone troppo pieno anche un cuoco bravo perde di vista il sale, nascosto in mezzo al resto. Il bancone è la finestra di contesto.
 
@@ -46,7 +46,7 @@ Windows have grown a lot, to hundreds of thousands of tokens and beyond. But mor
 
 And not all of the context is used equally well. Several studies show that models retrieve information at the start and the end more reliably than information in the middle (the "lost in the middle" effect). A short, relevant context often beats a long, noisy one.
 
-## For dummies
+## In everyday life
 
 A cook works on a counter of fixed size. On it sit the recipe, the ingredients and the dish in progress. Pile on more and something has to fall to the floor. And on a cluttered counter even a good cook loses track of the salt, buried somewhere in the middle. The counter is the context window.
 

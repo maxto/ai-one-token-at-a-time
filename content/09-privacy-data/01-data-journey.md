@@ -20,7 +20,7 @@ All'arrivo, però, il messaggio viene decifrato. Il modello deve leggere il test
 
 Dopo la risposta il messaggio può restare in più posti: la cronologia che vedi, i registri tecnici per errori e sicurezza, a volte i dati usati per migliorare i modelli. Quali copie esistono, e per quanto, dipende dal servizio e dalle impostazioni. Conviene scrivere sapendo che il testo potrebbe essere conservato.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Spedisci una lettera in una busta chiusa. Il postino la trasporta ma non può leggerla. La busta però è indirizzata a un ufficio, e lì qualcuno la apre per rispondere. L'ufficio può anche fare una fotocopia per l'archivio e annotare sul registro chi ha scritto e quando. La busta protegge il viaggio, non quello che succede dopo l'apertura.
 
@@ -46,7 +46,7 @@ On arrival, though, the message is decrypted. The model has to read the text to 
 
 After the answer, the message can stay in several places: the history you see, technical logs for errors and security, sometimes the data used to improve models. Which copies exist, and for how long, depends on the service and your settings. It pays to write knowing the text may be kept.
 
-## For dummies
+## In everyday life
 
 You post a letter in a sealed envelope. The postman carries it but cannot read it. The envelope, however, is addressed to an office, and there someone opens it to reply. The office may also photocopy it for the archive and note in a register who wrote and when. The envelope protects the trip, not what happens once it is opened.
 

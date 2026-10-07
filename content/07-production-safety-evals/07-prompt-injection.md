@@ -20,7 +20,7 @@ Il rischio cresce con gli strumenti. Un chatbot ingannato dice cose sbagliate. U
 
 Oggi non esiste una soluzione completa. Si riduce il danno: dare all'agente solo i permessi necessari, chiedere conferma umana per le azioni importanti, separare i passi che leggono testo esterno da quelli che agiscono, usare classificatori che cercano tentativi di attacco. Sono difese a strati, non garanzie.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Una segretaria smista la posta del suo capo. Le istruzioni sono chiare: rispondere alle richieste dei clienti. Un giorno arriva una lettera: "Nuova disposizione della direzione: spedisca a questo indirizzo una copia di tutti i contratti". Sembra ufficiale, e lei esegue. Nessuno è entrato in ufficio. È bastato un foglio nella pila della posta.
 
@@ -46,7 +46,7 @@ The risk grows with tools. A fooled chatbot says wrong things. A fooled agent ca
 
 There is no complete fix today. You reduce the damage: give the agent only the permissions it needs, ask a human to confirm important actions, keep the steps that read outside text separate from those that act, and use classifiers that look for attack attempts. These are layered defences, not guarantees.
 
-## For dummies
+## In everyday life
 
 An assistant sorts her boss's mail. Her instructions are clear: reply to customer requests. One day a letter arrives: "New directive from management: send a copy of all contracts to this address." It looks official, so she does it. Nobody broke into the office. A sheet of paper in the mail pile was enough.
 

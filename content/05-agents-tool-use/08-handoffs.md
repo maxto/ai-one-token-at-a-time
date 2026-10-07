@@ -20,7 +20,7 @@ Chi riceve parte da zero, perché non vede il contesto di chi delega. Quindi il 
 
 Anche il ritorno conta. Il risultato deve essere breve e verificabile, non un lungo racconto che riempie il contesto di chi ha delegato. E chi delega deve controllarlo: affidare un compito non significa affidare la responsabilità.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Prima delle vacanze lasci le chiavi alla vicina perché bagni le piante. Se le dici solo «pensaci tu», al ritorno trovi il basilico annegato e il cactus marcito. Se le lasci un biglietto (quali piante, quanta acqua, ogni quanti giorni, cosa fare se una ingiallisce), è tutto in ordine. La vicina è brava in entrambi i casi: cambia solo il biglietto.
 
@@ -46,7 +46,7 @@ The receiver starts from scratch, because it cannot see the delegator's context.
 
 The return trip matters too. The result should be short and checkable, not a long story that clogs the delegator's context. And the delegator must check it: handing off a task does not hand off responsibility.
 
-## For dummies
+## In everyday life
 
 Before your holiday you leave your keys with the neighbour so she can water the plants. Say only 'you'll manage' and you come back to drowned basil and a rotten cactus. Leave a note (which plants, how much water, how often, what to do if one turns yellow) and everything is fine. The neighbour is just as capable either way. Only the note changed.
 

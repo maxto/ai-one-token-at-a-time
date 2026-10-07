@@ -20,7 +20,7 @@ Questo giudizio è molto più preciso, ma anche molto più lento, perché va rip
 
 Il limite: il reranker non può recuperare ciò che la prima fase ha scartato. Riordina, non cerca.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Una scuola di musica cerca un insegnante di chitarra. La segreteria scorre duecento curriculum in un'ora e ne tiene venti, guardando parole come "chitarra" e "insegnamento". Poi il direttore incontra i venti uno per uno, li ascolta suonare e sceglie i tre migliori. Non vedrà mai chi la segreteria ha scartato, quindi il primo filtro deve essere largo.
 
@@ -46,7 +46,7 @@ That judgement is far more accurate but also far slower, because it must run onc
 
 The limit: a reranker cannot rescue what the first stage left out. It reorders. It does not search.
 
-## For dummies
+## In everyday life
 
 A music school is hiring a guitar teacher. The office skims two hundred CVs in an hour and keeps twenty, looking for words like "guitar" and "teaching". Then the director meets those twenty one by one, hears them play and picks the best three. She never sees anyone the office dropped, so the first filter has to be generous.
 

@@ -20,7 +20,7 @@ Anche con una temperatura moderata, migliaia di token poco probabili, messi insi
 
 Il limite: queste impostazioni interagiscono tra loro e con la temperatura. Di solito conviene cambiarne una sola alla volta, e alcuni fornitori sconsigliano di modificare insieme temperatura e top-p. Non rendono il modello più preciso: evitano solo le scelte peggiori.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Cena tra amici, nessuno sa dove andare. Top-k: "scegliamo tra i 3 ristoranti più votati", sempre tre, anche se uno stravince. Top-p: "teniamo i preferiti finché non raccolgono il 90% dei voti". Se tutti vogliono la pizzeria, resta solo quella. Se i gusti sono divisi, la lista si allunga. Poi si tira a sorte tra quelli rimasti, dando più biglietti ai più votati.
 
@@ -46,7 +46,7 @@ Even at a moderate temperature, thousands of unlikely tokens add up to real weig
 
 The limit: these settings interact with each other and with temperature. It is usually best to change one at a time, and some providers advise against adjusting temperature and top-p together. They do not make the model more accurate. They only rule out the worst choices.
 
-## For dummies
+## In everyday life
 
 Dinner with friends, and nobody can decide. Top-k: "let's choose among the 3 most voted places", always three, even when one wins by a mile. Top-p: "keep the favourites until they cover 90% of the votes". If everyone wants pizza, only the pizzeria survives. If tastes are split, the list grows. Then you draw lots among those left, giving more tickets to the most popular.
 

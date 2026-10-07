@@ -20,7 +20,7 @@ Confonderli porta a errori pratici. Cancellare una chat può non cancellare un f
 
 Molti servizi offrono un comando per ciascun uso: chat temporanee, una pagina per vedere e cancellare le memorie, un'opzione per escludere i propri dati dall'addestramento. Nomi e impostazioni predefinite cambiano tra servizi e tipi di account, anche nel tempo. Vale la pena controllarli uno per uno.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 In palestra il registro degli ingressi segna ogni volta che passi: è la cronologia. L'allenatore si appunta che hai male a un ginocchio e lo rilegge prima di ogni lezione: è la memoria. La palestra studia le schede di tanti iscritti per scrivere il nuovo programma per tutti: è l'addestramento. Strappare una pagina del registro non cancella l'appunto dell'allenatore, né il programma già scritto.
 
@@ -46,7 +46,7 @@ Mixing them up leads to practical mistakes. Deleting a chat may not delete a fac
 
 Many services offer one control for each use: temporary chats, a page to view and delete memories, an option to exclude your data from training. Names and default settings vary across services and account types, and over time. It is worth checking them one by one.
 
-## For dummies
+## In everyday life
 
 At the gym, the entry register records every visit: that is history. The coach notes that your knee hurts and rereads it before each session: that is memory. The gym studies the records of many members to write the new programme for everyone: that is training. Tearing a page out of the register does not erase the coach's note, nor the programme already written.
 

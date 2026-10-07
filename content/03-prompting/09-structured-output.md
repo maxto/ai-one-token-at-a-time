@@ -20,7 +20,7 @@ Molti servizi permettono di passare uno **schema**, cioè la descrizione esatta 
 
 Il limite: il vincolo riguarda la forma, non il contenuto. Un anno può essere un numero valido e sbagliato. Se l'informazione manca, un campo obbligatorio può favorire invenzioni, soprattutto se lo schema non ammette un valore nullo per indicare il dato mancante. E una risposta interrotta per limite di lunghezza, o un rifiuto, può restare senza struttura.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Il modulo d'iscrizione della biblioteca ha caselle per nome, data di nascita e telefono, e nella casella della data ci stanno solo cifre. Nessuno può scriverci una poesia. Ma il modulo non sa se la data è vera: si può scrivere una data perfetta e falsa. Dire a voce "scrivi la data in cifre" è come chiederlo nel prompt. Le caselle stampate sono lo schema.
 
@@ -46,7 +46,7 @@ Many services let you pass a **schema**, an exact description of the fields and 
 
 The limit: the constraint covers the shape, not the content. A year can be a valid number and still be wrong. If the information is missing, a required field can encourage made-up values, especially if the schema has no null value for missing data. And an answer cut off by a length limit, or a refusal, can lack the structure.
 
-## For dummies
+## In everyday life
 
 The library sign-up form has boxes for name, date of birth and phone, and the date box only takes digits. Nobody can write a poem in it. But the form cannot tell whether the date is true: you can write a perfect, false date. Saying out loud "write the date in digits" is like asking in the prompt. The printed boxes are the schema.
 

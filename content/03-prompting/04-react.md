@@ -20,7 +20,7 @@ Rispetto al solo Chain-of-Thought, il ragionamento si appoggia su dati recuperat
 
 I limiti: ogni giro costa tempo e token. Il modello può girare a vuoto o scegliere lo strumento sbagliato. Se un risultato è errato, l'errore si porta nei passi successivi. Servono un numero massimo di passi e strumenti descritti bene.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Stai preparando un risotto. Pensi: “Mi serve il brodo, ce n'è?” Apri la dispensa: c'è un solo dado. Ragioni: “Basta per un litro, me ne serve uno e mezzo.” Controlli il frigo: ci sono verdure. Decidi di fare un brodo veloce. Ogni azione ti dà un'informazione nuova, e ogni informazione cambia il piano. Non hai deciso tutto all'inizio: hai alternato pensiero e verifica.
 
@@ -46,7 +46,7 @@ Compared with Chain-of-Thought alone, the reasoning rests on data fetched from o
 
 The limits: each round costs time and tokens. The model can go round in circles or pick the wrong tool. If one result is wrong, the error carries into later steps. You need a cap on the number of steps and well-described tools.
 
-## For dummies
+## In everyday life
 
 You are making a risotto. You think: “I need stock. Is there any?” You open the cupboard: one stock cube. You reason: “That makes a litre, I need one and a half.” You check the fridge: there are vegetables. You decide to make a quick stock. Each action gives you new information, and each piece of information changes the plan. You did not decide everything up front. You alternated thinking and checking.
 

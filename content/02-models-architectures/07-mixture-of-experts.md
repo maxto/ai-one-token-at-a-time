@@ -20,7 +20,7 @@ Il vantaggio: il modello può avere moltissimi parametri in totale, quindi molta
 
 Il compromesso: tutti gli esperti devono comunque stare in memoria, quindi serve hardware con molta memoria. L'addestramento è più delicato: bisogna evitare che il router mandi tutto agli stessi pochi esperti. E distribuire gli esperti su più chip aumenta il traffico di dati tra loro.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Nella cucina di un grande ristorante ci sono venti cuochi, ma ogni comanda passa solo da due o tre postazioni. Lo chef smista: questa va alla griglia e ai contorni, quella al forno. La brigata sa fare moltissimo, ma ogni piatto impegna poche persone, così la cucina regge tanti ordini. Lo stipendio però va pagato a tutti e venti, anche a chi in quel momento è fermo.
 
@@ -46,7 +46,7 @@ The benefit: the model can have a huge number of parameters in total, so a lot o
 
 The trade-off: all the experts still have to sit in memory, so you need hardware with plenty of it. Training is trickier: you have to stop the router from sending everything to the same few experts. And spreading experts across several chips adds data traffic between them.
 
-## For dummies
+## In everyday life
 
 A big restaurant kitchen has twenty cooks, but each order passes through only two or three stations. The chef routes them: this one to the grill and sides, that one to the oven. The brigade can do a great deal, yet each dish ties up only a few people, so the kitchen keeps up with many orders. Wages, though, go to all twenty, including whoever is standing idle right now.
 

@@ -20,7 +20,7 @@ L'inferenza è ciò che succede quando lo usi: il testo entra, il modello calcol
 
 La conseguenza pratica: le conoscenze del modello si fermano alla data di taglio dei dati. Per dargli informazioni nuove ci sono due strade: metterle nel contesto, con il prompt o il RAG, oppure un nuovo addestramento, più lento e costoso.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Uno studente prepara la maturità per mesi: legge, sbaglia gli esercizi, corregge, ripete. Questo è l'addestramento. Il giorno dell'esame non studia più: usa quello che ha in testa per rispondere alle domande. Questa è l'inferenza. Se la traccia parla di un fatto successo ieri, può saperlo solo se qualcuno lo ha scritto sul foglio.
 
@@ -46,7 +46,7 @@ Inference is what happens when you use it: text goes in, the model computes, tok
 
 The practical consequence: the model's knowledge stops at its training data cutoff. There are two ways to give it new information: put it in the context, through the prompt or RAG, or train again, which is slower and more expensive.
 
-## For dummies
+## In everyday life
 
 A student spends months preparing for final exams: reading, getting exercises wrong, correcting, repeating. That is training. On exam day there is no more studying. The student answers with what is already in their head. That is inference. If a question is about something that happened yesterday, they can only know it if someone wrote it on the exam sheet.
 

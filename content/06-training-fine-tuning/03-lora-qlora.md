@@ -20,7 +20,7 @@ Il risultato è un adattatore leggero, un file da pochi a qualche centinaio di m
 
 Il compromesso: su compiti difficili o molto lontani dai dati originali, LoRA può rendere un po' meno del fine-tuning completo. Bisogna anche scegliere il rango, cioè quanto sono larghe le matrici aggiunte.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un'orchestra suona da anni lo stesso repertorio classico. Per una serata jazz il direttore non riscrive tutte le partiture. Distribuisce ai musicisti dei foglietti adesivi con poche annotazioni a matita: qui swing, là un accento diverso. Le partiture originali restano intatte. Il giorno dopo si staccano i foglietti e si torna a Brahms. Per un'altra serata a tema basta un altro set di foglietti.
 
@@ -46,7 +46,7 @@ The output is a lightweight adapter, a file of a few megabytes to a few hundred.
 
 The trade-off: on hard tasks, or ones far from the original data, LoRA can fall a little short of full fine-tuning. You also have to pick the rank, which sets how wide the added matrices are.
 
-## For dummies
+## In everyday life
 
 An orchestra has played the same classical repertoire for years. For a jazz night the conductor doesn't rewrite every score. He hands out sticky notes with a few pencil marks: swing here, a different accent there. The original scores stay untouched. Next day the notes come off and it's back to Brahms. Another themed night just needs another set of notes.
 

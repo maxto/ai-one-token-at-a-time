@@ -20,7 +20,7 @@ Poi si confrontano quattro cose. La qualità: quante risposte sono buone. Il cos
 
 Due cautele. Le risposte cambiano da una prova all'altra, quindi conviene ripetere i casi più importanti. E un modello grande non è sempre necessario: per compiti semplici spesso basta uno piccolo e veloce. Quando escono modelli nuovi si rifà il confronto sugli stessi casi.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Per comprare scarpe da corsa non ti fidi solo della classifica di una rivista. Ne provi due o tre paia in negozio, sul tapis roulant, con le calze che usi di solito. Guardi come ti trovi, quanto costano e se ti fanno venire le vesciche, che poi devi curare tu. Il paio primo in classifica può non essere il migliore per il tuo piede.
 
@@ -46,7 +46,7 @@ Then compare four things. Quality: how many answers are good. Cost per task, whi
 
 Two cautions. Answers vary from one run to the next, so repeat the most important cases. And a large model is not always needed: for simple tasks a small, fast one is often enough. When new models come out, rerun the comparison on the same cases.
 
-## For dummies
+## In everyday life
 
 When buying running shoes you do not just trust a magazine's ranking. You try two or three pairs in the shop, on the treadmill, with the socks you usually wear. You check how they feel, what they cost and whether they give you blisters, which you then have to treat yourself. The top-ranked pair may not be the best one for your feet.
 

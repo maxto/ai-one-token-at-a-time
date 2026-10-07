@@ -20,7 +20,7 @@ Più testo non vuol dire risposte migliori. I pezzi irrilevanti distraggono il m
 
 C'è anche un rischio di sicurezza: un documento recuperato può nascondere istruzioni proprie (prompt injection). Il testo recuperato va trattato come dato, non come comando.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un amico parte per Vienna e vi chiede consigli sul treno. Potreste rovesciargli addosso tutte le guide che avete in casa. Meglio dargli tre pagine segnate con un post-it, dirgli da quale guida viene ciascuna e aggiungere: "se qui non c'è, chiedi in stazione". Riceve meno carta, ma risponde meglio alle sue domande e sa quando fermarsi.
 
@@ -46,7 +46,7 @@ More text does not mean better answers. Irrelevant chunks distract the model, an
 
 There is a security risk too: a retrieved document can hide instructions of its own (prompt injection). Retrieved text must be treated as data, not as commands.
 
-## For dummies
+## In everyday life
 
 A friend is off to Vienna and asks you about the train. You could dump every guidebook you own on him. Better to hand him three pages marked with sticky notes, tell him which guide each came from, and add: "if it's not here, ask at the station". He gets less paper, answers his own questions better, and knows when to stop.
 

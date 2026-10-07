@@ -20,7 +20,7 @@ I ruoli sono tre. L'host è l'applicazione con cui lavori. Al suo interno, un cl
 
 MCP standardizza il collegamento, non la fiducia. Un server di terzi può essere scritto male o essere malevolo, e ogni server collegato aggiunge descrizioni al contesto. Con molti server conviene caricare gli strumenti solo quando servono.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Prima dell'USB-C ogni telefono aveva il suo caricatore e i cassetti erano pieni di cavi. Poi è arrivata una porta comune: lo stesso cavo carica il telefono, il portatile e le cuffie. MCP fa lo stesso per l'AI. Chi costruisce un servizio crea una sola «porta» MCP e ogni app AI compatibile sa già come collegarsi. Come per i caricatori, però, una porta standard non garantisce che il cavo sia di buona qualità.
 
@@ -46,7 +46,7 @@ There are three roles. The host is the application you work in. Inside it, a cli
 
 MCP standardizes the connection, not the trust. A third-party server can be badly written or malicious, and every connected server adds descriptions to the context. With many servers, it pays to load tools only when they are needed.
 
-## For dummies
+## In everyday life
 
 Before USB-C, every phone had its own charger and drawers filled up with cables. Then a common port arrived: the same cable charges the phone, the laptop and the headphones. MCP does the same for AI. Whoever builds a service makes one MCP 'port', and every compatible AI app already knows how to plug in. As with chargers, though, a standard port does not guarantee a good cable.
 

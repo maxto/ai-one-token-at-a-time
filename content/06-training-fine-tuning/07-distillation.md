@@ -20,7 +20,7 @@ Queste "etichette morbide" contengono più informazione di una sola risposta cor
 
 Il risultato è un modello più rapido ed economico, che può girare anche su telefoni e portatili. Il limite: lo studente ha meno capacità e perde soprattutto sui compiti difficili o rari. Eredita anche gli errori dell'insegnante. Attenzione alle licenze: alcuni fornitori vietano di usare le uscite dei loro modelli per allenarne altri.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un maestro di scacchi gioca con un allievo e, a ogni mossa, non indica solo la migliore. Aggiunge: "questa è quasi altrettanto buona, quest'altra è un disastro". L'allievo assorbe il modo di giudicare del maestro, non solo le mosse giuste, e migliora in fretta. Non lo raggiungerà nelle posizioni più complicate, ma per le partite di tutti i giorni basta e avanza.
 
@@ -46,7 +46,7 @@ These "soft labels" carry more information than a single correct answer, so the 
 
 The result is a faster, cheaper model that can even run on phones and laptops. The limit: the student has less capacity and loses most on hard or rare tasks. It also inherits the teacher's mistakes. Watch the licences too: some providers forbid using their models' outputs to train other models.
 
-## For dummies
+## In everyday life
 
 A chess master plays with a pupil and, at every move, doesn't only name the best one. He adds: "this one is nearly as good, that one is a disaster". The pupil absorbs the master's judgement, not just the right moves, and improves quickly. He won't match the master in the trickiest positions, but for everyday games he is more than good enough.
 

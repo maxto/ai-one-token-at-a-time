@@ -20,7 +20,7 @@ Nella pianificazione l'agente scompone l'obiettivo in sotto-compiti, li ordina e
 
 Il limite: più ragionamento costa più token e più tempo, e aggiunge poco alle domande semplici. Inoltre il testo del ragionamento non è sempre una descrizione fedele di come il modello è arrivato alla risposta.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Per una cena con otto ospiti nessuno inizia a cucinare a caso. Prima si scrive il menu, poi la lista della spesa, poi l'ordine: il dolce la mattina perché deve raffreddare, l'arrosto alle sei, l'insalata per ultima. Se al mercato mancano i carciofi, si cambia contorno e si aggiorna il piano. Scrivere i passi non rende il cuoco più bravo, ma gli evita di perdere il filo.
 
@@ -46,7 +46,7 @@ In planning, the agent breaks the goal into sub-tasks, orders them and often wri
 
 The limit: more reasoning costs more tokens and more time, and adds little to simple questions. Also, the written reasoning is not always a faithful account of how the model actually reached its answer.
 
-## For dummies
+## In everyday life
 
 Nobody cooks dinner for eight by starting at random. First the menu, then the shopping list, then the order: dessert in the morning because it must cool, the roast at six, the salad last. If the market has no artichokes, the side dish changes and the plan is updated. Writing the steps down does not make the cook more skilled, but it keeps them from losing track.
 

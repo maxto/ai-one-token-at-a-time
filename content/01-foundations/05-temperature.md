@@ -20,7 +20,7 @@ La **temperatura** modifica le probabilità prima dell'estrazione: i punteggi ve
 
 Il compromesso: bassa per estrarre dati, classificare o scrivere codice, più alta per idee e varianti. Anche a temperatura 0 la risposta può cambiare leggermente tra una richiesta e l'altra, per dettagli tecnici del calcolo sui server.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Nella trattoria sotto casa ordini quasi sempre la carbonara, qualche volta l'amatriciana, di rado il piatto del giorno. Con la temperatura bassa prendi sempre la carbonara: sicuro, ma monotono. Con la temperatura alta ogni tanto ordini la trippa che non hai mai provato. Può essere una scoperta o un disastro. Il menu è lo stesso. Cambia quanto peso dai alle abitudini.
 
@@ -46,7 +46,7 @@ The model generates one token at a time. At each step it produces a score for ev
 
 The trade-off: keep it low for extracting data, classifying or writing code. Raise it for ideas and variations. Even at temperature 0 the output can vary slightly between requests, because of technical details in how servers run the computation.
 
-## For dummies
+## In everyday life
 
 At your local trattoria you nearly always order the carbonara, sometimes the amatriciana, rarely the daily special. At low temperature you get the carbonara every time: safe, but dull. At high temperature you now and then order the tripe you have never tried. It might be a discovery or a disaster. The menu stays the same. What changes is how much weight your habits get.
 

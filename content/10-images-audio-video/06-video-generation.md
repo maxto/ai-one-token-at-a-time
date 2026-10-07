@@ -20,7 +20,7 @@ La difficoltà è mantenere identità e relazioni mentre la scena cambia. Una pe
 
 A parità delle altre condizioni, più durata e più fotogrammi richiedono generalmente più calcolo e memoria. Anche la risoluzione pesa, e i nuovi tentativi aumentano il costo complessivo. Per un progetto pratico conviene provare prima una scena breve e semplice, poi controllare l'intera sequenza e i passaggi difficili.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Vuoi un breve video di una persona che prepara il tè. La tazza e l'inquadratura restano ferme. Il primo fotogramma mostra il manico a destra. Mentre la mano passa davanti, il manico sparisce e poi ricompare dall'altra parte. Ogni immagine potrebbe sembrare una bella fotografia, ma viste insieme raccontano un movimento incoerente. Controllare l'intera sequenza aiuta anche a trovare errori temporanei, assenti nel primo e nell'ultimo fotogramma.
 
@@ -46,7 +46,7 @@ The challenge is maintaining identity and relationships as the scene changes. A 
 
 With other conditions held constant, longer duration and more frames generally require more computation and memory. Resolution matters too, and retries increase the overall cost. For a practical project, start with a short, simple scene, then check the whole sequence and its difficult transitions.
 
-## For dummies
+## In everyday life
 
 You want a short video of someone making tea. The cup and camera remain still. The first frame shows the handle on the right. As a hand passes in front, the handle disappears and then returns on the other side. Each image might look like a fine photograph, but together they show inconsistent movement. Checking the whole sequence also helps reveal temporary errors absent from the first and last frames.
 

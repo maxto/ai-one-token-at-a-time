@@ -20,7 +20,7 @@ Controlla prima l'**esistenza**: apri il documento e confronta titolo, autore e 
 
 Infine valuta autorevolezza, attualità e limiti della fonte. Per un orario cerca chi gestisce il servizio, per un risultato di ricerca il lavoro originale. Se il documento non è accessibile, considera quel riferimento non verificato. La fonte stessa può comunque contenere errori o richiedere un confronto indipendente.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Per una gita scolastica chiedi se un museo offre laboratori ogni domenica. L'assistente cita una pagina del museo che esiste davvero. Aprendola scopri che il laboratorio era previsto per una sola domenica, durante una festa. Il collegamento era autentico, ma non sosteneva la regola generale. Prima di organizzare la visita controlli il calendario corrente e, se resta un dubbio, contatti il museo.
 
@@ -46,7 +46,7 @@ First check **existence**: open the document and compare its title, author and d
 
 Finally assess the source's authority, currency and limitations. For a timetable, consult the service operator. For a research finding, consult the original study. If the document is inaccessible, treat that reference as unverified. The source itself may still contain errors or need independent corroboration.
 
-## For dummies
+## In everyday life
 
 For a school trip, you ask whether a museum runs workshops every Sunday. The assistant cites a genuine museum page. When you open it, you discover that the workshop was scheduled for just one Sunday during a festival. The link was authentic, but did not support the general rule. Before arranging the visit, you check the current calendar and contact the museum if anything remains unclear.
 

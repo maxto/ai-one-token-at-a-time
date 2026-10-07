@@ -20,7 +20,7 @@ Da lì sono nate tre famiglie. Solo encoder (come BERT): ottimi per classificare
 
 Il compromesso: un encoder vede il contesto in entrambe le direzioni ma non è fatto per scrivere testi lunghi. Un decoder scrive bene ma, a parità di dimensioni, può rendere meno di un encoder su compiti come classificazione o ricerca.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 In una redazione lavorano due persone. Il correttore legge l'articolo intero, avanti e indietro, e capisce di cosa parla: sa dirti l'argomento o trovare l'errore. Lo scrittore invece compone riga dopo riga, e per scegliere la parola successiva guarda solo ciò che ha già scritto. Per tradurre un libro servono entrambi: uno legge l'originale, l'altro scrive la versione nuova.
 
@@ -46,7 +46,7 @@ Three families grew from that. Encoder-only (such as BERT): great for classifyin
 
 The trade-off: an encoder sees context in both directions but is not built to write long text. A decoder writes well but, at the same size, can do worse than an encoder on tasks like classification or search.
 
-## For dummies
+## In everyday life
 
 Two people work at a newspaper. The proofreader reads the whole article, back and forth, and grasps what it is about: they can name the topic or spot the error. The writer composes line by line and, to choose the next word, looks only at what is already written. To translate a book you need both: one reads the original, the other writes the new version.
 

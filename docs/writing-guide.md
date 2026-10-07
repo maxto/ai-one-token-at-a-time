@@ -19,7 +19,7 @@ Smart readers who are not ML engineers. Level: medium-high. Explain the real mec
 |---|---|---|---|
 | One line | `## In una frase` | `## One line` | one sentence, max ~25 words |
 | Deep dive | `## Approfondimento` | `## Deep dive` | 2–3 paragraphs, 110–180 words total: how it works, why it matters, a limit or trade-off |
-| For dummies | `## Esempio for dummies` | `## For dummies` | 50–90 words, an everyday scene or analogy. Vary the opening (not always "Imagine…") |
+| In everyday life | `## Nella vita di tutti i giorni` | `## In everyday life` | 50–90 words, an everyday scene or analogy. Vary the opening (not always "Imagine…") |
 | Common mistake | `## Errore comune` | `## Common mistake` | 25–50 words: the misconception and the correct view |
 | Figure caption | `## Didascalia della figura` | `## Figure caption` | one sentence: what the picture shows |
 
@@ -44,7 +44,7 @@ title.en: Tokens & tokenization
 …
 ## Approfondimento
 …
-## Esempio for dummies
+## Nella vita di tutti i giorni
 …
 ## Errore comune
 …
@@ -57,7 +57,7 @@ title.en: Tokens & tokenization
 …
 ## Deep dive
 …
-## For dummies
+## In everyday life
 …
 ## Common mistake
 …

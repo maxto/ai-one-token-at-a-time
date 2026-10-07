@@ -20,7 +20,7 @@ Poi arriva una seconda fase: fine-tuning su istruzioni ed esempi di dialogo, spe
 
 Il limite principale: il modello produce testo plausibile, non testo verificato. Può affermare fatti inventati con sicurezza (le cosiddette allucinazioni) e non sa nulla di ciò che è successo dopo la fine dei suoi dati di addestramento, a meno che non gli si diano strumenti o documenti.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un amico ha letto tutti i libri di una biblioteca enorme, ma non può più entrarci. Gli chiedi una ricetta e lui la ricostruisce a memoria, frase dopo frase, scegliendo ogni volta la parola che suona più giusta. Spesso è perfetta. A volte sbaglia una dose, con lo stesso tono sicuro. E dei libri arrivati dopo la sua ultima visita non sa nulla.
 
@@ -46,7 +46,7 @@ A second phase follows: fine-tuning on instructions and example dialogues, often
 
 The main limit: the model produces plausible text, not checked text. It can state invented facts with confidence (so-called hallucinations), and it knows nothing about what happened after its training data ends unless you give it tools or documents.
 
-## For dummies
+## In everyday life
 
 A friend has read every book in a huge library but can no longer go inside. You ask for a recipe and they rebuild it from memory, sentence by sentence, each time picking the word that sounds most right. Often it is perfect. Sometimes a quantity is wrong, stated in the same confident tone. And they know nothing about books that arrived after their last visit.
 

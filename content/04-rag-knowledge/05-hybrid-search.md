@@ -20,7 +20,7 @@ La ricerca vettoriale ha i difetti opposti: capisce i sinonimi, ma può mancare 
 
 Il costo è un secondo indice da mantenere e un parametro in più da regolare. In cambio, il recupero di solito diventa più robusto.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Vi serve un ricambio per l'aspirapolvere. Un commesso guarda solo il codice stampato sul pezzo: se il codice è giusto, lo trova subito. Un altro ascolta la descrizione, "quel tubo snodato che si aggancia sotto", e capisce cosa intendete anche senza codice. Chiedere a entrambi e confrontare le loro proposte funziona meglio che fidarsi di uno solo.
 
@@ -46,7 +46,7 @@ Vector search has the opposite flaws: it handles synonyms but can miss an exact 
 
 The cost is a second index to maintain and one more setting to tune. In return, retrieval usually becomes more robust.
 
-## For dummies
+## In everyday life
 
 You need a spare part for your vacuum cleaner. One shop assistant only checks the code printed on the part: give him the right code and he finds it at once. Another listens to your description, "that bendy hose that clips on underneath", and gets it with no code at all. Asking both and comparing their picks works better than trusting either alone.
 

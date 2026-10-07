@@ -20,7 +20,7 @@ Così può descrivere una foto, leggere un appunto scritto a mano o rispondere a
 
 Limiti: i dettagli fini restano difficili. Contare oggetti, leggere scritte minuscole o capire posizioni precise può fallire. E le immagini consumano molti token, quindi spazio nel contesto e costo.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Al bancone della posta mostri una busta e chiedi: «Basta questo francobollo?». L'impiegato la guarda, legge l'indirizzo, ne stima il peso a occhio e ti risponde. Non serve che tu gli descriva la busta a parole: unisce in un colpo solo quello che vede e la tua domanda. Un modello multimodale fa lo stesso con una foto e un testo.
 
@@ -46,7 +46,7 @@ That is how it can describe a photo, read a handwritten note or answer a questio
 
 Limits: fine detail remains hard. Counting objects, reading tiny print or judging exact positions can fail. And images use up many tokens, which costs context space and money.
 
-## For dummies
+## In everyday life
 
 At the post office counter you hold up an envelope and ask: “Is this stamp enough?” The clerk looks at it, reads the address, judges the weight by eye and answers. You don't need to describe the envelope in words: they combine what they see with your question in one go. A multimodal model does the same with a photo and a line of text.
 

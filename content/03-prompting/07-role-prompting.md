@@ -20,7 +20,7 @@ Funziona meglio quando il ruolo è specifico e accompagnato dal contesto. “Sei
 
 Il limite è importante. Un ruolo non aggiunge conoscenze che il modello non ha. “Sei un medico” non lo rende un medico: cambia lo stile, non l'accuratezza. Sulle domande di fatto gli studi mostrano effetti piccoli o incostanti.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Allo sportello delle poste, la stessa domanda su un pacco smarrito riceve risposte diverse. L'impiegato nuovo legge il regolamento. Quello con vent'anni di servizio ti dice subito quale modulo compilare e a chi telefonare. Il direttore ti parla di tempi e rimborsi. Le regole sono le stesse per tutti: cambia cosa mettono in primo piano. Ma nessuno dei tre sa dirti dove sia il pacco, se nessuno l'ha registrato.
 
@@ -46,7 +46,7 @@ It works best when the role is specific and comes with context. “You are an ex
 
 The limit matters. A role does not add knowledge the model lacks. “You are a doctor” does not make it one: it changes the style, not the accuracy. On factual questions, studies show small or inconsistent effects.
 
-## For dummies
+## In everyday life
 
 At the post office counter, the same question about a lost parcel gets different answers. The new clerk reads out the rules. The one with twenty years' service tells you straight away which form to fill in and whom to call. The manager talks about timelines and refunds. The rules are the same for all three. What changes is what they put first. None of them can tell you where the parcel is if nobody logged it.
 

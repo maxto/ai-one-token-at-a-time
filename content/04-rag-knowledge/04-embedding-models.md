@@ -20,7 +20,7 @@ Così "come pulire il forno" trova anche "togliere il grasso incrostato", senza 
 
 Un vincolo pratico: domande e documenti vanno trasformati con lo stesso modello. Vettori di modelli diversi non sono confrontabili. Se cambiate modello, dovete ricalcolare l'intero indice.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Su una mappa delle canzoni, ogni brano ha coordinate decise da ritmo, umore e strumenti. Le ballate malinconiche stanno in un angolo, i pezzi da ballare in un altro. Una playlist "simili a questa" prende semplicemente le canzoni vicine. Il modello di embedding è chi disegna la mappa. Se due cartografi diversi disegnano due mappe, le coordinate dell'una non hanno senso sull'altra.
 
@@ -46,7 +46,7 @@ That is how "how to clean the oven" can find "removing baked-on grease" with no 
 
 One practical constraint: queries and documents must go through the same model. Vectors from different models cannot be compared. If you switch models, you must re-embed the whole index.
 
-## For dummies
+## In everyday life
 
 On a map of songs, each track gets coordinates from its rhythm, mood and instruments. Sad ballads cluster in one corner, dance tracks in another. A "more like this" playlist simply picks nearby songs. The embedding model is the one who draws the map. If two different mapmakers draw two maps, coordinates from one mean nothing on the other.
 

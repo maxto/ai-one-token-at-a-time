@@ -20,7 +20,7 @@ La misura più usata è la **similarità del coseno**: guarda l'angolo tra due v
 
 Il limite: vicino non vuol dire giusto né pertinente. "Il negozio apre alle 9" e "il negozio non apre alle 9" possono risultare molto simili.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 In biblioteca chiedi un libro "sui viaggi in treno in Asia". Il bibliotecario non cerca quelle parole esatte nei titoli. Va allo scaffale giusto e prende i libri accanto: guide ferroviarie, diari di viaggio in India, un saggio sulla Transiberiana. La similarità tra vettori fa questo: misura quanto due testi stanno vicini e ti porta i più prossimi, anche se usano parole diverse.
 
@@ -46,7 +46,7 @@ This is the engine behind semantic search and RAG (Retrieval-Augmented Generatio
 
 The limit: close does not mean correct or relevant. "The shop opens at 9" and "the shop does not open at 9" can score as very similar.
 
-## For dummies
+## In everyday life
 
 At the library you ask for a book "about train travel in Asia". The librarian doesn't scan titles for those exact words. They walk to the right shelf and pull out the neighbours: railway guides, travel diaries from India, a book on the Trans-Siberian. Vector similarity does the same: it measures how close two texts sit and returns the nearest ones, even when they use different words.
 

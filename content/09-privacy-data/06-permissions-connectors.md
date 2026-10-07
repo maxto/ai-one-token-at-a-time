@@ -20,7 +20,7 @@ Il **principio del minimo privilegio** dice di dare a ogni persona o programma s
 
 In pratica: preferisci la sola lettura quando basta, limita l'accesso a una cartella o a un calendario se il servizio lo permette, chiedi una conferma prima delle azioni importanti. E rivedi ogni tanto i collegamenti attivi: un accesso che non usi più va revocato.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Prima delle vacanze lasci al vicino le chiavi per bagnare le piante. Gli dai quella del portone e del balcone, non quella della cantina e dell'auto. Se ti fidi, va benissimo. Ma se qualcuno lo convince con un biglietto falso a "prendere un pacco in camera", meno porte apre la sua chiave, meno danni può fare. Al ritorno, le chiavi te le fai ridare.
 
@@ -46,7 +46,7 @@ The **principle of least privilege** says to give every person or program only t
 
 In practice: prefer read-only access when it is enough, limit access to one folder or calendar if the service allows it, and ask for confirmation before important actions. Also review your active connections now and then: access you no longer use should be revoked.
 
-## For dummies
+## In everyday life
 
 Before going on holiday you leave your neighbour the keys to water the plants. You hand over the front door and balcony keys, not the cellar or the car. If you trust them, fine. But if someone talks them into "fetching a parcel from the bedroom" with a fake note, the fewer doors their keys open, the less harm they can do. When you get back, you ask for the keys back.
 

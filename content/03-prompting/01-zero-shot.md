@@ -20,7 +20,7 @@ Nello **zero-shot prompting** descrivi il compito e il modello risponde, senza e
 
 Il limite arriva con compiti insoliti o formati molto precisi. Se vuoi un'etichetta tra cinque categorie inventate da te, o uno stile particolare, il modello deve indovinare. Lì conviene passare agli esempi (vedi Few-shot Prompting).
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un amico ti chiede di portare “qualcosa da bere” alla cena. Non ti dice marca né quantità, ma sai cosa si porta di solito a una cena tra amici e arrivi con due bottiglie di vino e dell'acqua. Hai svolto il compito senza esempi, grazie a ciò che già sapevi. Se invece ti avesse chiesto “il solito di Marco”, senza averti mai mostrato cosa beve Marco, avresti dovuto tirare a indovinare.
 
@@ -46,7 +46,7 @@ It is the right starting point: cheap, quick to write, and enough for common tas
 
 The limit shows up with unusual tasks or very precise formats. If you want one label out of five categories you invented, or a specific house style, the model has to guess. That is when examples help (see Few-shot Prompting).
 
-## For dummies
+## In everyday life
 
 A friend asks you to bring “something to drink” to dinner. No brand, no quantity. You know what people usually bring to a dinner among friends, so you turn up with two bottles of wine and some water. You did the task with no examples, using what you already knew. Had they asked for “Marco's usual” without ever showing you what Marco drinks, you would have had to guess.
 

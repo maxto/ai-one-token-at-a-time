@@ -20,7 +20,7 @@ I metadati di provenienza descrivono invece la storia dichiarata del file. Lo st
 
 I rilevatori di AI cercano tracce statistiche senza richiedere una dichiarazione del creatore. Possono segnalare contenuti autentici o non riconoscere quelli sintetici, soprattutto fuori dalle condizioni di valutazione. Usa il risultato come indizio, insieme alla fonte originale e ad altre conferme, non come verdetto.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Ricevi la foto di un albero caduto davanti alla scuola. Il file ha una scheda di provenienza valida, ma questo non dice se la foto sia di oggi o se la descrizione del luogo sia corretta. Cerchi il messaggio originale e una conferma della scuola. Se la scheda manca, fai gli stessi controlli: la sua assenza non dimostra che l'immagine sia generata.
 
@@ -46,7 +46,7 @@ Provenance metadata instead describes a file's declared history. The open C2PA s
 
 AI detectors look for statistical traces without requiring a creator's declaration. They may flag authentic content or miss synthetic content, especially outside their evaluation conditions. Treat the result as a clue alongside the original source and other confirmation, not as a verdict.
 
-## For dummies
+## In everyday life
 
 You receive a photo of a fallen tree outside the school. The file has a valid provenance record, but this does not tell you whether the photo is from today or the location description is correct. You look for the original post and confirmation from the school. If the record is missing, make the same checks: its absence does not prove the image was generated.
 

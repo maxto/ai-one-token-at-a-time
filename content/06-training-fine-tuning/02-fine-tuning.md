@@ -20,7 +20,7 @@ Funziona bene per insegnare uno stile, un formato fisso, un gergo o un compito r
 
 Ha due limiti noti. Primo: è poco affidabile per aggiungere fatti nuovi o che cambiano spesso. In quel caso conviene recuperare i documenti al momento della domanda. Secondo: se si esagera, il modello può perdere capacità che aveva prima. Questo fenomeno si chiama oblio catastrofico.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Una cuoca esperta viene assunta in un ristorante giapponese. Sa già tagliare, cuocere e condire: non deve tornare a scuola. Passa un mese accanto allo chef per imparare il riso da sushi, i tagli del pesce e l'impiattamento della casa. Alla fine cucina in stile giapponese senza aver dimenticato il resto. Se però per un anno facesse solo sushi, qualche ricetta di prima potrebbe arrugginirsi.
 
@@ -46,7 +46,7 @@ It works well for teaching a style, a fixed output format, a vocabulary or a rep
 
 It has two known limits. First, it is an unreliable way to add new or fast-changing facts. Fetching the documents at question time usually works better. Second, push it too hard and the model can lose skills it had before. This is called catastrophic forgetting.
 
-## For dummies
+## In everyday life
 
 An experienced cook joins a Japanese restaurant. She already knows how to chop, cook and season, so there's no going back to school. She spends a month beside the chef learning sushi rice, fish cuts and the house plating. Afterwards she cooks Japanese-style without forgetting everything else. If she made nothing but sushi for a year, though, some of her old recipes might get rusty.
 

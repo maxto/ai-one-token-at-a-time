@@ -20,7 +20,7 @@ La descrizione ammette molte immagini possibili. Cambiando il rumore iniziale po
 
 Il seed non è una fotografia salvata. Per ripetere un risultato servono anche lo stesso modello, le stesse impostazioni e condizioni di esecuzione compatibili. Differenze nel software o nell'hardware possono impedire una copia identica. Conviene conservare l'immagine riuscita insieme al prompt e alle impostazioni.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Chiedi a due illustratori una bicicletta sotto la pioggia. Uno la mette davanti a una scuola, l'altro vicino a un albero. Entrambi rispettano la richiesta, perché molte scelte restano aperte. Nel generatore, il rumore casuale contribuisce a queste differenze. Conservare il seed aiuta a ripartire in condizioni simili, ma serve anche conservare il resto della “ricetta”.
 
@@ -46,7 +46,7 @@ The description allows many possible images. Changing the initial noise can chan
 
 A seed is not a saved photograph. Repeating a result also requires the same model, the same settings and compatible execution conditions. Software or hardware differences can prevent an identical copy. Keep a successful image together with its prompt and settings.
 
-## For dummies
+## In everyday life
 
 You ask two illustrators for a bicycle in the rain. One puts it outside a school, the other beside a tree. Both follow the request, because many choices remain open. In a generator, random noise contributes to these differences. Keeping the seed helps you start again under similar conditions, but you also need the rest of the “recipe”.
 

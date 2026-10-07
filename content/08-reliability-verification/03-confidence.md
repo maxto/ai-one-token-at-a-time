@@ -20,7 +20,7 @@ La **calibrazione** confronta la sicurezza dichiarata con la frequenza di rispos
 
 Chiedere "quali parti sono incerte e quali informazioni mancano?" può aiutare a individuare punti da verificare. Chiedi anche di distinguere fatti documentati, ipotesi e deduzioni. Resta un aiuto all'analisi: il modello può omettere un dubbio o inventarne uno. Una percentuale scritta nella chat, senza valutazioni pertinenti, non è una misura validata.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Due amici ti spiegano come raggiungere una palestra. Il primo parla senza esitazioni, il secondo dice che una strada potrebbe essere chiusa. Il tono non basta per scegliere. Controlli la mappa e l'avviso sui lavori. Il dubbio del secondo amico ti ha indicato cosa verificare, ma non ha dimostrato da solo che la strada sia chiusa. Lo stesso vale per le cautele espresse da un assistente.
 
@@ -46,7 +46,7 @@ An assistant can write "certainly" before a false statement and "perhaps" before
 
 Asking "which parts are uncertain and what information is missing?" can help identify points to check. Also ask it to separate documented facts, assumptions and deductions. This remains an analytical aid: the model can miss an uncertainty or invent one. A percentage written in chat, without relevant evaluation, is not a validated measure.
 
-## For dummies
+## In everyday life
 
 Two friends explain how to reach a gym. One speaks without hesitation, while the other says a road might be closed. Tone is not enough to choose between them. You check the map and the roadworks notice. The second friend's uncertainty suggested something to check, but did not by itself establish that the road was closed. The same applies to an assistant's expressions of caution.
 

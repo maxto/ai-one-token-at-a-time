@@ -20,7 +20,7 @@ Per farli rendere bene si usano alcune tecniche. Dati di addestramento più cura
 
 Il compromesso: sanno meno cose e reggono peggio i compiti lunghi e complessi. Rendono al massimo su compiti stretti e ben definiti, soprattutto dopo un fine-tuning mirato.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 In cucina c'è il robot multifunzione con trenta accessori e c'è il pelapatate. Il robot fa quasi tutto, ma occupa mezzo bancone e va montato. Il pelapatate sta in un cassetto, costa poco ed è pronto in un secondo. Se ogni giorno devi solo pelare patate, vince lui. Se devi preparare un menù intero per dieci persone, ti serve il robot.
 
@@ -46,7 +46,7 @@ A few techniques help them perform well for their size. Better-curated training 
 
 The trade-off: they know less and struggle more with long, complex tasks. They do best on narrow, well-defined jobs, especially after targeted fine-tuning.
 
-## For dummies
+## In everyday life
 
 The kitchen has a food processor with thirty attachments, and it has a vegetable peeler. The processor does almost everything, but it takes up half the counter and needs assembling. The peeler fits in a drawer, costs little and is ready in a second. If all you do each day is peel potatoes, the peeler wins. For a full dinner for ten, you want the processor.
 

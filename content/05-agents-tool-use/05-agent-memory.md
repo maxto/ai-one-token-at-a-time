@@ -20,7 +20,7 @@ La memoria a lungo termine vive fuori dal modello: file di note, database, archi
 
 Il difficile è scegliere. Salvare tutto riempie il contesto di rumore. Salvare male fissa errori che poi vengono riletti come veri. Una memoria utile è breve, datata, rivista ogni tanto e trattata come un appunto da verificare, non come una verità.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un'infermiera finisce il turno di notte. Non può passare la propria testa alla collega del mattino, quindi lascia una consegna scritta: chi ha la febbre, quali farmaci sono stati dati, cosa controllare alle dieci. La collega legge e riparte da lì. Se la consegna è troppo lunga, l'essenziale si perde. Se contiene un errore, l'errore passa al turno successivo.
 
@@ -46,7 +46,7 @@ Long-term memory lives outside the model: note files, databases, stores searched
 
 The hard part is choosing. Saving everything fills the context with noise. Saving badly locks in mistakes that are later read back as true. Useful memory is short, dated, reviewed now and then, and treated as a note to verify, not as the truth.
 
-## For dummies
+## In everyday life
 
 A nurse finishes the night shift. She cannot hand her memory to the morning colleague, so she leaves a written handover: who has a fever, which drugs were given, what to check at ten. The colleague reads it and picks up from there. If the note is too long, the essentials get lost. If it contains a mistake, the mistake carries into the next shift.
 

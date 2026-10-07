@@ -20,7 +20,7 @@ Gli esempi comunicano cose difficili da descrivere a parole: un formato esatto, 
 
 Ci sono dei costi. Ogni esempio occupa token, quindi spazio e denaro a ogni chiamata. Il modello copia anche dettagli che non volevi: se tutti gli esempi sono brevi, le risposte saranno brevi. Se tre su quattro hanno la stessa etichetta, tenderà a sceglierla. Servono esempi vari, rappresentativi e coerenti tra loro. Con i modelli recenti, istruzioni chiare più uno o due esempi bastano spesso.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Primo giorno in biblioteca. La responsabile non ti spiega il sistema di etichette. Ti mette davanti tre libri già catalogati, un romanzo, un atlante e un manuale di cucina, ognuno con la sua etichetta sul dorso. Poi ti passa un quarto libro. Dagli esempi ricavi formato, ordine dei campi e abbreviazioni. Ma se i tre esempi fossero stati tutti romanzi, al primo libro di giardinaggio avresti rischiato di sbagliare.
 
@@ -46,7 +46,7 @@ Examples convey things that are hard to put into words: an exact format, a tone,
 
 There are costs. Every example uses tokens, so space and money on every call. The model also copies details you did not intend: if all examples are short, answers will be short. If three out of four share a label, it will lean toward that label. Examples need to be varied, representative and consistent. With recent models, clear instructions plus one or two examples are often enough.
 
-## For dummies
+## In everyday life
 
 First day at a library. The head librarian does not explain the labelling system. She puts three catalogued books in front of you, a novel, an atlas and a cookbook, each with a spine label. Then she hands you a fourth. From the examples you work out the format, the order of fields and the abbreviations. But had all three been novels, the first gardening book would probably have tripped you up.
 

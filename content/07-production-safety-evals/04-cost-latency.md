@@ -20,7 +20,7 @@ Le leve principali sono poche. Scegliere il modello più piccolo che supera i pr
 
 Ogni leva ha un prezzo. Un modello piccolo può essere meno affidabile sui compiti complessi. I modelli che ragionano a lungo prima di rispondere producono molti token che non vedi ma paghi. Il numero giusto non è il costo per chiamata ma il costo per compito riuscito, tentativi falliti compresi.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 All'ufficio postale il costo di una spedizione dipende dal peso e dalla velocità scelta. Una raccomandata urgente arriva prima ma costa di più. Un pacco ordinario costa poco ma arriva tra giorni. Chi spedisce tanto impara a scegliere: posta veloce solo per ciò che corre, invii raggruppati per il resto. E conta il costo per pacco arrivato: una spedizione economica che si perde e va rifatta costa il doppio.
 
@@ -46,7 +46,7 @@ The main levers are few. Pick the smallest model that passes your tests. Shorten
 
 Each lever has a price. A small model can be less reliable on complex tasks. Models that reason at length before answering produce many tokens you may not see but still pay for. The number that matters is not cost per call but cost per successful task, failed attempts included.
 
-## For dummies
+## In everyday life
 
 At the post office, the price of a shipment depends on weight and speed. Express arrives sooner but costs more. Standard is cheap but takes days. People who ship a lot learn to choose: express only for what is urgent, grouped shipments for the rest. And what counts is the cost per parcel delivered: a cheap shipment that gets lost and must be resent costs twice.
 

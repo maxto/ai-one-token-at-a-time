@@ -20,7 +20,7 @@ Anche la velocità migliora. Generare testo è spesso limitato da quanto in fret
 
 Il compromesso è la precisione. A 8 bit la perdita è di solito minima. A 4 bit resta spesso accettabile, con metodi che trattano con cura i valori più delicati. Sotto quella soglia la qualità può crollare, e i modelli piccoli soffrono più di quelli grandi.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 La ricetta della nonna dice 237 grammi di farina e 52 di zucchero. La nipote la ricopia sul quaderno arrotondando: 240 e 50. La torta viene praticamente uguale e il quaderno è più facile da leggere. Se però arrotondasse all'etto, scriverebbe 200 e 100. Lo zucchero raddoppia e la torta cambia sapore. Arrotondare va bene, finché la grana non diventa troppo grossa.
 
@@ -46,7 +46,7 @@ Speed improves too. Generating text is often limited by how fast the weights can
 
 The trade-off is precision. At 8 bits the loss is usually minimal. At 4 bits it is often acceptable, with methods that handle the most sensitive values carefully. Below that, quality can collapse, and small models suffer more than large ones.
 
-## For dummies
+## In everyday life
 
 Grandma's recipe says 237 grams of flour and 52 of sugar. Her grandson copies it into his notebook, rounding to 240 and 50. The cake comes out practically the same and the notebook is easier to read. Round to the nearest hundred grams, though, and it says 200 and 100. The sugar has doubled and the cake tastes different. Rounding is fine until the steps get too coarse.
 

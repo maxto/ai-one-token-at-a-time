@@ -20,7 +20,7 @@ I token contano perché tutto si misura in token: costo, velocità, limiti di lu
 
 Il limite: un token di più lettere arriva al modello come un'unica unità, e le lettere che contiene non sono indicate. Questo contribuisce a errori in compiti banali per noi, come contare le lettere di una parola o scriverla al contrario.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Una scatola di LEGO ha pezzi standard. Per una casa usi i mattoncini grandi già pronti. Per un dettaglio strano unisci tre pezzetti piccoli. Il tokenizer fa lo stesso con il testo: una parola comune è spesso un pezzo unico, una parola rara o inventata di solito diventa più pezzi. Al modello ogni mattoncino arriva come un numero, non come una fila di lettere.
 
@@ -46,7 +46,7 @@ Tokens matter because everything is measured in them: cost, speed, length limits
 
 The limit: a token of several letters reaches the model as a single unit, and the letters inside it are not marked. This contributes to errors on tasks that are trivial for us, like counting the letters in a word or spelling it backwards.
 
-## For dummies
+## In everyday life
 
 A LEGO box comes with standard pieces. For a house you use the big ready-made bricks. For an odd detail you join three small ones. The tokenizer does the same with text: a common word is often a single piece, while a rare or made-up word usually becomes several. Each brick reaches the model as a number, not as a row of letters.
 

@@ -20,7 +20,7 @@ Per conoscere un cambiamento recente, il sistema può usare una ricerca o docume
 
 Il limite si sposta sulla qualità delle fonti e sul loro uso. Una pagina vecchia, un risultato irrilevante o una lettura sbagliata possono ancora produrre errori. Per orari e altri fatti variabili, controlla la data di validità e che la fonte sia stata davvero consultata.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Una guida turistica stampata descrive un museo e il suo vecchio orario. Il museo cambia giorno di chiusura dopo la stampa. La guida resta utile per la storia dell'edificio, ma non può registrare da sola il cambiamento. Un avviso recente del museo può completarla. Devi però leggere a quali giorni si applica: una comunicazione su una chiusura straordinaria non sostituisce necessariamente l'orario abituale.
 
@@ -46,7 +46,7 @@ To learn about a recent change, the system can use search or documents supplied 
 
 The limitation shifts to source quality and how sources are used. An old page, an irrelevant result or a misreading can still cause errors. For timetables and other changing facts, check the effective date and whether the source was actually consulted.
 
-## For dummies
+## In everyday life
 
 A printed travel guide describes a museum and its old opening hours. The museum changes its closing day after publication. The guide remains useful for the building's history, but cannot record the change by itself. A recent museum notice can supplement it. You still need to read which days it applies to: a notice about an exceptional closure does not necessarily replace the regular timetable.
 

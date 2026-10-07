@@ -20,7 +20,7 @@ Per calcoli e procedure verifica dati iniziali, unità e passaggi controllabili.
 
 Proporziona lo sforzo alle conseguenze. Un titolo per una festa richiede poco controllo, un'istruzione che riguarda la sicurezza molto di più, anche con una persona qualificata. Se mancano prove sufficienti, lascia la conclusione aperta o rinvia l'azione. Un altro assistente può aiutare la revisione, ma il suo accordo non basta come verifica.
 
-## Esempio for dummies
+## Nella vita di tutti i giorni
 
 Un assistente adatta una ricetta da una teglia a due e prepara la lista della spesa. Controlli che le quantità siano state raddoppiate, che grammi e cucchiai non siano confusi e che un ingrediente presente due volte non venga contato male. Non raddoppi automaticamente il tempo di cottura: consulti la ricetta e controlli il risultato. Per un ospite allergico verifichi anche le etichette, perché le conseguenze cambiano.
 
@@ -46,7 +46,7 @@ For calculations and procedures, check inputs, units and verifiable steps. Repea
 
 Match effort to consequences. A party title needs little checking, while an instruction affecting safety needs much more, including a qualified person. If sufficient evidence is missing, leave the conclusion open or postpone action. Another assistant can help with review, but its agreement alone is not verification.
 
-## For dummies
+## In everyday life
 
 An assistant scales a recipe from one baking tray to two and prepares a shopping list. You check that quantities have doubled, that grams and spoonfuls are not confused and that an ingredient appearing twice is not miscounted. You do not automatically double cooking time: you consult the recipe and check the result. For a guest with an allergy, you also check labels because the consequences change.
 
