@@ -12,6 +12,14 @@ const url = 'file://' + path.join(root, 'dist/index.html');
 const failures = [];
 const expect = (ok, msg) => { if (!ok) failures.push(msg); };
 
+// Link previews (LinkedIn, WhatsApp, ...): Open Graph tags and the image they point to
+const head = fs.readFileSync(path.join(root, 'dist/index.html'), 'utf8').split('</head>')[0];
+for (const tag of ['og:title', 'og:description', 'og:image', 'og:url', 'twitter:card'])
+  expect(head.includes(`property="${tag}"`) || head.includes(`name="${tag}"`), `missing <meta> ${tag}`);
+expect(/name="description" content="[^"]*\d+ modules, \d+ lessons/.test(head), 'meta description lacks module and lesson counts');
+expect(fs.existsSync(path.join(root, 'dist/og.png')), 'dist/og.png is missing');
+expect(head.includes('<title>AI, one token at a time</title>'), 'no English <title> in <head>');
+
 const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome' });
 async function run(opts, name, fn) {
   const ctx = await browser.newContext(opts);

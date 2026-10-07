@@ -8,7 +8,7 @@ writes:
   dist/index.html     standalone page (GitHub Pages, open locally)
   content/**/NN-id.preview.svg  light-theme, Italian copy of each figure for GitHub
 """
-import json, re, sys, pathlib
+import html, json, re, shutil, sys, pathlib
 import xml.etree.ElementTree as ET
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -186,6 +186,23 @@ def write_previews(course):
             (mdir / f"{li:02d}-{les['id']}.preview.svg").write_text(svg + "\n")
 
 
+SITE_URL = "https://maxto.github.io/ai-one-token-at-a-time/"
+
+
+def preview_meta(modules, lessons):
+    """Description and Open Graph tags for link previews (site/og.png is made by `npm run og`)."""
+    title = "AI, one token at a time"
+    desc = (f"A free bilingual (English / Italian) mini course on how generative AI really works: "
+            f"{modules} modules, {lessons} lessons, one diagram and one everyday example per idea.")
+    tags = [("name", "description", desc), ("property", "og:type", "website"), ("property", "og:title", title),
+            ("property", "og:description", desc), ("property", "og:url", SITE_URL),
+            ("property", "og:image", SITE_URL + "og.png"), ("property", "og:image:width", "1200"),
+            ("property", "og:image:height", "630"), ("property", "og:image:alt", f"{title}: how generative AI really works, explained simply"),
+            ("property", "og:locale", "en_US"), ("property", "og:locale:alternate", "it_IT"),
+            ("name", "twitter:card", "summary_large_image")]
+    return "".join(f'<meta {k}="{v}" content="{html.escape(c)}">\n' for k, v, c in tags)
+
+
 def main():
     course = load()
     if errors:
@@ -195,11 +212,12 @@ def main():
     data = json.dumps(course, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = (SITE / "template.html").read_text().replace("/*__COURSE_DATA__*/", data)
     DIST.mkdir(exist_ok=True)
+    n = sum(len(m["lessons"]) for m in course)
     (DIST / "index.html").write_text('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
                                      '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
-                                     '</head>\n<body style="margin:0">\n' + page + '\n</body>\n</html>\n')
+                                     '<title>AI, one token at a time</title>\n' + preview_meta(len(course), n) + '</head>\n<body style="margin:0">\n' + page + '\n</body>\n</html>\n')
+    shutil.copyfile(SITE / "og.png", DIST / "og.png")
     write_previews(course)
-    n = sum(len(m["lessons"]) for m in course)
     print(f"ok: {len(course)} modules, {n} lessons, {len(page) // 1024} KB -> dist/")
 
 

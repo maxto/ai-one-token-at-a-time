@@ -6,7 +6,8 @@
   "scripts": {
     "build": "python3 scripts/build.py",
     "test": "python3 scripts/build.py && node tests/e2e.mjs",
-    "figs": "mkdir -p tests/output && python3 scripts/build.py --json tests/output/course.json && node tests/render-figs.mjs"
+    "figs": "mkdir -p tests/output && python3 scripts/build.py --json tests/output/course.json && node tests/render-figs.mjs",
+    "og": "node scripts/render-og.mjs"
   },
   "devDependencies": {
     "playwright-core": "^1.55.0"
