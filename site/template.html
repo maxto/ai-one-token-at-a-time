@@ -81,7 +81,6 @@ h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.1
 .theme-btn { background: transparent; padding: 0; cursor: pointer; }
 .note { max-width: 68ch; margin: 48px auto 0; padding-top: 18px; border-top: 1px solid var(--rule); font-size: var(--s-xs); color: var(--muted); line-height: 1.6; }
 .note a { color: inherit; }
-.syl-social { display: none; gap: 8px; padding: 18px 8px 0; margin-top: 12px; border-top: 1px solid var(--rule); }
 .meter { height: 3px; background: var(--rule); }
 .meter > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s ease; }
 
@@ -217,11 +216,13 @@ mark { background: var(--accent-soft); color: var(--ink); border-radius: 3px; pa
   .search { max-width: none; }
 }
 @media (max-width: 400px) {
-  .topbar-in { gap: 8px; padding-inline: 12px; }
+  .topbar-in { gap: 6px; padding-inline: 12px; }
+  .repo { width: 30px; height: 30px; }
+  .repo + .repo { margin-left: 0; }
+  .lang button { padding: 6px 7px; }
+  .menu-btn { padding: 6px 8px; }
 }
 @media (max-width: 480px) {
-  .topbar .social { display: none; }
-  .syl-social { display: flex; }
   .pager { grid-template-columns: minmax(0, 1fr); }
   .pager a.next { grid-column: 1; }
   .keys { display: none; }
@@ -241,7 +242,7 @@ mark { background: var(--accent-soft); color: var(--ink); border-radius: 3px; pa
       <button id="langIt" type="button" aria-pressed="false">IT</button>
       <button id="langEn" type="button" aria-pressed="true">EN</button>
     </div>
-    <button class="repo social theme-btn" type="button"></button>
+    <button class="repo theme-btn" type="button"></button>
     <a class="repo" id="repo" href="https://github.com/maxto/ai-one-token-at-a-time" target="_blank" rel="noopener" aria-label="Codice sorgente su GitHub" title="Codice sorgente su GitHub">
       <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
     </a>
@@ -329,7 +330,7 @@ function renderSyllabus(currentKey) {
     const qk = `${m.id}-quiz`;
     h += `<li class="syl-quiz"><a href="#${qk}"${qk === currentKey ? ' aria-current="page"' : ""}><span class="tick">?</span><span>${t("quiz")}</span></a></li></ol></div>`;
   });
-  nav.innerHTML = h + `<div class="syl-social"><button class="repo theme-btn" type="button"></button></div>`;
+  nav.innerHTML = h;
   document.getElementById("meter").style.width = (100 * n / totalLessons) + "%";
 }
 

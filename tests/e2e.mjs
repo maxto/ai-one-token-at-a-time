@@ -70,9 +70,7 @@ await run({ viewport: { width: 1280, height: 860 } }, 'desktop', async p => {
 await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceScaleFactor: 2, hasTouch: true, isMobile: true }, 'phone', async p => {
   expect(await overflow(p) === 0, 'phone home overflows');
   expect(await p.isVisible('#repo'), 'GitHub link hidden on phone');
-  await p.click('#menuBtn'); await p.waitForTimeout(200);
-  expect(await p.isVisible('.syl-social .theme-btn'), 'theme button missing from the phone menu');
-  await p.click('#menuBtn'); await p.waitForTimeout(200);
+  expect(await p.isVisible('.topbar .theme-btn'), 'theme button hidden on phone');
   await p.goto(url + '#m1-temperature'); await p.waitForTimeout(300);
   expect(await overflow(p) === 0, 'phone lesson overflows');
   await p.evaluate(() => document.querySelector('.fig').scrollIntoView());
