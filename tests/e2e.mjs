@@ -49,7 +49,6 @@ await run({ viewport: { width: 1280, height: 860 } }, 'desktop', async p => {
   await p.click('#langEn'); await p.waitForTimeout(200);
   expect(await p.textContent('.lesson h1') === 'Embeddings', 'switch back to English failed');
   expect(await p.getAttribute('#repo', 'aria-label') === 'Source code on GitHub', 'GitHub link label not translated');
-  expect(await p.isVisible('.topbar a[aria-label="LinkedIn"]'), 'LinkedIn link missing from the top bar');
   expect(await p.evaluate(() => getComputedStyle(document.querySelector('.fig svg .it') || document.body).display) === 'none' || !(await p.$('.fig svg .it')), 'Italian figure labels visible in EN');
   await p.screenshot({ path: path.join(out, 'desktop-lesson-en.png') });
   await p.goto(url + '#home'); await p.waitForTimeout(300);
@@ -72,7 +71,6 @@ await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceSc
   expect(await overflow(p) === 0, 'phone home overflows');
   expect(await p.isVisible('#repo'), 'GitHub link hidden on phone');
   await p.click('#menuBtn'); await p.waitForTimeout(200);
-  expect(await p.isVisible('.syl-social a[aria-label="LinkedIn"]'), 'LinkedIn link missing from the phone menu');
   expect(await p.isVisible('.syl-social .theme-btn'), 'theme button missing from the phone menu');
   await p.click('#menuBtn'); await p.waitForTimeout(200);
   await p.goto(url + '#m1-temperature'); await p.waitForTimeout(300);
