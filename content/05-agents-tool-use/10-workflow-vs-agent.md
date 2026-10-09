@@ -4,7 +4,7 @@ title.it: Workflow o agente?
 title.en: Workflow or agent?
 ---
 
-![](./09-workflow-vs-agent.preview.svg)
+![](./10-workflow-vs-agent.preview.svg)
 
 # IT
 

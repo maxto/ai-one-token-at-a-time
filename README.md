@@ -2,9 +2,9 @@
 
 [![AI, one token at a time: how generative AI really works, explained simply](site/og.png)](https://maxto.github.io/ai-one-token-at-a-time/)
 
-A short bilingual (Italian / English) course on how generative AI works: 10 modules, 82 lessons, one diagram and one everyday example per idea, a quiz at the end of each module. Not too technical: the goal is a solid mental model, not engineering.
+A short bilingual (Italian / English) course on how generative AI works: 10 modules, 83 lessons, one diagram and one everyday example per idea, a quiz at the end of each module. Not too technical: the goal is a solid mental model, not engineering.
 
-*Un corso breve, in italiano e in inglese, su come funziona l'intelligenza artificiale generativa: 10 moduli, 82 lezioni, un diagramma e un esempio di tutti i giorni per ogni idea, un quiz alla fine di ogni modulo.*
+*Un corso breve, in italiano e in inglese, su come funziona l'intelligenza artificiale generativa: 10 moduli, 83 lezioni, un diagramma e un esempio di tutti i giorni per ogni idea, un quiz alla fine di ogni modulo.*
 
 **Read the course / Leggi il corso: https://maxto.github.io/ai-one-token-at-a-time/**
 
@@ -16,7 +16,7 @@ A short bilingual (Italian / English) course on how generative AI works: 10 modu
 | 2 | [Models & architectures](content/02-models-architectures/) | LLMs, SLMs, multimodal, reasoning models, diffusion, encoder vs decoder, mixture of experts, foundation models |
 | 3 | [Prompting techniques](content/03-prompting/) | zero-shot, few-shot, chain-of-thought, ReAct, tree of thoughts, self-consistency, role prompting, templates, structured output |
 | 4 | [RAG & knowledge](content/04-rag-knowledge/) | retrieval pipelines, vector databases, chunking, embedding models, hybrid search, reranking, knowledge graphs, context injection, from document to text |
-| 5 | [Agents & tool use](content/05-agents-tool-use/) | agents, tool calling, MCP, multi-agent systems, memory, planning, agent loops, handoffs, workflow or agent |
+| 5 | [Agents & tool use](content/05-agents-tool-use/) | agents, tool calling, MCP, multi-agent systems, memory, planning, agent loops, the agent harness, handoffs, workflow or agent |
 | 6 | [Training & fine-tuning](content/06-training-fine-tuning/) | pre-training, fine-tuning, LoRA/QLoRA, RLHF, DPO, instruction tuning, distillation, quantization |
 | 7 | [Production, safety & evals](content/07-production-safety-evals/) | prompt caching, KV cache, streaming, cost & latency, observability, guardrails, prompt injection, evals & benchmarks, choosing a model |
 | 8 | [Reliability & verification](content/08-reliability-verification/) | hallucinations, knowledge cutoff, confidence and uncertainty, sources and citations, sycophancy, bias, checking an answer |
