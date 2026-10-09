@@ -23,7 +23,7 @@ A short bilingual (Italian / English) course on how generative AI works: 10 modu
 | 9 | [Privacy & data](content/09-privacy-data/) | a message's journey, history/memory/training, sharing the minimum, anonymization, local or cloud, permissions and connectors, retention and deletion |
 | 10 | [Images, audio & video](content/10-images-audio-video/) | how a model sees an image, prompt to image, editing part of an image, reference images, speech, video generation, content provenance |
 
-Each lesson is a Markdown file you can read right here on GitHub. The course page (language switch, search, progress, quizzes) is built from them.
+Each lesson is a Markdown file you can read right here on GitHub. The course page (language switch, light or dark theme, search, progress, quizzes) is built from them.
 
 ## Build
 
