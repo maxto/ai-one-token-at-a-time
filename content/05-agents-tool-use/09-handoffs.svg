@@ -1,4 +1,4 @@
-<svg viewBox="0 0 560 200" role="img" aria-label="L'agente B non vede il contesto di A: riceve solo la consegna scritta e restituisce un risultato breve.">
+<svg viewBox="0 0 560 200" role="img" aria-label="In questo esempio di delega, B riceve da A solo la consegna scritta e restituisce un risultato breve.">
 <defs>
 <marker id="ah-handoffs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
 <path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
@@ -13,7 +13,7 @@
 <rect class="fill-soft" x="36" y="120" width="138" height="8" rx="4"/>
 <rect class="fill-soft" x="36" y="138" width="138" height="8" rx="4"/>
 <text class="t-sm mid it" x="290" y="36">consegna</text>
-<text class="t-sm mid en" x="290" y="36">hand-off</text>
+<text class="t-sm mid en" x="290" y="36">brief</text>
 <rect class="box-accent" x="225" y="45" width="130" height="105" rx="6"/>
 <text class="t-xs mid it" x="290" y="66">obiettivo</text>
 <text class="t-xs mid en" x="290" y="66">goal</text>
@@ -31,7 +31,7 @@
 <text class="t-xs mid it" x="465" y="96">vede solo</text>
 <text class="t-xs mid en" x="465" y="96">sees only</text>
 <text class="t-xs mid it" x="465" y="112">la consegna</text>
-<text class="t-xs mid en" x="465" y="112">the hand-off</text>
+<text class="t-xs mid en" x="465" y="112">the brief</text>
 <line class="ln" x1="190" y1="97" x2="223" y2="97" marker-end="url(#ah-handoffs)"/>
 <line class="ln" x1="355" y1="97" x2="388" y2="97" marker-end="url(#ah-handoffs)"/>
 <polyline class="ln-muted dash" points="465,160 465,188 105,188 105,162" marker-end="url(#ah-handoffs)"/>
