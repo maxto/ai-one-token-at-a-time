@@ -2,17 +2,17 @@
 
 ## Current state (2026-10-09)
 
-**The project is closed for now.** The course is complete and published: 10 modules, 83 lessons, live at https://maxto.github.io/ai-one-token-at-a-time/.
+**Done for now, not closed.** The course is complete and published: 10 modules, 83 lessons, live at https://maxto.github.io/ai-one-token-at-a-time/.
 
 Last changes:
 - New lesson `05-agents-tool-use/08-agent-harness.md` (id `agent-harness`), after Agent Loops. Handoffs and Workflow vs agent moved to `09-` and `10-`, ids unchanged.
 - Handoffs lesson: how much context the receiver gets now depends on the system (no more "starts from scratch" as a rule).
-- Shared on LinkedIn on 2026-10-09. No traction: the LinkedIn audience is finance.
+- Shared on LinkedIn on 2026-10-09 (about 60 views on a Friday afternoon), then deleted by Max. The LinkedIn audience is finance.
 
-## Rules while closed
+## How it grows
 
-- Only fixes: a reported error, a wrong or outdated claim, a missing paragraph. No new lessons or features.
-- Every fix follows `AGENTS.md`: IT and EN together, advisor review, `npm test`, `python3 scripts/lengths.py`, `npm run figs` for figures, commit the regenerated previews.
+- No planned work. New lessons or sections get added as new topics come up, plus fixes for reported errors or outdated claims.
+- Every change follows `AGENTS.md`: IT and EN together, advisor review, `npm test`, `python3 scripts/lengths.py`, `npm run figs` for figures, commit the regenerated previews.
 
 ## What comes next (elsewhere)
 
