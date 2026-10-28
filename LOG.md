@@ -2,6 +2,19 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-28: dark-theme figures, variant C (Codex review)
+
+**What was done.** Max found the dark figure panel of bd715f4 (variant A) made the figures look too dark. Tried variant B locally (panel = card colour, raised boxes, recessed soft areas): Max rejected the back-and-forth on the background and suggested keeping the dark panel with lighter inner graphics. Asked Codex as adversarial reviewer (`dist/advisor/theme-request.md`, `theme-answer.md`, images in `dist/advisor/theme/`, gitignored). Codex recommended C, implemented in `site/template.html`, dark theme only: figure panel `--fig-bg: #171a21` (kept), plain boxes `--fig-box: #353c4c` (raised above the panel), soft areas `--fig-soft: #333a49`, small figure text, muted lines, muted fills and the caption `--fig-muted: #ccd2de` (was muted `#a3aabb`), box borders `--line: #8d98b0`, module tint 28% (kept). New `--fig-ghost` for the faint silhouette in the Diffusion figure (`ellipse.fill-soft`). Light defaults point at the old values (`--surface`, `--chip`, `--muted`).
+
+**Verified.** All 86 EN figures rendered in dark (scratch copy of render-figs), 8 from different modules and Reranking/Diffusion side by side in A, B and C looked at. Contrast computed by Codex (WCAG): `.t-xs` and `.t-sm` at least 4.9:1 on every fill in C; before, `.t-xs` on module tints went down to 3.2:1 (for example "query + chunk" in the Reranking figure), below AA. `npm test` ok. `npm run figs` then a pixel compare of all 172 light figure PNGs against the previous run: 0 differ. HEAD before this entry: bd715f4.
+
+**Decisions.**
+- Done (approved by Max): variant C. Rejected: B (panel back to card colour, Max did not want the background flipping again), A as is (inner graphics too dark, small text below AA on module tints).
+- Done (approved by Max): home module cards stay lighter than the page (surface on bg). Rejected: darker cards like the figure panel, they would sit at about 1.07:1 against the page and blend in (Codex and Claude agree).
+- Done: Diffusion silhouette `--fig-ghost: #8d98b0` in dark, not Codex's `#ccd2de`: with `#ccd2de` the step-2 shape became brighter than the step-3 shape and inverted the "image slowly emerges" progression. `#8d98b0` gives about 2.6:1 on the box, below the step-3 shape (3.1:1), and it is meant to be faint.
+- Proposed, not decided: explicit dark placeholder colour for the search box (Codex). Max had found it readable. Kept in HANDOFF.
+- Proposed, to check: tiny figure labels on phones (Codex: at the 420px minimum SVG width an 11.5px label renders at about 8.6px). Size, not colour. Kept in HANDOFF.
+
 ## 2026-10-28: more contrast in dark-theme figures
 
 **What was done.** Max found the figures still flat in the dark theme. Cause: plain boxes are filled with the card colour, so only a thin border separated them, and module-tinted boxes mixed only 16% of the module colour. In `site/template.html`: new variables `--fig-bg` (light: `var(--surface)`, dark: `#171a21`, a darker panel behind the figure) and `--soft-mix` (light: 16%, dark: 28%, used by `--mc-soft`), and dark `--line` `#69738b` to `#7c869e`. `tests/render-figs.mjs` uses `--soft-mix` too. Light theme unchanged. Also pushed: ec9d391 (HANDOFF after the first dark theme push).
