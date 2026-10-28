@@ -1,6 +1,6 @@
 # Handoff
 
-Closed: 2026-10-28 16:37 CET. Last operation: estimated reading and study time on the home page and in the contents menu, committed and pushed. HEAD verified before this update: 19e7623 (the commit that includes this file comes after it).
+Closed: 2026-10-28 17:02 CET. Last operation: brighter dark theme (palette raised for contrast), committed, push waiting for Max. HEAD verified before this update: 6d251d8 (the commit that includes this file comes after it).
 
 ## Goal
 
@@ -12,6 +12,7 @@ The course is done for now, not closed: 10 modules, 86 lessons, live at https://
 - 2026-10-28 update (see LOG.md): new lessons Computer-Use Agents (`#m5-computer-use`), Open-weight models (`#m2-open-weights`, includes "uncensored" models), Reward hacking (`#m6-reward-hacking`). Fixes in Context Window, AI Agents, Multi-Agent Systems, Agent Loops, Agent Harness.
 - Checks run on 2026-10-28: `python3 scripts/lengths.py` ok, `npm test` ok, `npm run figs` ok and the new PNGs looked at. Text review of the new lessons and estimated study times done the same day (see LOG.md).
 - Tests needed `--disable-gpu --disable-software-rasterizer --use-gl=swiftshader` for Chrome 150 under WSL (page screenshots timed out otherwise, also on the old HEAD). Now in `tests/e2e.mjs` and `tests/render-figs.mjs`.
+- 2026-10-28: dark theme brightened for contrast (see LOG.md). Committed locally, push waiting for Max's go-ahead.
 - Advisor files for this round are in the gitignored `dist/advisor/` (scan, batch1, lessons, final): local only.
 
 ## Open items
@@ -30,4 +31,4 @@ The next focus is AI applied to finance, as Macroasset content, not in this repo
 
 ## Next step
 
-Apply any corrections Max sends after reading the three new lessons online.
+Push the dark theme commit once Max says go. Then: Apply any corrections Max sends after reading the three new lessons online.

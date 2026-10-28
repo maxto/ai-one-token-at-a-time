@@ -2,6 +2,15 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-28: brighter dark theme
+
+**What was done.** Max found the dark theme too dark, with no contrast: the top bar, the title tokens and the cards blended into the background. Raised the whole dark palette in `site/template.html` (both the `prefers-color-scheme` block and `[data-theme="dark"]`): bg `#10131a` to `#1c2029`, surface `#171b24` to `#262b37`, rule `#2a303d` to `#3e4657`, chip `#222734` to `#333a49`, accent-soft `#1d2440` to `#2c3768`, line `#4c5568` to `#69738b`, ink, ink-2, muted and accent lighter, good/warn/bad soft backgrounds lighter. `tests/e2e.mjs` checks the new dark body colour. Light theme unchanged.
+
+**Verified.** Contrast computed with the WCAG formula: every text colour is at least 4.7:1 on every dark background it sits on (body text 10 to 15:1, accent-ink on accent 8.1:1). Dark screenshots before and after looked at (home, lesson, figure). `npm test` ok. HEAD before this entry: 6d251d8.
+
+**Decisions.**
+- Done (approved by Max): a lighter, "dimmed" dark theme instead of near-black. The problem was structure (surfaces and borders too close in tone), not only text contrast, which already passed AA. Small task, no advisor review.
+
 ## 2026-10-28: estimated reading and study time
 
 **What was done.** `scripts/build.py` now counts the words of each module (all lesson sections plus the quiz, per language) and stores `time.read` and `time.study` in the course data. The home page shows the total under the lead ("about 2 hours of reading, 5-6 hours to study it with figures and quizzes"). The contents menu shows the study time next to each module (25 to 45 min, rounded to 5, tooltip "Estimated study time"). Also committed: the regenerated `09-open-weights.preview.svg` that the previous commit missed.

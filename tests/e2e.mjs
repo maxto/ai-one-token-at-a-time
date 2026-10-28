@@ -55,7 +55,7 @@ await run({ viewport: { width: 1280, height: 860 } }, 'desktop', async p => {
   expect((await p.textContent('.note')).startsWith('Content for educational purposes'), 'disclaimer missing or not translated on the home');
   await p.click('.topbar .theme-btn'); await p.waitForTimeout(100);
   expect(await p.evaluate(() => document.documentElement.dataset.theme) === 'dark', 'theme button did not switch to dark');
-  expect(await p.evaluate(() => getComputedStyle(document.body).backgroundColor) === 'rgb(16, 19, 26)', 'dark theme colours not applied');
+  expect(await p.evaluate(() => getComputedStyle(document.body).backgroundColor) === 'rgb(28, 32, 41)', 'dark theme colours not applied');
   await p.reload(); await p.waitForTimeout(300);
   expect(await p.evaluate(() => document.documentElement.dataset.theme) === 'dark', 'the dark theme choice was not remembered');
   await p.click('.topbar .theme-btn'); await p.waitForTimeout(100);
