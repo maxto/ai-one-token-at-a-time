@@ -8,7 +8,7 @@ writes:
   dist/index.html     standalone page (GitHub Pages, open locally)
   content/**/NN-id.preview.svg  light-theme, Italian copy of each figure for GitHub
 """
-import html, json, re, shutil, sys, pathlib
+import html, json, re, shutil, sys, pathlib, urllib.parse
 import xml.etree.ElementTree as ET
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -119,6 +119,44 @@ def parse_quiz(text, where):
     return quiz
 
 
+# --- sources (see docs/writing-guide.md, "Sources") ---
+SOURCE_FIELDS = ("Work", "Author", "Year", "Language", "Note.it", "Note.en")
+MAX_SOURCES = 2  # one or two reference sources on the lesson's own topic
+
+
+def parse_sources(text, where):
+    """`# Sources` block: one `## source-id` per entry, then `- Field: value` lines."""
+    out, cur = [], None
+    for line in text.splitlines():
+        if not line.strip(): continue
+        mm = re.match(r"## (.+)$", line)
+        if mm:
+            sid = mm.group(1).strip()
+            if not re.fullmatch(r"[a-z0-9-]+", sid): err(where, f"bad source id {sid!r}")
+            if any(s["id"] == sid for s in out): err(where, f"duplicate source id {sid!r}")
+            cur = {"id": sid, "f": {}}; out.append(cur); continue
+        mm = re.match(r"- ([A-Za-z.]+): (.+)$", line)
+        if not cur or not mm: err(where, f"unexpected line in sources: {line!r}"); continue
+        k, v = mm.group(1), mm.group(2).strip()
+        if k not in SOURCE_FIELDS: err(where, f"source {cur['id']}: unknown field {k}")
+        elif k in cur["f"]: err(where, f"source {cur['id']}: duplicate field {k}")
+        else: cur["f"][k] = v
+    sources = []
+    for s in out:
+        f, w = s["f"], f"{where} source {s['id']}"
+        missing = [k for k in SOURCE_FIELDS if not f.get(k)]
+        if missing: err(w, f"missing fields {missing}"); continue
+        link = re.fullmatch(r"\[(.+)\]\((https?://[^\s()]+)\)", f["Work"])  # no parentheses in URLs: percent-encode them
+        if link and not urllib.parse.urlsplit(link.group(2)).hostname: link = None
+        if not link: err(w, "Work must be [Title](http(s) URL with a host)")
+        if not re.fullmatch(r"\d{4}|undated", f["Year"]): err(w, f"bad Year {f['Year']!r}")
+        if not re.fullmatch(r"[a-z]{2}", f["Language"]): err(w, f"bad Language {f['Language']!r}")
+        if not link: continue
+        sources.append({"id": s["id"], "title": link.group(1), "url": link.group(2), "author": f["Author"], "year": f["Year"],
+                        "lang": f["Language"], "note": {"it": f["Note.it"], "en": f["Note.en"]}})
+    return sources
+
+
 def load():
     course = []
     for mdir in sorted(p for p in CONTENT.iterdir() if p.is_dir() and re.match(r"\d\d-", p.name)):
@@ -138,8 +176,14 @@ def load():
             if lf.stem[3:] != lid or not re.fullmatch(r"[a-z0-9-]+", lid) or lid in ids: err(where, f"bad id {lid!r} (must match file name)")
             ids.add(lid)
             les = {"id": lid, "title": {lg: meta.get(f"title.{lg}", "") for lg in LANGS},
-                   "oneLiner": {}, "deep": {}, "dummy": {}, "mistake": {}, "fig": {"svg": "", "caption": {}}}
+                   "oneLiner": {}, "deep": {}, "dummy": {}, "mistake": {}, "fig": {"svg": "", "caption": {}}, "sources": []}
             top = sections(body, 1)
+            heads = re.findall(r"^# (.+)$", body, re.M)
+            if len(heads) != len(set(heads)): err(where, f"repeated top-level heading in {heads}")
+            if set(heads) - {"IT", "EN", "Sources"}: err(where, f"unknown top-level heading in {heads}")
+            if "Sources" in top:
+                les["sources"] = parse_sources(top["Sources"], where)
+                if not 1 <= len(les["sources"]) <= MAX_SOURCES: err(where, f"{len(les['sources'])} sources, want 1-{MAX_SOURCES}")
             for lg in LANGS:
                 sec = sections(top.get(lg.upper(), ""), 2)
                 names = LESSON_SECTIONS[lg]

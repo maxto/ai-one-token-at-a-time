@@ -60,6 +60,19 @@ await run({ viewport: { width: 1280, height: 860 } }, 'desktop', async p => {
   expect(await p.evaluate(() => document.documentElement.dataset.theme) === 'dark', 'the dark theme choice was not remembered');
   await p.click('.topbar .theme-btn'); await p.waitForTimeout(100);
   expect(await p.evaluate(() => document.documentElement.dataset.theme) === 'light', 'theme button did not switch back to light');
+  // Sources block (pilot: module 2, see docs/writing-guide.md "Sources"). Expected values copied from the lesson file.
+  await p.goto(url + '#m2-llm'); await p.waitForTimeout(300);
+  expect(await p.textContent('.srcs h2') === 'Sources', 'lesson sources heading missing');
+  const srcs = await p.$$eval('.srcs a', l => l.map(a => [a.getAttribute('href'), a.target, a.rel]));
+  expect(JSON.stringify(srcs.map(s => s[0])) === JSON.stringify(['https://web.stanford.edu/~jurafsky/slp3/', 'https://arxiv.org/abs/2005.14165v4']), 'lesson source links wrong');
+  expect(srcs.every(([, tg, rel]) => tg === '_blank' && rel === 'noopener'), 'source links do not open safely in a new tab');
+  expect((await p.textContent('.srcs li p')) === 'Free university textbook: what an LLM learns by predicting the token in chapter 1, transformers and generation in chapter 7. Partly technical.', 'English source note wrong');
+  expect(await p.$$eval('.srcs .src-lang', l => l.length) === 0, 'source language tag shown for English sources in English');
+  await p.click('#langIt'); await p.waitForTimeout(200);
+  expect((await p.textContent('.srcs h2')) === 'Fonti', 'sources heading not translated');
+  expect((await p.textContent('.srcs li p')) === 'Manuale universitario gratuito: cosa impara un LLM prevedendo il token nel capitolo 1, transformer e generazione nel capitolo 7. In parte tecnico.', 'Italian source note wrong');
+  expect(await p.$$eval('.srcs .src-lang', l => l.map(e => e.textContent).join()) === 'EN,EN', 'EN tag missing on English sources in Italian');
+  await p.click('#langEn'); await p.waitForTimeout(200);
   await p.goto(url + '#m1-quiz'); await p.waitForTimeout(300);
   await p.click('label.opt >> nth=0'); await p.waitForTimeout(200);
   expect(await p.$('.q .explain') !== null, 'quiz gave no feedback');
@@ -71,6 +84,10 @@ await run({ viewport: { width: 390, height: 844 }, colorScheme: 'dark', deviceSc
   expect(await overflow(p) === 0, 'phone home overflows');
   expect(await p.isVisible('#repo'), 'GitHub link hidden on phone');
   expect(await p.isVisible('.topbar .theme-btn'), 'theme button hidden on phone');
+  await p.goto(url + '#m2-open-weights'); await p.waitForTimeout(300);
+  expect(await overflow(p) === 0, 'phone lesson with sources overflows');
+  await p.evaluate(() => document.querySelector('.srcs').scrollIntoView());
+  await p.screenshot({ path: path.join(out, 'phone-dark-sources.png') });
   await p.goto(url + '#m1-temperature'); await p.waitForTimeout(300);
   expect(await overflow(p) === 0, 'phone lesson overflows');
   await p.evaluate(() => document.querySelector('.fig').scrollIntoView());

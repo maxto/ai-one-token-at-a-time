@@ -69,6 +69,28 @@ title.en: Tokens & tokenization
 - The `NN-` prefix sets the order.
 - Lessons may refer to each other by title ("see Embeddings") but must make sense alone.
 
+## Sources
+
+A lesson may end with a `# Sources` block, after `# EN`: **one or two reference sources on the lesson's own topic**. Optional: add them when they help a reader dig deeper. What matters is that the lesson is correct (see "Correct" above and `AGENTS.md`). The block is written once for both languages: only the notes are translated. The page shows it after the common mistake.
+
+```markdown
+# Sources
+
+## mixtral-of-experts
+- Work: [Mixtral of Experts](https://arxiv.org/abs/2401.04088v1)
+- Author: Jiang et al., Mistral AI
+- Year: 2024
+- Language: en
+- Note.it: Un modello recente: il router sceglie 2 esperti su 8 per ogni token (sezione 2). Tecnico.
+- Note.en: A recent model: the router picks 2 of 8 experts for each token (section 2). Technical.
+```
+
+- **On topic.** A source about a side claim (for example hallucinations inside the LLM lesson) belongs in the lesson about that topic.
+- **Reliable and read.** Papers, specs, official docs or a university textbook, opened and read, not "looks right". No Wikipedia, marketing pages or AI-generated summaries. For arXiv, link the version read (`v1`) and give the original year.
+- **Fields.** `Author`: "First author et al.", plus an organisation only when all authors share it. `Year: undated` when there is no date. `Language`: the source's language, shown as a tag when it differs from the page language. No parentheses in URLs: percent-encode them.
+- **Notes:** at most 35 words, IT and EN saying the same thing: what the source covers and where to look, and "Technical" when it is.
+- `python3 scripts/build.py` checks the format, `python3 scripts/lengths.py` the notes.
+
 ## Module file
 
 `content/NN-module/_module.md`: front matter `id` (`m1`, `m2`…), `title.it`, `title.en`. Then `# IT` and `# EN` with a 2-sentence intro each, then `# Quiz`.

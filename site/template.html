@@ -167,6 +167,12 @@ main { min-width: 0; padding: 32px 16px 80px; }
 .box-dummy h2 { color: var(--accent); }
 .box-mistake { background: var(--warn-soft); }
 .box-mistake h2 { color: var(--warn); }
+.srcs ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.srcs li { font-size: var(--s-sm); line-height: 1.5; color: var(--ink-2); overflow-wrap: anywhere; }
+.srcs li a { font-weight: 700; }
+.srcs .src-meta { color: var(--muted); }
+.srcs .src-lang { font-family: var(--f-mono); font-size: .7rem; padding: 1px 5px; border: 1px solid var(--rule); border-radius: 4px; color: var(--muted); }
+.srcs li p { margin: 2px 0 0; }
 .lesson-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--rule); }
 .mark[aria-pressed="true"] { background: var(--good-soft); color: var(--good); border-color: transparent; }
 .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
@@ -286,7 +292,7 @@ const UI = {
     lead: "Un corso breve sui concetti che servono davvero per capire e usare l'intelligenza artificiale generativa, con un esempio quotidiano per ogni idea.",
     how: [["Una frase", "Il concetto in breve."], ["Approfondimento", "Come funziona davvero."], ["Nella vita di tutti i giorni", "Una scena concreta per fissare l'idea."], ["Errore comune", "L'equivoco da evitare."]],
     chipsNote: "Il titolo diviso in token, come lo vede un modello (divisione illustrativa).",
-    deep: "Approfondimento", dummy: "Nella vita di tutti i giorni", mistake: "Errore comune",
+    deep: "Approfondimento", dummy: "Nella vita di tutti i giorni", mistake: "Errore comune", sources: "Fonti", undated: "s.d.", newTab: "si apre in una nuova scheda",
     mark: "Segna come completata", marked: "Completata", prev: "Precedente", next: "Successiva", quiz: "Quiz del modulo", quizShort: "Quiz",
     quizIntro: "Tre domande per verificare il modulo. Scegli una risposta: vedi subito se è giusta e perché.",
     right: "Giusto.", wrong: "Non proprio.", score: (a, b) => `Hai risposto giusto a ${a} domande su ${b}.`, retry: "Ricomincia il quiz",
@@ -302,7 +308,7 @@ const UI = {
     lead: "A short course on the concepts you actually need to understand and use generative AI, with an everyday example for every idea.",
     how: [["One line", "The idea in brief."], ["Deep dive", "How it really works."], ["In everyday life", "A concrete scene to make it stick."], ["Common mistake", "The misconception to avoid."]],
     chipsNote: "The title split into tokens, the way a model sees it (illustrative split).",
-    deep: "Deep dive", dummy: "In everyday life", mistake: "Common mistake",
+    deep: "Deep dive", dummy: "In everyday life", mistake: "Common mistake", sources: "Sources", undated: "n.d.", newTab: "opens in a new tab",
     mark: "Mark as complete", marked: "Completed", prev: "Previous", next: "Next", quiz: "Module quiz", quizShort: "Quiz",
     quizIntro: "Three questions to check the module. Pick an answer: you see at once whether it is right, and why.",
     right: "Right.", wrong: "Not quite.", score: (a, b) => `You got ${a} out of ${b} right.`, retry: "Restart the quiz",
@@ -408,6 +414,15 @@ function pagerHtml(i) {
   </nav><p class="keys">${t("keys")}</p>`;
 }
 
+/* sources: one or two references on the lesson's topic (checks of every claim: docs/source-audit/) */
+function sourcesHtml(list) {
+  if (!list || !list.length) return "";
+  const li = s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener" aria-label="${esc(s.title)} (${esc(t("newTab"))})">${esc(s.title)}</a>
+    <span class="src-meta">· ${esc(s.author)}, ${esc(s.year === "undated" ? t("undated") : s.year)}</span>${s.lang !== lang ? ` <span class="src-lang" title="${esc(s.lang)}">${esc(s.lang.toUpperCase())}</span>` : ""}
+    <p>${esc(L(s.note))}</p></li>`;
+  return `<section class="sec srcs"><h2>${t("sources")}</h2><ul>${list.map(li).join("")}</ul></section>`;
+}
+
 function viewLesson(s) {
   const { m, mi, l, li } = s, i = steps.indexOf(s), isDone = done.has(s.key);
   return `<article class="col lesson" style="${mc(mi)}">
@@ -418,6 +433,7 @@ function viewLesson(s) {
     ${l.fig ? `<figure class="fig"><div class="fig-scroll">${l.fig.svg}</div><figcaption>${rich(L(l.fig.caption))}</figcaption></figure>` : ""}
     <section class="sec box box-dummy"><h2>${t("dummy")}</h2><p>${rich(L(l.dummy))}</p></section>
     <section class="sec box box-mistake"><h2>${t("mistake")}</h2><p>${rich(L(l.mistake))}</p></section>
+    ${sourcesHtml(l.sources)}
     <div class="lesson-foot"><button class="btn btn-ghost mark" id="mark" type="button" aria-pressed="${isDone}">${isDone ? "✓ " + t("marked") : t("mark")}</button>
     <span class="eyebrow">${done.size}/${totalLessons} ${t("completed")}</span></div>
     ${pagerHtml(i)}

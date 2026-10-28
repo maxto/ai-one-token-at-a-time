@@ -13,6 +13,7 @@ LIMITS = {
     ("Nella vita di tutti i giorni", "In everyday life"): (50, 90),
     ("Errore comune", "Common mistake"): (25, 50),
 }
+NOTE_MAX = 35  # words in one source note
 SINGLE = ("In una frase", "One line", "Didascalia della figura", "Figure caption")
 
 
@@ -24,9 +25,16 @@ def check(path):
     bad = []
     lang, sec, buf = None, None, {}
     for line in path.read_text().splitlines():
-        if line.startswith("# "): lang = line[2:].strip()
+        if line.startswith("# "): lang, sec = line[2:].strip(), None
+        elif lang == "Sources":  # source records: only the translated notes are prose
+            mm = re.match(r"- Note\.(it|en): (.+)$", line)
+            if mm: buf[("Sources", f"note {mm.group(1)}")] = buf.get(("Sources", f"note {mm.group(1)}"), []) + [mm.group(2)]
         elif line.startswith("## "): sec = line[3:].strip(); buf[(lang, sec)] = []
         elif sec and line.strip(): buf[(lang, sec)].append(line.strip())
+    for lg in ("it", "en"):
+        for note in buf.pop(("Sources", f"note {lg}"), []):
+            if words(note) > NOTE_MAX: bad.append(f"{path.relative_to(ROOT)} [Sources] note {lg}: {words(note)} words, want at most {NOTE_MAX}")
+            if ";" in note or "—" in note: bad.append(f"{path.relative_to(ROOT)} [Sources] note {lg}: semicolon or em-dash")
     for (lg, s), lines in buf.items():
         text = " ".join(lines)
         for names, (lo, hi) in LIMITS.items():
