@@ -4,7 +4,7 @@ title.it: Passaggi di consegne e delega
 title.en: Handoffs & Delegation
 ---
 
-![](./09-handoffs.preview.svg)
+![](./10-handoffs.preview.svg)
 
 # IT
 

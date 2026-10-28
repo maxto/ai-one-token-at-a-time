@@ -13,7 +13,7 @@ const course = JSON.parse(fs.readFileSync(path.join(root, 'tests/output/course.j
 const only = process.argv[2]; // optional module id, e.g. m3
 fs.mkdirSync(out, { recursive: true });
 
-const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome' });
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome', args: ['--disable-gpu', '--disable-software-rasterizer', '--use-gl=swiftshader'] });
 const page = await browser.newPage({ viewport: { width: 640, height: 600 }, deviceScaleFactor: 1.5 });
 for (const [mi, m] of course.entries()) {
   if (only && m.id !== only) continue;

@@ -16,7 +16,7 @@ Un agente è un modello linguistico che, in un ciclo, sceglie azioni, usa strume
 
 Un chatbot risponde una volta e si ferma. Un **agente** riceve un obiettivo e lavora in più passi. A ogni passo il modello legge la situazione, decide cosa fare, chiama uno strumento (una ricerca, un file, un programma) e legge il risultato. Poi sceglie il passo successivo. Il modello in sé produce solo testo: è il programma intorno, spesso chiamato harness, che esegue le azioni e gli restituisce l'esito.
 
-Il vantaggio è che l'agente può affrontare compiti aperti, dove i passi non sono noti in anticipo, e può correggersi quando un tentativo fallisce. Il prezzo è il controllo. Più passi significano più costi, più tempo e più occasioni di errore, e un errore iniziale si propaga. Per questo un buon agente ha confini chiari: quali strumenti può usare, quando fermarsi e quali azioni richiedono l'approvazione di una persona.
+Il vantaggio è che l'agente può affrontare compiti aperti, dove i passi non sono noti in anticipo, e può correggersi quando un tentativo fallisce. Il prezzo è il controllo. Più passi significano più costi, più tempo e più occasioni di errore, e un errore iniziale si propaga. Per questo un buon agente ha confini chiari: quali strumenti può usare, quando fermarsi e quali azioni richiedono l'approvazione di una persona. E un agente non parte sempre da un tuo messaggio: può avviarlo un orario fissato o un evento, come l'arrivo di una email, e può lavorare in background. L'avvio automatico però non autorizza azioni oltre i permessi concessi.
 
 ## Nella vita di tutti i giorni
 
@@ -40,7 +40,7 @@ An agent is a language model that, in a loop, picks actions, uses tools and chec
 
 A chatbot answers once and stops. An **agent** gets a goal and works in several steps. At each step the model reads the situation, decides what to do, calls a tool (a search, a file, a program) and reads the result. Then it picks the next step. The model itself only produces text: the program around it, often called the harness, runs the actions and feeds back the outcome.
 
-The benefit is that an agent can handle open-ended tasks, where the steps are not known in advance, and it can correct itself when an attempt fails. The cost is control. More steps mean more money, more time and more chances to go wrong, and an early mistake carries forward. So a good agent has clear limits: which tools it may use, when to stop, and which actions need a person's approval.
+The benefit is that an agent can handle open-ended tasks, where the steps are not known in advance, and it can correct itself when an attempt fails. The cost is control. More steps mean more money, more time and more chances to go wrong, and an early mistake carries forward. So a good agent has clear limits: which tools it may use, when to stop, and which actions need a person's approval. And an agent need not start from your message: a schedule or an event, such as an incoming email, can start it, and it can work in the background. Starting automatically does not authorise actions beyond the permissions granted.
 
 ## In everyday life
 

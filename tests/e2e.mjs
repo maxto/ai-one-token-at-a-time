@@ -20,7 +20,7 @@ expect(/name="description" content="[^"]*\d+ modules, \d+ lessons/.test(head), '
 expect(fs.existsSync(path.join(root, 'dist/og.png')), 'dist/og.png is missing');
 expect(head.includes('<title>AI, one token at a time</title>'), 'no English <title> in <head>');
 
-const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome' });
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome', args: ['--disable-gpu', '--disable-software-rasterizer', '--use-gl=swiftshader'] });
 async function run(opts, name, fn) {
   const ctx = await browser.newContext(opts);
   const p = await ctx.newPage();

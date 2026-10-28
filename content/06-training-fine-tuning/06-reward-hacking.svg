@@ -1,0 +1,29 @@
+<svg viewBox="0 0 560 230" role="img" aria-label="In questo esempio il controllo dà lo stesso premio a chi risolve davvero il compito e a chi trova una scorciatoia che lo aggira, quindi l'addestramento può rinforzare entrambe le strade.">
+<defs>
+<marker id="ah-reward-hacking" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<rect class="box" x="20" y="88" width="110" height="54" rx="6"/>
+<text class="t mid it" x="75" y="120">Compito</text>
+<text class="t mid en" x="75" y="120">Task</text>
+<rect class="box" x="200" y="24" width="160" height="54" rx="6"/>
+<text class="t mid it" x="280" y="47">Risolve</text>
+<text class="t mid en" x="280" y="47">Solves it</text>
+<text class="t-xs mid it" x="280" y="66">corregge il codice</text>
+<text class="t-xs mid en" x="280" y="66">fixes the code</text>
+<rect class="box-accent" x="200" y="152" width="160" height="54" rx="6"/>
+<text class="t mid it" x="280" y="175">Scorciatoia</text>
+<text class="t mid en" x="280" y="175">Shortcut</text>
+<text class="t-xs mid it" x="280" y="194">falsa il controllo</text>
+<text class="t-xs mid en" x="280" y="194">tampers with check</text>
+<rect class="box" x="430" y="88" width="110" height="54" rx="6"/>
+<text class="t mid it" x="485" y="111">Controllo</text>
+<text class="t mid en" x="485" y="111">Check</text>
+<text class="t-xs mid it" x="485" y="130">✓ premio</text>
+<text class="t-xs mid en" x="485" y="130">✓ reward</text>
+<line class="ln" x1="130" y1="104" x2="198" y2="58" marker-end="url(#ah-reward-hacking)"/>
+<line class="ln" x1="130" y1="126" x2="198" y2="172" marker-end="url(#ah-reward-hacking)"/>
+<line class="ln" x1="360" y1="58" x2="428" y2="104" marker-end="url(#ah-reward-hacking)"/>
+<line class="ln" x1="360" y1="172" x2="428" y2="126" marker-end="url(#ah-reward-hacking)"/>
+</svg>

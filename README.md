@@ -2,9 +2,9 @@
 
 [![AI, one token at a time: how generative AI really works, explained simply](site/og.png)](https://maxto.github.io/ai-one-token-at-a-time/)
 
-A short bilingual (Italian / English) course on how generative AI works: 10 modules, 83 lessons, one diagram and one everyday example per idea, a quiz at the end of each module. Not too technical: the goal is a solid mental model, not engineering.
+A short bilingual (Italian / English) course on how generative AI works: 10 modules, 86 lessons, one diagram and one everyday example per idea, a quiz at the end of each module. Not too technical: the goal is a solid mental model, not engineering.
 
-*Un corso breve, in italiano e in inglese, su come funziona l'intelligenza artificiale generativa: 10 moduli, 83 lezioni, un diagramma e un esempio di tutti i giorni per ogni idea, un quiz alla fine di ogni modulo.*
+*Un corso breve, in italiano e in inglese, su come funziona l'intelligenza artificiale generativa: 10 moduli, 86 lezioni, un diagramma e un esempio di tutti i giorni per ogni idea, un quiz alla fine di ogni modulo.*
 
 **Read the course / Leggi il corso: https://maxto.github.io/ai-one-token-at-a-time/**
 

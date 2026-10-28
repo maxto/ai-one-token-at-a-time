@@ -4,7 +4,7 @@ title.it: Quantization
 title.en: Quantization
 ---
 
-![](./08-quantization.preview.svg)
+![](./09-quantization.preview.svg)
 
 # IT
 

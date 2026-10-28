@@ -4,7 +4,7 @@ title.it: Distillation
 title.en: Distillation
 ---
 
-![](./07-distillation.preview.svg)
+![](./08-distillation.preview.svg)
 
 # IT
 

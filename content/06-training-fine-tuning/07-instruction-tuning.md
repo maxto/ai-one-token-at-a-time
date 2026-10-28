@@ -4,7 +4,7 @@ title.it: Instruction tuning
 title.en: Instruction tuning
 ---
 
-![](./06-instruction-tuning.preview.svg)
+![](./07-instruction-tuning.preview.svg)
 
 # IT
 

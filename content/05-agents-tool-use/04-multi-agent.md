@@ -14,9 +14,9 @@ Un sistema multi-agente divide un compito tra più agenti, ognuno con ruolo, str
 
 ## Approfondimento
 
-Lo schema più comune ha un orchestratore, cioè un agente coordinatore, che scompone il compito e assegna le parti a sotto-agenti. Ognuno lavora con un contesto pulito e solo gli strumenti che gli servono, poi restituisce un risultato sintetico. Altri schemi sono la catena, dove l'output di uno è l'input del successivo, e la revisione, dove un agente produce e un altro controlla.
+Lo schema più comune ha un orchestratore, cioè un agente coordinatore, che scompone il compito e assegna le parti a sotto-agenti. Ognuno riceve il contesto e gli strumenti previsti dal sistema, poi restituisce un risultato sintetico. La conversazione precedente può essere inclusa, filtrata o esclusa. Altri schemi sono la catena, dove l'output di uno è l'input del successivo, e la revisione, dove un agente produce e un altro controlla.
 
-I vantaggi sono reali: lavori indipendenti in parallelo, contesti più corti e quindi più focalizzati, ruoli più facili da testare. Ma ogni **passaggio** tra agenti perde informazioni, come nel gioco del telefono senza fili. I costi in token si moltiplicano e gli errori diventano più difficili da rintracciare. Regola pratica: usare più agenti solo quando il lavoro si divide davvero in parti indipendenti. Per un compito lineare di solito basta un solo agente ben istruito.
+I vantaggi sono reali: lavori indipendenti in parallelo, contesti più corti e quindi più focalizzati, ruoli più facili da testare. Ma ogni **passaggio** tra agenti rischia di perdere informazioni, soprattutto quando si riassume, come nel gioco del telefono senza fili. I costi in token si moltiplicano e gli errori diventano più difficili da rintracciare. Regola pratica: usare più agenti solo quando il lavoro si divide davvero in parti indipendenti. Per un compito lineare di solito basta un solo agente ben istruito.
 
 ## Nella vita di tutti i giorni
 
@@ -28,7 +28,7 @@ Si pensa che più agenti diano sempre risultati migliori, come una squadra più 
 
 ## Didascalia della figura
 
-L'orchestratore assegna un compito a ogni sotto-agente, che lavora nel proprio contesto e restituisce solo una sintesi.
+In questo schema l'orchestratore assegna un compito a ogni sotto-agente, che lavora nel proprio contesto e restituisce solo una sintesi.
 
 # EN
 
@@ -38,9 +38,9 @@ A multi-agent system splits a task across several agents, each with its own role
 
 ## Deep dive
 
-The most common pattern has an orchestrator, a coordinating agent that breaks the task down and hands the parts to sub-agents. Each one works with a clean context and only the tools it needs, then returns a short result. Other patterns are the pipeline, where one agent's output is the next one's input, and review, where one agent produces and another checks.
+The most common pattern has an orchestrator, a coordinating agent that breaks the task down and hands the parts to sub-agents. Each one receives the context and tools provided by the system, then returns a short result. The previous conversation may be included, filtered or left out. Other patterns are the pipeline, where one agent's output is the next one's input, and review, where one agent produces and another checks.
 
-The gains are real: independent work runs in parallel, contexts stay shorter and more focused, and roles are easier to test. But every **hand-off** between agents loses information, like a game of telephone. Token costs multiply and errors get harder to trace. A practical rule: use several agents only when the work truly splits into independent parts. For a linear task, one well-instructed agent is usually enough.
+The gains are real: independent work runs in parallel, contexts stay shorter and more focused, and roles are easier to test. But every **transfer** between agents can lose information, especially when context is summarised, like a game of telephone. Token costs multiply and errors get harder to trace. A practical rule: use several agents only when the work truly splits into independent parts. For a linear task, one well-instructed agent is usually enough.
 
 ## In everyday life
 
@@ -48,8 +48,8 @@ A family house move. One person coordinates: someone takes the furniture apart, 
 
 ## Common mistake
 
-People assume more agents always means better results, like a bigger team. Often it is the reverse: more hand-offs, more cost, more miscommunication. It only pays off when the work splits cleanly.
+People assume more agents always means better results, like a bigger team. Often it is the reverse: more transfers, more cost, more miscommunication. It only pays off when the work splits cleanly.
 
 ## Figure caption
 
-The orchestrator gives each sub-agent a task, and each works in its own context and returns only a summary.
+In this pattern the orchestrator gives each sub-agent a task, and each works in its own context and returns only a summary.

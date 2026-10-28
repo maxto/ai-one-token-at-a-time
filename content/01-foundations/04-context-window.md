@@ -18,7 +18,7 @@ Il modello non ha memoria tra una chiamata e l'altra. A ogni richiesta riceve tu
 
 Le finestre sono cresciute molto, fino a centinaia di migliaia di token e oltre. Ma più contesto costa di più e rallenta: nel meccanismo di attenzione standard il lavoro cresce più che in proporzione alla lunghezza.
 
-E non tutto il contesto viene usato bene. Diversi studi mostrano che i modelli recuperano meglio le informazioni all'inizio e alla fine, e peggio quelle nel mezzo (effetto "lost in the middle"). Un contesto corto e pertinente spesso funziona meglio di uno lungo e pieno di rumore.
+E non tutto il contesto viene usato bene. Il limite dichiarato non garantisce la stessa qualità su tutta la finestra: in uno studio del 2025 su 18 modelli le prestazioni calavano con la lunghezza dell'input, anche in compiti semplici (a volte si parla di "context rot"). Le informazioni nel mezzo possono essere recuperate peggio ("lost in the middle"). E possono pesare i testi sullo stesso argomento che non rispondono alla domanda. Un contesto corto e pertinente spesso funziona meglio di uno lungo e pieno di rumore.
 
 ## Nella vita di tutti i giorni
 
@@ -44,7 +44,7 @@ The model has no memory between calls. On every request it gets everything from 
 
 Windows have grown a lot, to hundreds of thousands of tokens and beyond. But more context costs more and runs slower: in standard attention the work grows faster than the length does.
 
-And not all of the context is used equally well. Several studies show that models retrieve information at the start and the end more reliably than information in the middle (the "lost in the middle" effect). A short, relevant context often beats a long, noisy one.
+And not all of the context is used equally well. The advertised limit does not guarantee the same quality across the whole window: in a 2025 study of 18 models, performance dropped as the input grew, even on simple tasks (this is sometimes called "context rot"). Information in the middle can be retrieved less reliably ("lost in the middle"). Passages on the same topic that do not answer the question can also hurt. A short, relevant context often beats a long, noisy one.
 
 ## In everyday life
 
