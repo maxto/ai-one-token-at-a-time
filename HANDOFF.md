@@ -1,6 +1,6 @@
 # Handoff
 
-Closed: 2026-10-28 22:53 CET. Last operation: optional lesson sources (pilot on three module-2 lessons) and wording corrections from the source check, after two Codex reviews. Not committed yet. HEAD verified before this update: 3723d93.
+Closed: 2026-10-28 23:00 CET. Last operation: sources pilot committed (3469ff1) and pushed, local review server stopped. HEAD verified before this update: 3469ff1.
 
 ## Goal
 
@@ -14,13 +14,11 @@ The course is done for now, not closed: 10 modules, 86 lessons, live at https://
 - Tests needed `--disable-gpu --disable-software-rasterizer --use-gl=swiftshader` for Chrome 150 under WSL (page screenshots timed out otherwise, also on the old HEAD). Now in `tests/e2e.mjs` and `tests/render-figs.mjs`.
 - 2026-10-28: dark theme brightened for contrast, then dark-theme figures set to variant C after a Codex review: dark panel, raised lighter boxes, lighter small text (see LOG.md). Home cards stay lighter than the page. Light theme unchanged (pixel compare of all light figures).
 - Advisor files for this round are in the gitignored `dist/advisor/` (scan, batch1, lessons, final): local only.
-- 2026-10-28 evening, uncommitted: optional `# Sources` block (one or two reference sources), shown in `#m2-llm`, `#m2-mixture-of-experts`, `#m2-open-weights`, with corrected wording in those three lessons (see LOG.md). Build, `lengths.py`, `npm test` ok. Check record in `docs/source-audit/m2.md`. Codex files `dist/advisor/sources-*.md` (local only).
+- 2026-10-28 evening, committed in 3469ff1 and pushed: optional `# Sources` block (one or two reference sources), shown in `#m2-llm`, `#m2-mixture-of-experts`, `#m2-open-weights`, with corrected wording in those three lessons (see LOG.md). Build, `lengths.py`, `npm test` ok. Check record in `docs/source-audit/m2.md`. Codex files `dist/advisor/sources-*.md` (local only).
 
 ## Open items
 
-- Commit of the sources pilot. Status: waiting for Max's go-ahead, then push (also needs his go-ahead).
 - Sources for other lessons: optional, added when a lesson is touched or a good reference is at hand. Side-claim sources already checked and waiting for their lesson: hallucination survey (Ji et al.) for Hallucinations, InstructGPT for RLHF or Instruction tuning, Attention Is All You Need for Attention (details in `docs/source-audit/m2.md`). Status: proposed, not decided.
-- Local server on port 8765 serving `dist/` for Max's review (this session only). Status: running.
 
 - Max reviews the new lessons online. Status: to check. Who: Max.
 - Max studies the course himself. Status: ongoing since 2026-10-09.
@@ -38,4 +36,4 @@ The next focus is AI applied to finance, as Macroasset content, not in this repo
 
 ## Next step
 
-Commit the sources pilot once Max gives the go-ahead. Then apply any corrections Max sends after reading the lessons online.
+Apply any corrections Max sends after reading the lessons online.
