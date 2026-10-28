@@ -14,9 +14,9 @@ Un modello a pesi aperti si può scaricare ed eseguire da sé, ma non è per for
 
 ## Approfondimento
 
-I **pesi** sono i numeri imparati durante l'addestramento. Quando vengono pubblicati, chi ha l'hardware adatto può eseguire il modello sui propri computer o adattarlo con il fine-tuning. Ma pesi aperti non vuol dire open source. La definizione dell'Open Source Initiative (OSI, 2024) richiede anche il codice per addestrare ed eseguire il modello, informazioni dettagliate sui dati e la libertà di usare, studiare, modificare e condividere il sistema. Un rilascio può dare i pesi senza il resto, con una licenza che pone condizioni d'uso.
+I **pesi** sono i numeri imparati durante l'addestramento. Quando vengono pubblicati, chi ha l'hardware adatto può eseguire il modello sui propri computer o adattarlo con il fine-tuning. Ma pesi aperti non vuol dire per forza open source. La definizione dell'Open Source Initiative (OSI, 2024) richiede anche il codice per addestrare ed eseguire il modello, informazioni dettagliate sui dati e la libertà di usare, studiare, modificare e condividere il sistema. Un rilascio può dare i pesi senza il resto, con una licenza che pone condizioni d'uso.
 
-I possibili vantaggi includono ricerca indipendente, meno concentrazione del mercato, uso del modello senza mandare dati a terzi. Ma una pubblicazione non si può ritirare: le copie già scaricate restano.
+I possibili vantaggi includono ricerca indipendente, meno concentrazione del mercato e l'uso del modello senza mandare dati a terzi. Ma una pubblicazione non si può ritirare: le copie già scaricate restano.
 
 Alcune protezioni apprese si possono indebolire modificando i pesi: gli studi lo mostrano con un breve fine-tuning o con modifiche mirate, nei modelli esaminati. Il rilascio dei pesi riduce il controllo del fornitore sulle modifiche successive. Separatamente, nei forum criminali si vendono strumenti chiamati "uncensored": quelli analizzati in un rapporto del 2025 usano modelli esistenti guidati da prompt modificati.
 
@@ -30,7 +30,7 @@ Si pensa che pesi aperti significhi open source, gratis e privato. Aperto riguar
 
 ## Didascalia della figura
 
-La disponibilità dei pesi non garantisce codice per addestrare ed eseguire, informazioni sui dati e libertà di uso, studio, modifica e condivisione richiesti da OSI.
+La disponibilità dei pesi non garantisce codice per addestrare ed eseguire, informazioni sui dati e libertà di uso, studio, modifica e condivisione richiesti dalla definizione OSI.
 
 # EN
 
@@ -56,4 +56,4 @@ People assume open weights means open source, free and private. Open is about wh
 
 ## Figure caption
 
-Available weights do not guarantee the training and inference code, data information, and freedoms to use, study, modify and share required by OSI.
+Available weights do not guarantee the training and inference code, data information, and freedoms to use, study, modify and share required by the OSI definition.

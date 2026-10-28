@@ -18,7 +18,7 @@ Il modello non ha memoria tra una chiamata e l'altra. A ogni richiesta riceve tu
 
 Le finestre sono cresciute molto, fino a centinaia di migliaia di token e oltre. Ma più contesto costa di più e rallenta: nel meccanismo di attenzione standard il lavoro cresce più che in proporzione alla lunghezza.
 
-E non tutto il contesto viene usato bene. Il limite dichiarato non garantisce la stessa qualità su tutta la finestra: in uno studio del 2025 su 18 modelli le prestazioni calavano con la lunghezza dell'input, anche in compiti semplici (a volte si parla di "context rot"). Le informazioni nel mezzo possono essere recuperate peggio ("lost in the middle"). E possono pesare i testi sullo stesso argomento che non rispondono alla domanda. Un contesto corto e pertinente spesso funziona meglio di uno lungo e pieno di rumore.
+E non tutto il contesto viene usato bene. Il limite dichiarato non garantisce la stessa qualità su tutta la finestra: in uno studio del 2025 su 18 modelli le prestazioni calavano con la lunghezza dell'input, anche in compiti semplici (a volte si parla di "context rot"). Le informazioni nel mezzo possono essere recuperate peggio ("lost in the middle"). Anche i testi sullo stesso argomento che non rispondono alla domanda possono peggiorare il risultato. Un contesto corto e pertinente spesso funziona meglio di uno lungo e pieno di rumore.
 
 ## Nella vita di tutti i giorni
 

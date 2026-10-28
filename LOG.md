@@ -2,6 +2,14 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-28: text review of the new lessons
+
+**What was done.** Codex (after /clear, fresh context) and Claude reviewed the text of commit 567ef7b independently, then merged the findings. Fixed: Open-weight models IT said "pesi aperti non vuol dire open source" while EN said "not necessarily" (found by Claude, missed by Codex), a missing "e" in a list, OSI caption wording. Reward hacking: clearer IT for special-casing, a comma splice in EN, missing subject. Computer-use agents: a comma splice, "a portata di mano", the one-liner no longer repeats "interface". Agent Harness: two colons in one sentence. Context Window IT: "possono pesare" was ambiguous. AI Agents IT: "un'email". Codex confirmed the merged fixes.
+
+**Verified.** `python3 scripts/lengths.py` ok, `python3 scripts/build.py` ok, `npm test` ok. HEAD before this entry: 567ef7b.
+
+**Decisions.** None new.
+
 ## 2026-10-28: topic scan, 3 new lessons, 6 lesson fixes
 
 **What was done.** Scanned the 83 lessons against current topics (web searches on 2026-10-28). Codex (advisor) reviewed the proposal, then each batch of text, three rounds in total. Every factual claim was checked against a source opened during the session. Files: `dist/advisor/scan-*`, `batch1-*`, `lessons-*`, `final-*` (gitignored, local).

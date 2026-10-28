@@ -10,7 +10,7 @@ title.en: Computer-Use Agents
 
 ## In una frase
 
-Un agente che usa il computer lavora su interfacce fatte per le persone: osserva l'interfaccia, clicca o scrive, poi guarda cosa è cambiato.
+Un agente che usa il computer lavora su interfacce fatte per le persone: osserva cosa mostrano, clicca o scrive, poi guarda cosa è cambiato.
 
 ## Approfondimento
 
@@ -18,11 +18,11 @@ Molti siti e programmi non offrono uno strumento pensato per un agente. Allora l
 
 Il punto difficile è collegare l'intenzione all'elemento giusto: individuare il pulsante o il campo corretto. Il modello può sbagliare elemento o coordinate, e ogni giro richiede tempo. Uno strumento diretto, quando esiste, può evitare i passaggi dell'interfaccia.
 
-Lo stato mostrato può contenere istruzioni ingannevoli (prompt injection), e le azioni usano gli accessi della sessione. Per questo si consiglia un ambiente separato con pochi privilegi, niente password o dati sensibili a portata, e una conferma umana prima delle azioni con conseguenze rilevanti.
+Lo stato mostrato può contenere istruzioni ingannevoli (prompt injection), e le azioni usano gli accessi della sessione. Per questo si consiglia un ambiente separato con pochi privilegi, niente password o dati sensibili a portata di mano, e una conferma umana prima delle azioni con conseguenze rilevanti.
 
 ## Nella vita di tutti i giorni
 
-Una nonna sposta un appuntamento sul calendario del computer, con il nipote al telefono. Lui non tocca nulla: chiede cosa vede sullo schermo, dice dove cliccare, aspetta e chiede di nuovo. Alla fine non si fida di «ho premuto Salva»: le fa riaprire l'appuntamento per controllare che l'orario sia cambiato davvero. È lento, perché ogni passaggio va descritto e controllato. Il nipote è il modello, le mani della nonna sono l'harness.
+Una nonna sposta un appuntamento sul calendario del computer, con il nipote al telefono. Lui non tocca nulla: chiede cosa vede sullo schermo, dice dove cliccare, aspetta e chiede di nuovo. Alla fine non si fida di «ho premuto Salva»: le fa riaprire l'appuntamento per controllare che l'orario sia cambiato davvero. È lento, perché ogni passaggio va descritto e controllato. Il nipote è il modello. Le mani della nonna sono l'harness.
 
 ## Errore comune
 
@@ -36,7 +36,7 @@ Il modello riceve osservazioni dell'interfaccia, come screenshot o struttura del
 
 ## One line
 
-A computer-use agent works on interfaces built for people: it observes the interface, clicks or types, then checks what changed.
+A computer-use agent works on interfaces built for people: it observes what they show, clicks or types, then checks what changed.
 
 ## Deep dive
 
@@ -48,7 +48,7 @@ The displayed state may contain deceptive instructions (prompt injection), and a
 
 ## In everyday life
 
-A grandmother moves an appointment in her computer calendar, with her grandson on the phone. He touches nothing: he asks what she sees on the screen, tells her where to click, waits and asks again. At the end he does not trust "I pressed Save": he has her reopen the appointment to check the time really changed. It is slow, because every step has to be described and checked. The grandson is the model, her hands are the harness.
+A grandmother moves an appointment in her computer calendar, with her grandson on the phone. He touches nothing: he asks what she sees on the screen, tells her where to click, waits and asks again. At the end he does not trust "I pressed Save": he has her reopen the appointment to check the time really changed. It is slow, because every step has to be described and checked. The grandson is the model. Her hands are the harness.
 
 ## Common mistake
 
