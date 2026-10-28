@@ -93,6 +93,7 @@ h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.1
 .syl-mod > a { display: flex; align-items: center; gap: 10px; padding: 8px; border-radius: 8px; text-decoration: none; color: var(--ink); font-weight: 700; font-size: var(--s-sm); line-height: 1.3; }
 .syl-mod > a:hover { background: var(--chip); }
 .dot { flex: none; width: 10px; height: 10px; border-radius: 3px; background: var(--mc, var(--accent)); }
+.syl-time { margin-left: auto; font-family: var(--f-mono); font-size: var(--s-xs); font-weight: 400; color: var(--muted); white-space: nowrap; }
 .syl-mod ol { list-style: none; margin: 0 0 4px; padding: 0 0 0 18px; border-left: 1px solid var(--rule); margin-left: 12px; }
 .syl-mod li a { display: flex; gap: 8px; align-items: baseline; padding: 4px 8px; border-radius: 6px; text-decoration: none; color: var(--ink-2); font-size: var(--s-sm); line-height: 1.35; }
 .syl-mod li a:hover { background: var(--chip); color: var(--ink); }
@@ -113,6 +114,7 @@ main { min-width: 0; padding: 32px 16px 80px; }
 .chip small { font-family: var(--f-mono); font-size: .7rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .chips-note { font-size: var(--s-xs); color: var(--muted); font-family: var(--f-mono); }
 .lead { font-size: var(--s-lg); line-height: 1.45; color: var(--ink-2); margin: 20px 0 0; max-width: 58ch; }
+.time-note { font-size: var(--s-sm); color: var(--muted); margin: 10px 0 0; }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 8px; padding: 10px 16px; font-weight: 700; font-size: var(--s-sm); text-decoration: none; cursor: pointer; border: 1px solid transparent; }
 .btn-primary { background: var(--accent); color: var(--accent-ink); }
@@ -271,6 +273,7 @@ const UI = {
     right: "Giusto.", wrong: "Non proprio.", score: (a, b) => `Hai risposto giusto a ${a} domande su ${b}.`, retry: "Ricomincia il quiz",
     results: (n, q) => `${n} risultati per “${q}”`, none: "Nessun concetto trovato. Prova con un'altra parola, anche in inglese.",
     keys: "Usa le frecce ← → per passare da una lezione all'altra.", backHome: "Torna alla panoramica", nextModule: "Modulo successivo",
+    time: (r, s) => `Tempo stimato: circa ${r} di lettura, ${s} per studiarlo con figure e quiz.`, hours: "ore", hour: "ora", studyTime: "Tempo di studio stimato, con figure e quiz",
     chips: ["AI", ",", " un", " token", " alla", " vol", "ta"], themeDark: "Tema scuro", themeLight: "Tema chiaro",
     note: ["Contenuti a scopo divulgativo, realizzati con il supporto di strumenti di intelligenza artificiale e sottoposti a revisione prima della pubblicazione. Eventuali errori possono essere segnalati su ", "GitHub", "."]
   },
@@ -286,6 +289,7 @@ const UI = {
     right: "Right.", wrong: "Not quite.", score: (a, b) => `You got ${a} out of ${b} right.`, retry: "Restart the quiz",
     results: (n, q) => `${n} results for “${q}”`, none: "No concept found. Try another word.",
     keys: "Use the ← → arrow keys to move between lessons.", backHome: "Back to the overview", nextModule: "Next module",
+    time: (r, s) => `Estimated time: about ${r} of reading, ${s} to study it with figures and quizzes.`, hours: "hours", hour: "hour", studyTime: "Estimated study time, with figures and quiz",
     chips: ["AI", ",", " one", " token", " at", " a", " time"], themeDark: "Dark theme", themeLight: "Light theme",
     note: ["Content for educational purposes, produced with the support of AI tools and reviewed before publication. Any errors can be reported on ", "GitHub", "."]
   }
@@ -322,7 +326,7 @@ function renderSyllabus(currentKey) {
   const n = done.size;
   let h = `<div class="syl-progress"><span>${t("progress")}</span><b>${n}/${totalLessons}</b></div>`;
   COURSE.forEach((m, mi) => {
-    h += `<div class="syl-mod" style="${mc(mi)}"><a href="#${m.id}-${m.lessons[0].id}"><span class="dot"></span><span>${mi + 1}. ${esc(L(m.title))}</span></a><ol>`;
+    h += `<div class="syl-mod" style="${mc(mi)}"><a href="#${m.id}-${m.lessons[0].id}"><span class="dot"></span><span>${mi + 1}. ${esc(L(m.title))}</span><span class="syl-time" title="${esc(t("studyTime"))}">${modMinutes(m)} min</span></a><ol>`;
     m.lessons.forEach(l => {
       const key = `${m.id}-${l.id}`, isDone = done.has(key);
       h += `<li class="${isDone ? "done" : ""}"><a href="#${key}"${key === currentKey ? ' aria-current="page"' : ""}><span class="tick">${isDone ? "✓" : "·"}</span><span>${esc(L(l.title))}</span></a></li>`;
@@ -332,6 +336,16 @@ function renderSyllabus(currentKey) {
   });
   nav.innerHTML = h;
   document.getElementById("meter").style.width = (100 * n / totalLessons) + "%";
+}
+
+/* ---------- estimated time (computed by build.py) ---------- */
+const modMinutes = m => Math.max(5, Math.round(m.time.study[lang] / 5) * 5);
+function timeNote() {
+  const sum = k => COURSE.reduce((a, m) => a + m.time[k][lang], 0) / 60;
+  const h = n => `${n} ${n === 1 ? t("hour") : t("hours")}`;
+  const read = Math.max(0.5, Math.round(sum("read") * 2) / 2), study = sum("study");
+  const lo = Math.floor(study), hi = Math.ceil(study);
+  return t("time")(h(String(read).replace(".", lang === "it" ? "," : ".")), lo === hi ? h(lo) : `${lo}-${h(hi)}`);
 }
 
 /* ---------- views ---------- */
@@ -346,6 +360,7 @@ function viewHome() {
     <h1 class="chips" aria-label="${esc(t("name"))}">${chips}</h1>
     <div class="chips-note">${esc(t("chipsNote"))}</div>
     <p class="lead">${esc(t("lead"))}</p>
+    <p class="time-note">${esc(timeNote())}</p>
     <div class="actions"><a class="btn btn-primary" href="#${go.key}">${started ? t("resume") : t("start")} →</a>
     ${started ? `<span class="btn btn-ghost" aria-live="polite">${done.size}/${totalLessons} ${t("completed")}</span>` : ""}</div>
     <div class="how">${t("how").map(([a, b]) => `<div><b>${esc(a)}</b>${esc(b)}</div>`).join("")}</div>

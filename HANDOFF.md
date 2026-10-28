@@ -1,6 +1,6 @@
 # Handoff
 
-Closed: 2026-10-28 16:15 CET. Last operation: text review of the three new lessons (Codex + Claude), fixes committed and pushed. HEAD verified before this update: 567ef7b (the commit that includes this file comes after it).
+Closed: 2026-10-28 16:37 CET. Last operation: estimated reading and study time on the home page and in the contents menu, committed and pushed. HEAD verified before this update: 19e7623 (the commit that includes this file comes after it).
 
 ## Goal
 
@@ -10,7 +10,7 @@ The course is done for now, not closed: 10 modules, 86 lessons, live at https://
 
 - Worktree: `/home/maxto/projects/personal/ai-one-token-at-a-time`, branch `main`.
 - 2026-10-28 update (see LOG.md): new lessons Computer-Use Agents (`#m5-computer-use`), Open-weight models (`#m2-open-weights`, includes "uncensored" models), Reward hacking (`#m6-reward-hacking`). Fixes in Context Window, AI Agents, Multi-Agent Systems, Agent Loops, Agent Harness.
-- Checks run on 2026-10-28: `python3 scripts/lengths.py` ok, `npm test` ok, `npm run figs` ok and the new PNGs looked at. Text review of the new lessons done the same day (see LOG.md).
+- Checks run on 2026-10-28: `python3 scripts/lengths.py` ok, `npm test` ok, `npm run figs` ok and the new PNGs looked at. Text review of the new lessons and estimated study times done the same day (see LOG.md).
 - Tests needed `--disable-gpu --disable-software-rasterizer --use-gl=swiftshader` for Chrome 150 under WSL (page screenshots timed out otherwise, also on the old HEAD). Now in `tests/e2e.mjs` and `tests/render-figs.mjs`.
 - Advisor files for this round are in the gitignored `dist/advisor/` (scan, batch1, lessons, final): local only.
 

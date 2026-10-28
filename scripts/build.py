@@ -203,10 +203,33 @@ def preview_meta(modules, lessons):
     return "".join(f'<meta {k}="{v}" content="{html.escape(c)}">\n' for k, v, c in tags)
 
 
+# Estimated time per module. Reading: 238 words a minute, the average adult silent reading
+# rate for English non-fiction (Brysbaert 2019, Journal of Memory and Language 109, 104047).
+# Studying: half that rate, plus 1 minute per figure and 2 minutes per quiz (our assumption).
+READ_WPM = 238
+STUDY_WPM = READ_WPM / 2
+
+
+def words(text):
+    return len(re.findall(r"\S+", re.sub(r"\*\*", "", text)))
+
+
+def add_times(course):
+    for mod in course:
+        mod["time"] = {"read": {}, "study": {}}
+        for lg in LANGS:
+            n = sum(words(" ".join([les["oneLiner"][lg], *les["deep"][lg], les["dummy"][lg],
+                                     les["mistake"][lg], les["fig"]["caption"][lg]])) for les in mod["lessons"])
+            n += sum(words(" ".join([q["q"][lg], *q["options"][lg], q["explain"][lg]])) for q in mod["quiz"])
+            mod["time"]["read"][lg] = round(n / READ_WPM, 1)
+            mod["time"]["study"][lg] = round(n / STUDY_WPM + len(mod["lessons"]) + 2, 1)
+
+
 def main():
     course = load()
     if errors:
         print("\n".join(errors)); sys.exit(1)
+    add_times(course)
     if "--json" in sys.argv:
         pathlib.Path(sys.argv[sys.argv.index("--json") + 1]).write_text(json.dumps(course, ensure_ascii=False, indent=1))
     data = json.dumps(course, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

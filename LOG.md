@@ -2,6 +2,16 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-28: estimated reading and study time
+
+**What was done.** `scripts/build.py` now counts the words of each module (all lesson sections plus the quiz, per language) and stores `time.read` and `time.study` in the course data. The home page shows the total under the lead ("about 2 hours of reading, 5-6 hours to study it with figures and quizzes"). The contents menu shows the study time next to each module (25 to 45 min, rounded to 5, tooltip "Estimated study time"). Also committed: the regenerated `09-open-weights.preview.svg` that the previous commit missed.
+
+**Verified.** Build ok, `npm test` ok, home screenshots looked at (IT desktop, EN phone). HEAD before this entry: 19e7623.
+
+**Decisions.**
+- Done (approved by Max): times are computed at build time, never typed by hand, so they stay right when lessons are added. Shown on the home page (total) and in the contents menu (per module). Not per lesson: lessons are all 2 to 4 minutes, so it would add noise.
+- Done: reading rate 238 words a minute, the average adult silent reading rate for English non-fiction in Brysbaert 2019 (Journal of Memory and Language 109, 104047, checked online). The same rate is used for Italian. Study time is our assumption, labelled "estimated": half the reading rate, plus 1 minute per figure and 2 minutes per quiz.
+
 ## 2026-10-28: text review of the new lessons
 
 **What was done.** Codex (after /clear, fresh context) and Claude reviewed the text of commit 567ef7b independently, then merged the findings. Fixed: Open-weight models IT said "pesi aperti non vuol dire open source" while EN said "not necessarily" (found by Claude, missed by Codex), a missing "e" in a list, OSI caption wording. Reward hacking: clearer IT for special-casing, a comma splice in EN, missing subject. Computer-use agents: a comma splice, "a portata di mano", the one-liner no longer repeats "interface". Agent Harness: two colons in one sentence. Context Window IT: "possono pesare" was ambiguous. AI Agents IT: "un'email". Codex confirmed the merged fixes.
