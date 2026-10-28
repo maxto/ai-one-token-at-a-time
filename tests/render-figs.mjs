@@ -18,7 +18,7 @@ const page = await browser.newPage({ viewport: { width: 640, height: 600 }, devi
 for (const [mi, m] of course.entries()) {
   if (only && m.id !== only) continue;
   const n = mi + 1;
-  const vars = `--mc: var(--m${n}); --mc-soft: color-mix(in srgb, var(--m${n}) 16%, var(--surface)); --mc-text: color-mix(in srgb, var(--m${n}) 78%, var(--ink))`;
+  const vars = `--mc: var(--m${n}); --mc-soft: color-mix(in srgb, var(--m${n}) var(--soft-mix), var(--surface)); --mc-text: color-mix(in srgb, var(--m${n}) 78%, var(--ink))`;
   for (const l of m.lessons) for (const lang of ['it', 'en']) {
     await page.setContent(`<!doctype html><html lang="${lang}"><head><meta charset="utf-8">${fonts}${style}</head><body style="padding:16px;margin:0"><figure class="fig" style="${vars}; margin:0"><div class="fig-scroll">${l.fig.svg}</div><figcaption>${l.fig.caption[lang]}</figcaption></figure></body></html>`, { waitUntil: 'networkidle' });
     await (await page.$('figure')).screenshot({ path: path.join(out, `${m.id}-${l.id}-${lang}.png`) });

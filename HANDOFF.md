@@ -1,6 +1,6 @@
 # Handoff
 
-Closed: 2026-10-28 17:02 CET. Last operation: brighter dark theme (palette raised for contrast), committed and pushed (Pages deploy ok, live site serves the new colours). HEAD verified before this update: d203f7b (the commit that includes this file comes after it).
+Closed: 2026-10-28 17:12 CET. Last operation: more contrast in dark-theme figures (darker figure panel, stronger module tint), committed and pushed. HEAD verified before this update: ec9d391 (the commit that includes this file comes after it).
 
 ## Goal
 
@@ -12,7 +12,7 @@ The course is done for now, not closed: 10 modules, 86 lessons, live at https://
 - 2026-10-28 update (see LOG.md): new lessons Computer-Use Agents (`#m5-computer-use`), Open-weight models (`#m2-open-weights`, includes "uncensored" models), Reward hacking (`#m6-reward-hacking`). Fixes in Context Window, AI Agents, Multi-Agent Systems, Agent Loops, Agent Harness.
 - Checks run on 2026-10-28: `python3 scripts/lengths.py` ok, `npm test` ok, `npm run figs` ok and the new PNGs looked at. Text review of the new lessons and estimated study times done the same day (see LOG.md).
 - Tests needed `--disable-gpu --disable-software-rasterizer --use-gl=swiftshader` for Chrome 150 under WSL (page screenshots timed out otherwise, also on the old HEAD). Now in `tests/e2e.mjs` and `tests/render-figs.mjs`.
-- 2026-10-28: dark theme brightened for contrast (see LOG.md). Pushed and live, verified 2026-10-28.
+- 2026-10-28: dark theme brightened for contrast, then dark-theme figures given a darker panel and stronger module tint (see LOG.md). Light theme unchanged.
 - Advisor files for this round are in the gitignored `dist/advisor/` (scan, batch1, lessons, final): local only.
 
 ## Open items

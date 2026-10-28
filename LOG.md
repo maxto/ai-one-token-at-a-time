@@ -2,6 +2,16 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-28: more contrast in dark-theme figures
+
+**What was done.** Max found the figures still flat in the dark theme. Cause: plain boxes are filled with the card colour, so only a thin border separated them, and module-tinted boxes mixed only 16% of the module colour. In `site/template.html`: new variables `--fig-bg` (light: `var(--surface)`, dark: `#171a21`, a darker panel behind the figure) and `--soft-mix` (light: 16%, dark: 28%, used by `--mc-soft`), and dark `--line` `#69738b` to `#7c869e`. `tests/render-figs.mjs` uses `--soft-mix` too. Light theme unchanged. Also pushed: ec9d391 (HANDOFF after the first dark theme push).
+
+**Verified.** All 86 EN figures rendered in dark before and after (scratch copy of render-figs with `colorScheme: 'dark'`), 8 from different modules looked at side by side. `npm test` ok. `npm run figs` ok, light module 4 figures looked at, unchanged. HEAD before this entry: ec9d391.
+
+**Decisions.**
+- Done (approved by Max): fix contrast in CSS only, not by editing the 86 SVGs. Rejected: extra colours inside single figures (large review work, not needed after this change).
+- Done: search box left as it is. Max checked it and it is readable.
+
 ## 2026-10-28: brighter dark theme
 
 **What was done.** Max found the dark theme too dark, with no contrast: the top bar, the title tokens and the cards blended into the background. Raised the whole dark palette in `site/template.html` (both the `prefers-color-scheme` block and `[data-theme="dark"]`): bg `#10131a` to `#1c2029`, surface `#171b24` to `#262b37`, rule `#2a303d` to `#3e4657`, chip `#222734` to `#333a49`, accent-soft `#1d2440` to `#2c3768`, line `#4c5568` to `#69738b`, ink, ink-2, muted and accent lighter, good/warn/bad soft backgrounds lighter. `tests/e2e.mjs` checks the new dark body colour. Light theme unchanged.

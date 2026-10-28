@@ -23,6 +23,8 @@
   --chip: #eef0f5;
   --line: #aeb6c6;
   --on-fill: #ffffff;
+  --fig-bg: var(--surface);
+  --soft-mix: 16%;
   --m1: #4263eb; --m2: #ae3ec9; --m3: #1098ad; --m4: #37b24d; --m5: #f76707; --m6: #d6336c; --m7: #868e96; --m8: #7048e8; --m9: #0ca678; --m10: #e03131;
   --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --f-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
@@ -37,8 +39,10 @@
     --accent: #8ca3ff; --accent-ink: #0b0e14; --accent-soft: #2c3768;
     --good: #69db7c; --good-soft: #1c3526; --warn: #ffa94d; --warn-soft: #3a2b17; --bad: #ff8787; --bad-soft: #3e2023;
     --chip: #333a49;
-    --line: #69738b;
+    --line: #7c869e;
     --on-fill: #0b0e14;
+    --fig-bg: #171a21;
+    --soft-mix: 28%;
     --m1: #748ffc; --m2: #da77f2; --m3: #3bc9db; --m4: #69db7c; --m5: #ffa94d; --m6: #f783ac; --m7: #adb5bd; --m8: #9775fa; --m9: #38d9a9; --m10: #ff8787;
     color-scheme: dark;
   }
@@ -48,8 +52,10 @@
   --accent: #8ca3ff; --accent-ink: #0b0e14; --accent-soft: #2c3768;
   --good: #69db7c; --good-soft: #1c3526; --warn: #ffa94d; --warn-soft: #3a2b17; --bad: #ff8787; --bad-soft: #3e2023;
   --chip: #333a49;
-  --line: #69738b;
+  --line: #7c869e;
   --on-fill: #0b0e14;
+  --fig-bg: #171a21;
+  --soft-mix: 28%;
   --m1: #748ffc; --m2: #da77f2; --m3: #3bc9db; --m4: #69db7c; --m5: #ffa94d; --m6: #f783ac; --m7: #adb5bd; --m8: #9775fa; --m9: #38d9a9; --m10: #ff8787;
   color-scheme: dark;
 }
@@ -162,7 +168,7 @@ kbd { font-family: var(--f-mono); font-size: .75rem; border: 1px solid var(--rul
 
 
 /* lesson figure: inline SVG drawn only with these classes */
-.fig { margin: 28px 0 0; padding: 16px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); }
+.fig { margin: 28px 0 0; padding: 16px; background: var(--fig-bg); border: 1px solid var(--rule); border-radius: var(--radius); }
 .fig-scroll { overflow-x: auto; }
 .fig svg { display: block; width: 100%; min-width: 420px; max-width: 560px; height: auto; margin: 0 auto; color: var(--ink); }
 .fig figcaption { margin-top: 10px; font-size: var(--s-sm); color: var(--muted); line-height: 1.5; }
@@ -318,7 +324,7 @@ const t = k => UI[lang][k];
 const L = o => (o && (o[lang] ?? o.it)) || "";
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const rich = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-const mc = mi => `--mc: var(--m${mi + 1}); --mc-soft: color-mix(in srgb, var(--m${mi + 1}) 16%, var(--surface)); --mc-text: color-mix(in srgb, var(--m${mi + 1}) 78%, var(--ink))`;
+const mc = mi => `--mc: var(--m${mi + 1}); --mc-soft: color-mix(in srgb, var(--m${mi + 1}) var(--soft-mix), var(--surface)); --mc-text: color-mix(in srgb, var(--m${mi + 1}) 78%, var(--ink))`;
 
 /* ---------- syllabus + meter ---------- */
 function renderSyllabus(currentKey) {
