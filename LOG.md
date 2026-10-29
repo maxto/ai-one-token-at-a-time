@@ -2,6 +2,19 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-29: sources for module 6
+
+**What was done.** Max asked to move on to module 6 (order 6 and 8 first, approved earlier the same day). All 9 lessons of module 6 now have a `# Sources` block: SLP3 (pre-training, fine-tuning, instruction tuning), GPT-3, Ovadia (fine-tuning vs retrieval), LoRA, QLoRA, InstructGPT (RLHF, the side source waiting since the module-2 audit), DPO, Concrete Problems in AI Safety (reward hacking), FLAN, Hinton (distillation), Gholami survey and Dettmers and Zettlemoyer 4-bit (quantization). One text change, IT and EN: in Quantization, quantization-aware training "accounts for the rounding from the start" -> "the model is retrained to account for rounding. It costs more, but usually loses less quality" (Gholami Fig. 4 and sec. III-G: a pre-trained model is quantized and retrained). Two of Claude's source notes corrected after Codex: Ovadia compares unsupervised fine-tuning with retrieval, LoRA adds the product of two small matrices to the weights.
+
+**Verified.** Three Claude subagents found and read the sources (`dist/advisor/m6-a.md`, `m6-b.md`, `m6-c.md`, local only) and found no important general error. Claude rechecked titles, authors, dates and latest versions of all arXiv sources through the arXiv API, affiliations on the PDF first pages, SLP3 and all cited section headings in the PDF text. Codex opened all 12 reader sources (`m6-answer.md`): three fixes, all applied. Codex checked the applied text (`m6-followup-answer.md`): OK. `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok. Record in `docs/source-audit/m6.md`. HEAD before this entry: c8e55ab.
+
+**Decisions.**
+- Done (Max approved Codex's three points): the QAT fix is an error on the general case (it misdefined the method), not an edge-case hedge. Claude's wording "retrained" instead of Codex's "trained", so it does not clash with the previous sentence ("most often a finished model is quantized after training"). Codex agreed.
+- Done: InstructGPT goes to RLHF only. Instruction tuning uses SLP3 ch. 8 and FLAN, the paper that set the term and shows that task variety helps. Rejected: InstructGPT in two lessons.
+- Done: narrower findings recorded in `docs/source-audit/m6.md` and not applied (examples count in fine-tuning, LIMA as a hypothesis, distillation and Caruana 2006, "polite" in RLHF, "changed the tests during training"). Rejected under the general-errors rule.
+- Done: Lambert's RLHF book and the Xu et al. distillation survey kept out (only home page or abstract read).
+- Done (Max): commit and push of module 6, then a full clean.
+
 ## 2026-10-29: sources for module 1, and the rule "general errors only"
 
 **What was done.** Max asked to do the same source work for the other modules, starting with module 1. All 9 lessons of module 1 now have a `# Sources` block (one or two reference sources on the lesson's topic): SLP3 (Jurafsky and Martin) in eight lessons, plus Sennrich (BPE), Sentence-BERT, HNSW, Lost in the Middle, Holtzman (top-p), Hugging Face chat templates, Wallace (instruction hierarchy), Vaswani. Text changes, IT and EN:

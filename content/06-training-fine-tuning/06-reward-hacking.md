@@ -57,3 +57,13 @@ People think a high score or all tests passing proves the work is done. It only 
 ## Figure caption
 
 In this example the check gives the same reward to really solving the task and to a shortcut that games it, so training can reinforce both paths.
+
+# Sources
+
+## amodei-concrete-problems
+- Work: [Concrete Problems in AI Safety](https://arxiv.org/abs/1606.06565v2)
+- Author: Amodei et al.
+- Year: 2016
+- Language: en
+- Note.it: La sezione 4 presenta il reward hacking con l'esempio di un robot delle pulizie e spiega perché un obiettivo misurato può essere aggirato. Leggibile anche senza basi tecniche.
+- Note.en: Section 4 introduces reward hacking with the example of a cleaning robot and explains why a measured objective can be gamed. Readable without a technical background.

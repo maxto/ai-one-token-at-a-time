@@ -57,3 +57,13 @@ Distillation is often confused with quantization. Quantization compresses the sa
 ## Figure caption
 
 The student learns to reproduce the teacher's whole probability distribution, not just its top answer.
+
+# Sources
+
+## hinton-distillation
+- Work: [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531v1)
+- Author: Hinton et al., Google
+- Year: 2015
+- Language: en
+- Note.it: L'articolo che ha reso popolare la distillazione: un modello piccolo impara dalle probabilità morbide prodotte da uno grande (sezioni 1 e 2). Tecnico.
+- Note.en: The paper that popularised distillation: a small model learns from the soft probabilities produced by a large one (sections 1 and 2). Technical.

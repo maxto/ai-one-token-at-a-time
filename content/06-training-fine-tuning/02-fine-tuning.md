@@ -57,3 +57,21 @@ The most common error is thinking fine-tuning is the best way to make a model "k
 ## Figure caption
 
 A few targeted examples nudge the weights of an already trained model.
+
+# Sources
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: il capitolo 8 definisce il fine-tuning e spiega perché costa una piccola frazione del pre-training (sezione 8.1). In parte tecnico.
+- Note.en: Free university textbook: chapter 8 defines fine-tuning and explains why it costs a small fraction of pre-training (section 8.1). Partly technical.
+
+## ovadia-finetuning-or-retrieval
+- Work: [Fine-Tuning or Retrieval? Comparing Knowledge Injection in LLMs](https://arxiv.org/abs/2312.05934v3)
+- Author: Ovadia et al., Microsoft
+- Year: 2023
+- Language: en
+- Note.it: Confronta fine-tuning non supervisionato e recupero di documenti per aggiungere conoscenze: negli esperimenti il recupero funziona meglio, sia sui fatti già visti sia su quelli nuovi (sezione 5). Tecnico.
+- Note.en: Compares unsupervised fine-tuning with document retrieval for adding knowledge: in the experiments, retrieval works better for both previously seen and new facts (section 5). Technical.

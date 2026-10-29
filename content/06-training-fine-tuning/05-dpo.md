@@ -57,3 +57,13 @@ A common claim is that DPO does away with human preferences. It doesn't: it need
 ## Figure caption
 
 RLHF goes through a reward model and reinforcement learning, while DPO uses the same preferences to update the model directly.
+
+# Sources
+
+## rafailov-dpo
+- Work: [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290v3)
+- Author: Rafailov et al.
+- Year: 2023
+- Language: en
+- Note.it: L'articolo originale della DPO: mostra come raggiungere lo stesso obiettivo dell'RLHF senza un reward model separato (sezioni 3 e 4, figura 1). Tecnico.
+- Note.en: The original DPO paper: shows how to reach the same objective as RLHF without a separate reward model (sections 3 and 4, Figure 1). Technical.

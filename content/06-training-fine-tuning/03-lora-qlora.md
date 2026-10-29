@@ -57,3 +57,21 @@ Many assume LoRA produces a smaller model. It doesn't: the base model keeps its 
 ## Figure caption
 
 The large matrix W stays frozen: only two thin matrices, B and A, are trained, and their product is added to W.
+
+# Sources
+
+## hu-lora
+- Work: [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685v2)
+- Author: Hu et al., Microsoft
+- Year: 2021
+- Language: en
+- Note.it: L'articolo originale di LoRA: due piccole matrici allenabili producono una correzione a basso rango da sommare ai pesi congelati, con adattatori leggeri da scambiare (sezioni 4.1 e 4.2). Tecnico.
+- Note.en: The original LoRA paper: two small trainable matrices produce a low-rank update added to frozen weights, giving lightweight adapters you can swap (sections 4.1 and 4.2). Technical.
+
+## dettmers-qlora
+- Work: [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314v1)
+- Author: Dettmers et al., University of Washington
+- Year: 2023
+- Language: en
+- Note.it: Come addestrare adattatori LoRA sopra un modello base congelato e compresso a 4 bit, fino a un modello da 65 miliardi di parametri su una sola GPU (sezione 3). Tecnico.
+- Note.en: How to train LoRA adapters on top of a frozen base model compressed to 4 bits, up to a 65-billion-parameter model on a single GPU (section 3). Technical.

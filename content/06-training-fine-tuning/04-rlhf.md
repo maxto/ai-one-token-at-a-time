@@ -57,3 +57,13 @@ People think the model learns live from users' thumbs-up. RLHF is a separate tra
 ## Figure caption
 
 People pick the better answer, a reward model learns to score answers, and reinforcement learning updates the model.
+
+# Sources
+
+## ouyang-instructgpt
+- Work: [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155v1)
+- Author: Ouyang et al., OpenAI
+- Year: 2022
+- Language: en
+- Note.it: L'articolo di InstructGPT descrive tutta la procedura: confronti fatti da persone, reward model e ottimizzazione con PPO (sezioni 3.1 e 3.5). Tecnico.
+- Note.en: The InstructGPT paper describes the whole procedure: human comparisons, a reward model and optimisation with PPO (sections 3.1 and 3.5). Technical.

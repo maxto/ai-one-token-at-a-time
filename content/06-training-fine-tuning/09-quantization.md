@@ -16,7 +16,7 @@ La quantizzazione salva i pesi del modello con meno bit, per esempio 4 invece di
 
 Ogni peso di un modello è un numero, di solito salvato con 16 bit. La **quantization** (quantizzazione) lo arrotonda su una scala più grossolana: 8 bit, 4 bit, a volte meno. Passando da 16 a 4 bit, la memoria occupata dai pesi scende di circa quattro volte. Un modello che prima richiedeva un server può entrare in una scheda grafica da casa.
 
-Anche la velocità migliora. Generare testo è spesso limitato da quanto in fretta si leggono i pesi dalla memoria, non dai calcoli. Meno byte da spostare significa risposte più rapide. Quasi sempre si quantizza un modello già addestrato. Esiste anche un addestramento che tiene conto della quantizzazione fin dall'inizio, più costoso ma più preciso.
+Anche la velocità migliora. Generare testo è spesso limitato da quanto in fretta si leggono i pesi dalla memoria, non dai calcoli. Meno byte da spostare significa risposte più rapide. Quasi sempre si quantizza un modello già addestrato. Esiste anche il quantization-aware training: si riallena il modello tenendo conto degli arrotondamenti. Costa di più, ma di solito perde meno qualità.
 
 Il compromesso è la precisione. A 8 bit la perdita è di solito minima. A 4 bit resta spesso accettabile, con metodi che trattano con cura i valori più delicati. Sotto quella soglia la qualità può crollare, e i modelli piccoli soffrono più di quelli grandi.
 
@@ -42,7 +42,7 @@ Quantization stores a model's weights with fewer bits, say 4 instead of 16, cutt
 
 Each weight in a model is a number, usually stored in 16 bits. **Quantization** rounds it onto a coarser scale: 8 bits, 4 bits, sometimes less. Going from 16 to 4 bits cuts the memory taken by the weights by about four times. A model that once needed a server can fit on a home graphics card.
 
-Speed improves too. Generating text is often limited by how fast the weights can be read from memory, not by the arithmetic. Fewer bytes to move means faster answers. Most often a finished model is quantized after training. Quantization-aware training also exists: it accounts for the rounding from the start, costs more and keeps more accuracy.
+Speed improves too. Generating text is often limited by how fast the weights can be read from memory, not by the arithmetic. Fewer bytes to move means faster answers. Most often a finished model is quantized after training. Quantization-aware training also exists: the model is retrained to account for rounding. It costs more, but usually loses less quality.
 
 The trade-off is precision. At 8 bits the loss is usually minimal. At 4 bits it is often acceptable, with methods that handle the most sensitive values carefully. Below that, quality can collapse, and small models suffer more than large ones.
 
@@ -57,3 +57,21 @@ People believe quantization removes parameters from the model. The number of wei
 ## Figure caption
 
 With fewer bits each weight is rounded to the nearest level of a coarser scale, and memory use drops.
+
+# Sources
+
+## gholami-quantization-survey
+- Work: [A Survey of Quantization Methods for Efficient Neural Network Inference](https://arxiv.org/abs/2103.13630v3)
+- Author: Gholami et al., UC Berkeley
+- Year: 2021
+- Language: en
+- Note.it: Panoramica dei metodi di quantizzazione per le reti neurali in generale, con la differenza tra quantizzare durante l'addestramento e dopo (sezione 3). Tecnico.
+- Note.en: Overview of quantization methods for neural networks in general, including the difference between quantizing during training and after it (section 3). Technical.
+
+## dettmers-4bit
+- Work: [The case for 4-bit precision: k-bit Inference Scaling Laws](https://arxiv.org/abs/2212.09720v2)
+- Author: Dettmers and Zettlemoyer, University of Washington
+- Year: 2022
+- Language: en
+- Note.it: Oltre 35.000 esperimenti su modelli linguistici: a parità di memoria, quantizzare a 4 bit è quasi sempre la scelta migliore (sezioni 5 e 7). Tecnico.
+- Note.en: Over 35,000 experiments on language models: for a given memory budget, 4-bit quantization is almost always the best choice (sections 5 and 7). Technical.

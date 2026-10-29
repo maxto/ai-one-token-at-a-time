@@ -57,3 +57,21 @@ People think the model stores the internet like a searchable archive. It doesn't
 ## Figure caption
 
 The model sees some text, guesses the next token and adjusts its weights based on the error.
+
+# Sources
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: il capitolo 7 spiega come si preaddestra un modello a prevedere il token successivo su grandi raccolte di testo (sezione 7.7). In parte tecnico.
+- Note.en: Free university textbook: chapter 7 explains how a model is pretrained to predict the next token on large text collections (section 7.7). Partly technical.
+
+## brown-gpt3
+- Work: [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v4)
+- Author: Brown et al., OpenAI
+- Year: 2020
+- Language: en
+- Note.it: L'articolo di GPT-3: la sezione 2.2 descrive i dati di pre-training, da dove vengono e come sono stati filtrati e mescolati. Tecnico.
+- Note.en: The GPT-3 paper: section 2.2 describes the pre-training data, where it comes from and how it was filtered and mixed. Technical.

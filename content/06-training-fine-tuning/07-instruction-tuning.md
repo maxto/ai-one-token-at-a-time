@@ -57,3 +57,21 @@ People assume a model understands instructions straight out of pre-training. A b
 ## Figure caption
 
 Given the same request, the base model continues the text, while the instruction-tuned model answers it.
+
+# Sources
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: la sezione 8.1 del capitolo 8 spiega l'instruction tuning, i dati che usa e come si valuta. In parte tecnico.
+- Note.en: Free university textbook: section 8.1 of chapter 8 explains instruction tuning, the data it uses and how it is evaluated. Partly technical.
+
+## wei-flan
+- Work: [Finetuned Language Models Are Zero-Shot Learners](https://arxiv.org/abs/2109.01652v5)
+- Author: Wei et al., Google Research
+- Year: 2021
+- Language: en
+- Note.it: L'articolo FLAN: allenare un modello su istruzioni di molti tipi di compito lo migliora su compiti mai visti, e più tipi aiutano di più (sezione 4.1). Tecnico.
+- Note.en: The FLAN paper: training a model on instructions for many kinds of task improves it on unseen tasks, and more kinds help more (section 4.1). Technical.

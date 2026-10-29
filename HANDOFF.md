@@ -1,6 +1,6 @@
 # Handoff
 
-Closed: 2026-10-29 08:51 CET. Last operation: module-1 sources and fixes written and checked, not committed yet. HEAD verified before this update: 8ed6370.
+Closed: 2026-10-29 09:19 CET. Last operation: module-6 sources and one QAT fix written and checked (Codex OK), committed and pushed with Max's go-ahead of 2026-10-29. HEAD verified before this update: c8e55ab.
 
 ## Goal
 
@@ -16,15 +16,15 @@ The course is done for now, not closed: 10 modules, 86 lessons, live at https://
 - Advisor files for this round are in the gitignored `dist/advisor/` (scan, batch1, lessons, final): local only.
 - 2026-10-28 evening, committed in 3469ff1 and pushed: optional `# Sources` block (one or two reference sources), shown in `#m2-llm`, `#m2-mixture-of-experts`, `#m2-open-weights`, with corrected wording in those three lessons (see LOG.md). Build, `lengths.py`, `npm test` ok. Check record in `docs/source-audit/m2.md`. Codex files `dist/advisor/sources-*.md` (local only).
 - 2026-10-29, committed and pushed in 8ed6370: sources for the other six module-2 lessons, so all 9 lessons of module 2 have them, with wording corrections (see LOG.md). Pages deploy of 8ed6370 succeeded (verified 2026-10-29). Codex files `dist/advisor/m2-rest-*.md` (local only).
-- 2026-10-29, uncommitted: sources for all 9 lessons of module 1, three text fixes (top-k-top-p accuracy, embeddings "keywords", new temperature analogy) and a source-note fix. Record `docs/source-audit/m1.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m1-*.md` (local only).
+- 2026-10-29, committed and pushed in c8e55ab, Pages deploy succeeded (verified 2026-10-29): sources for all 9 lessons of module 1, three text fixes (top-k-top-p accuracy, embeddings "keywords", new temperature analogy) and a source-note fix. Record `docs/source-audit/m1.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m1-*.md` (local only).
+- 2026-10-29, module 6: sources for all 9 lessons, one text fix (quantization-aware training is a retraining, not training "from the start") and two source-note fixes, after Codex. Record `docs/source-audit/m6.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m6-*.md` (local only). Pages deploy of this commit: to check.
 - Rule from 2026-10-29 (LOG.md): change text only for important errors on the general case, no caveats from edge cases. Italian written natively, not translated from English.
 
 ## Open items
 
-- Commit and push of module 1. Status: waiting for Max's go-ahead.
-- Sources for modules 3 to 10, module by module, same method (subagents, Claude WebSearch check, Codex review), filtered by the general-errors rule. Status: approved by Max on 2026-10-29. Order proposed: 6 and 8 first (side sources waiting), then the rest.
+- Sources for modules 3 to 10, module by module, same method (subagents, Claude WebSearch check, Codex review), filtered by the general-errors rule. Status: approved by Max on 2026-10-29. Done: 1, 2, 6. Next: 8 (side source waiting), then 3, 4, 5, 7, 9, 10.
 
-- Side-claim sources already checked and waiting for their lesson: hallucination survey (Ji et al.) for Hallucinations (module 8), InstructGPT for RLHF or Instruction tuning (module 6), details in `docs/source-audit/m2.md`. Attention Is All You Need is now in Attention (module 1). Status: to use in modules 6 and 8.
+- Side-claim source already checked and waiting for its lesson: hallucination survey (Ji et al.) for Hallucinations (module 8), details in `docs/source-audit/m2.md`. InstructGPT is now in RLHF (module 6), Attention Is All You Need in Attention (module 1). Status: to use in module 8.
 
 - Max reviews the new lessons online. Status: to check. Who: Max.
 - Max studies the course himself. Status: ongoing since 2026-10-09.
@@ -42,4 +42,4 @@ The next focus is AI applied to finance, as Macroasset content, not in this repo
 
 ## Next step
 
-Ask Max for the go-ahead to commit and push module 1 (content, `docs/source-audit/m1.md`, HANDOFF.md, LOG.md). Then start module 6.
+Check that the Pages deploy of the module-6 commit succeeded. Then start module 8 (Reliability and verification): three subagents, then Claude's check on the web and the arXiv API, then Codex, filtered by the general-errors rule. Use the Ji et al. hallucination survey in Hallucinations.
