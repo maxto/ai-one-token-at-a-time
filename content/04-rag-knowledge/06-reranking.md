@@ -57,3 +57,21 @@ Common mistake: thinking reranking makes a good first-stage search unnecessary. 
 ## Figure caption
 
 Fast search picks the candidates, and then the reranker reads query and chunk together and puts them back in order.
+
+# Sources
+
+## passage-reranking-bert
+- Work: [Passage Re-ranking with BERT](https://arxiv.org/abs/1901.04085v5)
+- Author: Nogueira and Cho
+- Year: 2019
+- Language: en
+- Note.it: Descrive la pipeline in due fasi: BM25 recupera circa mille passaggi, poi BERT legge domanda e passaggio insieme e li riordina (sezione 2). Tecnico.
+- Note.en: Describes the two-stage pipeline: BM25 retrieves about a thousand passages, then BERT reads query and passage together and reorders them (section 2). Technical.
+
+## colbert-khattab
+- Work: [ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT](https://arxiv.org/abs/2004.12832v2)
+- Author: Khattab and Zaharia, Stanford University
+- Year: 2020
+- Language: en
+- Note.it: Confronta i modelli che codificano domanda e testo separatamente con quelli che li leggono insieme, più precisi ma molto più costosi (introduzione e figura 2). Tecnico.
+- Note.en: Contrasts models that encode query and text separately with those that read them together, more accurate but far more costly (introduction and figure 2). Technical.

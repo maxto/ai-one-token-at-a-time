@@ -2,6 +2,26 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-29: sources for module 4
+
+**What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 9 lessons of module 4 now have a `# Sources` block: Lewis et al. RAG (Retrieval pipelines, waiting since the module-2 audit), HNSW and the Faiss library (Vector databases), Gao et al. RAG survey (Chunking), MTEB (Embedding models), DPR and Cormack et al. RRF (Hybrid search), Nogueira and Cho and ColBERT (Reranking), Edge et al. Graph RAG and Hogan et al. Knowledge Graphs (Knowledge graphs), Liu et al. "Lost in the Middle" and Anthropic "Long context prompting" (Context injection), Docling Technical Report (Document parsing). No lesson text changed. Record in `docs/source-audit/m4.md` (new). Subagent reports `dist/advisor/m4-a.md`, `m4-b.md`, `m4-c.md`, Codex request and answer `dist/advisor/m4-request.md`, `m4-answer.md` (local only).
+
+**Verified.** Claude: titles, first-version dates and latest versions through the arXiv API, affiliations on the PDF first pages, every cited section heading in the PDF text, the RRF PDF and the Anthropic page (curl). Note fixes by Claude over the drafts: GraphRAG title from the abs page, Lewis "named RAG" (not "introduced"), section pointers for Edge, MTEB, Gao, a more exact Liu note. Codex confirmed all fourteen entries and found Greshake et al. (prompt injection) and Ringlstetter et al. (OCR "rn"/"m") supporting existing text. `build.py`, `lengths.py`, `npm test` ok on 2026-10-29.
+
+**Decisions.**
+- Done (Max, 2026-10-29): Codex's correction to Embedding models and quiz Q3 ("same embedding space" instead of "same model", from DPR's separate encoders) is not applied. It rests on an exception: those encoders are trained together into one space. For independently trained models "same model, re-embed when you switch" is the right general rule. Applies the general-errors rule of 2026-10-29.
+- Done (Claude, Codex agreed): keep Gao for Chunking despite its blog-backed size examples, keep the Anthropic doc next to Liu, keep Hogan with its section pointers.
+- Proposed: one commit with the module-4 sources, the audit record and the notes (including the module-3 closure notes still uncommitted). Push on Max's go-ahead.
+
+## 2026-10-29: module 3 pushed
+
+**What was done.** Module 3 sources committed in 98cd3b1 and pushed with 8f4b691 (module-8 notes), on Max's go-ahead of 2026-10-29. HANDOFF updated for the closure. Codex chat cleared at task close (its answer is in `dist/advisor/m3-answer.md`).
+
+**Verified.** Pages deploy of 98cd3b1 succeeded. The live page contains the new Tree of Thoughts sentence ("can carry through to later steps").
+
+**Decisions.**
+- Done (Max, 2026-10-29): commit and push of module 3, proposed in the module-3 entry below. Max accepted the Tree of Thoughts text fix with it.
+
 ## 2026-10-29: sources for module 3
 
 **What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 9 lessons of module 3 now have a `# Sources` block: Wei et al. FLAN (Zero-shot), Brown et al. GPT-3 and Zhao et al. "Calibrate Before Use" (Few-shot), Wei et al. CoT and Kojima et al. (Chain-of-Thought), Yao et al. ReAct, Yao et al. Tree of Thoughts, Wang et al. (Self-Consistency), Zheng et al. on personas in system prompts (Role Prompting), Schulhoff et al. The Prompt Report (Prompt Templates), OpenAI "Structured model outputs" and Willard and Louf (Structured output). One lesson-text fix after Codex: Tree of Thoughts deep dive, IT and EN, "if the first step is wrong, so is everything after it" became "an early error can carry through to later steps" (the old wording made error propagation inevitable, Yao sec. 2-3, Wei sec. 6). Source entries corrected: FLAN note (Claude: "suggests", not "explains". Codex: task types held out of instruction tuning, not "never seen in training"), Zheng note points to section 4, OpenAI entry (current title and URL, refusal vs length cutoff).

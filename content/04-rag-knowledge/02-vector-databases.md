@@ -57,3 +57,21 @@ Common mistake: believing the vector database "understands" the text. It underst
 ## Figure caption
 
 Similar texts are nearby points: the database returns the points closest to the query, without checking them all.
+
+# Sources
+
+## hnsw-malkov-yashunin
+- Work: [Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs](https://arxiv.org/abs/1603.09320v4)
+- Author: Malkov and Yashunin
+- Year: 2016
+- Language: en
+- Note.it: Il metodo HNSW per la ricerca approssimata dei vicini più prossimi: un grafo a più livelli che evita di confrontare tutti i punti (introduzione). Tecnico.
+- Note.en: The HNSW method for approximate nearest neighbor search: a multi-layer graph that avoids comparing every point (introduction). Technical.
+
+## faiss-library
+- Work: [The Faiss library](https://arxiv.org/abs/2401.08281v4)
+- Author: Douze et al.
+- Year: 2024
+- Language: en
+- Note.it: La libreria di Meta per la ricerca vettoriale: ricerca esatta contro approssimata e compromesso tra velocità, memoria e precisione (sezioni 1 e 3). Tecnico.
+- Note.en: Meta's vector search library: exact versus approximate search and the trade-off between speed, memory and accuracy (sections 1 and 3). Technical.

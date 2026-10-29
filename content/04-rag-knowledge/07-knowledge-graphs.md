@@ -57,3 +57,21 @@ Common mistake: treating graphs and vector search as rivals. They serve differen
 ## Figure caption
 
 Two facts from different documents become linked edges: following the path reaches the answer in two hops.
+
+# Sources
+
+## graphrag-local-to-global
+- Work: [From Local to Global: A Graph RAG Approach to Query-Focused Summarization](https://arxiv.org/abs/2404.16130v2)
+- Author: Edge et al., Microsoft
+- Year: 2024
+- Language: en
+- Note.it: Costruisce dai testi un grafo di entità e riassume i gruppi di entità collegate, per rispondere a domande sull'intero corpus (sezione 3.1). Tecnico.
+- Note.en: Builds an entity graph from the texts and summarises groups of closely related entities, to answer questions about the whole corpus (section 3.1). Technical.
+
+## knowledge-graphs-survey
+- Work: [Knowledge Graphs](https://arxiv.org/abs/2003.02320v6)
+- Author: Hogan et al.
+- Year: 2020
+- Language: en
+- Note.it: Ampia rassegna: nodi e archi (sezione 2.1.1), interrogare percorsi di lunghezza qualsiasi (2.2.3), costruire il grafo dai testi (6.2). Molto lungo e tecnico.
+- Note.en: A broad survey: nodes and edges (section 2.1.1), querying paths of any length (2.2.3), building the graph from text (6.2). Very long and technical.

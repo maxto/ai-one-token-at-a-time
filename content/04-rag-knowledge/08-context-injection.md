@@ -57,3 +57,21 @@ Common mistake: believing huge context windows make retrieval unnecessary. Filli
 ## Figure caption
 
 The prompt gets the instructions, only the useful chunks with their sources, and the question, while the off-topic chunk stays out.
+
+# Sources
+
+## lost-in-the-middle
+- Work: [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172v3)
+- Author: Liu et al.
+- Year: 2023
+- Language: en
+- Note.it: I modelli usano meglio le informazioni all'inizio e alla fine del contesto che quelle a metà (introduzione). Passare da 20 a 50 documenti migliora appena le risposte (sezione 5). Tecnico.
+- Note.en: Models use information at the start and end of the context better than in the middle (introduction). Going from 20 to 50 documents barely improves the answers (section 5). Technical.
+
+## claude-long-context-prompting
+- Work: [Prompting best practices, section "Long context prompting"](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: Guida ufficiale su come mettere più documenti in un prompt: documenti in cima, domanda in fondo, ogni documento con tag e fonte. Pratica.
+- Note.en: Official guide to putting several documents into a prompt: documents at the top, question at the end, each document with tags and its source. Practical.

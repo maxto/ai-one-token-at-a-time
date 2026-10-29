@@ -57,3 +57,21 @@ Common mistake: treating keyword search as obsolete now that embeddings exist. I
 ## Figure caption
 
 Two rankings of the same archive, by keywords and by meaning, merged by position: whatever ranks high in both wins.
+
+# Sources
+
+## dpr-karpukhin
+- Work: [Dense Passage Retrieval for Open-Domain Question Answering](https://arxiv.org/abs/2004.04906v3)
+- Author: Karpukhin et al.
+- Year: 2020
+- Language: en
+- Note.it: Confronta la ricerca per parole chiave (BM25) con quella vettoriale e prova a combinarle (sezioni 5.1 e 5.3). Tecnico.
+- Note.en: Compares keyword search (BM25) with vector search and tests combining them (sections 5.1 and 5.3). Technical.
+
+## rrf-cormack
+- Work: [Reciprocal Rank Fusion outperforms Condorcet and individual Rank Learning Methods](https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf)
+- Author: Cormack et al.
+- Year: 2009
+- Language: en
+- Note.it: L'articolo breve (due pagine) che propone la Reciprocal Rank Fusion: somma 1/(k + posizione) e fonde classifiche senza usare i punteggi. Tecnico.
+- Note.en: The short two-page paper that proposes Reciprocal Rank Fusion: it sums 1/(k + rank) and merges rankings without using their scores. Technical.

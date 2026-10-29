@@ -57,3 +57,13 @@ Thinking the quality of a RAG system depends only on the model and the search. I
 ## Figure caption
 
 A two-column page, read line by line across the columns, becomes jumbled text, and the error can pass on to the chunks, the search and the answer.
+
+# Sources
+
+## docling-technical-report
+- Work: [Docling Technical Report](https://arxiv.org/abs/2408.09869v5)
+- Author: Auer et al., IBM Research
+- Year: 2024
+- Language: en
+- Note.it: Descrive una pipeline aperta per convertire i PDF in testo: analisi della pagina, ordine di lettura, struttura delle tabelle e OCR per le scansioni (sezione 3). Tecnico.
+- Note.en: Describes an open pipeline that converts PDFs to text: page layout analysis, reading order, table structure and OCR for scans (section 3). Technical.

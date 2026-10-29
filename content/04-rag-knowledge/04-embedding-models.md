@@ -57,3 +57,13 @@ Common mistake: assuming closeness means "correct answer". Embeddings measure si
 ## Figure caption
 
 The model turns each text into a vector: sentences with the same meaning land close together even with no words in common.
+
+# Sources
+
+## mteb-muennighoff
+- Work: [MTEB: Massive Text Embedding Benchmark](https://arxiv.org/abs/2210.07316v3)
+- Author: Muennighoff et al.
+- Year: 2022
+- Language: en
+- Note.it: Confronta 33 modelli di embedding su 58 dataset e 112 lingue: nessun modello vince su tutti i compiti (sezione 4). Tecnico.
+- Note.en: Compares 33 embedding models on 58 datasets and 112 languages: no model wins on every task (section 4). Technical.

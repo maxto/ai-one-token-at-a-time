@@ -57,3 +57,13 @@ Common mistake: hunting for one "right" chunk size that works everywhere. There 
 ## Figure caption
 
 The same cookbook cut three ways: one single piece, one line per piece, one piece per recipe.
+
+# Sources
+
+## rag-survey-gao
+- Work: [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997v5)
+- Author: Gao et al.
+- Year: 2023
+- Language: en
+- Note.it: Una rassegna sul RAG: il paragrafo sul chunking confronta pezzi grandi e piccoli e presenta il metodo Small2Big (sezione III.B). Tecnico.
+- Note.en: A survey of RAG: the chunking paragraph weighs large against small chunks and presents the Small2Big method (section III.B). Technical.

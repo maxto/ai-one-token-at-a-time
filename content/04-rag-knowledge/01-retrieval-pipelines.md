@@ -53,3 +53,13 @@ Common mistake: thinking RAG "teaches" the documents to the model. The model doe
 ## Figure caption
 
 First documents are cut up and indexed, and then each question searches the index and the best pieces go into the prompt.
+
+# Sources
+
+## rag-lewis-2020
+- Work: [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401v4)
+- Author: Lewis et al.
+- Year: 2020
+- Language: en
+- Note.it: Il lavoro che ha dato il nome al RAG: un modello che consulta un indice esterno di testi, che si può sostituire per aggiornare le conoscenze (introduzione e sezione 2). Tecnico.
+- Note.en: The paper that named RAG: a model that consults an external index of texts, which can be swapped to update its knowledge (introduction and section 2). Technical.
