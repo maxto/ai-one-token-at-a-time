@@ -53,3 +53,13 @@ People think an agent is a smarter model. Often it is the same model you chat wi
 ## Figure caption
 
 The model picks an action, the tool runs it and the result goes back to the model, until the task is done.
+
+# Sources
+
+## building-effective-agents
+- Work: [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
+- Author: Anthropic
+- Year: 2024
+- Language: en
+- Note.it: La guida di Anthropic agli agenti: un modello che usa strumenti in un ciclo, guidato dai risultati, con costi più alti ed errori che si sommano (sezione "Agents").
+- Note.en: Anthropic's guide to agents: a model that uses tools in a loop, guided by the results, with higher costs and errors that compound (section "Agents").

@@ -57,3 +57,13 @@ People think MCP is a model, or a replacement for tool calling. It is a connecti
 ## Figure caption
 
 Without a standard, each app needs a connector for each service, while with MCP, each side connects once to the common interface.
+
+# Sources
+
+## mcp-architecture
+- Work: [Model Context Protocol specification: Architecture](https://modelcontextprotocol.io/specification/2026-07-28/architecture)
+- Author: Model Context Protocol
+- Year: 2026
+- Language: en
+- Note.it: La specifica ufficiale di MCP, versione 2026-07-28: l'host crea un client per ogni server, e i server offrono strumenti, risorse e prompt (sezione "Core Components"). Tecnico.
+- Note.en: The official MCP specification, version 2026-07-28: the host creates one client for each server, and servers offer tools, resources and prompts (section "Core Components"). Technical.

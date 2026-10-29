@@ -57,3 +57,21 @@ People think the written reasoning shows exactly what the model 'thinks'. It is 
 ## Figure caption
 
 Answering at once leaves little room for working, while writing intermediate steps gives each step the previous one as context.
+
+# Sources
+
+## unfaithful-cot
+- Work: [Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting](https://arxiv.org/abs/2305.04388v2)
+- Author: Turpin et al.
+- Year: 2023
+- Language: en
+- Note.it: Mostra che il ragionamento scritto può sembrare plausibile senza dire il vero motivo della risposta: indizi nascosti nel prompt cambiano la risposta, ma la spiegazione non li cita (riassunto). Tecnico.
+- Note.en: Shows that written reasoning can look plausible without giving the real reason for the answer: hints hidden in the prompt change the answer, but the explanation does not mention them (abstract). Technical.
+
+## to-cot-or-not
+- Work: [To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning](https://arxiv.org/abs/2409.12183v3)
+- Author: Sprague et al.
+- Year: 2024
+- Language: en
+- Note.it: Un'analisi di oltre cento articoli, con nuovi test: il ragionamento passo passo aiuta soprattutto in matematica e logica, molto meno negli altri compiti (riassunto). Tecnico.
+- Note.en: A review of over a hundred papers, plus new tests: step-by-step reasoning helps mainly on math and logic, much less on other tasks (abstract). Technical.

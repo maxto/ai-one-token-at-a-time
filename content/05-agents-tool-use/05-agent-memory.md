@@ -57,3 +57,13 @@ People think an agent 'learns' from every conversation the way a person does. Th
 ## Figure caption
 
 The model reads only the context window, while long-term memory sits outside, and the system saves and retrieves notes.
+
+# Sources
+
+## memgpt
+- Work: [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560v2)
+- Author: Packer et al., UC Berkeley
+- Year: 2023
+- Language: en
+- Note.it: Un sistema che dà al modello una memoria oltre la finestra di contesto: riassunti dei messaggi vecchi e archivi esterni in cui il modello può cercare (sezione 2). Tecnico.
+- Note.en: A system that gives the model memory beyond the context window: summaries of old messages and external stores the model can search (section 2). Technical.

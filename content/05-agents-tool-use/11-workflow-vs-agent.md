@@ -57,3 +57,13 @@ Thinking an agent is always the more advanced choice, and therefore the better o
 ## Figure caption
 
 On the left the steps are fixed in code, on the right the model picks the next step on each turn and decides when to stop.
+
+# Sources
+
+## building-effective-agents
+- Work: [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
+- Author: Anthropic
+- Year: 2024
+- Language: en
+- Note.it: Distingue i workflow, con passi fissati nel codice, dagli agenti, che li decidono da soli, e consiglia di partire dalla soluzione più semplice (sezioni "What are agents?" e "When (and when not) to use agents").
+- Note.en: Separates workflows, with steps fixed in code, from agents, which direct their own steps, and advises starting with the simplest solution (sections "What are agents?" and "When (and when not) to use agents").

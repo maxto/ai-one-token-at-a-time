@@ -57,3 +57,13 @@ People think this kind of agent sees and understands the screen like a person. I
 ## Figure caption
 
 The model receives observations of the interface, as a screenshot or the page's structure, and requests actions that the harness executes before returning their results.
+
+# Sources
+
+## computer-use-tool
+- Work: [Computer use tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: La documentazione di Claude: il modello chiede screenshot, clic e tasti, l'applicazione li esegue e restituisce il risultato. Tratta anche le istruzioni nascoste nelle pagine (sezioni "How computer use works" e "Security considerations").
+- Note.en: Claude's docs: the model asks for screenshots, clicks and keystrokes, the application runs them and returns the result. It also covers instructions hidden in pages (sections "How computer use works" and "Security considerations").

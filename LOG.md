@@ -2,6 +2,26 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-29: sources for module 5
+
+**What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 11 lessons of module 5 now have a `# Sources` block: Anthropic "Building effective agents" (AI agents, and Workflow or agent), Anthropic "How tool use works" (Tool calling), MCP specification "Architecture" 2026-07-28 (MCP), Hadfield et al. multi-agent research system (Multi-agent), MemGPT (Agent memory), Turpin et al. and Sprague et al. (Planning and reasoning), Young "Effective harnesses for long-running agents" (Agent loops), Rajasekaran et al. "Effective context engineering" and Claude Code "Configure permissions" (Agent harness), Anthropic "Computer use tool" (Computer use), OpenAI Agents SDK "Handoffs" and Claude Code "Create custom subagents" (Handoffs). No lesson text changed. Record in `docs/source-audit/m5.md` (new). Subagent brief and reports `dist/advisor/m5-brief.md`, `m5-a.md`, `m5-b.md`, `m5-c.md`, Codex request and answer `m5-request.md`, `m5-answer.md` (local only).
+
+**Verified.** Three Claude subagents found and read the sources and found no important general error. Their web reads went through WebFetch (a model-written summary), so Claude fetched every page with curl and found the cited passages, headings, publication dates and bylines in the page text. arXiv API for versions and first dates, PDF first pages for affiliations. MCP versioning page: 2026-07-28 is the latest version. Codex opened all 13 distinct reader sources: all 14 entries OK, no error in lesson text, quiz or figure labels, no fix. It closed two evidence gaps (scheduled agents, structured page observations) with two Anthropic doc pages, which Claude checked. `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok. No figure changed, so no `npm run figs`. HEAD before this entry: fefef7b.
+
+**Decisions.**
+- Done (Claude, Codex agreed): one source per lesson where possible. "Building effective agents" was proposed for three lessons and kept in two (AI agents, Workflow or agent), because they are the two core topics of the post and the course already repeats sources (e.g. GPT-3). The other duplicates were replaced (Agent loops, Handoffs) and context engineering moved from Agent memory to Agent harness.
+- Done (Claude): MCP spec linked at the latest version, 2026-07-28, not the 2025-06-18 proposed by the subagent.
+- Proposed: commit module 5 together with the module-4 closure notes, then push. Waiting for Max's go-ahead.
+
+## 2026-10-29: module 4 pushed
+
+**What was done.** Module 4 sources committed in fefef7b (with the module-3 closure notes) and pushed, on Max's go-ahead of 2026-10-29. HANDOFF updated for the closure. Codex chat cleared at task close (its answer is in `dist/advisor/m4-answer.md`).
+
+**Verified.** Pages deploy of fefef7b succeeded. The live page contains the new Graph RAG source.
+
+**Decisions.**
+- Done (Max, 2026-10-29): commit and push of module 4, proposed in the module-4 entry below.
+
 ## 2026-10-29: sources for module 4
 
 **What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 9 lessons of module 4 now have a `# Sources` block: Lewis et al. RAG (Retrieval pipelines, waiting since the module-2 audit), HNSW and the Faiss library (Vector databases), Gao et al. RAG survey (Chunking), MTEB (Embedding models), DPR and Cormack et al. RRF (Hybrid search), Nogueira and Cho and ColBERT (Reranking), Edge et al. Graph RAG and Hogan et al. Knowledge Graphs (Knowledge graphs), Liu et al. "Lost in the Middle" and Anthropic "Long context prompting" (Context injection), Docling Technical Report (Document parsing). No lesson text changed. Record in `docs/source-audit/m4.md` (new). Subagent reports `dist/advisor/m4-a.md`, `m4-b.md`, `m4-c.md`, Codex request and answer `dist/advisor/m4-request.md`, `m4-answer.md` (local only).

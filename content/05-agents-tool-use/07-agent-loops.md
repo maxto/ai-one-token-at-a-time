@@ -57,3 +57,13 @@ People think letting an agent run longer gives a better result. Without an exter
 ## Figure caption
 
 The result check guides the loop: a pass stops it, otherwise the agent retries up to the cap and then asks a person for help.
+
+# Sources
+
+## effective-harnesses
+- Work: [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+- Author: Young, Anthropic
+- Year: 2025
+- Language: en
+- Note.it: Anthropic su un agente che lavora per molte sessioni: senza un elenco di verifiche dichiara finito il lavoro troppo presto, quindi ogni funzionalità va provata prima di segnarla come riuscita (sezione "Testing").
+- Note.en: Anthropic on an agent working over many sessions: without a list of checks it declares the job done too early, so each feature is tested before being marked as passing (section "Testing").

@@ -1,6 +1,6 @@
 # Handoff
 
-Closed: 2026-10-29 14:54 CET. Last operation: module-4 sources written and checked (subagents, Claude's arXiv and PDF check, Codex: all entries OK, its one text correction rejected by Max), not committed. HEAD verified before this update: 98cd3b1.
+Closed: 2026-10-29 16:47 CET. Last operation: module-5 sources applied after subagents, Claude's web check and Codex review (all OK, no text fix), not committed yet. HEAD verified before this update: fefef7b.
 
 ## Goal
 
@@ -20,12 +20,13 @@ The course is done for now, not closed: 10 modules, 86 lessons, live at https://
 - 2026-10-29, module 6: sources for all 9 lessons, one text fix (quantization-aware training is a retraining, not training "from the start") and two source-note fixes, after Codex. Record `docs/source-audit/m6.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m6-*.md` (local only). Committed and pushed in fbebe62, Pages deploy succeeded (verified 2026-10-29).
 - 2026-10-29, module 8: sources for all 7 lessons, no lesson text change, two source-note fixes after Codex. Record `docs/source-audit/m8.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m8-*.md` (local only). Committed and pushed in 578b298, Pages deploy succeeded (verified 2026-10-29).
 - 2026-10-29, module 3: sources for all 9 lessons, one text fix in Tree of Thoughts (an early error "can carry through", not "everything after it is wrong") and two entry fixes, after Codex. Record `docs/source-audit/m3.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m3-*.md` (local only). Committed and pushed in 98cd3b1, Pages deploy succeeded (verified 2026-10-29).
-- 2026-10-29, module 4: sources for all 9 lessons, no lesson text change. Codex's "same embedding space" correction rejected by Max (exception, see LOG.md). Record `docs/source-audit/m4.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m4-*.md` (local only). Uncommitted: the 9 lessons, `docs/source-audit/m4.md`, `LOG.md`, `HANDOFF.md`. Commit and push waiting for Max's go-ahead.
+- 2026-10-29, module 4: sources for all 9 lessons, no lesson text change. Codex's "same embedding space" correction rejected by Max (exception, see LOG.md). Record `docs/source-audit/m4.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m4-*.md` (local only). Committed and pushed in fefef7b, Pages deploy succeeded (verified 2026-10-29).
+- 2026-10-29, module 5: sources for all 11 lessons, no lesson text change, Codex OK on all 14 entries. Record `docs/source-audit/m5.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m5-*.md` (local only). Not committed: waiting for Max's go-ahead to commit and push (with the module-4 closure notes).
 - Rule from 2026-10-29 (LOG.md): change text only for important errors on the general case, no caveats from edge cases. Italian written natively, not translated from English.
 
 ## Open items
 
-- Sources for modules 3 to 10, module by module, same method (subagents, Claude WebSearch check, Codex review), filtered by the general-errors rule. Status: approved by Max on 2026-10-29. Done: 1, 2, 3, 4, 6, 8 (4 uncommitted). Next: 5, 7, 9, 10.
+- Sources for modules 3 to 10, module by module, same method (subagents, Claude WebSearch check, Codex review), filtered by the general-errors rule. Status: approved by Max on 2026-10-29. Done: 1, 2, 3, 4, 5, 6, 8 (5 not committed yet). Next: 7, 9, 10.
 
 - Max reviews the new lessons online. Status: to check. Who: Max.
 - Max studies the course himself. Status: ongoing since 2026-10-09.
@@ -43,4 +44,4 @@ The next focus is AI applied to finance, as Macroasset content, not in this repo
 
 ## Next step
 
-Max decides on commit and push of module 4. Then module 5, same method: three subagents, Claude's check on the web and the arXiv API, then Codex, filtered by the general-errors rule.
+Max's go-ahead to commit and push module 5. Then module 7, same method: three subagents, Claude's own curl check of every page (WebFetch only summarises) and the arXiv API, then Codex, filtered by the general-errors rule.

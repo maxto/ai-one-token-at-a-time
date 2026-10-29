@@ -57,3 +57,21 @@ People think the receiving agent 'already knows' what the task is about. Often i
 ## Figure caption
 
 In this delegation example, B receives only the written brief from A and returns a short result.
+
+# Sources
+
+## openai-agents-handoffs
+- Work: [Handoffs](https://openai.github.io/openai-agents-python/handoffs/)
+- Author: OpenAI
+- Year: undated
+- Language: en
+- Note.it: La documentazione dell'Agents SDK di OpenAI: con un handoff il nuovo agente prende in mano la conversazione e di norma ne vede tutta la cronologia, che si può filtrare. Tecnico.
+- Note.en: OpenAI's Agents SDK documentation: in a handoff the new agent takes over the conversation and by default sees its whole history, which can be filtered. Technical.
+
+## claude-code-subagents
+- Work: [Create custom subagents](https://code.claude.com/docs/en/sub-agents)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: La documentazione di Claude Code sulla delega: ogni sotto-agente lavora nel proprio contesto, con istruzioni e strumenti suoi, e restituisce all'agente principale solo un riassunto.
+- Note.en: Claude Code's documentation on delegation: each sub-agent works in its own context, with its own instructions and tools, and returns only a summary to the main agent.

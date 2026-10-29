@@ -53,3 +53,13 @@ People think the model 'goes online' or 'runs code' by itself. The model only wr
 ## Figure caption
 
 The model only writes a structured request: the application runs it against the service and returns the result.
+
+# Sources
+
+## how-tool-use-works
+- Work: [How tool use works](https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: La documentazione di Claude: il modello non esegue mai nulla da solo, scrive una richiesta strutturata, poi il codice dell'applicazione la esegue e gli restituisce il risultato.
+- Note.en: Claude's documentation: the model never runs anything itself, it writes a structured request, then the application's code runs it and sends back the result.

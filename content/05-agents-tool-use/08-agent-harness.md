@@ -57,3 +57,21 @@ People think an assistant's quality depends only on the model. With a different 
 ## Figure caption
 
 The harness wraps the model: it prepares the context, checks permissions before each action and brings the tools' results back into the context.
+
+# Sources
+
+## effective-context-engineering
+- Work: [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+- Author: Rajasekaran et al., Anthropic
+- Year: 2025
+- Language: en
+- Note.it: Come scegliere cosa entra nel contesto del modello a ogni passo, con la compattazione, cioè il riassunto della conversazione vicino al limite, e le note tenute fuori (sezione "Context engineering for long-horizon tasks").
+- Note.en: How to choose what enters the model's context at each step, with compaction, summarising the conversation near the limit, and notes kept outside it (section "Context engineering for long-horizon tasks").
+
+## claude-code-permissions
+- Work: [Configure permissions](https://code.claude.com/docs/en/permissions)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: La documentazione di un harness reale, Claude Code: una regola di divieto impedisce di usare uno strumento, mentre le istruzioni scritte orientano il modello ma non impongono un limite.
+- Note.en: Documentation of a real harness, Claude Code: a deny rule prevents a tool from being used, while written instructions steer the model but do not enforce a boundary.

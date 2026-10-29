@@ -53,3 +53,13 @@ People assume more agents always means better results, like a bigger team. Often
 ## Figure caption
 
 In this pattern the orchestrator gives each sub-agent a task, and each works in its own context and returns only a summary.
+
+# Sources
+
+## multi-agent-research-system
+- Work: [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)
+- Author: Hadfield et al., Anthropic
+- Year: 2025
+- Language: en
+- Note.it: Come Anthropic ha costruito un sistema di ricerca: un agente principale divide il compito tra sotto-agenti in parallelo, ognuno con il proprio contesto, spendendo circa 15 volte i token di una chat.
+- Note.en: How Anthropic built a research system: a lead agent splits the task among sub-agents working in parallel, each with its own context, using about 15 times the tokens of a chat.
