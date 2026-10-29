@@ -1,6 +1,6 @@
 # Handoff
 
-Closed: 2026-10-29 10:22 CET. Last operation: module-8 sources committed and pushed in 578b298 with Max's go-ahead of 2026-10-29, Pages deploy succeeded. HEAD verified before this update: 578b298.
+Closed: 2026-10-29 12:29 CET. Last operation: module-3 sources written and checked (subagents, Claude's arXiv and PDF check, Codex: one lesson fix and two entry fixes applied), not committed. HEAD verified before this update: 8f4b691 (module-8 notes, committed, not pushed).
 
 ## Goal
 
@@ -19,11 +19,12 @@ The course is done for now, not closed: 10 modules, 86 lessons, live at https://
 - 2026-10-29, committed and pushed in c8e55ab, Pages deploy succeeded (verified 2026-10-29): sources for all 9 lessons of module 1, three text fixes (top-k-top-p accuracy, embeddings "keywords", new temperature analogy) and a source-note fix. Record `docs/source-audit/m1.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m1-*.md` (local only).
 - 2026-10-29, module 6: sources for all 9 lessons, one text fix (quantization-aware training is a retraining, not training "from the start") and two source-note fixes, after Codex. Record `docs/source-audit/m6.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m6-*.md` (local only). Committed and pushed in fbebe62, Pages deploy succeeded (verified 2026-10-29).
 - 2026-10-29, module 8: sources for all 7 lessons, no lesson text change, two source-note fixes after Codex. Record `docs/source-audit/m8.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m8-*.md` (local only). Committed and pushed in 578b298, Pages deploy succeeded (verified 2026-10-29).
+- 2026-10-29, module 3: sources for all 9 lessons, one text fix in Tree of Thoughts (an early error "can carry through", not "everything after it is wrong") and two entry fixes, after Codex. Record `docs/source-audit/m3.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m3-*.md` (local only). Uncommitted: the 9 lessons, `docs/source-audit/m3.md`, `LOG.md`, `HANDOFF.md`. Commit and push waiting for Max's go-ahead. 8f4b691 (module-8 notes) is committed but not pushed.
 - Rule from 2026-10-29 (LOG.md): change text only for important errors on the general case, no caveats from edge cases. Italian written natively, not translated from English.
 
 ## Open items
 
-- Sources for modules 3 to 10, module by module, same method (subagents, Claude WebSearch check, Codex review), filtered by the general-errors rule. Status: approved by Max on 2026-10-29. Done: 1, 2, 6, 8. Next: 3, 4, 5, 7, 9, 10.
+- Sources for modules 3 to 10, module by module, same method (subagents, Claude WebSearch check, Codex review), filtered by the general-errors rule. Status: approved by Max on 2026-10-29. Done: 1, 2, 3, 6, 8 (3 uncommitted). Next: 4, 5, 7, 9, 10.
 
 - Max reviews the new lessons online. Status: to check. Who: Max.
 - Max studies the course himself. Status: ongoing since 2026-10-09.
@@ -41,4 +42,4 @@ The next focus is AI applied to finance, as Macroasset content, not in this repo
 
 ## Next step
 
-Module 3, same method: three subagents, Claude's check on the web and the arXiv API, then Codex, filtered by the general-errors rule. Side sources still waiting from the module-2 audit: Cheng et al. was used in module 8. Lewis et al. (RAG) belongs to module 4 (RAG and knowledge), see `docs/source-audit/m2.md`.
+Max decides on commit and push of module 3 (one commit with the notes, push also carries 8f4b691). Then module 4, same method: three subagents, Claude's check on the web and the arXiv API, then Codex, filtered by the general-errors rule. Lewis et al. (RAG), waiting since the module-2 audit, belongs to module 4, see `docs/source-audit/m2.md`.

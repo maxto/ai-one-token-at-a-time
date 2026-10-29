@@ -57,3 +57,13 @@ People think “you are an expert” makes answers more correct. A role steers s
 ## Figure caption
 
 With the same question, the role changes the answer's style and priorities, while the model's knowledge stays the same.
+
+# Sources
+
+## zheng-personas-system-prompts
+- Work: [When "A Helpful Assistant" Is Not Really Helpful: Personas in System Prompts Do Not Improve Performances of Large Language Models](https://arxiv.org/abs/2311.10054v3)
+- Author: Zheng et al.
+- Year: 2023
+- Language: en
+- Note.it: Su 162 ruoli e 2.410 domande di fatto, aggiungere un ruolo al system prompt non migliora l'accuratezza (sezione 4). Tecnico.
+- Note.en: Across 162 roles and 2,410 factual questions, adding a role to the system prompt does not improve accuracy (section 4). Technical.

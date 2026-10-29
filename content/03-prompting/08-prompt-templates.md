@@ -57,3 +57,13 @@ People think a template is done once written. Treat it like code: test it on rea
 ## Figure caption
 
 The template keeps the instructions fixed, and on each call a program fills the placeholders with that case's data and sends the full prompt.
+
+# Sources
+
+## prompt-report
+- Work: [The Prompt Report: A Systematic Survey of Prompt Engineering Techniques](https://arxiv.org/abs/2406.06608v6)
+- Author: Schulhoff et al.
+- Year: 2024
+- Language: en
+- Note.it: Definisce il prompt template (sezione 1.1) e tratta prompt injection (sezione 5.1.1) e sensibilità al prompt (sezione 5.2.1). Tecnico.
+- Note.en: Defines the prompt template (section 1.1) and covers prompt injection (section 5.1.1) and prompt sensitivity (section 5.2.1). Technical.

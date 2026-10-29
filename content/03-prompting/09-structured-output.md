@@ -57,3 +57,21 @@ Believing that an answer that matches the schema is also correct. The schema che
 ## Figure caption
 
 With only a request in the prompt the JSON can arrive broken, constrained decoding enforces the schema, but the values still need checking.
+
+# Sources
+
+## openai-structured-outputs
+- Work: [Structured model outputs](https://developers.openai.com/api/docs/guides/structured-outputs)
+- Author: OpenAI
+- Year: undated
+- Language: en
+- Note.it: Guida ufficiale allo schema: un rifiuto può non rispettarlo e un limite di lunghezza può interrompere la risposta (sezione "Handle edge cases"). Tecnico.
+- Note.en: Official schema guide: a refusal may not follow the schema, and a length limit can interrupt the response (section "Handle edge cases"). Technical.
+
+## willard-louf-guided-generation
+- Work: [Efficient Guided Generation for Large Language Models](https://arxiv.org/abs/2307.09702v4)
+- Author: Willard and Louf, Normal Computing
+- Year: 2023
+- Language: en
+- Note.it: Spiega come la decodifica vincolata maschera a ogni passo i token non ammessi (sezione 2.2) e come si indicizza il vocabolario (sezione 3). Tecnico.
+- Note.en: Explains how constrained decoding masks disallowed tokens at each step (section 2.2) and how the vocabulary is indexed (section 3). Technical.

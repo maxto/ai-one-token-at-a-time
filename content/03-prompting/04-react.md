@@ -57,3 +57,13 @@ Many believe the model runs the tools itself in ReAct. It only writes which acti
 ## Figure caption
 
 The model alternates thought, action and observation: the program runs the action on the tool, and the loop repeats until there is enough information.
+
+# Sources
+
+## react-paper
+- Work: [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629v3)
+- Author: Yao et al.
+- Year: 2022
+- Language: en
+- Note.it: L'articolo originale: ragionamento e azioni alternati (sezione 2) e analisi degli errori rispetto al solo Chain-of-Thought (sezione 3.3). Tecnico.
+- Note.en: The original paper: interleaved reasoning and actions (section 2) and an error analysis against plain Chain-of-Thought (section 3.3). Technical.

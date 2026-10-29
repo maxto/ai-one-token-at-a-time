@@ -57,3 +57,21 @@ Many think examples make the model “learn” permanently. They do not. Example
 ## Figure caption
 
 Three complete examples show the pattern, and for the new case the model continues that pattern, with no change to its weights.
+
+# Sources
+
+## gpt3-few-shot-learners
+- Work: [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v4)
+- Author: Brown et al.
+- Year: 2020
+- Language: en
+- Note.it: Definisce zero-shot, one-shot e few-shot e l'apprendimento in contesto, senza aggiornare i pesi (sezioni 1 e 2). Tecnico.
+- Note.en: Defines zero-shot, one-shot and few-shot and in-context learning, with no weight updates (sections 1 and 2). Technical.
+
+## calibrate-before-use
+- Work: [Calibrate Before Use: Improving Few-Shot Performance of Language Models](https://arxiv.org/abs/2102.09690v2)
+- Author: Zhao et al.
+- Year: 2021
+- Language: en
+- Note.it: Con gli stessi esempi l'accuratezza cambia molto: il modello favorisce l'etichetta più frequente e quella vista per ultima (sezioni 3 e 4). Tecnico.
+- Note.en: With the same examples accuracy varies a lot: the model favours the most frequent label and the last one seen (sections 3 and 4). Technical.

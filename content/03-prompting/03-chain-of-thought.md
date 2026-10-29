@@ -57,3 +57,21 @@ People think adding “think step by step” always improves answers. On simple 
 ## Figure caption
 
 Skipping the steps makes the sum easy to get wrong, while writing intermediate results lets each step build on the one before.
+
+# Sources
+
+## chain-of-thought-prompting
+- Work: [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903v6)
+- Author: Wei et al., Google Research
+- Year: 2022
+- Language: en
+- Note.it: L'articolo che introduce il chain-of-thought: esempi con passaggi intermedi migliorano aritmetica e ragionamento nei modelli grandi (sezioni 2, 3.2 e 6). Tecnico.
+- Note.en: The paper that introduces chain-of-thought: examples with intermediate steps improve arithmetic and reasoning in large models (sections 2, 3.2 and 6). Technical.
+
+## zero-shot-reasoners
+- Work: [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916v4)
+- Author: Kojima et al.
+- Year: 2022
+- Language: en
+- Note.it: La sola frase «Let's think step by step», senza esempi, migliora molto i problemi a più passi, ma non quelli semplici (sezioni 3 e 4.1). Tecnico.
+- Note.en: The single phrase "Let's think step by step", with no examples, greatly improves multi-step problems, but not simple ones (sections 3 and 4.1). Technical.

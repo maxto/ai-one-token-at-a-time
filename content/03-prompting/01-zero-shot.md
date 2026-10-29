@@ -57,3 +57,13 @@ People assume zero-shot means a short, vague prompt. It only means “no example
 ## Figure caption
 
 The prompt holds only the instruction and no examples: the model answers from what it learned in training.
+
+# Sources
+
+## flan-zero-shot
+- Work: [Finetuned Language Models Are Zero-Shot Learners](https://arxiv.org/abs/2109.01652v5)
+- Author: Wei et al., Google Research
+- Year: 2021
+- Language: en
+- Note.it: Mostra miglioramenti zero-shot su tipi di compito esclusi dall'instruction tuning (introduzione e figura 1). Suggerisce perché prompt diversi dai testi di pre-training possano mettere in difficoltà un modello senza esempi. Tecnico.
+- Note.en: Shows zero-shot improvements on task types held out of instruction tuning (introduction and figure 1). Suggests why prompts unlike pre-training text may challenge a model given no examples. Technical.

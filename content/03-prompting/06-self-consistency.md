@@ -57,3 +57,13 @@ People assume the most-voted answer must be correct. Majority voting reduces ran
 ## Figure caption
 
 The same question is reasoned through five times independently, and the most frequent final answer wins.
+
+# Sources
+
+## self-consistency-paper
+- Work: [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://arxiv.org/abs/2203.11171v4)
+- Author: Wang et al., Google Research
+- Year: 2022
+- Language: en
+- Note.it: L'articolo originale: campionare più ragionamenti e scegliere la risposta più frequente (sezione 2), con i risultati (sezione 3) e il costo (sezione 5). Tecnico.
+- Note.en: The original paper: sampling several reasoning paths and taking the most frequent answer (section 2), with results (section 3) and cost (section 5). Technical.

@@ -2,6 +2,20 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-29: sources for module 3
+
+**What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 9 lessons of module 3 now have a `# Sources` block: Wei et al. FLAN (Zero-shot), Brown et al. GPT-3 and Zhao et al. "Calibrate Before Use" (Few-shot), Wei et al. CoT and Kojima et al. (Chain-of-Thought), Yao et al. ReAct, Yao et al. Tree of Thoughts, Wang et al. (Self-Consistency), Zheng et al. on personas in system prompts (Role Prompting), Schulhoff et al. The Prompt Report (Prompt Templates), OpenAI "Structured model outputs" and Willard and Louf (Structured output). One lesson-text fix after Codex: Tree of Thoughts deep dive, IT and EN, "if the first step is wrong, so is everything after it" became "an early error can carry through to later steps" (the old wording made error propagation inevitable, Yao sec. 2-3, Wei sec. 6). Source entries corrected: FLAN note (Claude: "suggests", not "explains". Codex: task types held out of instruction tuning, not "never seen in training"), Zheng note points to section 4, OpenAI entry (current title and URL, refusal vs length cutoff).
+
+**Verified.** Three Claude subagents found and read the sources (`dist/advisor/m3-a.md`, `m3-b.md`, `m3-c.md`, local only) and found no important general error. Claude rechecked titles, dates and latest versions of all arXiv sources through the arXiv API, affiliations on the PDF first pages, all cited section headings in the PDF text, and the OpenAI page heading with curl. Codex opened all 12 reader sources (`m3-request.md`, `m3-answer.md`): one lesson fix and two entry fixes, all applied as written. `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok after the fixes. Codex did not recheck the applied fixes (its exact wording was used). No figure changed, so no `npm run figs`. Record in `docs/source-audit/m3.md`. HEAD before this entry: 8f4b691.
+
+**Decisions.**
+- Done: Zero-shot keeps FLAN. Codex judged it fair (instructions without demonstrations). Rejected: Brown there too (used for few-shot, no paper twice), Kojima (zero-shot reasoning, used for CoT).
+- Done: Few-shot uses Brown and Zhao. Rejected: Min et al. (read, Zhao backs the lesson's majority-label point and quiz Q2).
+- Done: Role Prompting keeps only Zheng. Rejected: Kong et al. as a reader source (narrower, role-play on reasoning benchmarks).
+- Done: the Tree of Thoughts fix counts as an important general error (it taught a wrong mechanism), not an edge-case hedge.
+- Done: narrower findings recorded in `docs/source-audit/m3.md` and not applied (few-shot "two to five" and "boundary", CoT "planning", zero-shot "pre-training saw similar tasks", role "specific role works best", templates versioning, structured-output nullable fields, ReAct and ToT statements about the field). Rejected under the general-errors rule.
+- Proposed, Max to decide: commit of module 3 with the notes, and push (8f4b691 with the module-8 notes is also not pushed yet).
+
 ## 2026-10-29: module 8 pushed, notes closed
 
 **What was done.** Module 8 sources committed and pushed in 578b298 with Max's go-ahead of 2026-10-29. HANDOFF updated for the closure (Closed line, module 8 marked done, next step module 3).

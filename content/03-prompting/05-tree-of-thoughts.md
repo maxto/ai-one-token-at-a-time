@@ -14,7 +14,7 @@ Esplorare più linee di ragionamento in parallelo, valutarle e scartare quelle d
 
 ## Approfondimento
 
-Il Chain-of-Thought segue un solo percorso: se il primo passo è sbagliato, lo è anche tutto il resto. Il **Tree of Thoughts**, proposto nel 2023, genera invece più passi alternativi a ogni bivio. Il modello stesso, o un secondo prompt, valuta quali sono promettenti. Un algoritmo di ricerca decide quali rami espandere e quando tornare indietro.
+Il Chain-of-Thought segue un solo percorso: un errore iniziale può trascinarsi nei passaggi successivi. Il **Tree of Thoughts**, proposto nel 2023, genera invece più passi alternativi a ogni bivio. Il modello stesso, o un secondo prompt, valuta quali sono promettenti. Un algoritmo di ricerca decide quali rami espandere e quando tornare indietro.
 
 Funziona bene su problemi dove serve esplorare e fare marcia indietro: rompicapi, pianificazioni con vincoli stretti, testi con requisiti rigidi. In questi casi un singolo tentativo lineare fallisce spesso.
 
@@ -40,7 +40,7 @@ Exploring several lines of reasoning in parallel, scoring them and pruning the w
 
 ## Deep dive
 
-Chain-of-Thought follows a single path: if the first step is wrong, so is everything after it. **Tree of Thoughts**, proposed in 2023, instead generates several alternative steps at each fork. The model itself, or a separate prompt, judges which ones look promising. A search algorithm decides which branches to expand and when to backtrack.
+Chain-of-Thought follows a single path: an early error can carry through to later steps. **Tree of Thoughts**, proposed in 2023, instead generates several alternative steps at each fork. The model itself, or a separate prompt, judges which ones look promising. A search algorithm decides which branches to expand and when to backtrack.
 
 It works well on problems that need exploration and backtracking: puzzles, planning under tight constraints, writing with strict requirements. On these, a single linear attempt often fails.
 
@@ -57,3 +57,13 @@ People think writing “consider several options” gives you Tree of Thoughts. 
 ## Figure caption
 
 Each fork produces several alternative steps: the model scores them, weak branches are pruned and only the promising one is expanded.
+
+# Sources
+
+## tree-of-thoughts-paper
+- Work: [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601v2)
+- Author: Yao et al.
+- Year: 2023
+- Language: en
+- Note.it: L'articolo originale: generazione e valutazione dei passi, ricerca ad albero (sezione 3) e tre compiti di prova (sezione 4). Tecnico.
+- Note.en: The original paper: generating and scoring steps, tree search (section 3) and three test tasks (section 4). Technical.
