@@ -57,3 +57,13 @@ People often think the KV cache is the model's memory across conversations. It i
 ## Figure caption
 
 At each step only the new token's key and value are computed, and it is compared with those already in the cache.
+
+# Sources
+
+## vllm-pagedattention
+- Work: [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180v1)
+- Author: Kwon et al.
+- Year: 2023
+- Language: en
+- Note.it: Spiega come la generazione riusa chiavi e valori già calcolati, un token alla volta, e quanta memoria della GPU occupa la cache (sezioni 2 e 3). Tecnico.
+- Note.en: Explains how generation reuses keys and values already computed, one token at a time, and how much GPU memory the cache takes (sections 2 and 3). Technical.

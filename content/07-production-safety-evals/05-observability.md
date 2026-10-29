@@ -57,3 +57,13 @@ People think it is enough to check that the service is up and responding quickly
 ## Figure caption
 
 A trace shows the steps of a single request over time and reveals which step is slow or wrong.
+
+# Sources
+
+## opentelemetry-traces
+- Work: [Traces](https://opentelemetry.io/docs/concepts/signals/traces/)
+- Author: OpenTelemetry
+- Year: undated
+- Language: en
+- Note.it: Il concetto di traccia in OpenTelemetry, uno standard aperto per l'osservabilità: una richiesta diventa un albero di passi (span), ognuno con un inizio e una fine.
+- Note.en: The trace concept in OpenTelemetry, an open standard for observability: a request becomes a tree of steps (spans), each with a start and an end.

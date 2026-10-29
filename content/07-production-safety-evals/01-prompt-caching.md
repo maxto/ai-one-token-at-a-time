@@ -57,3 +57,21 @@ Many think prompt caching stores answers and returns them for similar questions.
 ## Figure caption
 
 With the same prefix the work is read back from the cache, while a date placed at the top changes the prefix and forces a full recompute.
+
+# Sources
+
+## claude-prompt-caching
+- Work: [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: La documentazione di Claude: cosa viene salvato, perché serve un prefisso identico, cosa invalida la cache e come cambiano i costi (sezioni "How prompt caching works" e "What invalidates the cache").
+- Note.en: Claude's documentation: what is stored, why an identical prefix is required, what invalidates the cache and how costs change (sections "How prompt caching works" and "What invalidates the cache").
+
+## openai-prompt-caching
+- Work: [Prompt caching](https://developers.openai.com/api/docs/guides/prompt-caching)
+- Author: OpenAI
+- Year: undated
+- Language: en
+- Note.it: La stessa idea in un altro fornitore: la cache conserva gli stati interni, cioè chiavi e valori, di un prefisso già elaborato, non il testo (sezione "What is the prompt cache?").
+- Note.en: The same idea at another provider: the cache keeps the internal states, keys and values, of a prefix already processed, not the text (section "What is the prompt cache?").

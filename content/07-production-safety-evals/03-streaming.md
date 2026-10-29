@@ -57,3 +57,21 @@ Many believe streaming makes the model faster. It does not: the time to generate
 ## Figure caption
 
 The model takes the same time, but with streaming the first text reaches the user almost at once.
+
+# Sources
+
+## claude-streaming
+- Work: [Streaming Messages](https://platform.claude.com/docs/en/build-with-claude/streaming)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: La documentazione di Claude sullo streaming: eventi inviati in sequenza, JSON che arriva a pezzi e come riprendere una risposta interrotta (sezioni "Event types" e "Error recovery").
+- Note.en: Claude's streaming documentation: events sent in sequence, JSON arriving in pieces and how to resume an interrupted response (sections "Event types" and "Error recovery").
+
+## openai-streaming
+- Work: [Streaming API responses](https://developers.openai.com/api/docs/guides/streaming-responses)
+- Author: OpenAI
+- Year: undated
+- Language: en
+- Note.it: Spiega perché con lo streaming si può leggere l'inizio della risposta prima della fine e perché diventa più difficile controllarla prima che l'utente la veda (introduzione e sezione "Moderation risk").
+- Note.en: Explains why streaming lets you read the start of the answer before the end and why it becomes harder to check before the user sees it (introduction and section "Moderation risk").

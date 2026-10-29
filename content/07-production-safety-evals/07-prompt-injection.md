@@ -57,3 +57,21 @@ People think prompt injection only comes from malicious users typing in the chat
 ## Figure caption
 
 Trusted instructions and an email's text end up in the same context: a hidden sentence in the email can steer the model's actions.
+
+# Sources
+
+## indirect-prompt-injection
+- Work: [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173v2)
+- Author: Greshake et al.
+- Year: 2023
+- Language: en
+- Note.it: L'articolo che ha introdotto l'iniezione indiretta: istruzioni nascoste nei dati letti dal modello, con attacchi ad applicazioni reali (sezioni 1 e 3). Tecnico.
+- Note.en: The paper that introduced indirect injection: instructions hidden in data the model reads, with attacks on real applications (sections 1 and 3). Technical.
+
+## owasp-llm01-prompt-injection
+- Work: [LLM01:2025 Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)
+- Author: OWASP Gen AI Security Project
+- Year: 2025
+- Language: en
+- Note.it: La scheda OWASP sulla prompt injection: tipi diretti e indiretti, limiti della prevenzione e difese a strati, come privilegi minimi e conferma umana per le azioni importanti.
+- Note.en: OWASP's entry on prompt injection: direct and indirect types, limits of prevention, and layered defences such as least privilege and human approval for important actions.

@@ -57,3 +57,13 @@ People think the price depends on how long the question is. Everything that goes
 ## Figure caption
 
 You pay for everything that goes in, not just the question, and what comes out costs more per token.
+
+# Sources
+
+## openai-latency-optimization
+- Work: [Latency optimization](https://developers.openai.com/api/docs/guides/latency-optimization)
+- Author: OpenAI
+- Year: undated
+- Language: en
+- Note.it: Sette principi per ridurre l'attesa, tra cui elaborare i token più in fretta, generarne meno, usarne meno in ingresso e fare meno richieste (sezione "Seven principles").
+- Note.en: Seven principles for cutting waiting time, including processing tokens faster, generating fewer, using fewer input tokens and making fewer requests (section "Seven principles").

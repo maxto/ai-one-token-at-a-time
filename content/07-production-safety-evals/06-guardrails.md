@@ -57,3 +57,21 @@ People think writing "never do X" in the prompt is enough. A prompt instruction 
 ## Figure caption
 
 The checks sit outside the model, before and after it: they can block or fix what passes through.
+
+# Sources
+
+## llama-guard
+- Work: [Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations](https://arxiv.org/abs/2312.06674v1)
+- Author: Inan et al., Meta
+- Year: 2023
+- Language: en
+- Note.it: Un modello che classifica come sicure o no sia le richieste sia le risposte, usato come controllo separato attorno a un altro modello (introduzione). Tecnico.
+- Note.en: A model that classifies both prompts and responses as safe or unsafe, used as a separate check around another model (introduction). Technical.
+
+## nemo-guardrails
+- Work: [NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails](https://arxiv.org/abs/2310.10501v1)
+- Author: Rebedea et al., NVIDIA
+- Year: 2023
+- Language: en
+- Note.it: Regole programmabili in uno strato separato dal modello, che tengono il dialogo sui temi ammessi e controllano le azioni (sezioni 3 e 4). Tecnico.
+- Note.en: Programmable rules in a layer separate from the model, which keep the dialogue on allowed topics and control actions (sections 3 and 4). Technical.

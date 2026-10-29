@@ -2,6 +2,26 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-29: sources for module 7
+
+**What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 9 lessons of module 7 now have a `# Sources` block: Anthropic and OpenAI "Prompt caching" (Prompt caching), Kwon et al. vLLM/PagedAttention (KV cache), Anthropic "Streaming Messages" and OpenAI "Streaming API responses" (Streaming), OpenAI "Latency optimization" (Cost and latency), OpenTelemetry "Traces" (Observability), Llama Guard and NeMo Guardrails (Guardrails), Greshake et al. and OWASP LLM01:2025 (Prompt injection), Zheng et al. LLM-as-a-judge and Miller error bars (Evals), Anthropic "Choosing the right model" (Choosing a model). No lesson text changed. Record in `docs/source-audit/m7.md` (new). Brief, subagent reports, Codex request and answer `dist/advisor/m7-*.md` (local only).
+
+**Verified.** Three Claude subagents found and read the sources (web pages with curl this time, per the new brief) and found no important general error. Claude fetched all nine pages with curl and found the cited passages and headings, checked all six papers through the arXiv API (latest versions linked) and on the PDF first pages (affiliations, headings). Codex opened all 14 reader sources: all kept, three note fixes (OTel root spans have no parent, OWASP "limits of prevention" instead of "no fool-proof prevention", the model-choice heading), applied as written. Codex also closed two evidence gaps (reasoning tokens billed as output, benchmark contamination), checked by Claude. `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok after the fixes. No figure changed, so no `npm run figs`. HEAD before this entry: c71a9ab.
+
+**Decisions.**
+- Done (Claude, Codex agreed): OWASP LLM01:2025 instead of OpenAI "Safety in building agents" for Prompt injection, because that page belongs to Agent Builder, which OpenAI is deprecating, so the link may go stale.
+- Done (Claude): Anthropic "Prompt caching" kept in Prompt caching only, not repeated in Cost and latency.
+- Proposed: commit module 7 together with the module-5 closure notes, then push. Waiting for Max's go-ahead.
+
+## 2026-10-29: module 5 pushed, module 7 started
+
+**What was done.** Module 5 sources committed in c71a9ab (with the module-4 closure notes) and pushed, on Max's go-ahead of 2026-10-29. Codex chat cleared at task close (its answer is in `dist/advisor/m5-answer.md`). Module 7 started on the same go-ahead: brief `dist/advisor/m7-brief.md` (module-5 brief, plus: read web pages with curl, not WebFetch), three subagents launched.
+
+**Verified.** Pages deploy of c71a9ab succeeded. The live page contains the new harnesses source.
+
+**Decisions.**
+- Done (Max, 2026-10-29): commit and push of module 5, proposed in the module-5 entry below.
+
 ## 2026-10-29: sources for module 5
 
 **What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 11 lessons of module 5 now have a `# Sources` block: Anthropic "Building effective agents" (AI agents, and Workflow or agent), Anthropic "How tool use works" (Tool calling), MCP specification "Architecture" 2026-07-28 (MCP), Hadfield et al. multi-agent research system (Multi-agent), MemGPT (Agent memory), Turpin et al. and Sprague et al. (Planning and reasoning), Young "Effective harnesses for long-running agents" (Agent loops), Rajasekaran et al. "Effective context engineering" and Claude Code "Configure permissions" (Agent harness), Anthropic "Computer use tool" (Computer use), OpenAI Agents SDK "Handoffs" and Claude Code "Create custom subagents" (Handoffs). No lesson text changed. Record in `docs/source-audit/m5.md` (new). Subagent brief and reports `dist/advisor/m5-brief.md`, `m5-a.md`, `m5-b.md`, `m5-c.md`, Codex request and answer `m5-request.md`, `m5-answer.md` (local only).

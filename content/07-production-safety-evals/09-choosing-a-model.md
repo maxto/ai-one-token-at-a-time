@@ -57,3 +57,13 @@ Picking the top model on a leaderboard without trying others. The leaderboard me
 ## Figure caption
 
 The same real cases go to three models, and the comparison looks at quality, cost, time and corrections, not just the leaderboard.
+
+# Sources
+
+## choosing-the-right-model
+- Work: [Choosing the right model](https://platform.claude.com/docs/en/about-claude/models/choosing-a-model)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: La guida di Anthropic: capacità, velocità e costo, con test sui propri casi per scegliere (sezioni "Establish key criteria" e "Decide whether to upgrade or change models").
+- Note.en: Anthropic's guide: capabilities, speed and cost, with tests on your own cases to choose a model (sections "Establish key criteria" and "Decide whether to upgrade or change models").

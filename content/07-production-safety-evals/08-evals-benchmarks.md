@@ -57,3 +57,21 @@ People assume the model at the top of the leaderboard is the best for their case
 ## Figure caption
 
 An eval runs real cases through the system, grades them and gives one number with its margin of error, and the judge is calibrated on human scores.
+
+# Sources
+
+## llm-as-a-judge
+- Work: [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685v4)
+- Author: Zheng et al.
+- Year: 2023
+- Language: en
+- Note.it: Quanto un modello giudice concorda con le persone e quali distorsioni ha, come preferire le risposte più lunghe (sezioni 3.3 e 4.2). Tecnico.
+- Note.en: How closely a model judge agrees with people and which biases it has, such as favouring longer answers (sections 3.3 and 4.2). Technical.
+
+## error-bars-evals
+- Work: [Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations](https://arxiv.org/abs/2411.00640v1)
+- Author: Miller, Anthropic
+- Year: 2024
+- Language: en
+- Note.it: Perché il punteggio di una valutazione va dato con il suo margine di errore e come confrontare due modelli sulle stesse domande (introduzione e sezione 4). Tecnico.
+- Note.en: Why an eval score should come with its margin of error, and how to compare two models on the same questions (introduction and section 4). Technical.
