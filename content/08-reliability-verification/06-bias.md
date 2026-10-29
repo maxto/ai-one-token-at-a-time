@@ -57,3 +57,21 @@ Thinking that removing offensive words eliminates bias. A polite text can still 
 ## Figure caption
 
 Data with an unbalanced representation of roles can lead the model to repeat the same association in generated stories.
+
+# Sources
+
+## weidinger-ethical-social-risks
+- Work: [Ethical and social risks of harm from Language Models](https://arxiv.org/abs/2112.04359v1)
+- Author: Weidinger et al., DeepMind
+- Year: 2021
+- Language: en
+- Note.it: Rapporto sui rischi dei modelli linguistici: la sezione 2.1 tratta stereotipi, norme che escludono, linguaggio tossico e prestazioni peggiori per alcune lingue e gruppi.
+- Note.en: Report on the risks of language models: section 2.1 covers stereotypes, exclusionary norms, toxic language and lower performance for some languages and groups.
+
+## gallegos-bias-fairness-survey
+- Work: [Bias and Fairness in Large Language Models: A Survey](https://arxiv.org/abs/2309.00770v3)
+- Author: Gallegos et al.
+- Year: 2023
+- Language: en
+- Note.it: Rassegna sui pregiudizi nei modelli linguistici: in quali fasi nascono, dai dati all'uso (sezione 2.2.3), e perché non esiste un solo criterio di equità (sezione 2.3). Tecnico.
+- Note.en: Survey of bias in language models: the stages where it arises, from data to deployment (section 2.2.3), and why there is no single fairness criterion (section 2.3). Technical.

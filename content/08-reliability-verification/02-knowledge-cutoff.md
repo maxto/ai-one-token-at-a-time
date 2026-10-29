@@ -57,3 +57,13 @@ Believing the cutoff makes all answers about the past true and answers about the
 ## Figure caption
 
 A recent document enters the context alongside the question, allowing the model to use information from after its cutoff.
+
+# Sources
+
+## cheng-dated-data
+- Work: [Dated Data: Tracing Knowledge Cutoffs in Large Language Models](https://arxiv.org/abs/2403.12958v2)
+- Author: Cheng et al., Johns Hopkins University
+- Year: 2024
+- Language: en
+- Note.it: Mostra che la data di cutoff dichiarata di un modello e quella effettiva dei suoi dati possono essere diverse, e spiega perché (sezioni 5 e 6). Tecnico.
+- Note.en: Shows that a model's reported cutoff and the effective cutoff of its data can differ, and explains why (sections 5 and 6). Technical.

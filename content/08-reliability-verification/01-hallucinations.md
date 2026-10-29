@@ -57,3 +57,13 @@ Assuming that such a detailed error must be a deliberate lie. Hallucination desc
 ## Figure caption
 
 Generation produces a plausible sentence, but without a matching record the reference remains unconfirmed.
+
+# Sources
+
+## ji-hallucination-survey
+- Work: [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629v7)
+- Author: Ji et al., Hong Kong University of Science and Technology
+- Year: 2022
+- Language: en
+- Note.it: Panoramica degli studi sulle allucinazioni: definizione e tipi (sezione 2), cause (sezione 3) e rimedi (sezione 5). Tecnico.
+- Note.en: Overview of research on hallucination: definition and types (section 2), causes (section 3) and mitigation (section 5). Technical.

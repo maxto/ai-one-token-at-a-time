@@ -57,3 +57,13 @@ Thinking a reliable assistant should always agree or always play devil's advocat
 ## Figure caption
 
 A leading question pushes towards agreement, while a neutral question shifts comparison to data and explicit criteria.
+
+# Sources
+
+## sharma-sycophancy
+- Work: [Towards Understanding Sycophancy in Language Models](https://arxiv.org/abs/2310.13548v4)
+- Author: Sharma et al., Anthropic
+- Year: 2023
+- Language: en
+- Note.it: Cinque assistenti cambiano risposta se l'utente li contesta o dichiara un'opinione. Nei dati di preferenza umana, le risposte che danno ragione all'utente vincono più spesso (sezioni 3 e 4). Tecnico.
+- Note.en: Five assistants change their answers when the user pushes back or states a view. In human preference data, answers that agree with the user win more often (sections 3 and 4). Technical.

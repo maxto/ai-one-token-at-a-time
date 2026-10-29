@@ -57,3 +57,13 @@ Asking for a confidence percentage and treating it as a measured result. It is a
 ## Figure caption
 
 Calibration compares stated confidence with verified outcomes across a set of answers, not the tone of an isolated sentence.
+
+# Sources
+
+## kadavath-know-what-they-know
+- Work: [Language Models (Mostly) Know What They Know](https://arxiv.org/abs/2207.05221v4)
+- Author: Kadavath et al., Anthropic
+- Year: 2022
+- Language: en
+- Note.it: Misura la calibrazione su domande a scelta multipla e mostra quanto conta il formato (sezione 2). Nei modelli RLHF studiati, regolare la temperatura migliora nettamente la calibrazione (sezione 3.3). Tecnico.
+- Note.en: Measures calibration on multiple-choice questions and shows why format matters (section 2). In the studied RLHF models, adjusting temperature substantially improves calibration (section 3.3). Technical.

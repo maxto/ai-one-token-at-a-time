@@ -57,3 +57,21 @@ Asking "are you sure?" and treating the second answer as independent verificatio
 ## Figure caption
 
 Facts, calculations and procedures need different checks before deciding whether to use the answer or postpone action.
+
+# Sources
+
+## huang-self-correct
+- Work: [Large Language Models Cannot Self-Correct Reasoning Yet](https://arxiv.org/abs/2310.01798v2)
+- Author: Huang et al.
+- Year: 2023
+- Language: en
+- Note.it: Nei compiti di ragionamento studiati, ricontrollare la risposta senza riscontri esterni non migliora l'accuratezza (sezione 3). Discute l'utilità di strumenti esterni, come calcolatrici e test (sezione 6). Tecnico.
+- Note.en: On the reasoning tasks studied, re-checking answers without external feedback does not improve accuracy (section 3). Discusses the usefulness of external tools, such as calculators and tests (section 6). Technical.
+
+## nist-ai-600-1
+- Work: [Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile](https://doi.org/10.6028/NIST.AI.600-1)
+- Author: NIST
+- Year: 2024
+- Language: en
+- Note.it: Profilo del NIST, l'ente federale USA per gli standard, sui rischi dell'IA generativa: risposte false date con sicurezza, con passaggi e citazioni inventati (sezione 2.2), ed eccessiva fiducia (sezione 2.7).
+- Note.en: Profile by NIST, the US federal standards agency, on generative AI risks: false answers given confidently, with invented steps and citations (section 2.2), and over-reliance (section 2.7).

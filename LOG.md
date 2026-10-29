@@ -2,6 +2,20 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-29: sources for module 8
+
+**What was done.** Next step from HANDOFF (module 8 after 6, approved earlier the same day). All 7 lessons of module 8 now have a `# Sources` block: Ji et al. hallucination survey (Hallucinations, the side source waiting since the module-2 audit), Cheng et al. "Dated Data" (Knowledge cutoff), Kadavath et al. (Confidence), Liu et al. on generative search engine citations and Agrawal et al. on fabricated references (Sources and citations), Sharma et al. (Sycophancy), Weidinger et al. and the Gallegos et al. survey (Bias), Huang et al. on self-correction and NIST AI 600-1 (Verification). No lesson text changed. Two of Claude's source notes corrected after Codex: Kadavath (calibration depends on the question format, temperature tuning restores it in the RLHF models studied), Huang (the paper tests intrinsic correction on reasoning tasks, external tools are discussed).
+
+**Verified.** Three Claude subagents found and read the sources (`dist/advisor/m8-a.md`, `m8-b.md`, `m8-c.md`, local only) and found no important general error. Claude rechecked titles, dates and latest versions of all arXiv sources through the arXiv API, affiliations on the PDF first pages, the NIST title and DOI, and all cited section headings in the PDF text. Codex opened all 10 reader sources (`m8-request.md`, `m8-answer.md`): no error in lesson text, quiz or figure labels, two note fixes, both applied. `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok after the fixes. Codex did not recheck the applied notes (its exact wording was used). Record in `docs/source-audit/m8.md`. HEAD before this entry: fbebe62.
+
+**Decisions.**
+- Done: Confidence keeps only Kadavath. Rejected: Guo et al. 2017 (calibration of classifiers, not language models).
+- Done: Sycophancy keeps only Sharma. Rejected: Perez et al. (only section 4 read, Sharma covers the lesson).
+- Done: Verification uses Huang and NIST AI 600-1. Rejected: FActScore and Chain-of-Verification (the model checking itself, not the reader's own checking).
+- Done: Codex's two note fixes applied as written. They correct Claude's summaries of single papers, not the lesson text.
+- Done: narrower findings recorded in `docs/source-audit/m8.md` and not applied (Ji's source-relative definition, Sharma "likely driven in part", Perez on sycophancy before RLHF, instructions and raters as bias sources, "another assistant" evidence being about the same model). Rejected under the general-errors rule.
+- Proposed, Max to decide: commit and push of module 8 with the pending HANDOFF update.
+
 ## 2026-10-29: sources for module 6
 
 **What was done.** Max asked to move on to module 6 (order 6 and 8 first, approved earlier the same day). All 9 lessons of module 6 now have a `# Sources` block: SLP3 (pre-training, fine-tuning, instruction tuning), GPT-3, Ovadia (fine-tuning vs retrieval), LoRA, QLoRA, InstructGPT (RLHF, the side source waiting since the module-2 audit), DPO, Concrete Problems in AI Safety (reward hacking), FLAN, Hinton (distillation), Gholami survey and Dettmers and Zettlemoyer 4-bit (quantization). One text change, IT and EN: in Quantization, quantization-aware training "accounts for the rounding from the start" -> "the model is retrained to account for rounding. It costs more, but usually loses less quality" (Gholami Fig. 4 and sec. III-G: a pre-trained model is quantized and retrained). Two of Claude's source notes corrected after Codex: Ovadia compares unsupervised fine-tuning with retrieval, LoRA adds the product of two small matrices to the weights.

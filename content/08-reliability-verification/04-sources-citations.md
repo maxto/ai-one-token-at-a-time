@@ -57,3 +57,21 @@ Counting citations as votes in favour of the answer. Many references may be irre
 ## Figure caption
 
 Checking moves from the source's existence to the precise passage, distinguishing a possibility from an established conclusion.
+
+# Sources
+
+## liu-verifiability
+- Work: [Evaluating Verifiability in Generative Search Engines](https://arxiv.org/abs/2304.09848v2)
+- Author: Liu et al., Stanford University
+- Year: 2023
+- Language: en
+- Note.it: Valuta quattro motori di ricerca generativi: solo il 74,5% delle citazioni sostiene davvero la frase a cui è collegata (sezione 4.2). Tecnico.
+- Note.en: Audits four generative search engines: only 74.5% of citations actually support the sentence they are attached to (section 4.2). Technical.
+
+## agrawal-hallucinated-references
+- Work: [Do Language Models Know When They're Hallucinating References?](https://arxiv.org/abs/2305.18248v3)
+- Author: Agrawal et al.
+- Year: 2023
+- Language: en
+- Note.it: Riferimenti bibliografici inventati dai modelli linguistici: titoli plausibili che non esistono, spesso costruiti mescolando titoli veri (sezioni 1 e 6.2). Tecnico.
+- Note.en: Fabricated references from language models: plausible-sounding titles that do not exist, often mashed up from real ones (sections 1 and 6.2). Technical.
