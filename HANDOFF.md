@@ -1,6 +1,6 @@
 # Handoff
 
-Closed: 2026-10-28 23:00 CET. Last operation: sources pilot committed (3469ff1) and pushed, local review server stopped. HEAD verified before this update: 3469ff1.
+Closed: 2026-10-29 08:24 CET. Last operation: module-2 sources committed and pushed (Max's go-ahead on 2026-10-29), in the commit that contains this file. HEAD verified before this update: 0c3bf9a.
 
 ## Goal
 
@@ -15,10 +15,13 @@ The course is done for now, not closed: 10 modules, 86 lessons, live at https://
 - 2026-10-28: dark theme brightened for contrast, then dark-theme figures set to variant C after a Codex review: dark panel, raised lighter boxes, lighter small text (see LOG.md). Home cards stay lighter than the page. Light theme unchanged (pixel compare of all light figures).
 - Advisor files for this round are in the gitignored `dist/advisor/` (scan, batch1, lessons, final): local only.
 - 2026-10-28 evening, committed in 3469ff1 and pushed: optional `# Sources` block (one or two reference sources), shown in `#m2-llm`, `#m2-mixture-of-experts`, `#m2-open-weights`, with corrected wording in those three lessons (see LOG.md). Build, `lengths.py`, `npm test` ok. Check record in `docs/source-audit/m2.md`. Codex files `dist/advisor/sources-*.md` (local only).
+- 2026-10-29, committed and pushed with this file: sources for the other six module-2 lessons, so all 9 lessons of module 2 have them, with wording corrections (see LOG.md). Build, `lengths.py`, `npm test` ok on 2026-10-28. Codex files `dist/advisor/m2-rest-*.md` (local only).
 
 ## Open items
 
-- Sources for other lessons: optional, added when a lesson is touched or a good reference is at hand. Side-claim sources already checked and waiting for their lesson: hallucination survey (Ji et al.) for Hallucinations, InstructGPT for RLHF or Instruction tuning, Attention Is All You Need for Attention (details in `docs/source-audit/m2.md`). Status: proposed, not decided.
+- Sources for modules 1 and 3 to 10, module by module, same method (subagents, Claude check, Codex review). Status: proposed, Max to decide.
+
+- Side-claim sources already checked and waiting for their lesson: hallucination survey (Ji et al.) for Hallucinations, InstructGPT for RLHF or Instruction tuning, Attention Is All You Need for Attention (details in `docs/source-audit/m2.md`). Status: proposed, not decided.
 
 - Max reviews the new lessons online. Status: to check. Who: Max.
 - Max studies the course himself. Status: ongoing since 2026-10-09.
@@ -36,4 +39,4 @@ The next focus is AI applied to finance, as Macroasset content, not in this repo
 
 ## Next step
 
-Apply any corrections Max sends after reading the lessons online.
+Check that the Pages deploy of the module-2 sources succeeded. Then ask Max whether to continue with the other modules, one at a time.

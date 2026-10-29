@@ -14,11 +14,11 @@ Uno SLM è un modello linguistico più piccolo, pensato per girare veloce ed eco
 
 ## Approfondimento
 
-Non esiste una soglia ufficiale, ma di solito si parla di **SLM** (small language model) per modelli da qualche miliardo di parametri o meno. L'architettura è la stessa degli LLM. Cambia la scala, e con essa il costo: meno memoria, meno calcolo, risposte più rapide.
+Non esiste una soglia ufficiale, ma di solito si parla di **SLM** (small language model) per modelli da qualche miliardo di parametri o meno. L'architettura di solito è la stessa degli LLM: un transformer. Cambia la scala, e con essa il costo: meno memoria, meno calcolo, risposte più rapide.
 
 Per farli rendere bene si usano alcune tecniche. Dati di addestramento più curati, non solo più numerosi. La distillazione, in cui un modello grande fa da insegnante e quello piccolo impara a imitarne le risposte. La quantizzazione, che salva i parametri con meno bit, cioè meno precisione, per occupare meno spazio. Il vantaggio pratico è che possono girare in locale: i dati non lasciano il dispositivo e non serve una connessione.
 
-Il compromesso: sanno meno cose e reggono peggio i compiti lunghi e complessi. Rendono al massimo su compiti stretti e ben definiti, soprattutto dopo un fine-tuning mirato.
+Il compromesso: sanno meno cose e reggono peggio i compiti ampi e complessi. Rendono al massimo su compiti stretti e ben definiti, soprattutto dopo un fine-tuning mirato.
 
 ## Nella vita di tutti i giorni
 
@@ -26,7 +26,7 @@ In cucina c'è il robot multifunzione con trenta accessori e c'è il pelapatate.
 
 ## Errore comune
 
-Errore comune: considerare uno SLM solo una versione scadente di un LLM. Su un compito specifico, con buoni dati e fine-tuning, può avvicinarsi a modelli molto più grandi, a volte eguagliarli. Perde soprattutto su conoscenza generale e ragionamenti lunghi.
+Errore comune: considerare uno SLM solo una versione scadente di un LLM. Su un compito specifico, con buoni dati e fine-tuning, può avvicinarsi a modelli molto più grandi, a volte eguagliarli. Perde soprattutto su conoscenza generale e su compiti ampi e complessi.
 
 ## Didascalia della figura
 
@@ -40,11 +40,11 @@ An SLM is a smaller language model, built to run fast and cheaply, even on a lap
 
 ## Deep dive
 
-There is no official cutoff, but **SLM** (small language model) usually means a model with a few billion parameters or fewer. The architecture is the same as an LLM's. What changes is scale, and with it cost: less memory, less compute, faster answers.
+There is no official cutoff, but **SLM** (small language model) usually means a model with a few billion parameters or fewer. The architecture is usually the same as an LLM's: a transformer. What changes is scale, and with it cost: less memory, less compute, faster answers.
 
 A few techniques help them perform well for their size. Better-curated training data, not just more of it. Distillation, where a large model acts as teacher and the small one learns to imitate its answers. Quantization, which stores parameters with fewer bits, meaning less precision, so they take up less space. The practical benefit is that they can run locally: data stays on the device and no connection is needed.
 
-The trade-off: they know less and struggle more with long, complex tasks. They do best on narrow, well-defined jobs, especially after targeted fine-tuning.
+The trade-off: they know less and struggle more with broad, complex tasks. They do best on narrow, well-defined jobs, especially after targeted fine-tuning.
 
 ## In everyday life
 
@@ -52,8 +52,18 @@ The kitchen has a food processor with thirty attachments, and it has a vegetable
 
 ## Common mistake
 
-Common mistake: seeing an SLM as just a worse LLM. On a specific task, with good data and fine-tuning, it can come close to much larger models and sometimes match them. It mainly loses out on general knowledge and long reasoning.
+Common mistake: seeing an SLM as just a worse LLM. On a specific task, with good data and fine-tuning, it can come close to much larger models and sometimes match them. It mainly loses out on general knowledge and broad, complex tasks.
 
 ## Figure caption
 
 A small model can learn from a large one (distillation) and ends up light enough to run on a phone or a laptop.
+
+# Sources
+
+## lu-small-language-models-survey
+- Work: [Small Language Models: Survey, Measurements, and Insights](https://arxiv.org/abs/2409.15790v3)
+- Author: Lu et al.
+- Year: 2024
+- Language: en
+- Note.it: Rassegna sugli SLM da 100 milioni a 5 miliardi di parametri: dati curati e distillazione (sezioni 2.3 e 2.4), memoria e quantizzazione sui dispositivi (sezione 4). Tecnico.
+- Note.en: A survey of SLMs from 100 million to 5 billion parameters: curated data and distillation (sections 2.3 and 2.4), memory and quantization on devices (section 4). Technical.

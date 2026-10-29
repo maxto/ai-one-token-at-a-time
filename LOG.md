@@ -2,6 +2,24 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-28: sources and corrections for the rest of module 2
+
+**What was done.** Max asked to continue with the rest of module 2. Reference sources added to SLM, Multimodal models, Reasoning models, Diffusion models, Encoder vs decoder, Foundation models (one or two each, on the lesson's own topic). Now all 9 lessons of module 2 have sources. Wording corrected in IT and EN where the check found claims stronger than the sources:
+- SLM: architecture "usually ... a transformer". "Long, complex tasks" and "long reasoning" -> "broad, complex tasks".
+- Multimodal: patches and the vision encoder "in many models". Dedicated components for images or speech: "some models add". Common mistake: "in many multimodal models", and going through a caption is possible but loses information.
+- Reasoning: "logic, maths and programming" -> "maths and programming" (no logic benchmark). "Can overcomplicate things" -> "can waste many tokens without improving the answer".
+- Diffusion: "optionally guided by a text description", "in text-guided systems". Fine control "can remain hard".
+- Encoder vs decoder: "almost all of today's chatbots, because ... scales very well" -> "many of today's large language models ... these models improve with scale" (product names left out, writing guide). Trade-off: encoder "not built to generate text", decoder weaker "on tasks that benefit from context in both directions, such as classification" (the search comparison had no source). Common mistake softened: "large decoders do well on many comprehension tasks". The decoder looks at "tokens already written, itself included". Analogy: "when they work together on a translation" (before: you need both).
+- Foundation models: adaptation "usually" costs far less.
+
+**Verified.** Three Claude subagents found and read the sources (PDFs as raw text). Claude applied them, then Codex opened all reader sources and the changed passages (`dist/advisor/m2-rest-request.md`, `m2-rest-answer.md`, local only) and found four more fixes, all applied. ViT paper moved from the Multimodal reader block to the record (off topic). Quiz and figures of module 2 checked for the changed claims: no change needed ("looks only back" in the encoder figure is fine). `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok. Record in `docs/source-audit/m2.md`, section "Rest of the module". HEAD before this entry: 0c3bf9a.
+
+**Decisions.**
+- Done (Max): sources for the rest of module 2, same simple rule as the pilot.
+- Done: all wording corrections above, Claude and Codex agreeing on each.
+- Proposed, not decided: the other modules, module by module.
+- Done (Max, 2026-10-29): commit and push of these changes, in one commit with the notes.
+
 ## 2026-10-28: optional lesson sources, pilot on three module-2 lessons
 
 **What was done.** Max asked for sources on each topic so readers can dig deeper. Proposal reviewed by Codex (`dist/advisor/sources-request.md`, `sources-answer.md`), then a pilot on `#m2-llm`, `#m2-mixture-of-experts`, `#m2-open-weights`. New optional `# Sources` block at the end of a lesson (Work, Author, Year, Language, Note.it, Note.en), written once for both languages. `scripts/build.py` parses and validates it (fields, duplicates, http(s) URL with a host, 1 to 2 sources, repeated or unknown top-level headings). `site/template.html` shows it after the common mistake, links open in a new tab, an EN/IT tag appears when the source language differs from the page. Sources stay out of search and of the time estimate. `scripts/lengths.py` resets on top-level headings and checks only the notes (max 35 words, punctuation). `tests/e2e.mjs` checks the links and notes of `#m2-llm` in both languages and phone overflow on `#m2-open-weights`. Rules in `docs/writing-guide.md` ("Sources") and `AGENTS.md`. Check record in `docs/source-audit/m2.md`.

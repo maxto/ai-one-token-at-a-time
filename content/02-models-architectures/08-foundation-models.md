@@ -16,7 +16,7 @@ Un foundation model è un grande modello addestrato su dati vasti e generici, ch
 
 Il termine **foundation model** è stato proposto nel 2021 da ricercatori di Stanford. Indica un modello addestrato una volta, su enormi quantità di dati generici, quasi sempre con apprendimento auto-supervisionato (self-supervised): il modello impara da compiti ricavati dai dati stessi, come indovinare la parola mancante, senza etichette scritte a mano.
 
-Da questa base si ricavano molte applicazioni: con un prompt, con il fine-tuning o collegandola ad altri strumenti. Gli LLM sono l'esempio più noto, ma esistono foundation model per immagini, audio, video e perfino proteine. Il vantaggio economico è chiaro: l'addestramento costoso si fa una volta, l'adattamento costa molto meno.
+Da questa base si ricavano molte applicazioni: con un prompt, con il fine-tuning o collegandola ad altri strumenti. Gli LLM sono l'esempio più noto, ma esistono foundation model per immagini, audio, video e perfino proteine. Il vantaggio economico è chiaro: l'addestramento costoso si fa una volta, l'adattamento di solito costa molto meno.
 
 Il rovescio: se la base ha difetti, come errori, lacune o pregiudizi presenti nei dati, li ereditano tutte le applicazioni costruite sopra. Una sola fondazione debole indebolisce molte case.
 
@@ -42,7 +42,7 @@ A foundation model is a large model trained on broad, general data, which can th
 
 The term **foundation model** was proposed in 2021 by Stanford researchers. It means a model trained once, on huge amounts of general data, almost always with self-supervised learning: the model learns from tasks derived from the data itself, like guessing a missing word, with no hand-written labels.
 
-Many applications are then built on this base: through a prompt, through fine-tuning, or by connecting it to other tools. LLMs are the best-known example, but there are foundation models for images, audio, video and even proteins. The economics are clear: the expensive training happens once, and adaptation costs far less.
+Many applications are then built on this base: through a prompt, through fine-tuning, or by connecting it to other tools. LLMs are the best-known example, but there are foundation models for images, audio, video and even proteins. The economics are clear: the expensive training happens once, and adaptation usually costs far less.
 
 The flip side: if the base has flaws, such as errors, gaps or biases in its data, every application built on top inherits them. One weak foundation weakens many houses.
 
@@ -57,3 +57,13 @@ Common mistake: using foundation model as a synonym for chatbot or LLM. It is th
 ## Figure caption
 
 A single base, trained once on broad data, is adapted through prompts or fine-tuning to many different applications.
+
+# Sources
+
+## bommasani-foundation-models
+- Work: [On the Opportunities and Risks of Foundation Models](https://arxiv.org/abs/2108.07258v3)
+- Author: Bommasani et al.
+- Year: 2021
+- Language: en
+- Note.it: Il rapporto di Stanford che ha introdotto il termine: definizione, auto-supervisione e difetti ereditati da ogni applicazione nelle sezioni 1 e 1.1. Lungo, ma l'introduzione si legge senza matematica.
+- Note.en: The Stanford report that introduced the term: definition, self-supervision and flaws inherited by every application in sections 1 and 1.1. Long, but the introduction reads without maths.

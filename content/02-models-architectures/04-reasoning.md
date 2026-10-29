@@ -16,9 +16,9 @@ Un modello di ragionamento scrive una serie di passaggi intermedi prima di rispo
 
 Un **modello di ragionamento** è di solito un LLM normale, con la stessa architettura, addestrato in modo diverso. Prima della risposta finale genera una lunga catena di passaggi: prova un'ipotesi, la controlla, torna indietro, riprova. Questa capacità viene rafforzata soprattutto con il reinforcement learning su problemi con soluzione verificabile, come matematica e codice: il modello viene premiato quando arriva al risultato giusto.
 
-L'idea chiave è spendere più calcolo al momento della risposta (test-time compute), non solo durante l'addestramento. Su logica, matematica e programmazione il miglioramento è spesso netto.
+L'idea chiave è spendere più calcolo al momento della risposta (test-time compute), non solo durante l'addestramento. Su matematica e programmazione il miglioramento è spesso netto.
 
-Il prezzo: risposte più lente e più costose, perché anche i passaggi intermedi sono token. Su domande semplici può complicare le cose senza motivo. E il ragionamento mostrato non è per forza il vero processo interno che ha prodotto la risposta.
+Il prezzo: risposte più lente e più costose, perché anche i passaggi intermedi sono token. Su domande semplici può sprecare molti token senza migliorare la risposta. E il ragionamento mostrato non è per forza il vero processo interno che ha prodotto la risposta.
 
 ## Nella vita di tutti i giorni
 
@@ -42,9 +42,9 @@ A reasoning model works through intermediate steps before answering, spending mo
 
 A **reasoning model** is usually an ordinary LLM, with the same architecture, trained differently. Before the final answer it generates a long chain of steps: it tries an idea, checks it, backtracks, tries again. This skill is mostly strengthened with reinforcement learning on problems whose answers can be checked, such as maths and code: the model is rewarded when it reaches the right result.
 
-The key idea is spending more compute at answer time (test-time compute), not only during training. On logic, maths and programming the gain is often large.
+The key idea is spending more compute at answer time (test-time compute), not only during training. On maths and programming the gain is often large.
 
-The cost: slower, pricier answers, because the intermediate steps are tokens too. On simple questions it can overcomplicate things. And the reasoning it shows is not necessarily the actual internal process that produced the answer.
+The cost: slower, pricier answers, because the intermediate steps are tokens too. On simple questions it can waste many tokens without improving the answer. And the reasoning it shows is not necessarily the actual internal process that produced the answer.
 
 ## In everyday life
 
@@ -57,3 +57,21 @@ Common mistake: thinking it is a new kind of architecture, or that the visible r
 ## Figure caption
 
 A standard model answers straight away, while a reasoning model first generates intermediate steps, and pays for them in tokens and time.
+
+# Sources
+
+## deepseek-r1
+- Work: [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948v1)
+- Author: DeepSeek-AI
+- Year: 2025
+- Language: en
+- Note.it: Un modello di ragionamento aperto, addestrato con reinforcement learning su problemi verificabili (sezione 2.2). La sezione 2.2.4 mostra catene più lunghe e il modello che rivede i passaggi. Tecnico.
+- Note.en: An open reasoning model trained with reinforcement learning on checkable problems (section 2.2). Section 2.2.4 shows longer chains and the model revisiting its steps. Technical.
+
+## snell-test-time-compute
+- Work: [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](https://arxiv.org/abs/2408.03314v1)
+- Author: Snell et al.
+- Year: 2024
+- Language: en
+- Note.it: Quanto migliora un modello usando più calcolo al momento della risposta (abstract e introduzione). Il beneficio dipende dalla difficoltà del problema. Tecnico.
+- Note.en: How much a model improves when it uses more compute at answer time (abstract and introduction). The benefit depends on how hard the problem is. Technical.
