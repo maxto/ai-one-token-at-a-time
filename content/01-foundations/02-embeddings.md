@@ -26,7 +26,7 @@ Al supermercato la disposizione non è casuale. La pasta sta vicino ai sughi, i 
 
 ## Errore comune
 
-Pensare che gli embedding funzionino a parole chiave. "Il treno è in ritardo" e "la corsa delle 8 non è ancora arrivata" non hanno parole in comune, eppure risultano vicine. Conta il significato, non le parole uguali.
+Pensare che gli embedding funzionino a parole chiave. "Il treno è in ritardo" e "la corsa delle 8 non è ancora arrivata" non hanno parole chiave in comune, eppure risultano vicine. Conta il significato, non le parole uguali.
 
 ## Didascalia della figura
 
@@ -52,8 +52,26 @@ Supermarket layouts are not random. Pasta sits near the sauces, detergents far f
 
 ## Common mistake
 
-Thinking embeddings work on keywords. "The train is late" and "the 8 o'clock service hasn't arrived yet" share no words, yet they land close together. What counts is meaning, not matching words.
+Thinking embeddings work on keywords. "The train is late" and "the 8 o'clock service hasn't arrived yet" share no keywords, yet they land close together. What counts is meaning, not matching words.
 
 ## Figure caption
 
 Each word becomes a list of numbers, a point in space: words with similar meaning end up close together.
+
+# Sources
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: il capitolo 5 spiega gli embedding, come nascono dal contesto (sezioni 5.2 e 5.5) e i loro pregiudizi (5.8). In parte tecnico.
+- Note.en: Free university textbook: chapter 5 explains embeddings, how they come from context (sections 5.2 and 5.5) and their biases (5.8). Partly technical.
+
+## sentence-bert-reimers
+- Work: [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084v1)
+- Author: Reimers and Gurevych, TU Darmstadt
+- Year: 2019
+- Language: en
+- Note.it: Come ottenere un solo vettore per un'intera frase e confrontarlo con la similarità del coseno (introduzione e sezione 3). Tecnico.
+- Note.en: How to get a single vector for a whole sentence and compare it with cosine similarity (introduction and section 3). Technical.

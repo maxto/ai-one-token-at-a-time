@@ -57,3 +57,21 @@ Reading a similarity score as a percentage of relevance or truth. It is only a g
 ## Figure caption
 
 Cosine similarity looks at the angle between vectors: the document pointing almost the same way as the question scores highest.
+
+# Sources
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: il coseno nel capitolo 5 (sezione 5.4), la ricerca con vettori densi e il RAG nel capitolo 11 (sezioni 11.3 e 11.4). In parte tecnico.
+- Note.en: Free university textbook: the cosine in chapter 5 (section 5.4), dense vector search and RAG in chapter 11 (sections 11.3 and 11.4). Partly technical.
+
+## hnsw-malkov
+- Work: [Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs](https://arxiv.org/abs/1603.09320v4)
+- Author: Malkov and Yashunin
+- Year: 2016
+- Language: en
+- Note.it: Perché con molti vettori si usa la ricerca approssimata: l'introduzione spiega il limite della ricerca esatta e cos'è il recall. Tecnico.
+- Note.en: Why approximate search is used with many vectors: the introduction explains the limit of exact search and what recall is. Technical.

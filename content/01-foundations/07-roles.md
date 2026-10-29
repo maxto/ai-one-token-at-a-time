@@ -57,3 +57,21 @@ Treating the system prompt as a security wall. It is text the model gives more w
 ## Figure caption
 
 Messages and their roles become one single text, separated by special tokens, and the model continues from where the assistant's turn begins.
+
+# Sources
+
+## hf-chat-templates
+- Work: [Chat templates (Transformers documentation)](https://huggingface.co/docs/transformers/main/en/chat_templating)
+- Author: Hugging Face
+- Year: undated
+- Language: en
+- Note.it: Documentazione ufficiale: come i messaggi con i loro ruoli diventano un'unica sequenza di token, e come precompilare la risposta dell'assistente. Tecnico.
+- Note.en: Official documentation: how messages with their roles become one token sequence, and how to prefill the assistant reply. Technical.
+
+## instruction-hierarchy-wallace
+- Work: [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](https://arxiv.org/abs/2404.13208v1)
+- Author: Wallace et al., OpenAI
+- Year: 2024
+- Language: en
+- Note.it: Perché istruzioni di sistema e messaggi utente non dovrebbero avere la stessa priorità, e come addestrare un modello a rispettare quest'ordine (introduzione, sezioni 2 e 3). Tecnico.
+- Note.en: Why system instructions and user messages should not share the same priority, and how to train a model to respect that order (introduction, sections 2 and 3). Technical.

@@ -22,7 +22,7 @@ Il compromesso: bassa per estrarre dati, classificare o scrivere codice, più al
 
 ## Nella vita di tutti i giorni
 
-Nella trattoria sotto casa ordini quasi sempre la carbonara, qualche volta l'amatriciana, di rado il piatto del giorno. Con la temperatura bassa prendi sempre la carbonara: sicuro, ma monotono. Con la temperatura alta ogni tanto ordini la trippa che non hai mai provato. Può essere una scoperta o un disastro. Il menu è lo stesso. Cambia quanto peso dai alle abitudini.
+Pensa alla riproduzione casuale del telefono, se tenesse conto di quante volte hai ascoltato ogni canzone. A temperatura bassa tornano ancora più spesso le solite preferite: vai sul sicuro, ma ti stufi presto. A temperatura alta escono anche i pezzi che di solito salti. Magari riscopri una canzone dimenticata, magari parte proprio quella che non sopporti. La playlist resta la stessa: cambia solo quanto pesano le tue abitudini.
 
 ## Errore comune
 
@@ -48,7 +48,7 @@ The trade-off: keep it low for extracting data, classifying or writing code. Rai
 
 ## In everyday life
 
-At your local trattoria you nearly always order the carbonara, sometimes the amatriciana, rarely the daily special. At low temperature you get the carbonara every time: safe, but dull. At high temperature you now and then order the tripe you have never tried. It might be a discovery or a disaster. The menu stays the same. What changes is how much weight your habits get.
+Picture a shuffle on your phone that favours the songs you play most. Turn the temperature down and your usual favourites come round even more often: a safe bet, but they soon wear thin. Turn it up and the tracks you normally skip start to play. You might rediscover a song you had forgotten, or land on the one you can't stand. The playlist never changes. Only the weight of your habits does.
 
 ## Common mistake
 
@@ -57,3 +57,13 @@ Believing a high temperature makes the model smarter or truly creative. It adds 
 ## Figure caption
 
 Same scores, two temperatures: low makes the top token almost certain, high gives the others more of a chance.
+
+# Sources
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: come il modello sceglie il token e come la temperatura rimodella le probabilità, nel capitolo 7 (sezioni 7.6.2 e 7.6.3). In parte tecnico.
+- Note.en: Free university textbook: how the model picks a token and how temperature reshapes the probabilities, in chapter 7 (sections 7.6.2 and 7.6.3). Partly technical.

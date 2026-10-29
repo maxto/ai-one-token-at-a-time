@@ -57,3 +57,21 @@ Thinking the model "remembers" past conversations. It only knows what is in the 
 ## Figure caption
 
 Rules, chat, documents and the reply must all fit in one window of tokens: whatever does not fit gets cut.
+
+# Sources
+
+## lost-in-the-middle-liu
+- Work: [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172v3)
+- Author: Liu et al.
+- Year: 2023
+- Language: en
+- Note.it: Mostra che i modelli usano peggio le informazioni al centro di un contesto lungo (sezione 2.3, figura 5). Tecnico.
+- Note.en: Shows that models use information in the middle of a long context less well (section 2.3, figure 5). Technical.
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: la finestra di contesto e il costo dell'attenzione, che cresce con il quadrato della lunghezza, nel capitolo 7 (sezioni 7.1 e 7.3). In parte tecnico.
+- Note.en: Free university textbook: the context window and the cost of attention, which grows with the square of the length, in chapter 7 (sections 7.1 and 7.3). Partly technical.

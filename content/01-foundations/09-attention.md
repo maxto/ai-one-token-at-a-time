@@ -57,3 +57,21 @@ Thinking the attention weights explain why the model gave a certain answer. They
 ## Figure caption
 
 In this illustrative diagram, "note" draws more information from "violin" and "played", the words that help pick out its musical sense.
+
+# Sources
+
+## transformer-vaswani
+- Work: [Attention Is All You Need](https://arxiv.org/abs/1706.03762v7)
+- Author: Vaswani et al.
+- Year: 2017
+- Language: en
+- Note.it: Il paper originale del transformer: query, key, value e pesi nella sezione 3.2, teste multiple nella 3.2.2, costo per strato nella tabella 1. Tecnico.
+- Note.en: The original transformer paper: queries, keys, values and weights in section 3.2, multiple heads in 3.2.2, cost per layer in table 1. Technical.
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: l'attenzione spiegata passo per passo, con attenzione causale, teste multiple e costo quadratico, nel capitolo 7 (sezioni 7.1 e 7.3). In parte tecnico.
+- Note.en: Free university textbook: attention step by step, with causal attention, multiple heads and quadratic cost, in chapter 7 (sections 7.1 and 7.3). Partly technical.

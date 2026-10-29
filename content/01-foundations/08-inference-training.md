@@ -57,3 +57,13 @@ Thinking the model learns while you chat with it. During inference its parameter
 ## Figure caption
 
 In training every error adjusts the parameters, over a vast number of steps, while in inference the parameters stay fixed and just produce the answer.
+
+# Sources
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: come si addestra un modello (sezione 1.6) e cos'è l'inferenza, con i parametri che non cambiano (sezione 1.7), nel capitolo 1. In parte tecnico.
+- Note.en: Free university textbook: how a model is trained (section 1.6) and what inference is, with parameters that do not change (section 1.7), in chapter 1. Partly technical.

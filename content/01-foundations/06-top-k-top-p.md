@@ -18,7 +18,7 @@ Anche con una temperatura moderata, migliaia di token poco probabili, messi insi
 
 **Top-k** tiene solo i k token più probabili, per esempio 40, e scarta gli altri. Top-p, detto anche nucleus sampling, tiene i token più probabili finché la loro probabilità sommata raggiunge p, per esempio 0,9. La differenza conta: top-p si adatta. Se il modello è sicuro, uno o due token bastano a raggiungere 0,9. Se è incerto, entrano molti candidati. Top-k invece ne tiene sempre lo stesso numero.
 
-Il limite: queste impostazioni interagiscono tra loro e con la temperatura. Di solito conviene cambiarne una sola alla volta, e alcuni fornitori sconsigliano di modificare insieme temperatura e top-p. Non rendono il modello più preciso: evitano solo le scelte peggiori.
+Il limite: queste impostazioni interagiscono tra loro e con la temperatura. Di solito conviene cambiarne una sola alla volta, e alcuni fornitori sconsigliano di modificare insieme temperatura e top-p. Non aggiungono conoscenza al modello: evitano solo le scelte peggiori.
 
 ## Nella vita di tutti i giorni
 
@@ -44,7 +44,7 @@ Even at a moderate temperature, thousands of unlikely tokens add up to real weig
 
 **Top-k** keeps only the k most likely tokens, say 40, and drops the rest. Top-p, also called nucleus sampling, keeps the most likely tokens until their combined probability reaches p, say 0.9. The difference matters: top-p adapts. When the model is confident, one or two tokens already reach 0.9. When it is unsure, many candidates get in. Top-k always keeps the same number.
 
-The limit: these settings interact with each other and with temperature. It is usually best to change one at a time, and some providers advise against adjusting temperature and top-p together. They do not make the model more accurate. They only rule out the worst choices.
+The limit: these settings interact with each other and with temperature. It is usually best to change one at a time, and some providers advise against adjusting temperature and top-p together. They do not add knowledge to the model. They only rule out the worst choices.
 
 ## In everyday life
 
@@ -57,3 +57,21 @@ Thinking top-k and top-p pick the best token. They only decide who gets into the
 ## Figure caption
 
 Top-p 0.9 keeps the most likely tokens up to 90%, just one when the model is confident and six when it is unsure, while top-k 3 always keeps three.
+
+# Sources
+
+## nucleus-sampling-holtzman
+- Work: [The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751v2)
+- Author: Holtzman et al.
+- Year: 2019
+- Language: en
+- Note.it: L'articolo che introduce il top-p (nucleus sampling): spiega la coda inaffidabile delle probabilità e i limiti di un k fisso (sezioni 1, 3.1 e 3.2). Tecnico.
+- Note.en: The paper that introduces top-p (nucleus sampling): it explains the unreliable probability tail and the limits of a fixed k (sections 1, 3.1 and 3.2). Technical.
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: top-k e top-p spiegati passo per passo nel capitolo 7 (sezione 7.6.4). In parte tecnico.
+- Note.en: Free university textbook: top-k and top-p explained step by step in chapter 7 (section 7.6.4). Partly technical.

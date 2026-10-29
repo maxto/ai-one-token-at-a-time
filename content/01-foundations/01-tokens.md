@@ -57,3 +57,21 @@ Thinking a token is a word. A token can be a whole word, part of a word or a pun
 ## Figure caption
 
 The sentence is cut into tokens, often with the space attached, and each token becomes a vocabulary number.
+
+# Sources
+
+## slp3-jurafsky-martin
+- Work: [Speech and Language Processing, 3rd edition draft](https://web.stanford.edu/~jurafsky/slp3/)
+- Author: Daniel Jurafsky and James H. Martin
+- Year: 2026
+- Language: en
+- Note.it: Manuale universitario gratuito: il capitolo 2 spiega la tokenizzazione in sottoparole e l'algoritmo BPE (sezione 2.4). In parte tecnico.
+- Note.en: Free university textbook: chapter 2 explains subword tokenization and the BPE algorithm (section 2.4). Partly technical.
+
+## sennrich-bpe
+- Work: [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909v5)
+- Author: Sennrich et al., University of Edinburgh
+- Year: 2015
+- Language: en
+- Note.it: L'articolo che ha introdotto il BPE per spezzare le parole rare in sottoparole (sezione 3.2). Tecnico.
+- Note.en: The paper that introduced BPE to split rare words into subwords (section 3.2). Technical.

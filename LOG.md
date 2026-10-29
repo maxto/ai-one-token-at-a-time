@@ -2,6 +2,23 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-29: sources for module 1, and the rule "general errors only"
+
+**What was done.** Max asked to do the same source work for the other modules, starting with module 1. All 9 lessons of module 1 now have a `# Sources` block (one or two reference sources on the lesson's topic): SLP3 (Jurafsky and Martin) in eight lessons, plus Sennrich (BPE), Sentence-BERT, HNSW, Lost in the Middle, Holtzman (top-p), Hugging Face chat templates, Wallace (instruction hierarchy), Vaswani. Text changes, IT and EN:
+- Top-k and top-p: "They do not make the model more accurate" -> "They do not add knowledge to the model" (contradicted by SLP3 sec. 7.6: favouring probable tokens gives text rated more accurate and factual).
+- Embeddings, common mistake: "share no words" -> "share no keywords" (the examples share "the" and "è").
+- Temperature, everyday life: the trattoria analogy said low temperature means "the carbonara every time", which is temperature 0. Rewritten as a shuffle weighted by how often you play each song, written natively in Italian and in English, not translated.
+- Context-window source note: quadratic cost cited at SLP3 sec. 7.1 and 7.3 (it is in 7.3).
+
+**Verified.** Three Claude subagents found and read the sources (reports `dist/advisor/m1-a.md`, `m1-b.md`, `m1-c.md`). Claude rechecked titles, authors, years and versions with WebSearch, and the SLP3 chapter titles and cited section headings in the Stanford PDFs (draft of 2026-08-19). Codex opened all reader sources and SLP3 chapters (`dist/advisor/m1-answer.md`), then checked the two late changes (`m1-followup-answer.md`): OK. `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok. Record in `docs/source-audit/m1.md`. HEAD before this entry: 8ed6370.
+
+**Decisions.**
+- Done (Max): change the text only for an important error on the general case. No caveats drawn from particular cases (one study, one provider, one API: "some services charge per character", "the API returns an error", "studies on earlier models"). The course states the general, widely published view, with one or two sources that show it is correct. This replaces the stricter habit of modules 1 and 2 of narrowing every claim a source supports only partly. The subagents' and Codex's findings are filtered by this rule. The other wording hedges first applied to module 1 were reverted and are recorded as "not applied" in `docs/source-audit/m1.md`. Module 2 corrections stay as they are (not reopened).
+- Done (Max): Italian is written natively, with Italian context, not as a literal translation of the English. Example rewritten for Temperature on this basis.
+- Done: of Codex's eight points, three applied (the source note, "keywords", the temperature analogy, rewritten) and five rejected as edge cases: top-k-top-p low-probability wording, "at least 90%", the single-candidate case, "perpendicular means unrelated", "compare everything with everything", "it only knows what is in the window", quiz 1 rewording, "causal self-attention".
+- Done: Anthropic's context-window docs and the Thinking Machines nondeterminism blog kept out of the reader blocks (a vendor page that changes, a lab blog on a side claim).
+- Proposed, Max to decide: commit (and push) of module 1. Then modules 6 and 8 next (sources already waiting), then the rest in order.
+
 ## 2026-10-28: sources and corrections for the rest of module 2
 
 **What was done.** Max asked to continue with the rest of module 2. Reference sources added to SLM, Multimodal models, Reasoning models, Diffusion models, Encoder vs decoder, Foundation models (one or two each, on the lesson's own topic). Now all 9 lessons of module 2 have sources. Wording corrected in IT and EN where the check found claims stronger than the sources:
