@@ -2,6 +2,16 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-29: module 8 pushed, notes closed
+
+**What was done.** Module 8 sources committed and pushed in 578b298 with Max's go-ahead of 2026-10-29. HANDOFF updated for the closure (Closed line, module 8 marked done, next step module 3).
+
+**Verified.** Pages deploy of 578b298 succeeded. `git log 578b298..HEAD` empty before the notes commit.
+
+**Decisions.**
+- Done (Max, 2026-10-29): commit and push of module 8, the decision proposed in the module-8 entry below.
+- Done: an earlier draft of this closure rewrote that "Proposed" line in the module-8 entry. Restored, the outcome goes in this new entry, as the LOG rule says.
+
 ## 2026-10-29: sources for module 8
 
 **What was done.** Next step from HANDOFF (module 8 after 6, approved earlier the same day). All 7 lessons of module 8 now have a `# Sources` block: Ji et al. hallucination survey (Hallucinations, the side source waiting since the module-2 audit), Cheng et al. "Dated Data" (Knowledge cutoff), Kadavath et al. (Confidence), Liu et al. on generative search engine citations and Agrawal et al. on fabricated references (Sources and citations), Sharma et al. (Sycophancy), Weidinger et al. and the Gallegos et al. survey (Bias), Huang et al. on self-correction and NIST AI 600-1 (Verification). No lesson text changed. Two of Claude's source notes corrected after Codex: Kadavath (calibration depends on the question format, temperature tuning restores it in the RLHF models studied), Huang (the paper tests intrinsic correction on reasoning tasks, external tools are discussed).
