@@ -2,6 +2,15 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-30: module 10 pushed, sources work closed
+
+**What was done.** Module 10 sources committed in 1b8d44a (with the module-9 closure notes) and pushed, on Max's go-ahead of 2026-10-30. Codex chat cleared at task close (its answer is in `dist/advisor/m10-answer.md`). The open item "Sources for modules 3 to 10" leaves HANDOFF as done: all 86 lessons have sources, records in `docs/source-audit/` (m1 to m10).
+
+**Verified.** Pages deploy of 1b8d44a succeeded. The live page contains the new C2PA source.
+
+**Decisions.**
+- Done (Max, 2026-10-30): commit and push of module 10, proposed in the module-10 entry below.
+
 ## 2026-10-30: sources for module 10
 
 **What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 7 lessons of module 10 now have a `# Sources` block: ViT and Anthropic "Vision" (Image understanding), Diffusers "Reproducibility" and Imagen (Text to image), GLIDE and Diffusers "Inpainting" (Image editing), IP-Adapter and ControlNet (Reference images), Whisper and VALL-E (Speech), Ho et al. "Video Diffusion Models" and "Align your Latents" (Video generation), the C2PA specification 2.5 and Stable Signature (Provenance). No lesson text changed. Record in `docs/source-audit/m10.md` (new). Brief, subagent reports, Codex request and answer `dist/advisor/m10-*.md` (local only). With this, every lesson of the course has sources.
