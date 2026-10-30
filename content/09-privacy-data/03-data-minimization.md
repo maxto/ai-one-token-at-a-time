@@ -57,3 +57,13 @@ People think more context always gives better answers, so they paste everything.
 ## Figure caption
 
 Before sending, data the task does not need is removed or replaced with placeholders, so only what is necessary reaches the model.
+
+# Sources
+
+## ec-gdpr-principles
+- Work: [Principles of the GDPR](https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/principles-gdpr_en)
+- Author: European Commission
+- Year: undated
+- Language: en
+- Note.it: La Commissione europea spiega i principi del GDPR, tra cui la minimizzazione: dati adeguati, pertinenti e limitati a quanto serve allo scopo, con i rimandi agli articoli.
+- Note.en: The European Commission explains the GDPR principles, including data minimisation: data adequate, relevant and limited to what the purpose needs, with references to the articles.

@@ -57,3 +57,21 @@ People think "delete" makes data vanish instantly and everywhere. It usually van
 ## Figure caption
 
 After deletion the visible chat disappears at once, backups and logs expire later, while whatever went into the model's weights stays.
+
+# Sources
+
+## extracting-training-data
+- Work: [Extracting Training Data from Large Language Models](https://arxiv.org/abs/2012.07805v2)
+- Author: Carlini et al.
+- Year: 2020
+- Language: en
+- Note.it: Mostra che da un modello linguistico si possono estrarre testi identici a quelli di addestramento, compresi nomi, numeri di telefono e indirizzi email (riassunto e sezione 1). Tecnico.
+- Note.en: Shows that exact texts from a language model's training data can be extracted, including names, phone numbers and email addresses (abstract and section 1). Technical.
+
+## machine-unlearning
+- Work: [Machine Unlearning](https://arxiv.org/abs/1912.03817v3)
+- Author: Bourtoule et al.
+- Year: 2019
+- Language: en
+- Note.it: Spiega perché far dimenticare dati a un modello già addestrato è difficile e perché riaddestrarlo da zero è il metodo semplice ma costoso (introduzione). Tecnico.
+- Note.en: Explains why making a trained model forget data is hard, and why retraining it from scratch is the simple but costly method (introduction). Technical.

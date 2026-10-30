@@ -2,6 +2,27 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-29: sources for module 9
+
+**What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 7 lessons of module 9 now have a `# Sources` block: RFC 8446 TLS 1.3 and OpenAI "Data controls" (A message's journey), two Anthropic help pages on retention and memory (History, memory and training), European Commission "Principles of the GDPR" (Data minimisation), Sweeney 2000 and Narayanan and Shmatikov (Anonymisation), Apple's 2025 foundation-models report (Local or cloud), RFC 6749 OAuth 2.0 (Permissions and connectors), Carlini et al. and Bourtoule et al. (Retention and deletion). No lesson text changed. Record in `docs/source-audit/m9.md` (new). Brief, subagent reports, Codex request and answer `dist/advisor/m9-*.md` (local only).
+
+**Verified.** Three Claude subagents found and read the sources and found no important general error. Claude fetched every page with curl and found the cited passages, checked the four papers through the arXiv API and on the PDF first pages, and read the Sweeney PDF. EUR-Lex blocks automated fetches: a subagent's retry with a spoofed user agent was denied by the permission system and not repeated, so the GDPR claims were checked on two European Commission pages. Codex opened all 11 reader sources: all OK, no note fix. It resolved the memory-page doubt (the contrary sentence is about legacy memory) and closed three evidence gaps (offline on-device models, least privilege, backup erasure), all checked by Claude. Memory page linked at its canonical URL after Codex. `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok. No figure changed, so no `npm run figs`. HEAD before this entry: 5a33342.
+
+**Decisions.**
+- Done (Claude, Codex agreed): Commission "Principles of the GDPR" as the lesson-3 source instead of EUR-Lex, which could not be read.
+- Done (Claude, Codex agreed): Apple's report alone for Local or cloud, the Ollama FAQ dropped as a product FAQ.
+- Not applied (Claude, Codex agreed): the Anonymisation lesson says "public signed reviews" where the Netflix study matched public IMDb ratings. Narrower, the general point holds. The source note uses the paper's wording.
+- Proposed: commit module 9 together with the module-7 closure notes, then push. Waiting for Max's go-ahead.
+
+## 2026-10-29: module 7 pushed, module 9 started
+
+**What was done.** Module 7 sources committed in 5a33342 (with the module-5 closure notes) and pushed, on Max's go-ahead of 2026-10-29. Codex chat cleared at task close (its answer is in `dist/advisor/m7-answer.md`). Module 9 started on the same go-ahead: brief `dist/advisor/m9-brief.md` (the module-7 brief for module 9), three subagents launched.
+
+**Verified.** Pages deploy of 5a33342 succeeded. The live page contains the new OWASP source.
+
+**Decisions.**
+- Done (Max, 2026-10-29): commit and push of module 7, proposed in the module-7 entry below.
+
 ## 2026-10-29: sources for module 7
 
 **What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 9 lessons of module 7 now have a `# Sources` block: Anthropic and OpenAI "Prompt caching" (Prompt caching), Kwon et al. vLLM/PagedAttention (KV cache), Anthropic "Streaming Messages" and OpenAI "Streaming API responses" (Streaming), OpenAI "Latency optimization" (Cost and latency), OpenTelemetry "Traces" (Observability), Llama Guard and NeMo Guardrails (Guardrails), Greshake et al. and OWASP LLM01:2025 (Prompt injection), Zheng et al. LLM-as-a-judge and Miller error bars (Evals), Anthropic "Choosing the right model" (Choosing a model). No lesson text changed. Record in `docs/source-audit/m7.md` (new). Brief, subagent reports, Codex request and answer `dist/advisor/m7-*.md` (local only).

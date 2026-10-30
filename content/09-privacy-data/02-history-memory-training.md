@@ -57,3 +57,21 @@ People believe deleting a conversation deletes everything that came from it. His
 ## Figure caption
 
 A conversation can take three different paths, history, memory and training, and each has its own switch.
+
+# Sources
+
+## anthropic-data-retention
+- Work: [How long do you store my data?](https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: Che cosa succede a una chat cancellata, per quanto resta sui server e quando entra nell'addestramento (sezioni "Controlling Your Chats" e "If You Allow Us to Use Your Data").
+- Note.en: What happens to a deleted chat, how long it stays on the servers and when it goes into training (sections "Controlling Your Chats" and "If You Allow Us to Use Your Data").
+
+## anthropic-chat-memory
+- Work: [Use Claude's chat search and memory to build on previous context](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: Come un assistente salva la memoria, come vederla e cancellarla, e perché cancellare una chat non rimuove i ricordi già salvati (sezione "Data retention and privacy").
+- Note.en: How an assistant saves memory, how to view and delete it, and why deleting a chat does not remove memories already saved (section "Data retention and privacy").

@@ -57,3 +57,13 @@ People think the assistant reads only what they ask about. With a connector swit
 ## Figure caption
 
 Each connector opens only the doors you authorise: reading is one permission, sending or editing is another, riskier one.
+
+# Sources
+
+## oauth-2
+- Work: [The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749)
+- Author: Hardt, IETF
+- Year: 2012
+- Language: en
+- Note.it: Lo standard dietro molti connettori: un'applicazione riceve un token con permessi limitati, senza conoscere la tua password (sezioni 1 e 3.3). Tecnico.
+- Note.en: The standard behind many connectors: an app receives a token with limited permissions, without learning your password (sections 1 and 3.3). Technical.

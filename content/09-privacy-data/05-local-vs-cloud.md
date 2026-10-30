@@ -57,3 +57,13 @@ People think an app with a local model must be private. The model can run on the
 ## Figure caption
 
 The local model processes the prompt on the device, the cloud one on remote servers, while privacy also depends on the app.
+
+# Sources
+
+## apple-foundation-models-2025
+- Work: [Apple Intelligence Foundation Language Models: Tech Report 2025](https://arxiv.org/abs/2507.13575v3)
+- Author: Apple
+- Year: 2025
+- Language: en
+- Note.it: Un caso reale con due modelli: uno compatto e quantizzato che gira sul dispositivo e uno più grande sui server dell'azienda (riassunto e introduzione). Tecnico.
+- Note.en: A real case with two models: a compact, quantized one that runs on the device and a larger one on the company's servers (abstract and introduction). Technical.

@@ -57,3 +57,21 @@ People think swapping the name for a code or "Mr X" makes data anonymous. If rar
 ## Figure caption
 
 Each detail alone describes many people, but a combination of a few details can narrow the group down to a single person.
+
+# Sources
+
+## sweeney-simple-demographics
+- Work: [Simple Demographics Often Identify People Uniquely](https://dataprivacylab.org/projects/identifiability/paper1.pdf)
+- Author: Sweeney, Carnegie Mellon University
+- Year: 2000
+- Language: en
+- Note.it: Lo studio sul censimento statunitense del 1990: codice postale, sesso e data di nascita bastano a rendere probabilmente unica gran parte della popolazione (riassunto).
+- Note.en: The study on the 1990 US census: ZIP code, sex and date of birth are enough to make most of the population probably unique (abstract).
+
+## netflix-deanonymization
+- Work: [How To Break Anonymity of the Netflix Prize Dataset](https://arxiv.org/abs/cs/0610105v2)
+- Author: Narayanan and Shmatikov, University of Texas at Austin
+- Year: 2006
+- Language: en
+- Note.it: Come un archivio di voti ai film pubblicato senza nomi è stato ricondotto ad alcune persone, confrontandolo con i voti pubblici su IMDb (riassunto e introduzione). Tecnico.
+- Note.en: How a film-ratings dataset published without names was traced back to some people by matching it with public ratings on IMDb (abstract and introduction). Technical.

@@ -57,3 +57,21 @@ People think "encrypted" means nobody can read the message. Encryption in transi
 ## Figure caption
 
 The message travels encrypted to the service, where the model reads it in plain text and a copy may end up in history, logs or training data.
+
+# Sources
+
+## tls-1-3
+- Work: [The Transport Layer Security (TLS) Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446)
+- Author: Rescorla, IETF
+- Year: 2018
+- Language: en
+- Note.it: Lo standard della cifratura in transito: protegge il contenuto tra i due capi della connessione, ma non nasconde per esempio quanti dati passano (sezione 1 e appendice E.3). Tecnico.
+- Note.en: The standard for encryption in transit: it protects the content between the two ends of the connection, but does not hide, for example, how much data passes (section 1 and appendix E.3). Technical.
+
+## openai-data-controls
+- Work: [Data controls in the OpenAI platform](https://developers.openai.com/api/docs/guides/your-data)
+- Author: OpenAI
+- Year: undated
+- Language: en
+- Note.it: Un fornitore spiega quali dati conserva oltre alla risposta, per esempio i registri per il controllo degli abusi, tenuti di norma fino a 30 giorni.
+- Note.en: A provider explains which data it keeps beyond the answer, for example abuse monitoring logs, kept by default for up to 30 days.
