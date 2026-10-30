@@ -57,3 +57,21 @@ Believing that the same prompt must produce the same image. The request leaves m
 ## Figure caption
 
 The same prompt guides two paths from noise to image, producing different results when the seed changes.
+
+# Sources
+
+## diffusers-reproducibility
+- Work: [Reproducibility (Diffusers documentation)](https://huggingface.co/docs/diffusers/main/en/using-diffusers/reusing_seeds)
+- Author: Hugging Face
+- Year: undated
+- Language: en
+- Note.it: La documentazione di una libreria per la diffusione: il seed fissa il rumore iniziale, ma nemmeno con lo stesso seed un risultato identico è garantito.
+- Note.en: The documentation of a diffusion library: the seed fixes the initial noise, but even the same seed does not guarantee an identical result.
+
+## imagen-saharia
+- Work: [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](https://arxiv.org/abs/2205.11487v1)
+- Author: Saharia et al., Google Research
+- Year: 2022
+- Language: en
+- Note.it: Un generatore di immagini a diffusione guidato dal testo: un encoder trasforma il testo negli embedding che orientano il passaggio dal rumore all'immagine (sezioni 2.1 e 2.2). Tecnico.
+- Note.en: A text-guided diffusion image generator: an encoder turns the text into the embeddings that steer the path from noise to image (sections 2.1 and 2.2). Technical.

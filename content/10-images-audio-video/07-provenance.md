@@ -57,3 +57,21 @@ Believing that “no watermark” means “authentic photo”, or that a detecto
 ## Figure caption
 
 A watermark and provenance offer information about origin, while a detector provides an estimate that needs further checking.
+
+# Sources
+
+## c2pa-specification
+- Work: [Content Credentials: C2PA Technical Specification, version 2.5](https://spec.c2pa.org/specifications/specifications/2.5/specs/C2PA_Specification.html)
+- Author: C2PA
+- Year: 2026
+- Language: en
+- Note.it: Lo standard aperto per la provenienza: dichiarazioni firmate legate al file, che mostrano se sono state alterate ma non se sono vere (sezioni 1.2 e 13, sul modello di fiducia). Tecnico.
+- Note.en: The open standard for provenance: signed statements bound to the file, which show whether they were tampered with but not whether they are true (sections 1.2 and 13, on the trust model). Technical.
+
+## stable-signature
+- Work: [The Stable Signature: Rooting Watermarks in Latent Diffusion Models](https://arxiv.org/abs/2303.15435v2)
+- Author: Fernandez et al.
+- Year: 2023
+- Language: en
+- Note.it: Una filigrana invisibile inserita dal generatore di immagini, con la sua resistenza a ritagli e compressione e gli attacchi che la rimuovono (introduzione e sezione 7). Tecnico.
+- Note.en: An invisible watermark inserted by the image generator, with its resistance to cropping and compression and the attacks that remove it (introduction and section 7). Technical.

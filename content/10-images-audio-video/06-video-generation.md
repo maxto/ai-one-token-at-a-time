@@ -57,3 +57,21 @@ Thinking a video is just a string of beautiful images. Those images also need co
 ## Figure caption
 
 The cup keeps its handle in the first frames but changes it in the last, illustrating inconsistency over time.
+
+# Sources
+
+## video-diffusion-models
+- Work: [Video Diffusion Models](https://arxiv.org/abs/2204.03458v2)
+- Author: Ho et al., Google
+- Year: 2022
+- Language: en
+- Note.it: Un modello a diffusione per il video che estende quello per immagini con un'attenzione sul tempo, perché fotogrammi belli da soli possono non essere coerenti fra loro (sezioni 3 e 3.1). Tecnico.
+- Note.en: A diffusion model for video that extends the image one with attention over time, because frames that look good alone may not be coherent with each other (sections 3 and 3.1). Technical.
+
+## align-your-latents
+- Work: [Align your Latents: High-Resolution Video Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2304.08818v2)
+- Author: Blattmann et al.
+- Year: 2023
+- Language: en
+- Note.it: Come un modello per immagini diventa un generatore di video coerenti nel tempo, e perché il video richiede molto calcolo (introduzione e figura 2). Tecnico.
+- Note.en: How an image model becomes a generator of videos consistent over time, and why video needs a lot of computation (introduction and figure 2). Technical.

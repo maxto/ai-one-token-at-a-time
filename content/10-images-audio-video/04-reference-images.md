@@ -57,3 +57,21 @@ Assuming that attaching a photo means “copy everything except what I mention�
 ## Figure caption
 
 An appearance and style reference and a pose guide feed into generation alongside the prompt.
+
+# Sources
+
+## ip-adapter
+- Work: [IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models](https://arxiv.org/abs/2308.06721v1)
+- Author: Ye et al., Tencent AI Lab
+- Year: 2023
+- Language: en
+- Note.it: Come un'immagine di riferimento guida un modello a diffusione insieme al testo, trasmettendo contenuto e stile (introduzione e sezione 3). Tecnico.
+- Note.en: How a reference image guides a diffusion model alongside the text, passing on content and style (introduction and section 3). Technical.
+
+## controlnet
+- Work: [Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543v3)
+- Author: Zhang et al., Stanford University
+- Year: 2023
+- Language: en
+- Note.it: Come bordi, profondità o posa di una persona diventano una guida per la struttura dell'immagine generata (introduzione e figura 1). Tecnico.
+- Note.en: How edges, depth or a person's pose become a guide for the structure of the generated image (introduction and figure 1). Technical.

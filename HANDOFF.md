@@ -1,6 +1,6 @@
 # Handoff
 
-Closed: 2026-10-29 18:21 CET. Last operation: module-9 sources applied after subagents, Claude's web check and Codex review (all OK, no text fix), not committed yet. HEAD verified before this update: 5a33342.
+Closed: 2026-10-30 08:47 CET. Last operation: module-10 sources applied after subagents, Claude's web check and Codex review (one note locator fixed, no text fix), not committed yet. HEAD verified before this update: 79082ab.
 
 ## Goal
 
@@ -23,12 +23,13 @@ The course is done for now, not closed: 10 modules, 86 lessons, live at https://
 - 2026-10-29, module 4: sources for all 9 lessons, no lesson text change. Codex's "same embedding space" correction rejected by Max (exception, see LOG.md). Record `docs/source-audit/m4.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m4-*.md` (local only). Committed and pushed in fefef7b, Pages deploy succeeded (verified 2026-10-29).
 - 2026-10-29, module 5: sources for all 11 lessons, no lesson text change, Codex OK on all 14 entries. Record `docs/source-audit/m5.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m5-*.md` (local only). Committed and pushed in c71a9ab, Pages deploy succeeded (verified 2026-10-29).
 - 2026-10-29, module 7: sources for all 9 lessons, no lesson text change, three note fixes after Codex. Record `docs/source-audit/m7.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m7-*.md` (local only). Committed and pushed in 5a33342, Pages deploy succeeded (verified 2026-10-29).
-- 2026-10-29, module 9: sources for all 7 lessons, no lesson text change, Codex OK on all 11 entries. Record `docs/source-audit/m9.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m9-*.md` (local only). Not committed: waiting for Max's go-ahead to commit and push (with the module-7 closure notes).
+- 2026-10-29, module 9: sources for all 7 lessons, no lesson text change, Codex OK on all 11 entries. Record `docs/source-audit/m9.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m9-*.md` (local only). Committed and pushed in 79082ab, Pages deploy succeeded (verified 2026-10-30).
+- 2026-10-30, module 10: sources for all 7 lessons, no lesson text change, one note-locator fix after Codex. Record `docs/source-audit/m10.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-30. Codex files `dist/advisor/m10-*.md` (local only). Not committed: waiting for Max's go-ahead to commit and push (with the module-9 closure notes).
 - Rule from 2026-10-29 (LOG.md): change text only for important errors on the general case, no caveats from edge cases. Italian written natively, not translated from English.
 
 ## Open items
 
-- Sources for modules 3 to 10, module by module, same method (subagents, Claude WebSearch check, Codex review), filtered by the general-errors rule. Status: approved by Max on 2026-10-29. Done: 1 to 9 (9 not committed yet). Next: 10, the last one.
+- Sources for modules 3 to 10, module by module, same method (subagents, Claude WebSearch check, Codex review), filtered by the general-errors rule. Status: approved by Max on 2026-10-29. Done: all 10 modules (10 not committed yet). The item closes when module 10 is pushed and the deploy is verified.
 
 - Max reviews the new lessons online. Status: to check. Who: Max.
 - Max studies the course himself. Status: ongoing since 2026-10-09.
@@ -46,4 +47,4 @@ The next focus is AI applied to finance, as Macroasset content, not in this repo
 
 ## Next step
 
-Max's go-ahead to commit and push module 9. Then module 10, same method (brief `dist/advisor/m7-brief.md` as the model): three subagents, Claude's own curl check of every page (WebFetch only summarises) and the arXiv API, then Codex, filtered by the general-errors rule.
+Max's go-ahead to commit and push module 10. Then verify the Pages deploy and the new source on the live page, clear the Codex chat, and close the sources item.

@@ -2,6 +2,26 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-10-30: sources for module 10
+
+**What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 7 lessons of module 10 now have a `# Sources` block: ViT and Anthropic "Vision" (Image understanding), Diffusers "Reproducibility" and Imagen (Text to image), GLIDE and Diffusers "Inpainting" (Image editing), IP-Adapter and ControlNet (Reference images), Whisper and VALL-E (Speech), Ho et al. "Video Diffusion Models" and "Align your Latents" (Video generation), the C2PA specification 2.5 and Stable Signature (Provenance). No lesson text changed. Record in `docs/source-audit/m10.md` (new). Brief, subagent reports, Codex request and answer `dist/advisor/m10-*.md` (local only). With this, every lesson of the course has sources.
+
+**Verified.** Three Claude subagents found and read the sources and found no important general error. Claude fetched the four web pages with curl and found the cited passages and headings, checked the ten papers through the arXiv API and on the PDF first pages, and read the C2PA version history (2.5, October 2026). The Diffusers seed page has changed since subagent A read it (now "Reproducibility", shorter): title and note follow the current page. Codex was at its usage limit at first, Max restored it the same morning. Codex opened all 14 reader sources: all kept, one locator fix (Ho et al. sections 3 and 3.1, not 2 and 3.1), checked by Claude in the PDF and applied. Codex also closed three evidence gaps (outpainting, rare names in speech recognition, audio watermarks), checked by Claude. `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok after the fix. No figure changed, so no `npm run figs`. HEAD before this entry: 79082ab.
+
+**Decisions.**
+- Done (Claude, Codex agreed): Ho et al. note does not say "the first diffusion model for video", because the paper claims only the first results on a text-conditioned video task.
+- Done (Claude, Codex agreed): C2PA linked at version 2.5 with Year 2026, not the unversioned spec, so the cited sections stay stable.
+- Proposed: commit module 10 together with the module-9 closure notes, then push. Waiting for Max's go-ahead.
+
+## 2026-10-30: module 9 pushed, module 10 started
+
+**What was done.** Module 9 sources committed in 79082ab (with the module-7 closure notes) and pushed, on Max's go-ahead of 2026-10-30. Codex chat cleared at task close (its answer is in `dist/advisor/m9-answer.md`). Module 10 started on the same go-ahead: brief `dist/advisor/m10-brief.md` (the module-9 brief for module 10, noting that NIST AI 600-1 and the two diffusion papers are already cited), three subagents launched.
+
+**Verified.** Build, `lengths.py` and `npm test` ok again before the commit. Pages deploy of 79082ab succeeded. The live page contains the new Netflix source.
+
+**Decisions.**
+- Done (Max, 2026-10-30): commit and push of module 9, proposed in the module-9 entry below.
+
 ## 2026-10-29: sources for module 9
 
 **What was done.** Next step from HANDOFF (open item approved by Max on 2026-10-29). All 7 lessons of module 9 now have a `# Sources` block: RFC 8446 TLS 1.3 and OpenAI "Data controls" (A message's journey), two Anthropic help pages on retention and memory (History, memory and training), European Commission "Principles of the GDPR" (Data minimisation), Sweeney 2000 and Narayanan and Shmatikov (Anonymisation), Apple's 2025 foundation-models report (Local or cloud), RFC 6749 OAuth 2.0 (Permissions and connectors), Carlini et al. and Bourtoule et al. (Retention and deletion). No lesson text changed. Record in `docs/source-audit/m9.md` (new). Brief, subagent reports, Codex request and answer `dist/advisor/m9-*.md` (local only).

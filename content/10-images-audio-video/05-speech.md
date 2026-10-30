@@ -57,3 +57,21 @@ Mistaking a natural voice for proof of authenticity. A system can read false tex
 ## Figure caption
 
 Recognition produces a transcript from audio, while synthesis generates new audio from text, potentially guided by a reference voice.
+
+# Sources
+
+## whisper
+- Work: [Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356v1)
+- Author: Radford et al., OpenAI
+- Year: 2022
+- Language: en
+- Note.it: Un modello di riconoscimento vocale che trasforma l'audio in testo, con i suoi limiti: errori nel rumore e trascrizioni a volte inventate (sezioni 2.2, 3.7 e 6). Tecnico.
+- Note.en: A speech recognition model that turns audio into text, with its limits: errors in noise and transcripts that are sometimes made up (sections 2.2, 3.7 and 6). Technical.
+
+## vall-e
+- Work: [Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers](https://arxiv.org/abs/2301.02111v1)
+- Author: Wang et al., Microsoft
+- Year: 2023
+- Language: en
+- Note.it: Una sintesi vocale che imita una voce da tre secondi di registrazione, con il rischio di impersonare qualcuno (introduzione e paragrafo finale "Broader impacts"). Tecnico.
+- Note.en: Speech synthesis that imitates a voice from a three-second recording, with the risk of impersonating someone (introduction and the closing "Broader impacts" paragraph). Technical.

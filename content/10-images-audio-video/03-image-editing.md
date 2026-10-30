@@ -57,3 +57,21 @@ Assuming that removing an object reveals the real scene it covered. The model ge
 ## Figure caption
 
 Inpainting edits a selected interior area, while outpainting generates new areas beyond the original border.
+
+# Sources
+
+## glide-nichol
+- Work: [GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models](https://arxiv.org/abs/2112.10741v3)
+- Author: Nichol et al.
+- Year: 2021
+- Language: en
+- Note.it: Un modello a diffusione guidato dal testo, addestrato anche a riempire una zona mascherata dell'immagine usando il contesto (sezione 4.3, sull'inpainting). Tecnico.
+- Note.en: A text-guided diffusion model also trained to fill a masked area of an image using its context (section 4.3, on inpainting). Technical.
+
+## diffusers-inpainting
+- Work: [Inpainting (Diffusers documentation)](https://huggingface.co/docs/diffusers/main/en/using-diffusers/inpaint)
+- Author: Hugging Face
+- Year: undated
+- Language: en
+- Note.it: La guida all'inpainting con una maschera: avverte che anche l'area fuori dalla maschera può cambiare e spiega come forzarla a restare identica (sezioni "Mask blur" e "Non-inpaint specific checkpoints").
+- Note.en: The guide to inpainting with a mask: it warns that the area outside the mask may also change and shows how to force it to stay identical (sections "Mask blur" and "Non-inpaint specific checkpoints").

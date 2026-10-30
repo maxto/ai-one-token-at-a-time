@@ -57,3 +57,21 @@ Assuming that a correct scene description guarantees every detail. Recognizing a
 ## Figure caption
 
 An image split into patches becomes a sequence of visual tokens that the model combines with the question.
+
+# Sources
+
+## vit-dosovitskiy
+- Work: [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929v2)
+- Author: Dosovitskiy et al., Google Research
+- Year: 2020
+- Language: en
+- Note.it: Il lavoro che ha mostrato come dividere un'immagine in patch e trattarle come i token di un Transformer (introduzione, sezione 3.1 e figura 1). Tecnico.
+- Note.en: The paper that showed how to split an image into patches and treat them as the tokens of a Transformer (introduction, section 3.1 and figure 1). Technical.
+
+## claude-vision
+- Work: [Vision (Claude API documentation)](https://platform.claude.com/docs/en/build-with-claude/vision)
+- Author: Anthropic
+- Year: undated
+- Language: en
+- Note.it: La guida ufficiale all'uso delle immagini con un modello: dimensioni, riduzione delle immagini grandi e limiti noti, come il conteggio di molti oggetti piccoli (sezione "Limitations").
+- Note.en: The official guide to using images with a model: sizes, downscaling of large images and known limits, such as counting many small objects (section "Limitations").
