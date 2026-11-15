@@ -2,6 +2,23 @@
 
 Newest entry on top. Entries are added, never rewritten.
 
+## 2026-11-15: two new module-7 lessons, continuous batching and speculative decoding
+
+**What was done.** The resources session (resources-c1) sent four course ideas from a newly archived LLM-serving roadmap (Pachaar, "time-to-first-token", `~/resources/pachaar-time-to-first-token/NOTES.md`). On Max's go-ahead ("procedi come tu mi consigli"), two new lessons after KV Cache: `03-batching` (Continuous batching) and `04-speculative-decoding` (Speculative decoding), each with a figure and a `# Sources` block. Module-7 files 03..09 renumbered to 05..11, ids unchanged. README: 88 lessons and the module-7 list. Progress sync across devices recorded in `docs/ideas.md`. Check record appended to `docs/source-audit/m7.md`. Committed in e74eae8 and pushed on Max's go-ahead. Request and Codex answer `dist/advisor/m7-new-*.md` (local only).
+
+**Verified.** Two Claude subagents read the papers in full text (Orca OSDI 2022, Kwon et al. v1, Leviathan et al. v1, Chen et al. v1, vLLM blog 2024-10-17). Claude checked affiliations and section headings in the extracted text, the Orca S1 passage, and the Anyscale page for the term "continuous batching". Codex reviewed text, figures and sources, opening the sources again: two fixes, applied (decisions below). `python3 scripts/build.py`, `python3 scripts/lengths.py`, `npm test` ok after the fixes. `npm run figs` ok before them (figures unchanged after), the four light-theme PNGs looked at. Not checked: dark theme and phone rendering of the new figures. Pages deploy of e74eae8 succeeded, the live page has the new titles. HEAD before this entry: e74eae8.
+
+**Decisions.**
+- Done (approved by Max): of the four ideas, two new lessons. The "why" of the two latency parts (decoding limited by memory reads) goes into the batching lesson, not into Cost & Latency or KV Cache, which have no error (rule of 2026-10-29). Rejected: second sources for existing lessons (Stanford CS336 for KV cache, NVIDIA and Databricks benchmarking blogs), because every lesson already has sources and vendor blogs are borderline for the writing guide. Rejected: "that is why output tokens cost more", because providers do not say so. Deferred: progress sync across devices, in `docs/ideas.md`, not requested yet.
+- Done (Claude, Codex agreed): order KV Cache, Continuous batching, Speculative decoding, because each builds on the previous one. Files renumbered rather than appended at the end of the module.
+- Done (Claude, Codex agreed): Orca is the batching lesson's only source and is not named in the text, because it called the mechanism "iteration-level scheduling". PagedAttention not repeated (already in KV Cache). The vLLM benchmark numbers stay out of the lesson. The batching text speaks of load, not batch size, because the sources show latency rising with request rate.
+- Done (approved by Max, Codex point 1 in Claude's wording): the one line says "come se scrivesse solo il grande" / "as if the large model wrote alone" instead of "senza cambiare il risultato" / "without changing the output", because the guarantee is on the large model's probabilities, not on an identical text. The Leviathan note follows ("conserva le probabilità").
+- Done (approved by Max, Codex point 2): "richiede circa lo stesso tempo" / "takes about as long" instead of "costa circa quanto" / "costs about as much", in the text and the Chen note, because the papers compare latency while the lesson says total computation goes up.
+- Not applied (narrower, rule of 2026-10-29): Chen's remark that hardware numerics can make single greedy outputs differ.
+- Done (Claude): no "Used by" line in the `~/resources` catalog, because the roadmap was an idea source, nothing was copied or adopted.
+
+**Open items moved.** None closed. New in HANDOFF: Max reviews the two new lessons online. The old HANDOFF state bullets on the sources work (2026-10-28 to 2026-10-30) are condensed to one line: their details are in those LOG entries.
+
 ## 2026-10-30: module 10 pushed, sources work closed
 
 **What was done.** Module 10 sources committed in 1b8d44a (with the module-9 closure notes) and pushed, on Max's go-ahead of 2026-10-30. Codex chat cleared at task close (its answer is in `dist/advisor/m10-answer.md`). The open item "Sources for modules 3 to 10" leaves HANDOFF as done: all 86 lessons have sources, records in `docs/source-audit/` (m1 to m10).

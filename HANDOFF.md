@@ -1,41 +1,30 @@
 # Handoff
 
-Closed: 2026-10-30 08:55 CET. Last operation: module 10 committed in 1b8d44a and pushed on Max's go-ahead, Pages deploy verified, Codex chat cleared. Sources work done for all 10 modules. HEAD verified before this update: 1b8d44a.
+Closed: 2026-11-15 13:08 CET. Last operation: two new module-7 lessons (Continuous batching, Speculative decoding) committed in e74eae8 and pushed on Max's go-ahead, Pages deploy verified. HEAD verified before this update: e74eae8.
 
 ## Goal
 
-The course is done for now, not closed: 10 modules, 86 lessons, live at https://maxto.github.io/ai-one-token-at-a-time/. It grows when a new topic is worth it, plus fixes for errors or outdated claims.
+The course is done for now, not closed: 10 modules, 88 lessons, live at https://maxto.github.io/ai-one-token-at-a-time/. It grows when a new topic is worth it, plus fixes for errors or outdated claims.
 
 ## State
 
 - Worktree: `/home/maxto/projects/personal/ai-one-token-at-a-time`, branch `main`.
-- 2026-10-28 update (see LOG.md): new lessons Computer-Use Agents (`#m5-computer-use`), Open-weight models (`#m2-open-weights`, includes "uncensored" models), Reward hacking (`#m6-reward-hacking`). Fixes in Context Window, AI Agents, Multi-Agent Systems, Agent Loops, Agent Harness.
-- Checks run on 2026-10-28: `python3 scripts/lengths.py` ok, `npm test` ok, `npm run figs` ok and the new PNGs looked at. Text review of the new lessons and estimated study times done the same day (see LOG.md).
-- Tests needed `--disable-gpu --disable-software-rasterizer --use-gl=swiftshader` for Chrome 150 under WSL (page screenshots timed out otherwise, also on the old HEAD). Now in `tests/e2e.mjs` and `tests/render-figs.mjs`.
-- 2026-10-28: dark theme brightened for contrast, then dark-theme figures set to variant C after a Codex review: dark panel, raised lighter boxes, lighter small text (see LOG.md). Home cards stay lighter than the page. Light theme unchanged (pixel compare of all light figures).
-- Advisor files for this round are in the gitignored `dist/advisor/` (scan, batch1, lessons, final): local only.
-- 2026-10-28 evening, committed in 3469ff1 and pushed: optional `# Sources` block (one or two reference sources), shown in `#m2-llm`, `#m2-mixture-of-experts`, `#m2-open-weights`, with corrected wording in those three lessons (see LOG.md). Build, `lengths.py`, `npm test` ok. Check record in `docs/source-audit/m2.md`. Codex files `dist/advisor/sources-*.md` (local only).
-- 2026-10-29, committed and pushed in 8ed6370: sources for the other six module-2 lessons, so all 9 lessons of module 2 have them, with wording corrections (see LOG.md). Pages deploy of 8ed6370 succeeded (verified 2026-10-29). Codex files `dist/advisor/m2-rest-*.md` (local only).
-- 2026-10-29, committed and pushed in c8e55ab, Pages deploy succeeded (verified 2026-10-29): sources for all 9 lessons of module 1, three text fixes (top-k-top-p accuracy, embeddings "keywords", new temperature analogy) and a source-note fix. Record `docs/source-audit/m1.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m1-*.md` (local only).
-- 2026-10-29, module 6: sources for all 9 lessons, one text fix (quantization-aware training is a retraining, not training "from the start") and two source-note fixes, after Codex. Record `docs/source-audit/m6.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m6-*.md` (local only). Committed and pushed in fbebe62, Pages deploy succeeded (verified 2026-10-29).
-- 2026-10-29, module 8: sources for all 7 lessons, no lesson text change, two source-note fixes after Codex. Record `docs/source-audit/m8.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m8-*.md` (local only). Committed and pushed in 578b298, Pages deploy succeeded (verified 2026-10-29).
-- 2026-10-29, module 3: sources for all 9 lessons, one text fix in Tree of Thoughts (an early error "can carry through", not "everything after it is wrong") and two entry fixes, after Codex. Record `docs/source-audit/m3.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m3-*.md` (local only). Committed and pushed in 98cd3b1, Pages deploy succeeded (verified 2026-10-29).
-- 2026-10-29, module 4: sources for all 9 lessons, no lesson text change. Codex's "same embedding space" correction rejected by Max (exception, see LOG.md). Record `docs/source-audit/m4.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m4-*.md` (local only). Committed and pushed in fefef7b, Pages deploy succeeded (verified 2026-10-29).
-- 2026-10-29, module 5: sources for all 11 lessons, no lesson text change, Codex OK on all 14 entries. Record `docs/source-audit/m5.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m5-*.md` (local only). Committed and pushed in c71a9ab, Pages deploy succeeded (verified 2026-10-29).
-- 2026-10-29, module 7: sources for all 9 lessons, no lesson text change, three note fixes after Codex. Record `docs/source-audit/m7.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m7-*.md` (local only). Committed and pushed in 5a33342, Pages deploy succeeded (verified 2026-10-29).
-- 2026-10-29, module 9: sources for all 7 lessons, no lesson text change, Codex OK on all 11 entries. Record `docs/source-audit/m9.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-29. Codex files `dist/advisor/m9-*.md` (local only). Committed and pushed in 79082ab, Pages deploy succeeded (verified 2026-10-30).
-- 2026-10-30, module 10: sources for all 7 lessons, no lesson text change, one note-locator fix after Codex. Record `docs/source-audit/m10.md` (new). Build, `lengths.py`, `npm test` ok on 2026-10-30. Codex files `dist/advisor/m10-*.md` (local only). Committed and pushed in 1b8d44a, Pages deploy succeeded (verified 2026-10-30).
-- All 86 lessons now have a `# Sources` block, with a check record per module in `docs/source-audit/` (m1 to m10).
+- 2026-11-15, committed in e74eae8 and pushed, Pages deploy succeeded (verified 2026-11-15): new lessons `#m7-batching` and `#m7-speculative-decoding` after KV Cache, module-7 files renumbered 05..11 (ids unchanged), README 88 lessons. Ideas from the resources session (Pachaar serving roadmap), Codex review applied. Build, `lengths.py`, `npm test` ok, `npm run figs` ok with light-theme PNGs looked at. Check record in `docs/source-audit/m7.md`. Details and decisions in LOG.md.
+- Sources: every lesson has a `# Sources` block, with a check record per module in `docs/source-audit/` (m1 to m10). Work of 2026-10-28 to 2026-10-30, details in LOG.md.
 - Rule from 2026-10-29 (LOG.md): change text only for important errors on the general case, no caveats from edge cases. Italian written natively, not translated from English.
+- Tests need `--disable-gpu --disable-software-rasterizer --use-gl=swiftshader` for Chrome under WSL (already in `tests/e2e.mjs` and `tests/render-figs.mjs`).
+- Advisor files are in the gitignored `dist/advisor/` (local only), the latest `m7-new-request.md` and `m7-new-answer.md`.
 
 ## Open items
 
-- Max reviews the new lessons online. Status: to check. Who: Max.
+- Max reviews the two new lessons online (Italian text, figures, also in the dark theme and on the phone, not checked by Claude). Status: to check. Who: Max.
+- Max reviews the lessons added on 2026-10-28 online. Status: to check. Who: Max.
 - Max studies the course himself. Status: ongoing since 2026-10-09.
 - GitHub Actions warns that the Pages workflow actions run on a deprecated Node.js version (in `docs/ideas.md`). Status: to check.
 - Tiny figure labels on phones: at the 420px minimum SVG width the 11.5px labels render at about 8.6px (Codex, 2026-10-28). Status: to check on a real phone. Who: Max, then Claude if a size change is needed.
 - Dark search box placeholder: Codex proposed an explicit colour (`var(--muted)`, opacity 1, dark only). Max found it readable. Status: proposed, not decided.
-- Rejected in the 2026-10-28 scan, kept here only as reasons not to redo the work: model release news, EU AI Act deadlines, agent payments as a lesson, semantic cache / provider fallback / A/B tests (possible examples later in Choosing a Model and Evals). Details in LOG.md.
+- Progress sync across devices (export/import, sync link): idea in `docs/ideas.md` since 2026-11-15. Status: not requested, Max decides.
+- Rejected, kept here only as reasons not to redo the work: model release news, EU AI Act deadlines, agent payments as a lesson, semantic cache / provider fallback / A/B tests (2026-10-28 scan). Second sources for existing lessons from the serving roadmap, and "output tokens cost more because of decoding" (2026-11-15). Details in LOG.md.
 
 ## What comes next (elsewhere)
 
@@ -46,4 +35,4 @@ The next focus is AI applied to finance, as Macroasset content, not in this repo
 
 ## Next step
 
-None pending from the sources work. Next is Max's choice among the open items above (online review of the lessons, phone labels, the Pages Node.js warning, the dark placeholder).
+Max reads `#m7-batching` and `#m7-speculative-decoding` online and reports anything to change. Otherwise, Max's choice among the open items above.
