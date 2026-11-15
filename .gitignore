@@ -2,3 +2,14 @@ dist/
 node_modules/
 tests/output/
 __pycache__/
+
+# Our working files (owner and agents): kept on disk, never committed
+# in this public repo (global rule "Public repositories")
+HANDOFF.md
+LOG.md
+AGENTS.md
+CLAUDE.md
+docs/ideas.md
+.claude/
+.agents/
+docs/superpowers/
