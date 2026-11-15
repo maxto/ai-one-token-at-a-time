@@ -1,0 +1,44 @@
+<svg viewBox="0 0 560 192" role="img" aria-label="Il modello piccolo propone quattro token, il grande li verifica in un solo passaggio, ne accetta tre e sostituisce il quarto con il suo.">
+<text class="t-xs it" x="20" y="20">il modello piccolo propone</text>
+<text class="t-xs en" x="20" y="20">the small model drafts</text>
+<rect class="box-soft" x="20" y="30" width="100" height="32" rx="6"/>
+<text class="t-sm mid it" x="70" y="51">Il gatto</text>
+<text class="t-sm mid en" x="70" y="51">The cat</text>
+<rect class="box-mod" x="128" y="30" width="88" height="32" rx="6"/>
+<text class="t mid it" x="172" y="51">dorme</text>
+<text class="t mid en" x="172" y="51">sleeps</text>
+<rect class="box-mod" x="224" y="30" width="88" height="32" rx="6"/>
+<text class="t mid it" x="268" y="51">sul</text>
+<text class="t mid en" x="268" y="51">on</text>
+<rect class="box-mod" x="320" y="30" width="88" height="32" rx="6"/>
+<text class="t mid it" x="364" y="51">divano</text>
+<text class="t mid en" x="364" y="51">the</text>
+<rect class="box-mod" x="416" y="30" width="88" height="32" rx="6"/>
+<text class="t mid it" x="460" y="51">blu</text>
+<text class="t mid en" x="460" y="51">roof</text>
+<text class="t mid" x="172" y="88">✓</text>
+<text class="t mid" x="268" y="88">✓</text>
+<text class="t mid" x="364" y="88">✓</text>
+<text class="t mid" x="460" y="88">✗</text>
+<text class="t-xs it" x="20" y="114">il modello grande li verifica tutti in un solo passaggio</text>
+<text class="t-xs en" x="20" y="114">the large model checks them all in one pass</text>
+<rect class="box-soft" x="20" y="128" width="100" height="32" rx="6"/>
+<text class="t-sm mid it" x="70" y="149">Il gatto</text>
+<text class="t-sm mid en" x="70" y="149">The cat</text>
+<rect class="box-mod" x="128" y="128" width="88" height="32" rx="6"/>
+<text class="t mid it" x="172" y="149">dorme</text>
+<text class="t mid en" x="172" y="149">sleeps</text>
+<rect class="box-mod" x="224" y="128" width="88" height="32" rx="6"/>
+<text class="t mid it" x="268" y="149">sul</text>
+<text class="t mid en" x="268" y="149">on</text>
+<rect class="box-mod" x="320" y="128" width="88" height="32" rx="6"/>
+<text class="t mid it" x="364" y="149">divano</text>
+<text class="t mid en" x="364" y="149">the</text>
+<rect class="box-accent" x="416" y="128" width="88" height="32" rx="6"/>
+<text class="t mid it" x="460" y="149">di</text>
+<text class="t mid en" x="460" y="149">sofa</text>
+<text class="t-xs mid it" x="268" y="180">accettati</text>
+<text class="t-xs mid en" x="268" y="180">kept</text>
+<text class="t-xs t-accent mid it" x="460" y="180">scelto dal grande</text>
+<text class="t-xs t-accent mid en" x="460" y="180">large model's pick</text>
+</svg>

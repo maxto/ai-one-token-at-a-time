@@ -4,7 +4,7 @@ title.it: Streaming
 title.en: Streaming
 ---
 
-![](./03-streaming.preview.svg)
+![](./05-streaming.preview.svg)
 
 # IT
 

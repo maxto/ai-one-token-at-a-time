@@ -1,0 +1,39 @@
+<svg viewBox="0 0 560 308" role="img" aria-label="Con un gruppo fisso i posti liberati restano vuoti fino alla fine, con il batching continuo una nuova richiesta entra al passo successivo.">
+<defs>
+<marker id="ah-batching" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" class="fill-ink"/>
+</marker>
+</defs>
+<text class="t-sm t-b it" x="20" y="24">Gruppo fisso</text>
+<text class="t-sm t-b en" x="20" y="24">Fixed batch</text>
+<rect class="box-mod" x="20" y="36" width="189" height="24" rx="6"/>
+<text class="t-sm mid" x="115" y="53">A</text>
+<rect class="box-soft" x="215" y="36" width="319" height="24" rx="6"/>
+<text class="t-xs mid it" x="375" y="53">vuoto</text>
+<text class="t-xs mid en" x="375" y="53">empty</text>
+<rect class="box-mod" x="20" y="64" width="514" height="24" rx="6"/>
+<text class="t-sm mid" x="277" y="81">B</text>
+<rect class="box-mod" x="20" y="92" width="319" height="24" rx="6"/>
+<text class="t-sm mid" x="180" y="109">C</text>
+<rect class="box-soft" x="345" y="92" width="189" height="24" rx="6"/>
+<text class="t-xs mid it" x="440" y="109">vuoto</text>
+<text class="t-xs mid en" x="440" y="109">empty</text>
+<text class="t-xs it" x="20" y="136">D aspetta che finisca B</text>
+<text class="t-xs en" x="20" y="136">D waits until B finishes</text>
+<text class="t-sm t-b it" x="20" y="170">Batching continuo</text>
+<text class="t-sm t-b en" x="20" y="170">Continuous batching</text>
+<rect class="box-mod" x="20" y="182" width="189" height="24" rx="6"/>
+<text class="t-sm mid" x="115" y="199">A</text>
+<rect class="box-accent" x="215" y="182" width="319" height="24" rx="6"/>
+<text class="t-sm mid it" x="375" y="199">D entra subito</text>
+<text class="t-sm mid en" x="375" y="199">D joins at once</text>
+<rect class="box-mod" x="20" y="210" width="514" height="24" rx="6"/>
+<text class="t-sm mid" x="277" y="227">B</text>
+<rect class="box-mod" x="20" y="238" width="319" height="24" rx="6"/>
+<text class="t-sm mid" x="180" y="255">C</text>
+<rect class="box-mod" x="345" y="238" width="189" height="24" rx="6"/>
+<text class="t-sm mid" x="440" y="255">E</text>
+<line class="ln-muted" x1="20" y1="278" x2="532" y2="278" marker-end="url(#ah-batching)"/>
+<text class="t-xs end it" x="534" y="298">passi: un token per richiesta</text>
+<text class="t-xs end en" x="534" y="298">steps: one token per request</text>
+</svg>

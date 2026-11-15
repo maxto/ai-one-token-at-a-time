@@ -4,7 +4,7 @@ title.it: Guardrail
 title.en: Guardrails
 ---
 
-![](./06-guardrails.preview.svg)
+![](./08-guardrails.preview.svg)
 
 # IT
 

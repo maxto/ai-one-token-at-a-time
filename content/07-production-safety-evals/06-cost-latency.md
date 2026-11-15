@@ -4,7 +4,7 @@ title.it: Costi e latenza
 title.en: Cost & Latency
 ---
 
-![](./04-cost-latency.preview.svg)
+![](./06-cost-latency.preview.svg)
 
 # IT
 

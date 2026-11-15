@@ -4,7 +4,7 @@ title.it: Osservabilità
 title.en: Observability
 ---
 
-![](./05-observability.preview.svg)
+![](./07-observability.preview.svg)
 
 # IT
 

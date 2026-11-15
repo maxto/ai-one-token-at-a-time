@@ -4,7 +4,7 @@ title.it: Prompt injection
 title.en: Prompt Injection
 ---
 
-![](./07-prompt-injection.preview.svg)
+![](./09-prompt-injection.preview.svg)
 
 # IT
 

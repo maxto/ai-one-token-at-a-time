@@ -4,7 +4,7 @@ title.it: Scegliere un modello
 title.en: Choosing a model
 ---
 
-![](./09-choosing-a-model.preview.svg)
+![](./11-choosing-a-model.preview.svg)
 
 # IT
 
